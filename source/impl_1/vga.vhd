@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 
 entity vga is
 	port(
-		clk : in std_logic;
+		vga_clk : in std_logic;
 		HSYNC : out std_logic := '1';
 		VSYNC : out std_logic := '1';
 		col : out unsigned(9 downto 0);
@@ -17,8 +17,8 @@ architecture synth of vga is
 	signal scol : unsigned(9 downto 0) := "0000000000";
 	signal srow : unsigned(9 downto 0) := "0000000000";
 begin
-	process(clk) is begin
-		if rising_edge(clk)then
+	process(vga_clk) is begin
+		if rising_edge(vga_clk)then
 			if (scol = 799) then
 				scol <= "0000000000";
 				srow <= srow + 1;
