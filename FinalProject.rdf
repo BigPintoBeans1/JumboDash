@@ -3,6 +3,9 @@
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
         <Options/>
+        <Source name="source/impl_1/top.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
     </Implementation>
     <Strategy name="Strategy1" file="FinalProject1.sty"/>
 </RadiantProject>
