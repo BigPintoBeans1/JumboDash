@@ -37,19 +37,18 @@
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -sdc "FinalProject_impl_1_cpe.ldc"
--path "C:/Users/erober10/Documents/GitHub/JumboDash/mypll"
--path "C:/lscc/radiant/2023.1/ispfpga/ice40tp/data" "C:/Users/erober10/Documents/GitHub/JumboDash/impl_1" "C:/Users/erober10/Documents/GitHub/JumboDash"
+-path "Z:/New folder/JumboDash/mypll"
+-path "C:/lscc/radiant/2023.1/ispfpga/ice40tp/data" "Z:/New folder/JumboDash/impl_1" "Z:/New folder/JumboDash"
 -ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd"
--lib "work" -vhd "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/top.vhd"
-"C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/vga.vhd"
-"C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/ROM.vhd"
--ver "C:/Users/erober10/Documents/GitHub/JumboDash/mypll/rtl/mypll.v"
--lib "work" -vhd "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/cube_gen.vhd"
-"C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/controller.vhd"
+-lib "work" -vhd "Z:/New folder/JumboDash/source/impl_1/top.vhd"
+"Z:/New folder/JumboDash/source/impl_1/vga.vhd"
+"Z:/New folder/JumboDash/source/impl_1/ROM.vhd"
+-ver "Z:/New folder/JumboDash/mypll/rtl/mypll.v"
+-lib "work" -vhd "Z:/New folder/JumboDash/source/impl_1/cube_gen.vhd"
 
 
--path "C:/Users/erober10/Documents/GitHub/JumboDash"
+-path "Z:/New folder/JumboDash"
 -top top
 -udb "FinalProject_impl_1_rtl.udb"
 -output_hdl "FinalProject_impl_1.vm"

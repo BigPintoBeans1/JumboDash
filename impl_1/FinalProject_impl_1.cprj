@@ -1,7 +1,7 @@
 -ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd"
--lib "work" -vhd "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/top.vhd" "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/vga.vhd" "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/ROM.vhd" "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/cube_gen.vhd" "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/controller.vhd"
--path "C:/Users/erober10/Documents/GitHub/JumboDash"
+-lib "work" -vhd "Z:/New folder/JumboDash/source/impl_1/top.vhd" "Z:/New folder/JumboDash/source/impl_1/vga.vhd" "Z:/New folder/JumboDash/source/impl_1/ROM.vhd" "Z:/New folder/JumboDash/source/impl_1/cube_gen.vhd"
+-path "Z:/New folder/JumboDash"
 -vh2008
 -top top
 -isTop

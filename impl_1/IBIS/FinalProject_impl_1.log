@@ -1,7 +1,7 @@
 |************************************************************************
 | IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
 | Report Generate Date: Nov 29 2023
-| Report Generate Time: 16:37:28
+| Report Generate Time: 17:07:16
 |************************************************************************
 |IBIS file ice40up.ibs   
 |Lattice Semiconductor Corporation   
@@ -136,17 +136,18 @@ L_pkg          2.652nH         1.989nH         3.504nH
 C_pkg          0.2807pF        0.2236pF        0.3481pF
 |
 [Pin]  signal_name          model_name           R_pin     L_pin     C_pin
-3             rgb[2]               lvc330a080aaaaaaaaou
-48            rgb[3]               lvc330a080aaaaaaaaou
-45            rgb[4]               lvc330a080aaaaaaaaou
-47            rgb[5]               lvc330a080aaaaaaaaou
-2             VSYNC                lvc330a080aaaaaaaaou
-46            HSYNC                lvc330a080aaaaaaaaou
-4             rgb[1]               lvc330a080aaaaaaaaou
-44            rgb[0]               lvc330a080aaaaaaaaou
-43            controlLatch         lvc330a080aaaaaaaaou
-36            controlClk           lvc330a080aaaaaaaaou
-20            fpga_clk             lvc330axxxbaaaaaaain
+31            rgb[4]               lvc330a080aaaaaaaaou
+47            rgb[3]               lvc330a080aaaaaaaaou
+21            controlClk           lvc330a080aaaaaaaaou
+12            controlLatch         lvc330a080aaaaaaaaou
+28            rgb[5]               lvc330a080aaaaaaaaou
+37            VSYNC                lvc330a080aaaaaaaaou
+32            HSYNC                lvc330a080aaaaaaaaou
+45            rgb[0]               lvc330a080aaaaaaaaou
+44            rgb[1]               lvc330a080aaaaaaaaou
+48            rgb[2]               lvc330a080aaaaaaaaou
+36            controllerIn         lvc330axxxbaaaaaaain
+35            fpga_clk             lvc330axxxbaaaaaaain
 |************************************************************************
 [Model] lvc330a080aaaaaaaaou
 Model_type Output

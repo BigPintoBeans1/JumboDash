@@ -57,14 +57,6 @@ prj_add_source "Z:/Radiant/JumboDash/source/impl_1/top.vhd"
 
 
 
-<A name="pn231127165122"></A><B><U><big>pn231127165122</big></U></B>
-#Start recording tcl command: 11/27/2023 16:50:04
-#Project Location: Z:/New folder/JumboDash; Project name: FinalProject
-prj_open "Z:/New folder/JumboDash/FinalProject.rdf"
-#Stop recording: 11/27/2023 16:51:22
-
-
-
 <A name="pn231127165311"></A><B><U><big>pn231127165311</big></U></B>
 #Start recording tcl command: 11/27/2023 16:50:48
 #Project Location: Z:/Radiant/JumboDash; Project name: FinalProject
@@ -155,13 +147,36 @@ prj_run Export -impl impl_1
 
 
 
+<A name="pn231129170737"></A><B><U><big>pn231129170737</big></U></B>
+#Start recording tcl command: 11/29/2023 16:02:15
+#Project Location: Z:/New folder/JumboDash; Project name: FinalProject
+prj_open "Z:/New folder/JumboDash/FinalProject.rdf"
+prj_add_source "Z:/New folder/JumboDash/mypll/mypll.ipx"
+prj_add_source "Z:/New folder/JumboDash/source/impl_1/cube_gen.vhd"
+prj_add_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
+prj_remove_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
+prj_add_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 11/29/2023 17:07:37
+
+
+
 </PRE></DIV>
 
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
 <UL id="toc_list">
 <LI><A href=#pn231127164935>pn231127164935</A></LI>
 <LI><A href=#pn231127164949>pn231127164949</A></LI>
-<LI><A href=#pn231127165122>pn231127165122</A></LI>
 <LI><A href=#pn231127165311>pn231127165311</A></LI>
 <LI><A href=#pn231127165830>pn231127165830</A></LI>
 <LI><A href=#pn231127172217>pn231127172217</A></LI>
@@ -169,6 +184,7 @@ prj_run Export -impl impl_1
 <LI><A href=#pn231129155453>pn231129155453</A></LI>
 <LI><A href=#pn231129155751>pn231129155751</A></LI>
 <LI><A href=#pn231129163540>pn231129163540</A></LI>
+<LI><A href=#pn231129170737>pn231129170737</A></LI>
 </UL>
 </DIV>
 

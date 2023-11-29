@@ -1,0 +1,20 @@
+#Start recording tcl command: 11/29/2023 16:02:15
+#Project Location: Z:/New folder/JumboDash; Project name: FinalProject
+prj_open "Z:/New folder/JumboDash/FinalProject.rdf"
+prj_add_source "Z:/New folder/JumboDash/mypll/mypll.ipx"
+prj_add_source "Z:/New folder/JumboDash/source/impl_1/cube_gen.vhd"
+prj_add_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
+prj_remove_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
+prj_add_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 11/29/2023 17:07:37
