@@ -5,7 +5,6 @@ use IEEE.numeric_std.all;
 entity top is
 	port(
 		fpga_clk : in std_logic; -- 12MHz clock from fpga
-		sevenSeg : out std_logic_vector(6 downto 0);
 		HSYNC : out std_logic;
 		VSYNC : out std_logic;
 		rgb : out std_logic_vector(5 downto 0)
@@ -59,8 +58,25 @@ component mypll is
     );
 end component;
 
-signal clk: std_logic;
-signal addr: unsigned(2 downto 0);
+component cube_gen is
+	port(
+		row : in unsigned(9 downto 0);
+		col : in unsigned(9 downto 0);
+		rgb : out std_logic_vector(5 downto 0);
+		valid : in std_logic
+	);
+end component;
+
+signal clk : std_logic;
+signal addr : unsigned(2 downto 0);
+
+-- VGA signals
+signal vga_clk : std_logic;
+signal row : unsigned(9 downto 0);
+signal col : unsigned(9 downto 0);
+signal valid : std_logic;
+signal reset : std_logic := '1'; 
+--
 
 begin
 
@@ -71,21 +87,20 @@ port map (
 	CLKHF => clk
 );
  
-Count : counter port map (
-	clk  => clk, 
-	addr => addr
-);
+-- Count : counter port map (
+-- 	clk  => clk, 
+--	addr => addr
+--);
 
-ROM : ROMaddress port map (
-	clk  => clk, 
-	addr => addr,
-	data => sevenSeg
-);
+-- ROM : ROMaddress port map (
+--	clk  => clk, 
+--	addr => addr,
+--	data => sevenSeg
+-- );
 
 mypll_1 : mypll port map(
 	ref_clk_i => fpga_clk,
 	rst_n_i => reset,
-	outcore_o => output_freq,
 	outglobal_o => vga_clk
 );
 	
@@ -93,6 +108,13 @@ vga_1 : vga port map(
 	vga_clk => vga_clk,
 	HSYNC => HSYNC,
 	VSYNC => VSYNC,
+	valid => valid,
+	row => row,
+	col => col
+);
+
+cube_gen1 : cube_gen port map(
+	rgb => rgb,
 	valid => valid,
 	row => row,
 	col => col
