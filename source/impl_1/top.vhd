@@ -7,7 +7,10 @@ entity top is
 		fpga_clk : in std_logic; -- 12MHz clock from fpga
 		HSYNC : out std_logic;
 		VSYNC : out std_logic;
-		rgb : out std_logic_vector(5 downto 0)
+		rgb : out std_logic_vector(5 downto 0);
+		controllerIn : in std_logic;
+		controlLatch : out std_logic;
+		controlClk : out std_logic
 	);
 end top;
 
@@ -67,6 +70,15 @@ component cube_gen is
 	);
 end component;
 
+component controller is
+  port( 
+	controllerInput : in std_logic; 
+	controllerLatch : out std_logic; 
+	controllerClk : out std_logic; 
+	controllerResult : out std_logic_vector(7 downto 0) 
+  ); 
+end component;
+
 signal clk : std_logic;
 signal addr : unsigned(2 downto 0);
 
@@ -76,9 +88,19 @@ signal row : unsigned(9 downto 0);
 signal col : unsigned(9 downto 0);
 signal valid : std_logic;
 signal reset : std_logic := '1'; 
---
+
+-- NES signal
+signal controllerOutput : std_logic_vector(7 downto 0); 
+-- 8 bits represent certain button being pressed it goes (LSB to MSB) a, b, select, start, up, down, left, right
 
 begin
+
+controller1 : controller port map(
+	controllerInput => controllerIn,
+	controllerLatch => controlLatch,
+	controllerClk => controlClk,
+	controllerResult => controllerOutput
+);
 
 HSOSCclock : HSOSC generic map ( CLKHF_DIV => "0b00")
 port map ( 
@@ -97,6 +119,8 @@ port map (
 --	addr => addr,
 --	data => sevenSeg
 -- );
+
+
 
 mypll_1 : mypll port map(
 	ref_clk_i => fpga_clk,
