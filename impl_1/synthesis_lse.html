@@ -48,10 +48,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Nov 29 17:07:00 2023
+Wed Nov 29 22:41:52 2023
 
 
-Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset Z:/New folder/JumboDash/promote.xml 
+Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset C:/Users/erober10/Documents/GitHub/JumboDash/promote.xml 
 
 Synthesis options:
 The -a option is iCE40UP.
@@ -113,23 +113,27 @@ The -syn option is FALSE.
 -sdc option: SDC file input is FinalProject_impl_1_cpe.ldc.
 -vh2008
 
+-path C:/Users/erober10/Documents/GitHub/JumboDash (searchpath added)
+-path C:/Users/erober10/Documents/GitHub/JumboDash/impl_1 (searchpath added)
+-path C:/Users/erober10/Documents/GitHub/JumboDash/mypll (searchpath added)
 -path C:/lscc/radiant/2023.1/ispfpga/ice40tp/data (searchpath added)
--path Z:/New folder/JumboDash (searchpath added)
--path Z:/New folder/JumboDash/impl_1 (searchpath added)
--path Z:/New folder/JumboDash/mypll (searchpath added)
 Mixed language design
 Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v
-Verilog design file = Z:/New folder/JumboDash/mypll/rtl/mypll.v
+Verilog design file = C:/Users/erober10/Documents/GitHub/JumboDash/mypll/rtl/mypll.v
 VHDL library = pmi
 VHDL design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd
 VHDL library = work
-VHDL design file = Z:/New folder/JumboDash/source/impl_1/top.vhd
+VHDL design file = C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/top.vhd
 VHDL library = work
-VHDL design file = Z:/New folder/JumboDash/source/impl_1/vga.vhd
+VHDL design file = C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/vga.vhd
 VHDL library = work
-VHDL design file = Z:/New folder/JumboDash/source/impl_1/ROM.vhd
+VHDL design file = C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/ROM.vhd
 VHDL library = work
-VHDL design file = Z:/New folder/JumboDash/source/impl_1/cube_gen.vhd
+VHDL design file = C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/cube_gen.vhd
+VHDL library = work
+VHDL design file = C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/jump.vhd
+VHDL library = work
+VHDL design file = C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/controller.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
@@ -178,32 +182,42 @@ INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): 
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file z:/new folder/jumbodash/mypll/rtl/mypll.v. VERI-1482
+Analyzing Verilog file c:/users/erober10/documents/github/jumbodash/mypll/rtl/mypll.v. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd
 
 INFO <35921014> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-Analyzing VHDL file z:/new folder/jumbodash/source/impl_1/top.vhd. VHDL-1481
-Analyzing VHDL file z:/new folder/jumbodash/source/impl_1/top.vhd
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd
 
-INFO <35921012> - synthesis: z:/new folder/jumbodash/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
-INFO <35921010> - synthesis: z:/new folder/jumbodash/source/impl_1/top.vhd(17): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file z:/new folder/jumbodash/source/impl_1/vga.vhd. VHDL-1481
-Analyzing VHDL file z:/new folder/jumbodash/source/impl_1/vga.vhd
+INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd(17): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd
 
-INFO <35921012> - synthesis: z:/new folder/jumbodash/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
-INFO <35921010> - synthesis: z:/new folder/jumbodash/source/impl_1/vga.vhd(16): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file z:/new folder/jumbodash/source/impl_1/rom.vhd. VHDL-1481
-Analyzing VHDL file z:/new folder/jumbodash/source/impl_1/rom.vhd
+INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd
 
-INFO <35921012> - synthesis: z:/new folder/jumbodash/source/impl_1/rom.vhd(5): analyzing entity romaddress. VHDL-1012
-INFO <35921010> - synthesis: z:/new folder/jumbodash/source/impl_1/rom.vhd(17): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file z:/new folder/jumbodash/source/impl_1/cube_gen.vhd. VHDL-1481
-Analyzing VHDL file z:/new folder/jumbodash/source/impl_1/cube_gen.vhd
+INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd(5): analyzing entity romaddress. VHDL-1012
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd(17): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd. VHDL-1481
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd
 
-INFO <35921012> - synthesis: z:/new folder/jumbodash/source/impl_1/cube_gen.vhd(5): analyzing entity cube_gen. VHDL-1012
-INFO <35921010> - synthesis: z:/new folder/jumbodash/source/impl_1/cube_gen.vhd(14): analyzing architecture synth. VHDL-1010
-INFO <35921504> - synthesis: The default VHDL library search path is now "Z:/New folder/JumboDash/impl_1". VHDL-1504
+INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(5): analyzing entity cube_gen. VHDL-1012
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd. VHDL-1481
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd
+
+INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd(5): analyzing entity jump. VHDL-1012
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd(13): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/controller.vhd. VHDL-1481
+Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/controller.vhd
+
+INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/controller.vhd(5): analyzing entity controller. VHDL-1012
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/controller.vhd(14): analyzing architecture synth. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/erober10/Documents/GitHub/JumboDash/impl_1". VHDL-1504
 Top module language type = VHDL.
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
@@ -238,35 +252,30 @@ WARNING <35001771> - synthesis: Initial value found on net VSYNC will be ignored
 WARNING <35001771> - synthesis: Initial value found on net valid will be ignored due to unrecognized driver type
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35931002> - synthesis: z:/new folder/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: z:/new folder/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/erober10/documents/github/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/erober10/documents/github/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sdi_i. Patching with GND.
 
 
 
+CRITICAL <35002028> - synthesis: I/O Port controllerIn 's net has no driver and is unused.
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
-Number of register bits => 20 of 5280 (0 % )
-CCU2 => 12
-FD1P3XZ => 20
-IB => 2
-LUT4 => 27
+Number of register bits => 37 of 5280 (0 % )
+CCU2 => 21
+FD1P3XZ => 37
+HSOSC_CORE => 1
+IB => 1
+LUT4 => 29
 OB => 10
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 0
+Number of odd-length carry chains : 1
 Number of even-length carry chains : 2
-
-
-<A name="lse_bbox"></A><B><U><big>BlackBox Report</big></U></B>
-
-################### Begin BlackBox Report ######################
-controller => 1
-################### End BlackBox Report ##################
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -280,23 +289,23 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
+  Net : controller1/clk, loads : 17
+  Net : row_0__N_29, loads : 10
   Net : vga_1/col_0__N_50, loads : 10
   Net : vga_1/row_0__N_30, loads : 10
-  Net : row_0__N_29, loads : 10
-  Net : vga_1/col[4], loads : 6
-  Net : vga_1/col[3], loads : 5
-  Net : vga_1/row[2], loads : 5
-  Net : vga_1/row[1], loads : 5
-  Net : vga_1/col[2], loads : 5
+  Net : vga_1/col[6], loads : 5
   Net : vga_1/col[5], loads : 5
-  Net : vga_1/row[8], loads : 5
+  Net : vga_1/row[2], loads : 5
+  Net : vga_1/row[4], loads : 5
+  Net : vga_1/row[3], loads : 5
+  Net : vga_1/row[1], loads : 5
 ################### End Clock Report ##################
 
-Peak Memory Usage: 105 MB
+Peak Memory Usage: 107 MB
 
 --------------------------------------------------------------
-Total CPU Time: 3 secs 
-Total REAL Time: 4 secs 
+Total CPU Time: 0 secs 
+Total REAL Time: 2 secs 
 --------------------------------------------------------------
 
 
@@ -357,7 +366,6 @@ Total REAL Time: 4 secs
 <UL id="toc_list">
 <LI><A href=#Syn>Top</A></LI>
 <LI><A href=#lse_area>Area Report</A></LI>
-<LI><A href=#lse_bbox>BlackBox Report</A></LI>
 <LI><A href=#lse_clock>Clock Report</A></LI>
 </UL>
 </DIV>

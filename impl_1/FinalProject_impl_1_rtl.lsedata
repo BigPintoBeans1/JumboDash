@@ -3,14 +3,16 @@
 <clocks>
     <clockitem name = "fpga_clk"  type = "port" />
     <clockitem name = "vga_clk"  type = "net" />
-    <clockitem name = "mypll_1/lscc_pll_inst/outglobalb_o"  type = "net" />
-    <clockitem name = "mypll_1/lscc_pll_inst/outcoreb_o"  type = "net" />
+    <clockitem name = "controlClk"  type = "net" />
+    <clockitem name = "controller1/clk"  type = "net" />
     <clockitem name = "mypll_1/outcore_o"  type = "net" />
+    <clockitem name = "mypll_1/lscc_pll_inst/outcoreb_o"  type = "net" />
+    <clockitem name = "mypll_1/lscc_pll_inst/outglobalb_o"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 5
+    //  Number of Clocks processed: 7
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.
