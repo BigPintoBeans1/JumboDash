@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "FinalProject_impl_1_map.udb"
-Wed Nov 29 22:41:55 2023
+Thu Nov 30 16:29:29 2023
 
 PAR: Place And Route Radiant Software (64-bit) 2023.1.0.43.3.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -26,12 +26,12 @@ WARNING <71003020> - par: Top module port 'controllerIn' does not connect to any
 WARNING <71003020> - par: Top module port 'controllerIn' does not connect to anything.
 WARNING <71003020> - par: Top module port 'controllerIn' does not connect to anything.
 WARNING <71003020> - par: Top module port 'controllerIn' does not connect to anything.
-Number of Signals: 148
-Number of Connections: 310
+Number of Signals: 157
+Number of Connections: 339
 Device utilization summary:
 
-   SLICE (est.)      40/2640          2% used
-     LUT             73/5280          1% used
+   SLICE (est.)      43/2640          2% used
+     LUT             82/5280          2% used
      REG             37/5280          1% used
    PIO               11/56           20% used
                      11/36           30% bonded
@@ -55,7 +55,7 @@ Device utilization summary:
 Pin Constraint Summary:
    0 out of 11 pins locked (0% locked).
 .
-..............
+.............
 Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
 
 
@@ -66,20 +66,20 @@ Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 6861.
+Placer score = 8436.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE             40/2640          1% used
+   SLICE             43/2640          1% used
 
 WARNING <70001944> - par: No master clock for
 	generated clock	create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
-Finished Placer Phase 1. CPU time: 1 secs , REAL time: 3 secs 
+Finished Placer Phase 1. CPU time: 6 secs , REAL time: 7 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  13228
-Finished Placer Phase 2.  CPU time: 1 secs , REAL time: 3 secs 
+Placer score =  14810
+Finished Placer Phase 2.  CPU time: 6 secs , REAL time: 7 secs 
 
 
 ------------------ Clock Report ------------------
@@ -100,20 +100,20 @@ I/O Usage Summary (final):
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
-+----------+---------------+------------+------------+------------+
-| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
-+----------+---------------+------------+------------+------------+
-| 0        | 7 / 14 ( 50%) | 3.3V       |            |            |
-| 1        | 4 / 14 ( 28%) | 3.3V       |            |            |
-| 2        | 0 / 8 (  0%)  | OFF        |            |            |
-+----------+---------------+------------+------------+------------+
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 11 / 14 ( 78%) | 3.3V       |            |            |
+| 1        | 0 / 14 (  0%)  | OFF        |            |            |
+| 2        | 0 / 8 (  0%)   | OFF        |            |            |
++----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 1 secs , REAL time: 3 secs 
+Total Placer CPU time: 6 secs , REAL time: 7 secs 
 
 Writing design to file FinalProject_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 22:41:58 11/29/23
+Start NBR router at 16:29:37 11/30/23
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -133,7 +133,7 @@ Preassignment Summary:
 --------------------------------------------------------------------------------
 74 connections routed with dedicated routing resources
 2 global clock signals routed
-95 connections routed (of 310 total) (30.65%)
+95 connections routed (of 339 total) (28.02%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (2 used out of 8 available):
@@ -152,30 +152,27 @@ Completed routing resource preassignment
 WARNING <70001944> - par: No master clock for
 	generated clock	create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 
-Start NBR section for initial routing at 22:41:58 11/29/23
+Start NBR section for initial routing at 16:29:37 11/30/23
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Level 4, iteration 1
-9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:41:58 11/29/23
+Start NBR section for normal routing at 16:29:37 11/30/23
 Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
-Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 22:41:58 11/29/23
+Start NBR section for setup/hold timing optimization with effort level 3 at 16:29:37 11/30/23
 
 Starting full timing analysis...
 
-Start NBR section for post-routing at 22:41:59 11/29/23
+Start NBR section for post-routing at 16:29:37 11/30/23
 
 End NBR router with 0 unrouted connection
 WARNING <70001944> - par: No master clock for
@@ -195,10 +192,10 @@ NBR Summary
 -----------
 
 
-Total CPU time 0 secs 
+Total CPU time 1 secs 
 Total REAL time: 0 secs 
 Completely routed.
-End of route.  310 routed (100.00%); 0 unrouted.
+End of route.  339 routed (100.00%); 0 unrouted.
 
 Writing design to file FinalProject_impl_1_par.dir/5_1.udb ...
 
@@ -214,9 +211,9 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.913
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 2 secs 
-Total REAL Time: 4 secs 
-Peak Memory Usage: 104.75 MB
+Total CPU  Time: 8 secs 
+Total REAL Time: 9 secs 
+Peak Memory Usage: 104.35 MB
 
 
 par done!

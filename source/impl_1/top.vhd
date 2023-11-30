@@ -65,6 +65,7 @@ component cube_gen is
 	port(
 		row : in unsigned(9 downto 0);
 		col : in unsigned(9 downto 0);
+		cube_bot : in unsigned(9 downto 0);
 		rgb : out std_logic_vector(5 downto 0);
 		valid : in std_logic
 	);
@@ -77,6 +78,14 @@ component controller is
 	controllerClk : out std_logic; 
 	controllerResult : out std_logic_vector(7 downto 0) 
   ); 
+end component;
+
+component jump is
+	port(
+		aPressed : in std_logic_vector (7 downto 0); 
+		vga_clk : in std_logic;
+		cubePos : out unsigned(6 downto 0)
+	);
 end component;
 
 signal clk : std_logic;
@@ -92,6 +101,9 @@ signal reset : std_logic := '1';
 -- NES signal
 signal controllerOutput : std_logic_vector(7 downto 0); 
 -- 8 bits represent certain button being pressed it goes (LSB to MSB) a, b, select, start, up, down, left, right
+
+-- Cube_gen signals
+signal cube_bot : unsigned(9 downto 0);
 
 begin
 
@@ -140,8 +152,15 @@ vga_1 : vga port map(
 cube_gen1 : cube_gen port map(
 	rgb => rgb,
 	valid => valid,
+	cube_bot => cube_bot,
 	row => row,
 	col => col
+);
+
+jump1 : jump port map(
+	vga_clk => vga_clk,
+	cubePos => cube_bot
+	-- need to port map controller then add "aPressed" here
 );
 
 end;

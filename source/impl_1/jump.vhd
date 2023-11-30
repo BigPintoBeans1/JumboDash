@@ -5,8 +5,8 @@ use IEEE.numeric_std.all;
 entity jump is
 	port(
 		aPressed : in std_logic_vector (7 downto 0); -- coresponds to shift registor's A value which is LSB
-		vgaClk : in std_logic;
-		cubePos : out std_logic_vector(6 downto 0)-- current bottom left pixel of cube's position
+		vga_clk : in std_logic;
+		cubePos : out unsigned(6 downto 0)-- current bottom left pixel of cube's position
 	);
 end jump;
 
@@ -15,8 +15,8 @@ signal count : unsigned(6 downto 0);
 signal position : unsigned(6 downto 0); -- current position
 signal lastPosition : unsigned(6 downto 0); -- last clock cycles' position
 begin
-	process(vgaClk) begin
-		if rising_edge(vgaClk) then
+	process(vga_clk) begin
+		if rising_edge(vga_clk) then
 			if (position = 7d"0" and aPressed = "00000001") then
 				--count <= 6d"1";
 				position <= 7d"1";
@@ -39,7 +39,7 @@ begin
 			end if;
 		end if;
 	end process;
-	cubePos <= std_logic_vector(position);
+	cubePos <= position;
 end;
 	
 	

@@ -6,7 +6,7 @@ entity cube_gen is
 	port(
 		row : in unsigned(9 downto 0);
 		col : in unsigned(9 downto 0);
-		cube_bot : in unsigned(9 downto 0) := 229;
+		cube_bot : in unsigned(9 downto 0) := 10d"229";
 		rgb : out std_logic_vector(5 downto 0);
 		valid : in std_logic
 	);
@@ -14,8 +14,8 @@ end cube_gen;
 
 architecture synth of cube_gen is
 
-signal ground_top : unsigned(9 downto 0) := 230;
-signal ground_bot : unsigned(9 downto 0) := 230 + 10; -- 10 pixels wide
+signal ground_top : unsigned(9 downto 0) := 10d"230";
+signal ground_bot : unsigned(9 downto 0) := 10d"230" + 10d"10"; -- 10 pixels wide
 signal cube_top : unsigned(9 downto 0);
 
 begin

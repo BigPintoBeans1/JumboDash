@@ -48,7 +48,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Wed Nov 29 22:41:54 2023
+Mapped on: Thu Nov 30 16:29:29 2023
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -59,8 +59,8 @@ Command line:   map -i FinalProject_impl_1_syn.udb -o
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of slice registers:  37 out of  5280 (1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            73 out of  5280 (1%)
-      Number of logic LUT4s:              31
+   Number of LUT4s:            82 out of  5280 (2%)
+      Number of logic LUT4s:              40
       Number of ripple logic:             21 (42 LUT4s)
    Number of IO sites used:   11 out of 39 (28%)
       Number of IO sites used for general PIO: 11
@@ -90,23 +90,23 @@ Command line:   map -i FinalProject_impl_1_syn.udb -o
      controller1.osc/CLKHF)
       Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
    Number of Clock Enables:  2
-      Net row_0__N_29: 6 loads, 6 SLICEs
       Net rgb_pad[2].vcc: 1 loads, 0 SLICEs
+      Net row_0__N_29: 6 loads, 6 SLICEs
    Number of LSRs:  2
-      Net col_0__N_50: 6 loads, 6 SLICEs
       Net row_0__N_30: 6 loads, 6 SLICEs
+      Net col_0__N_50: 6 loads, 6 SLICEs
    Top 10 highest fanout non-clock nets:
+      Net col[7]: 8 loads
+      Net col[5]: 7 loads
+      Net col[6]: 7 loads
+
       Net col_0__N_50: 7 loads
       Net row_0__N_30: 7 loads
+      Net col[8]: 6 loads
       Net rgb_pad[2].vcc: 6 loads
-
-      Net row_0__N_29: 6 loads
-      Net col[2]: 5 loads
-      Net col[3]: 5 loads
-      Net col[4]: 5 loads
-      Net vga_1.col[5]_2: 5 loads
-      Net vga_1.col[6]_2: 5 loads
-      Net vga_1.row[1]: 5 loads
+      Net row[1]: 6 loads
+      Net row[2]: 6 loads
+      Net row[3]: 6 loads
 
 
 
