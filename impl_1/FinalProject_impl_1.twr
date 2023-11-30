@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.0.43.3
 
-Thu Nov 30 16:29:39 2023
+Thu Nov 30 16:44:17 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -255,52 +255,52 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.000                 11.746  2       
+controller1/n1886                                            NET DELAY               0.000                 11.746  2       
 controller1/count_47_58_add_4_9/CI1->controller1/count_47_58_add_4_9/CO1
                                           SLICE_R10C30A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n1089                                            NET DELAY               0.000                 12.023  2       
+controller1/n1097                                            NET DELAY               0.000                 12.023  2       
 controller1/count_47_58_add_4_11/CI0->controller1/count_47_58_add_4_11/CO0
                                           SLICE_R10C30B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n1881                                            NET DELAY               0.000                 12.300  2       
+controller1/n1889                                            NET DELAY               0.000                 12.300  2       
 controller1/count_47_58_add_4_11/CI1->controller1/count_47_58_add_4_11/CO1
                                           SLICE_R10C30B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n1091                                            NET DELAY               0.000                 12.577  2       
+controller1/n1099                                            NET DELAY               0.000                 12.577  2       
 controller1/count_47_58_add_4_13/CI0->controller1/count_47_58_add_4_13/CO0
                                           SLICE_R10C30C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n1884                                            NET DELAY               0.000                 12.854  2       
+controller1/n1892                                            NET DELAY               0.000                 12.854  2       
 controller1/count_47_58_add_4_13/CI1->controller1/count_47_58_add_4_13/CO1
                                           SLICE_R10C30C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
-controller1/n1093                                            NET DELAY               0.000                 13.131  2       
+controller1/n1101                                            NET DELAY               0.000                 13.131  2       
 controller1/count_47_58_add_4_15/CI0->controller1/count_47_58_add_4_15/CO0
                                           SLICE_R10C30D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
-controller1/n1887                                            NET DELAY               0.000                 13.408  2       
+controller1/n1895                                            NET DELAY               0.000                 13.408  2       
 controller1/count_47_58_add_4_15/CI1->controller1/count_47_58_add_4_15/CO1
                                           SLICE_R10C30D      CIN1_TO_COUT1_DELAY     0.277                 13.685  2       
-controller1/n1095                                            NET DELAY               0.555                 14.240  2       
+controller1/n1103                                            NET DELAY               0.555                 14.240  2       
 controller1/count_47_58_add_4_17/CI0->controller1/count_47_58_add_4_17/CO0
                                           SLICE_R10C31A      CIN0_TO_COUT0_DELAY     0.277                 14.517  2       
-controller1/n1890                                            NET DELAY               0.661                 15.178  2       
+controller1/n1898                                            NET DELAY               0.661                 15.178  2       
 controller1/count_47_58_add_4_17/D1->controller1/count_47_58_add_4_17/S1
                                           SLICE_R10C31A      D1_TO_F1_DELAY          0.476                 15.654  1       
 controller1/count_8__N_51[16]                                NET DELAY               0.000                 15.654  1       
@@ -355,49 +355,49 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.000                 11.746  2       
+controller1/n1886                                            NET DELAY               0.000                 11.746  2       
 controller1/count_47_58_add_4_9/CI1->controller1/count_47_58_add_4_9/CO1
                                           SLICE_R10C30A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n1089                                            NET DELAY               0.000                 12.023  2       
+controller1/n1097                                            NET DELAY               0.000                 12.023  2       
 controller1/count_47_58_add_4_11/CI0->controller1/count_47_58_add_4_11/CO0
                                           SLICE_R10C30B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n1881                                            NET DELAY               0.000                 12.300  2       
+controller1/n1889                                            NET DELAY               0.000                 12.300  2       
 controller1/count_47_58_add_4_11/CI1->controller1/count_47_58_add_4_11/CO1
                                           SLICE_R10C30B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n1091                                            NET DELAY               0.000                 12.577  2       
+controller1/n1099                                            NET DELAY               0.000                 12.577  2       
 controller1/count_47_58_add_4_13/CI0->controller1/count_47_58_add_4_13/CO0
                                           SLICE_R10C30C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n1884                                            NET DELAY               0.000                 12.854  2       
+controller1/n1892                                            NET DELAY               0.000                 12.854  2       
 controller1/count_47_58_add_4_13/CI1->controller1/count_47_58_add_4_13/CO1
                                           SLICE_R10C30C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
-controller1/n1093                                            NET DELAY               0.000                 13.131  2       
+controller1/n1101                                            NET DELAY               0.000                 13.131  2       
 controller1/count_47_58_add_4_15/CI0->controller1/count_47_58_add_4_15/CO0
                                           SLICE_R10C30D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
-controller1/n1887                                            NET DELAY               0.000                 13.408  2       
+controller1/n1895                                            NET DELAY               0.000                 13.408  2       
 controller1/count_47_58_add_4_15/CI1->controller1/count_47_58_add_4_15/CO1
                                           SLICE_R10C30D      CIN1_TO_COUT1_DELAY     0.277                 13.685  2       
-controller1/n1095                                            NET DELAY               1.216                 14.901  2       
+controller1/n1103                                            NET DELAY               1.216                 14.901  2       
 controller1/count_47_58_add_4_17/D0->controller1/count_47_58_add_4_17/S0
                                           SLICE_R10C31A      D0_TO_F0_DELAY          0.476                 15.377  1       
 controller1/count_8__N_51[15]                                NET DELAY               0.000                 15.377  1       
@@ -452,46 +452,46 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.000                 11.746  2       
+controller1/n1886                                            NET DELAY               0.000                 11.746  2       
 controller1/count_47_58_add_4_9/CI1->controller1/count_47_58_add_4_9/CO1
                                           SLICE_R10C30A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n1089                                            NET DELAY               0.000                 12.023  2       
+controller1/n1097                                            NET DELAY               0.000                 12.023  2       
 controller1/count_47_58_add_4_11/CI0->controller1/count_47_58_add_4_11/CO0
                                           SLICE_R10C30B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n1881                                            NET DELAY               0.000                 12.300  2       
+controller1/n1889                                            NET DELAY               0.000                 12.300  2       
 controller1/count_47_58_add_4_11/CI1->controller1/count_47_58_add_4_11/CO1
                                           SLICE_R10C30B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n1091                                            NET DELAY               0.000                 12.577  2       
+controller1/n1099                                            NET DELAY               0.000                 12.577  2       
 controller1/count_47_58_add_4_13/CI0->controller1/count_47_58_add_4_13/CO0
                                           SLICE_R10C30C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n1884                                            NET DELAY               0.000                 12.854  2       
+controller1/n1892                                            NET DELAY               0.000                 12.854  2       
 controller1/count_47_58_add_4_13/CI1->controller1/count_47_58_add_4_13/CO1
                                           SLICE_R10C30C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
-controller1/n1093                                            NET DELAY               0.000                 13.131  2       
+controller1/n1101                                            NET DELAY               0.000                 13.131  2       
 controller1/count_47_58_add_4_15/CI0->controller1/count_47_58_add_4_15/CO0
                                           SLICE_R10C30D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
-controller1/n1887                                            NET DELAY               0.661                 14.069  2       
+controller1/n1895                                            NET DELAY               0.661                 14.069  2       
 controller1/count_47_58_add_4_15/D1->controller1/count_47_58_add_4_15/S1
                                           SLICE_R10C30D      D1_TO_F1_DELAY          0.476                 14.545  1       
 controller1/count_8__N_51[14]                                NET DELAY               0.000                 14.545  1       
@@ -546,43 +546,43 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.000                 11.746  2       
+controller1/n1886                                            NET DELAY               0.000                 11.746  2       
 controller1/count_47_58_add_4_9/CI1->controller1/count_47_58_add_4_9/CO1
                                           SLICE_R10C30A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n1089                                            NET DELAY               0.000                 12.023  2       
+controller1/n1097                                            NET DELAY               0.000                 12.023  2       
 controller1/count_47_58_add_4_11/CI0->controller1/count_47_58_add_4_11/CO0
                                           SLICE_R10C30B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n1881                                            NET DELAY               0.000                 12.300  2       
+controller1/n1889                                            NET DELAY               0.000                 12.300  2       
 controller1/count_47_58_add_4_11/CI1->controller1/count_47_58_add_4_11/CO1
                                           SLICE_R10C30B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n1091                                            NET DELAY               0.000                 12.577  2       
+controller1/n1099                                            NET DELAY               0.000                 12.577  2       
 controller1/count_47_58_add_4_13/CI0->controller1/count_47_58_add_4_13/CO0
                                           SLICE_R10C30C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n1884                                            NET DELAY               0.000                 12.854  2       
+controller1/n1892                                            NET DELAY               0.000                 12.854  2       
 controller1/count_47_58_add_4_13/CI1->controller1/count_47_58_add_4_13/CO1
                                           SLICE_R10C30C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
-controller1/n1093                                            NET DELAY               0.661                 13.792  2       
+controller1/n1101                                            NET DELAY               0.661                 13.792  2       
 controller1/count_47_58_add_4_15/D0->controller1/count_47_58_add_4_15/S0
                                           SLICE_R10C30D      D0_TO_F0_DELAY          0.476                 14.268  1       
 controller1/count_8__N_51[13]                                NET DELAY               0.000                 14.268  1       
@@ -637,40 +637,40 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.000                 11.746  2       
+controller1/n1886                                            NET DELAY               0.000                 11.746  2       
 controller1/count_47_58_add_4_9/CI1->controller1/count_47_58_add_4_9/CO1
                                           SLICE_R10C30A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n1089                                            NET DELAY               0.000                 12.023  2       
+controller1/n1097                                            NET DELAY               0.000                 12.023  2       
 controller1/count_47_58_add_4_11/CI0->controller1/count_47_58_add_4_11/CO0
                                           SLICE_R10C30B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n1881                                            NET DELAY               0.000                 12.300  2       
+controller1/n1889                                            NET DELAY               0.000                 12.300  2       
 controller1/count_47_58_add_4_11/CI1->controller1/count_47_58_add_4_11/CO1
                                           SLICE_R10C30B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n1091                                            NET DELAY               0.000                 12.577  2       
+controller1/n1099                                            NET DELAY               0.000                 12.577  2       
 controller1/count_47_58_add_4_13/CI0->controller1/count_47_58_add_4_13/CO0
                                           SLICE_R10C30C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n1884                                            NET DELAY               0.661                 13.515  2       
+controller1/n1892                                            NET DELAY               0.661                 13.515  2       
 controller1/count_47_58_add_4_13/D1->controller1/count_47_58_add_4_13/S1
                                           SLICE_R10C30C      D1_TO_F1_DELAY          0.476                 13.991  1       
 controller1/count_8__N_51[12]                                NET DELAY               0.000                 13.991  1       
@@ -725,37 +725,37 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.000                 11.746  2       
+controller1/n1886                                            NET DELAY               0.000                 11.746  2       
 controller1/count_47_58_add_4_9/CI1->controller1/count_47_58_add_4_9/CO1
                                           SLICE_R10C30A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n1089                                            NET DELAY               0.000                 12.023  2       
+controller1/n1097                                            NET DELAY               0.000                 12.023  2       
 controller1/count_47_58_add_4_11/CI0->controller1/count_47_58_add_4_11/CO0
                                           SLICE_R10C30B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n1881                                            NET DELAY               0.000                 12.300  2       
+controller1/n1889                                            NET DELAY               0.000                 12.300  2       
 controller1/count_47_58_add_4_11/CI1->controller1/count_47_58_add_4_11/CO1
                                           SLICE_R10C30B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n1091                                            NET DELAY               0.661                 13.238  2       
+controller1/n1099                                            NET DELAY               0.661                 13.238  2       
 controller1/count_47_58_add_4_13/D0->controller1/count_47_58_add_4_13/S0
                                           SLICE_R10C30C      D0_TO_F0_DELAY          0.476                 13.714  1       
 controller1/count_8__N_51[11]                                NET DELAY               0.000                 13.714  1       
@@ -810,34 +810,34 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.000                 11.746  2       
+controller1/n1886                                            NET DELAY               0.000                 11.746  2       
 controller1/count_47_58_add_4_9/CI1->controller1/count_47_58_add_4_9/CO1
                                           SLICE_R10C30A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n1089                                            NET DELAY               0.000                 12.023  2       
+controller1/n1097                                            NET DELAY               0.000                 12.023  2       
 controller1/count_47_58_add_4_11/CI0->controller1/count_47_58_add_4_11/CO0
                                           SLICE_R10C30B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n1881                                            NET DELAY               0.661                 12.961  2       
+controller1/n1889                                            NET DELAY               0.661                 12.961  2       
 controller1/count_47_58_add_4_11/D1->controller1/count_47_58_add_4_11/S1
                                           SLICE_R10C30B      D1_TO_F1_DELAY          0.476                 13.437  1       
 controller1/count_8__N_51[10]                                NET DELAY               0.000                 13.437  1       
@@ -892,31 +892,31 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.000                 11.746  2       
+controller1/n1886                                            NET DELAY               0.000                 11.746  2       
 controller1/count_47_58_add_4_9/CI1->controller1/count_47_58_add_4_9/CO1
                                           SLICE_R10C30A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n1089                                            NET DELAY               0.661                 12.684  2       
+controller1/n1097                                            NET DELAY               0.661                 12.684  2       
 controller1/count_47_58_add_4_11/D0->controller1/count_47_58_add_4_11/S0
                                           SLICE_R10C30B      D0_TO_F0_DELAY          0.476                 13.160  1       
 controller1/count_8__N_51[9]                                 NET DELAY               0.000                 13.160  1       
@@ -971,28 +971,28 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               0.555                 11.469  2       
+controller1/n1095                                            NET DELAY               0.555                 11.469  2       
 controller1/count_47_58_add_4_9/CI0->controller1/count_47_58_add_4_9/CO0
                                           SLICE_R10C30A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n1878                                            NET DELAY               0.661                 12.407  2       
+controller1/n1886                                            NET DELAY               0.661                 12.407  2       
 controller1/count_47_58_add_4_9/D1->controller1/count_47_58_add_4_9/S1
                                           SLICE_R10C30A      D1_TO_F1_DELAY          0.476                 12.883  1       
 controller1/count_8__N_51[8]                                 NET DELAY               0.000                 12.883  1       
@@ -1047,25 +1047,25 @@ controller1/count_47_58__i1/CK->controller1/count_47_58__i1/Q
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
 controller1/count_47_58_add_4_1/C1->controller1/count_47_58_add_4_1/CO1
                                           SLICE_R10C29A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n1081                                            NET DELAY               0.000                  9.252  2       
+controller1/n1089                                            NET DELAY               0.000                  9.252  2       
 controller1/count_47_58_add_4_3/CI0->controller1/count_47_58_add_4_3/CO0
                                           SLICE_R10C29B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n1869                                            NET DELAY               0.000                  9.529  2       
+controller1/n1877                                            NET DELAY               0.000                  9.529  2       
 controller1/count_47_58_add_4_3/CI1->controller1/count_47_58_add_4_3/CO1
                                           SLICE_R10C29B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n1083                                            NET DELAY               0.000                  9.806  2       
+controller1/n1091                                            NET DELAY               0.000                  9.806  2       
 controller1/count_47_58_add_4_5/CI0->controller1/count_47_58_add_4_5/CO0
                                           SLICE_R10C29C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n1872                                            NET DELAY               0.000                 10.083  2       
+controller1/n1880                                            NET DELAY               0.000                 10.083  2       
 controller1/count_47_58_add_4_5/CI1->controller1/count_47_58_add_4_5/CO1
                                           SLICE_R10C29C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n1085                                            NET DELAY               0.000                 10.360  2       
+controller1/n1093                                            NET DELAY               0.000                 10.360  2       
 controller1/count_47_58_add_4_7/CI0->controller1/count_47_58_add_4_7/CO0
                                           SLICE_R10C29D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n1875                                            NET DELAY               0.000                 10.637  2       
+controller1/n1883                                            NET DELAY               0.000                 10.637  2       
 controller1/count_47_58_add_4_7/CI1->controller1/count_47_58_add_4_7/CO1
                                           SLICE_R10C29D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n1087                                            NET DELAY               1.216                 12.130  2       
+controller1/n1095                                            NET DELAY               1.216                 12.130  2       
 controller1/count_47_58_add_4_9/D0->controller1/count_47_58_add_4_9/S0
                                           SLICE_R10C30A      D0_TO_F0_DELAY          0.476                 12.606  1       
 controller1/count_8__N_51[7]                                 NET DELAY               0.000                 12.606  1       

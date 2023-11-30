@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
 
 // backanno -o FinalProject_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui FinalProject_impl_1.udb 
-// Netlist created on Thu Nov 30 16:29:38 2023
-// Netlist written on Thu Nov 30 16:29:47 2023
+// Netlist created on Thu Nov 30 16:44:17 2023
+// Netlist written on Thu Nov 30 16:44:19 2023
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V
@@ -15,49 +15,49 @@ module top ( rgb, VSYNC, HSYNC, controlLatch, controlClk, fpga_clk,
   input  fpga_clk, controllerIn;
   output [5:0] rgb;
   output VSYNC, HSYNC, controlLatch, controlClk;
-  wire   \vga_1.row_9__N_1[2] , \vga_1.row_9__N_1[1] , \vga_1.n1854 , \row[2] , 
-         \vga_1.n1099 , \row[1] , row_0__N_29, row_0__N_30, vga_clk, 
-         \vga_1.n1101 , \vga_1.row_9__N_1[0] , \vga_1.n1851 , \rgb_pad[2].vcc , 
-         \row[0] , \vga_1.col_9__N_31[9] , \vga_1.n1848 , \vga_1.n1078 , 
+  wire   \vga_1.row_9__N_1[2] , \vga_1.row_9__N_1[1] , \vga_1.n1862 , \row[2] , 
+         \vga_1.n1107 , \row[1] , row_0__N_29, row_0__N_30, vga_clk, 
+         \vga_1.n1109 , \vga_1.row_9__N_1[0] , \vga_1.n1859 , \rgb_pad[2].vcc , 
+         \row[0] , \vga_1.col_9__N_31[9] , \vga_1.n1856 , \vga_1.n1086 , 
          \col[9] , col_0__N_50, \vga_1.col_9__N_31[4] , \vga_1.col_9__N_31[3] , 
-         \vga_1.n1839 , \col[4] , \vga_1.n1072 , \col[3] , \vga_1.n1074 , 
-         \vga_1.col_9__N_31[0] , \vga_1.n1827 , \vga_1.col[0] , \vga_1.n1070 , 
-         \vga_1.row_9__N_1[9] , \vga_1.n1866 , \vga_1.n1107 , \row[9] , 
-         \vga_1.col_9__N_31[8] , \vga_1.col_9__N_31[7] , \vga_1.n1845 , 
-         \col[8] , \vga_1.n1076 , \col[7] , \vga_1.row_9__N_1[8] , 
-         \vga_1.row_9__N_1[7] , \vga_1.n1863 , \row[8] , \vga_1.n1105 , 
+         \vga_1.n1847 , \col[4] , \vga_1.n1080 , \col[3] , \vga_1.n1082 , 
+         \vga_1.col_9__N_31[0] , \vga_1.n1835 , \vga_1.col[0] , \vga_1.n1078 , 
+         \vga_1.row_9__N_1[9] , \vga_1.n1874 , \vga_1.n1115 , \row[9] , 
+         \vga_1.col_9__N_31[8] , \vga_1.col_9__N_31[7] , \vga_1.n1853 , 
+         \col[8] , \vga_1.n1084 , \col[7] , \vga_1.row_9__N_1[8] , 
+         \vga_1.row_9__N_1[7] , \vga_1.n1871 , \row[8] , \vga_1.n1113 , 
          \row[7] , \vga_1.col_9__N_31[2] , \vga_1.col_9__N_31[1] , 
-         \vga_1.n1836 , \col[2] , \col[1] , \vga_1.row_9__N_1[6] , 
-         \vga_1.row_9__N_1[5] , \vga_1.n1860 , \row[6] , \vga_1.n1103 , 
-         \row[5] , \vga_1.row_9__N_1[4] , \vga_1.row_9__N_1[3] , \vga_1.n1857 , 
+         \vga_1.n1844 , \col[2] , \col[1] , \vga_1.row_9__N_1[6] , 
+         \vga_1.row_9__N_1[5] , \vga_1.n1868 , \row[6] , \vga_1.n1111 , 
+         \row[5] , \vga_1.row_9__N_1[4] , \vga_1.row_9__N_1[3] , \vga_1.n1865 , 
          \row[4] , \row[3] , \vga_1.col_9__N_31[6] , \vga_1.col_9__N_31[5] , 
-         \vga_1.n1842 , \col[6] , \col[5] , \controller1.count_8__N_51[12] , 
-         \controller1.count_8__N_51[11] , \controller1.n1884 , 
-         \controller1.slowCount[3] , \controller1.n1091 , 
-         \controller1.slowCount[2] , \controller1.clk , \controller1.n1093 , 
+         \vga_1.n1850 , \col[6] , \col[5] , \controller1.count_8__N_51[12] , 
+         \controller1.count_8__N_51[11] , \controller1.n1892 , 
+         \controller1.slowCount[3] , \controller1.n1099 , 
+         \controller1.slowCount[2] , \controller1.clk , \controller1.n1101 , 
          \controller1.count_8__N_51[4] , \controller1.count_8__N_51[3] , 
-         \controller1.n1872 , \controller1.n13 , \controller1.n1083 , 
-         \controller1.n14 , \controller1.n1085 , 
+         \controller1.n1880 , \controller1.n13 , \controller1.n1091 , 
+         \controller1.n14 , \controller1.n1093 , 
          \controller1.count_8__N_51[10] , \controller1.count_8__N_51[9] , 
-         \controller1.n1881 , \controller1.slowCount[1] , \controller1.n1089 , 
+         \controller1.n1889 , \controller1.slowCount[1] , \controller1.n1097 , 
          \controller1.slowCount[0] , \controller1.count_8__N_51[8] , 
-         \controller1.count_8__N_51[7] , \controller1.n1878 , 
-         \controller1.count[8] , \controller1.n1087 , \controller1.n10 , 
+         \controller1.count_8__N_51[7] , \controller1.n1886 , 
+         \controller1.count[8] , \controller1.n1095 , \controller1.n10 , 
          \controller1.count_8__N_51[16] , \controller1.count_8__N_51[15] , 
-         \controller1.n1890 , \controller1.slowCount[7] , \controller1.n1095 , 
+         \controller1.n1898 , \controller1.slowCount[7] , \controller1.n1103 , 
          \controller1.slowCount[6] , \controller1.count_8__N_51[6] , 
-         \controller1.count_8__N_51[5] , \controller1.n1875 , 
+         \controller1.count_8__N_51[5] , \controller1.n1883 , 
          \controller1.n11 , \controller1.n12 , \controller1.count_8__N_51[2] , 
-         \controller1.count_8__N_51[1] , \controller1.n1869 , 
-         \controller1.n15 , \controller1.n1081 , \controller1.n16 , 
-         \controller1.count_8__N_51[0] , \controller1.n1833 , 
+         \controller1.count_8__N_51[1] , \controller1.n1877 , 
+         \controller1.n15 , \controller1.n1089 , \controller1.n16 , 
+         \controller1.count_8__N_51[0] , \controller1.n1841 , 
          \controller1.n17 , \controller1.count_8__N_51[14] , 
-         \controller1.count_8__N_51[13] , \controller1.n1887 , 
+         \controller1.count_8__N_51[13] , \controller1.n1895 , 
          \controller1.slowCount[5] , \controller1.slowCount[4] , 
-         \cube_gen1.n1502 , n848, \cube_gen1.n1503 , n1505, n32, 
-         \cube_gen1.n1508 , \cube_gen1.n1415 , \cube_gen1.rgb_c_3_N_67 , 
-         \vga_1.n1500 , \vga_1.n44 , \vga_1.HSYNC_c_N_62 , n814, n428, n10, 
-         \cube_gen1.n36 , \vga_1.rgb_c_5_N_65 , \cube_gen1.n1321 , 
+         \cube_gen1.n1510 , n856, \cube_gen1.n1511 , n1513, n32, 
+         \cube_gen1.n1516 , \cube_gen1.n1423 , \cube_gen1.rgb_c_3_N_67 , 
+         \vga_1.n1508 , \vga_1.n44 , \vga_1.HSYNC_c_N_62 , n822, n436, n10, 
+         \cube_gen1.n36 , \vga_1.rgb_c_5_N_65 , \cube_gen1.n1329 , 
          \cube_gen1.rgb_c_3_N_68 , \cube_gen1.rgb_c_3_N_69 , rgb_c_3, n8, 
          \vga_1.VSYNC_c_N_64 , \vga_1.VSYNC_c_N_63 , VSYNC_c, 
          \vga_1.rgb_c_5_N_66 , rgb_c_5, \vga_1.n14 , \vga_1.n15 , 
@@ -67,167 +67,167 @@ module top ( rgb, VSYNC, HSYNC, controlLatch, controlClk, fpga_clk,
          fpga_clk_c, \mypll_1.lscc_pll_inst.feedback_w ;
 
   vga_1_SLICE_0 \vga_1.SLICE_0 ( .DI1(\vga_1.row_9__N_1[2] ), 
-    .DI0(\vga_1.row_9__N_1[1] ), .D1(\vga_1.n1854 ), .B1(\row[2] ), 
-    .D0(\vga_1.n1099 ), .B0(\row[1] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
-    .CLK(vga_clk), .CIN0(\vga_1.n1099 ), .CIN1(\vga_1.n1854 ), .Q0(\row[1] ), 
+    .DI0(\vga_1.row_9__N_1[1] ), .D1(\vga_1.n1862 ), .B1(\row[2] ), 
+    .D0(\vga_1.n1107 ), .B0(\row[1] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
+    .CLK(vga_clk), .CIN0(\vga_1.n1107 ), .CIN1(\vga_1.n1862 ), .Q0(\row[1] ), 
     .Q1(\row[2] ), .F0(\vga_1.row_9__N_1[1] ), .F1(\vga_1.row_9__N_1[2] ), 
-    .COUT1(\vga_1.n1101 ), .COUT0(\vga_1.n1854 ));
+    .COUT1(\vga_1.n1109 ), .COUT0(\vga_1.n1862 ));
   vga_1_SLICE_1 \vga_1.SLICE_1 ( .DI1(\vga_1.row_9__N_1[0] ), 
-    .D1(\vga_1.n1851 ), .C1(\rgb_pad[2].vcc ), .B1(\row[0] ), .CE(row_0__N_29), 
-    .LSR(row_0__N_30), .CLK(vga_clk), .CIN1(\vga_1.n1851 ), .Q1(\row[0] ), 
-    .F1(\vga_1.row_9__N_1[0] ), .COUT1(\vga_1.n1099 ), .COUT0(\vga_1.n1851 ));
+    .D1(\vga_1.n1859 ), .C1(\rgb_pad[2].vcc ), .B1(\row[0] ), .CE(row_0__N_29), 
+    .LSR(row_0__N_30), .CLK(vga_clk), .CIN1(\vga_1.n1859 ), .Q1(\row[0] ), 
+    .F1(\vga_1.row_9__N_1[0] ), .COUT1(\vga_1.n1107 ), .COUT0(\vga_1.n1859 ));
   vga_1_SLICE_2 \vga_1.SLICE_2 ( .DI0(\vga_1.col_9__N_31[9] ), 
-    .D1(\vga_1.n1848 ), .D0(\vga_1.n1078 ), .C0(\col[9] ), .LSR(col_0__N_50), 
-    .CLK(vga_clk), .CIN0(\vga_1.n1078 ), .CIN1(\vga_1.n1848 ), .Q0(\col[9] ), 
-    .F0(\vga_1.col_9__N_31[9] ), .COUT0(\vga_1.n1848 ));
+    .D1(\vga_1.n1856 ), .D0(\vga_1.n1086 ), .C0(\col[9] ), .LSR(col_0__N_50), 
+    .CLK(vga_clk), .CIN0(\vga_1.n1086 ), .CIN1(\vga_1.n1856 ), .Q0(\col[9] ), 
+    .F0(\vga_1.col_9__N_31[9] ), .COUT0(\vga_1.n1856 ));
   vga_1_SLICE_3 \vga_1.SLICE_3 ( .DI1(\vga_1.col_9__N_31[4] ), 
-    .DI0(\vga_1.col_9__N_31[3] ), .D1(\vga_1.n1839 ), .C1(\col[4] ), 
-    .D0(\vga_1.n1072 ), .C0(\col[3] ), .LSR(col_0__N_50), .CLK(vga_clk), 
-    .CIN0(\vga_1.n1072 ), .CIN1(\vga_1.n1839 ), .Q0(\col[3] ), .Q1(\col[4] ), 
+    .DI0(\vga_1.col_9__N_31[3] ), .D1(\vga_1.n1847 ), .C1(\col[4] ), 
+    .D0(\vga_1.n1080 ), .C0(\col[3] ), .LSR(col_0__N_50), .CLK(vga_clk), 
+    .CIN0(\vga_1.n1080 ), .CIN1(\vga_1.n1847 ), .Q0(\col[3] ), .Q1(\col[4] ), 
     .F0(\vga_1.col_9__N_31[3] ), .F1(\vga_1.col_9__N_31[4] ), 
-    .COUT1(\vga_1.n1074 ), .COUT0(\vga_1.n1839 ));
+    .COUT1(\vga_1.n1082 ), .COUT0(\vga_1.n1847 ));
   vga_1_SLICE_4 \vga_1.SLICE_4 ( .DI1(\vga_1.col_9__N_31[0] ), 
-    .D1(\vga_1.n1827 ), .C1(\vga_1.col[0] ), .B1(\rgb_pad[2].vcc ), 
-    .LSR(col_0__N_50), .CLK(vga_clk), .CIN1(\vga_1.n1827 ), 
-    .Q1(\vga_1.col[0] ), .F1(\vga_1.col_9__N_31[0] ), .COUT1(\vga_1.n1070 ), 
-    .COUT0(\vga_1.n1827 ));
+    .D1(\vga_1.n1835 ), .C1(\vga_1.col[0] ), .B1(\rgb_pad[2].vcc ), 
+    .LSR(col_0__N_50), .CLK(vga_clk), .CIN1(\vga_1.n1835 ), 
+    .Q1(\vga_1.col[0] ), .F1(\vga_1.col_9__N_31[0] ), .COUT1(\vga_1.n1078 ), 
+    .COUT0(\vga_1.n1835 ));
   vga_1_SLICE_5 \vga_1.SLICE_5 ( .DI0(\vga_1.row_9__N_1[9] ), 
-    .D1(\vga_1.n1866 ), .D0(\vga_1.n1107 ), .B0(\row[9] ), .CE(row_0__N_29), 
-    .LSR(row_0__N_30), .CLK(vga_clk), .CIN0(\vga_1.n1107 ), 
-    .CIN1(\vga_1.n1866 ), .Q0(\row[9] ), .F0(\vga_1.row_9__N_1[9] ), 
-    .COUT0(\vga_1.n1866 ));
+    .D1(\vga_1.n1874 ), .D0(\vga_1.n1115 ), .B0(\row[9] ), .CE(row_0__N_29), 
+    .LSR(row_0__N_30), .CLK(vga_clk), .CIN0(\vga_1.n1115 ), 
+    .CIN1(\vga_1.n1874 ), .Q0(\row[9] ), .F0(\vga_1.row_9__N_1[9] ), 
+    .COUT0(\vga_1.n1874 ));
   vga_1_SLICE_6 \vga_1.SLICE_6 ( .DI1(\vga_1.col_9__N_31[8] ), 
-    .DI0(\vga_1.col_9__N_31[7] ), .D1(\vga_1.n1845 ), .C1(\col[8] ), 
-    .D0(\vga_1.n1076 ), .C0(\col[7] ), .LSR(col_0__N_50), .CLK(vga_clk), 
-    .CIN0(\vga_1.n1076 ), .CIN1(\vga_1.n1845 ), .Q0(\col[7] ), .Q1(\col[8] ), 
+    .DI0(\vga_1.col_9__N_31[7] ), .D1(\vga_1.n1853 ), .C1(\col[8] ), 
+    .D0(\vga_1.n1084 ), .C0(\col[7] ), .LSR(col_0__N_50), .CLK(vga_clk), 
+    .CIN0(\vga_1.n1084 ), .CIN1(\vga_1.n1853 ), .Q0(\col[7] ), .Q1(\col[8] ), 
     .F0(\vga_1.col_9__N_31[7] ), .F1(\vga_1.col_9__N_31[8] ), 
-    .COUT1(\vga_1.n1078 ), .COUT0(\vga_1.n1845 ));
+    .COUT1(\vga_1.n1086 ), .COUT0(\vga_1.n1853 ));
   vga_1_SLICE_7 \vga_1.SLICE_7 ( .DI1(\vga_1.row_9__N_1[8] ), 
-    .DI0(\vga_1.row_9__N_1[7] ), .D1(\vga_1.n1863 ), .B1(\row[8] ), 
-    .D0(\vga_1.n1105 ), .B0(\row[7] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
-    .CLK(vga_clk), .CIN0(\vga_1.n1105 ), .CIN1(\vga_1.n1863 ), .Q0(\row[7] ), 
+    .DI0(\vga_1.row_9__N_1[7] ), .D1(\vga_1.n1871 ), .B1(\row[8] ), 
+    .D0(\vga_1.n1113 ), .B0(\row[7] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
+    .CLK(vga_clk), .CIN0(\vga_1.n1113 ), .CIN1(\vga_1.n1871 ), .Q0(\row[7] ), 
     .Q1(\row[8] ), .F0(\vga_1.row_9__N_1[7] ), .F1(\vga_1.row_9__N_1[8] ), 
-    .COUT1(\vga_1.n1107 ), .COUT0(\vga_1.n1863 ));
+    .COUT1(\vga_1.n1115 ), .COUT0(\vga_1.n1871 ));
   vga_1_SLICE_8 \vga_1.SLICE_8 ( .DI1(\vga_1.col_9__N_31[2] ), 
-    .DI0(\vga_1.col_9__N_31[1] ), .D1(\vga_1.n1836 ), .C1(\col[2] ), 
-    .D0(\vga_1.n1070 ), .C0(\col[1] ), .LSR(col_0__N_50), .CLK(vga_clk), 
-    .CIN0(\vga_1.n1070 ), .CIN1(\vga_1.n1836 ), .Q0(\col[1] ), .Q1(\col[2] ), 
+    .DI0(\vga_1.col_9__N_31[1] ), .D1(\vga_1.n1844 ), .C1(\col[2] ), 
+    .D0(\vga_1.n1078 ), .C0(\col[1] ), .LSR(col_0__N_50), .CLK(vga_clk), 
+    .CIN0(\vga_1.n1078 ), .CIN1(\vga_1.n1844 ), .Q0(\col[1] ), .Q1(\col[2] ), 
     .F0(\vga_1.col_9__N_31[1] ), .F1(\vga_1.col_9__N_31[2] ), 
-    .COUT1(\vga_1.n1072 ), .COUT0(\vga_1.n1836 ));
+    .COUT1(\vga_1.n1080 ), .COUT0(\vga_1.n1844 ));
   vga_1_SLICE_9 \vga_1.SLICE_9 ( .DI1(\vga_1.row_9__N_1[6] ), 
-    .DI0(\vga_1.row_9__N_1[5] ), .D1(\vga_1.n1860 ), .B1(\row[6] ), 
-    .D0(\vga_1.n1103 ), .B0(\row[5] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
-    .CLK(vga_clk), .CIN0(\vga_1.n1103 ), .CIN1(\vga_1.n1860 ), .Q0(\row[5] ), 
+    .DI0(\vga_1.row_9__N_1[5] ), .D1(\vga_1.n1868 ), .B1(\row[6] ), 
+    .D0(\vga_1.n1111 ), .B0(\row[5] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
+    .CLK(vga_clk), .CIN0(\vga_1.n1111 ), .CIN1(\vga_1.n1868 ), .Q0(\row[5] ), 
     .Q1(\row[6] ), .F0(\vga_1.row_9__N_1[5] ), .F1(\vga_1.row_9__N_1[6] ), 
-    .COUT1(\vga_1.n1105 ), .COUT0(\vga_1.n1860 ));
+    .COUT1(\vga_1.n1113 ), .COUT0(\vga_1.n1868 ));
   vga_1_SLICE_10 \vga_1.SLICE_10 ( .DI1(\vga_1.row_9__N_1[4] ), 
-    .DI0(\vga_1.row_9__N_1[3] ), .D1(\vga_1.n1857 ), .B1(\row[4] ), 
-    .D0(\vga_1.n1101 ), .B0(\row[3] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
-    .CLK(vga_clk), .CIN0(\vga_1.n1101 ), .CIN1(\vga_1.n1857 ), .Q0(\row[3] ), 
+    .DI0(\vga_1.row_9__N_1[3] ), .D1(\vga_1.n1865 ), .B1(\row[4] ), 
+    .D0(\vga_1.n1109 ), .B0(\row[3] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
+    .CLK(vga_clk), .CIN0(\vga_1.n1109 ), .CIN1(\vga_1.n1865 ), .Q0(\row[3] ), 
     .Q1(\row[4] ), .F0(\vga_1.row_9__N_1[3] ), .F1(\vga_1.row_9__N_1[4] ), 
-    .COUT1(\vga_1.n1103 ), .COUT0(\vga_1.n1857 ));
+    .COUT1(\vga_1.n1111 ), .COUT0(\vga_1.n1865 ));
   vga_1_SLICE_11 \vga_1.SLICE_11 ( .DI1(\vga_1.col_9__N_31[6] ), 
-    .DI0(\vga_1.col_9__N_31[5] ), .D1(\vga_1.n1842 ), .C1(\col[6] ), 
-    .D0(\vga_1.n1074 ), .C0(\col[5] ), .LSR(col_0__N_50), .CLK(vga_clk), 
-    .CIN0(\vga_1.n1074 ), .CIN1(\vga_1.n1842 ), .Q0(\col[5] ), .Q1(\col[6] ), 
+    .DI0(\vga_1.col_9__N_31[5] ), .D1(\vga_1.n1850 ), .C1(\col[6] ), 
+    .D0(\vga_1.n1082 ), .C0(\col[5] ), .LSR(col_0__N_50), .CLK(vga_clk), 
+    .CIN0(\vga_1.n1082 ), .CIN1(\vga_1.n1850 ), .Q0(\col[5] ), .Q1(\col[6] ), 
     .F0(\vga_1.col_9__N_31[5] ), .F1(\vga_1.col_9__N_31[6] ), 
-    .COUT1(\vga_1.n1076 ), .COUT0(\vga_1.n1842 ));
+    .COUT1(\vga_1.n1084 ), .COUT0(\vga_1.n1850 ));
   controller1_SLICE_12 \controller1.SLICE_12 ( 
     .DI1(\controller1.count_8__N_51[12] ), 
-    .DI0(\controller1.count_8__N_51[11] ), .D1(\controller1.n1884 ), 
-    .C1(\controller1.slowCount[3] ), .D0(\controller1.n1091 ), 
+    .DI0(\controller1.count_8__N_51[11] ), .D1(\controller1.n1892 ), 
+    .C1(\controller1.slowCount[3] ), .D0(\controller1.n1099 ), 
     .C0(\controller1.slowCount[2] ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n1091 ), .CIN1(\controller1.n1884 ), 
+    .CIN0(\controller1.n1099 ), .CIN1(\controller1.n1892 ), 
     .Q0(\controller1.slowCount[2] ), .Q1(\controller1.slowCount[3] ), 
     .F0(\controller1.count_8__N_51[11] ), .F1(\controller1.count_8__N_51[12] ), 
-    .COUT1(\controller1.n1093 ), .COUT0(\controller1.n1884 ));
+    .COUT1(\controller1.n1101 ), .COUT0(\controller1.n1892 ));
   controller1_SLICE_13 \controller1.SLICE_13 ( 
     .DI1(\controller1.count_8__N_51[4] ), .DI0(\controller1.count_8__N_51[3] ), 
-    .D1(\controller1.n1872 ), .C1(\controller1.n13 ), .D0(\controller1.n1083 ), 
+    .D1(\controller1.n1880 ), .C1(\controller1.n13 ), .D0(\controller1.n1091 ), 
     .C0(\controller1.n14 ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n1083 ), .CIN1(\controller1.n1872 ), 
+    .CIN0(\controller1.n1091 ), .CIN1(\controller1.n1880 ), 
     .Q0(\controller1.n14 ), .Q1(\controller1.n13 ), 
     .F0(\controller1.count_8__N_51[3] ), .F1(\controller1.count_8__N_51[4] ), 
-    .COUT1(\controller1.n1085 ), .COUT0(\controller1.n1872 ));
+    .COUT1(\controller1.n1093 ), .COUT0(\controller1.n1880 ));
   controller1_SLICE_14 \controller1.SLICE_14 ( 
     .DI1(\controller1.count_8__N_51[10] ), 
-    .DI0(\controller1.count_8__N_51[9] ), .D1(\controller1.n1881 ), 
-    .C1(\controller1.slowCount[1] ), .D0(\controller1.n1089 ), 
+    .DI0(\controller1.count_8__N_51[9] ), .D1(\controller1.n1889 ), 
+    .C1(\controller1.slowCount[1] ), .D0(\controller1.n1097 ), 
     .C0(\controller1.slowCount[0] ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n1089 ), .CIN1(\controller1.n1881 ), 
+    .CIN0(\controller1.n1097 ), .CIN1(\controller1.n1889 ), 
     .Q0(\controller1.slowCount[0] ), .Q1(\controller1.slowCount[1] ), 
     .F0(\controller1.count_8__N_51[9] ), .F1(\controller1.count_8__N_51[10] ), 
-    .COUT1(\controller1.n1091 ), .COUT0(\controller1.n1881 ));
+    .COUT1(\controller1.n1099 ), .COUT0(\controller1.n1889 ));
   controller1_SLICE_15 \controller1.SLICE_15 ( 
     .DI1(\controller1.count_8__N_51[8] ), .DI0(\controller1.count_8__N_51[7] ), 
-    .D1(\controller1.n1878 ), .C1(\controller1.count[8] ), 
-    .D0(\controller1.n1087 ), .C0(\controller1.n10 ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n1087 ), .CIN1(\controller1.n1878 ), 
+    .D1(\controller1.n1886 ), .C1(\controller1.count[8] ), 
+    .D0(\controller1.n1095 ), .C0(\controller1.n10 ), .CLK(\controller1.clk ), 
+    .CIN0(\controller1.n1095 ), .CIN1(\controller1.n1886 ), 
     .Q0(\controller1.n10 ), .Q1(\controller1.count[8] ), 
     .F0(\controller1.count_8__N_51[7] ), .F1(\controller1.count_8__N_51[8] ), 
-    .COUT1(\controller1.n1089 ), .COUT0(\controller1.n1878 ));
+    .COUT1(\controller1.n1097 ), .COUT0(\controller1.n1886 ));
   controller1_SLICE_16 \controller1.SLICE_16 ( 
     .DI1(\controller1.count_8__N_51[16] ), 
-    .DI0(\controller1.count_8__N_51[15] ), .D1(\controller1.n1890 ), 
-    .C1(\controller1.slowCount[7] ), .D0(\controller1.n1095 ), 
+    .DI0(\controller1.count_8__N_51[15] ), .D1(\controller1.n1898 ), 
+    .C1(\controller1.slowCount[7] ), .D0(\controller1.n1103 ), 
     .C0(\controller1.slowCount[6] ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n1095 ), .CIN1(\controller1.n1890 ), 
+    .CIN0(\controller1.n1103 ), .CIN1(\controller1.n1898 ), 
     .Q0(\controller1.slowCount[6] ), .Q1(\controller1.slowCount[7] ), 
     .F0(\controller1.count_8__N_51[15] ), .F1(\controller1.count_8__N_51[16] ), 
-    .COUT0(\controller1.n1890 ));
+    .COUT0(\controller1.n1898 ));
   controller1_SLICE_17 \controller1.SLICE_17 ( 
     .DI1(\controller1.count_8__N_51[6] ), .DI0(\controller1.count_8__N_51[5] ), 
-    .D1(\controller1.n1875 ), .C1(\controller1.n11 ), .D0(\controller1.n1085 ), 
+    .D1(\controller1.n1883 ), .C1(\controller1.n11 ), .D0(\controller1.n1093 ), 
     .C0(\controller1.n12 ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n1085 ), .CIN1(\controller1.n1875 ), 
+    .CIN0(\controller1.n1093 ), .CIN1(\controller1.n1883 ), 
     .Q0(\controller1.n12 ), .Q1(\controller1.n11 ), 
     .F0(\controller1.count_8__N_51[5] ), .F1(\controller1.count_8__N_51[6] ), 
-    .COUT1(\controller1.n1087 ), .COUT0(\controller1.n1875 ));
+    .COUT1(\controller1.n1095 ), .COUT0(\controller1.n1883 ));
   controller1_SLICE_18 \controller1.SLICE_18 ( 
     .DI1(\controller1.count_8__N_51[2] ), .DI0(\controller1.count_8__N_51[1] ), 
-    .D1(\controller1.n1869 ), .C1(\controller1.n15 ), .D0(\controller1.n1081 ), 
+    .D1(\controller1.n1877 ), .C1(\controller1.n15 ), .D0(\controller1.n1089 ), 
     .C0(\controller1.n16 ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n1081 ), .CIN1(\controller1.n1869 ), 
+    .CIN0(\controller1.n1089 ), .CIN1(\controller1.n1877 ), 
     .Q0(\controller1.n16 ), .Q1(\controller1.n15 ), 
     .F0(\controller1.count_8__N_51[1] ), .F1(\controller1.count_8__N_51[2] ), 
-    .COUT1(\controller1.n1083 ), .COUT0(\controller1.n1869 ));
+    .COUT1(\controller1.n1091 ), .COUT0(\controller1.n1877 ));
   controller1_SLICE_19 \controller1.SLICE_19 ( 
-    .DI1(\controller1.count_8__N_51[0] ), .D1(\controller1.n1833 ), 
+    .DI1(\controller1.count_8__N_51[0] ), .D1(\controller1.n1841 ), 
     .C1(\controller1.n17 ), .B1(\rgb_pad[2].vcc ), .CLK(\controller1.clk ), 
-    .CIN1(\controller1.n1833 ), .Q1(\controller1.n17 ), 
-    .F1(\controller1.count_8__N_51[0] ), .COUT1(\controller1.n1081 ), 
-    .COUT0(\controller1.n1833 ));
+    .CIN1(\controller1.n1841 ), .Q1(\controller1.n17 ), 
+    .F1(\controller1.count_8__N_51[0] ), .COUT1(\controller1.n1089 ), 
+    .COUT0(\controller1.n1841 ));
   controller1_SLICE_20 \controller1.SLICE_20 ( 
     .DI1(\controller1.count_8__N_51[14] ), 
-    .DI0(\controller1.count_8__N_51[13] ), .D1(\controller1.n1887 ), 
-    .C1(\controller1.slowCount[5] ), .D0(\controller1.n1093 ), 
+    .DI0(\controller1.count_8__N_51[13] ), .D1(\controller1.n1895 ), 
+    .C1(\controller1.slowCount[5] ), .D0(\controller1.n1101 ), 
     .C0(\controller1.slowCount[4] ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n1093 ), .CIN1(\controller1.n1887 ), 
+    .CIN0(\controller1.n1101 ), .CIN1(\controller1.n1895 ), 
     .Q0(\controller1.slowCount[4] ), .Q1(\controller1.slowCount[5] ), 
     .F0(\controller1.count_8__N_51[13] ), .F1(\controller1.count_8__N_51[14] ), 
-    .COUT1(\controller1.n1095 ), .COUT0(\controller1.n1887 ));
+    .COUT1(\controller1.n1103 ), .COUT0(\controller1.n1895 ));
   cube_gen1_SLICE_21 \cube_gen1.SLICE_21 ( .D1(\col[4] ), 
-    .C1(\cube_gen1.n1502 ), .B1(n848), .A1(\cube_gen1.n1503 ), .D0(n1505), 
-    .C0(n848), .B0(\col[3] ), .A0(\col[5] ), .F0(\cube_gen1.n1502 ), .F1(n32));
+    .C1(\cube_gen1.n1510 ), .B1(n856), .A1(\cube_gen1.n1511 ), .D0(n1513), 
+    .C0(n856), .B0(\col[3] ), .A0(\col[5] ), .F0(\cube_gen1.n1510 ), .F1(n32));
   cube_gen1_SLICE_23 \cube_gen1.SLICE_23 ( .D1(\row[4] ), 
-    .C1(\cube_gen1.n1508 ), .B1(\row[3] ), .A1(\cube_gen1.n1415 ), 
+    .C1(\cube_gen1.n1516 ), .B1(\row[3] ), .A1(\cube_gen1.n1423 ), 
     .D0(\row[0] ), .C0(\row[3] ), .B0(\row[1] ), .A0(\row[2] ), 
-    .F0(\cube_gen1.n1508 ), .F1(\cube_gen1.rgb_c_3_N_67 ));
-  vga_1_SLICE_25 \vga_1.SLICE_25 ( .D1(\vga_1.n1500 ), .C1(\vga_1.n44 ), 
+    .F0(\cube_gen1.n1516 ), .F1(\cube_gen1.rgb_c_3_N_67 ));
+  vga_1_SLICE_25 \vga_1.SLICE_25 ( .D1(\vga_1.n1508 ), .C1(\vga_1.n44 ), 
     .B1(\col[3] ), .A1(\col[7] ), .D0(\col[6] ), .C0(\col[2] ), .B0(\col[7] ), 
     .A0(\col[5] ), .F0(\vga_1.n44 ), .F1(\vga_1.HSYNC_c_N_62 ));
-  cube_gen1_SLICE_27 \cube_gen1.SLICE_27 ( .D1(n814), .C1(n428), .B1(\row[4] ), 
+  cube_gen1_SLICE_27 \cube_gen1.SLICE_27 ( .D1(n822), .C1(n436), .B1(\row[4] ), 
     .A1(\row[3] ), .D0(\row[8] ), .C0(\row[7] ), .B0(\row[6] ), .A0(\row[5] ), 
-    .F0(n428), .F1(n848));
+    .F0(n436), .F1(n856));
   vga_1_SLICE_28 \vga_1.SLICE_28 ( .D1(\row[0] ), .C1(n10), .B1(\row[3] ), 
-    .A1(\row[1] ), .D0(\row[4] ), .C0(\row[9] ), .B0(\row[2] ), .A0(n428), 
+    .A1(\row[1] ), .D0(\row[4] ), .C0(\row[9] ), .B0(\row[2] ), .A0(n436), 
     .F0(n10), .F1(row_0__N_30));
   cube_gen1_SLICE_29 \cube_gen1.SLICE_29 ( .D1(\col[6] ), .C1(\col[8] ), 
     .B1(\col[7] ), .C0(\col[7] ), .B0(\col[8] ), .A0(\col[9] ), 
     .F0(\cube_gen1.n36 ), .F1(\vga_1.rgb_c_5_N_65 ));
   cube_gen1_SLICE_30 \cube_gen1.SLICE_30 ( .D1(\cube_gen1.n36 ), 
-    .C1(\cube_gen1.n1321 ), .B1(\row[7] ), .A1(\row[6] ), .D0(\col[6] ), 
-    .C0(n32), .B0(\col[8] ), .A0(\col[7] ), .F0(\cube_gen1.n1321 ), 
+    .C1(\cube_gen1.n1329 ), .B1(\row[7] ), .A1(\row[6] ), .D0(\col[6] ), 
+    .C0(n32), .B0(\col[8] ), .A0(\col[7] ), .F0(\cube_gen1.n1329 ), 
     .F1(\cube_gen1.rgb_c_3_N_68 ));
   cube_gen1_SLICE_31 \cube_gen1.SLICE_31 ( .D1(\cube_gen1.rgb_c_3_N_67 ), 
     .C1(\cube_gen1.rgb_c_3_N_69 ), .B1(\cube_gen1.rgb_c_3_N_68 ), 
@@ -238,8 +238,8 @@ module top ( rgb, VSYNC, HSYNC, controlLatch, controlClk, fpga_clk,
     .B1(\row[8] ), .A1(\row[9] ), .D0(\row[0] ), .C0(\row[2] ), .B0(\row[1] ), 
     .F0(n8), .F1(\vga_1.VSYNC_c_N_64 ));
   cube_gen1_SLICE_37 \cube_gen1.SLICE_37 ( .D1(\row[2] ), .C1(\row[1] ), 
-    .D0(\row[0] ), .C0(\row[2] ), .B0(\row[1] ), .F0(n814), 
-    .F1(\cube_gen1.n1415 ));
+    .D0(\row[0] ), .C0(\row[2] ), .B0(\row[1] ), .F0(n822), 
+    .F1(\cube_gen1.n1423 ));
   vga_1_SLICE_39 \vga_1.SLICE_39 ( .D1(\vga_1.VSYNC_c_N_64 ), 
     .C1(\vga_1.VSYNC_c_N_63 ), .B1(\row[3] ), .D0(\row[6] ), .C0(\row[5] ), 
     .B0(\row[7] ), .F0(\vga_1.VSYNC_c_N_63 ), .F1(VSYNC_c));
@@ -267,11 +267,11 @@ module top ( rgb, VSYNC, HSYNC, controlLatch, controlClk, fpga_clk,
     .F0(\controller1.controlLatch_c_N_71 ), .F1(controlLatch_c));
   vga_1_SLICE_53 \vga_1.SLICE_53 ( .D1(\col[2] ), .C1(\vga_1.col[0] ), 
     .B1(\col[1] ), .A1(\col[8] ), .D0(\vga_1.col[0] ), .C0(\col[1] ), 
-    .A0(\col[2] ), .F0(n1505), .F1(\vga_1.n14 ));
+    .A0(\col[2] ), .F0(n1513), .F1(\vga_1.n14 ));
   SLICE_55 SLICE_55( .F0(GND_net));
   cube_gen1_SLICE_56 \cube_gen1.SLICE_56 ( .D1(\col[5] ), .C1(\col[6] ), 
     .D0(\col[5] ), .C0(\col[1] ), .B0(\col[3] ), .A0(\col[2] ), 
-    .F0(\cube_gen1.n1503 ), .F1(\vga_1.n1500 ));
+    .F0(\cube_gen1.n1511 ), .F1(\vga_1.n1508 ));
   rgb_pad_2__SLICE_60 \rgb_pad[2].SLICE_60 ( .F0(\rgb_pad[2].vcc ));
   controller1_osc \controller1.osc ( .CLKHFPU(\rgb_pad[2].vcc ), 
     .CLKHFEN(\rgb_pad[2].vcc ), .CLKHF(\controller1.clk ));

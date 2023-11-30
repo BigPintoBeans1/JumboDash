@@ -83,7 +83,7 @@ end component;
 component jump is
 	port(
 		aPressed : in std_logic_vector (7 downto 0); 
-		vga_clk : in std_logic;
+		vgaClk : in std_logic;
 		cubePos : out unsigned(6 downto 0)
 	);
 end component;
@@ -113,6 +113,8 @@ controller1 : controller port map(
 	controllerClk => controlClk,
 	controllerResult => controllerOutput
 );
+
+
 
 HSOSCclock : HSOSC generic map ( CLKHF_DIV => "0b00")
 port map ( 
@@ -158,9 +160,9 @@ cube_gen1 : cube_gen port map(
 );
 
 jump1 : jump port map(
-	vga_clk => vga_clk,
-	cubePos => cube_bot
-	-- need to port map controller then add "aPressed" here
+	vgaClk => vga_clk,
+	cubePos => cube_bot,
+	aPressed => controllerOutput -- need to port map controller then add "aPressed" here
 );
 
 end;
