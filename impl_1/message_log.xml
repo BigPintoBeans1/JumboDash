@@ -1,58 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="PAR">
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>controllerIn</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>controllerIn</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>controllerIn</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>controllerIn</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-    </Task>
-    <Task name="Export">
-        <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
-        </Message>
-    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35831026</ID>
@@ -116,17 +63,17 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>C:/Users/erober10/Documents/GitHub/JumboDash/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>Z:/Radiant/JumboDash/JumboDash/mypll/rtl/mypll.v(11): </Dynamic>
             <Dynamic>mypll</Dynamic>
-            <Navigation>C:/Users/erober10/Documents/GitHub/JumboDash/mypll/rtl/mypll.v</Navigation>
+            <Navigation>Z:/Radiant/JumboDash/JumboDash/mypll/rtl/mypll.v</Navigation>
             <Navigation>11</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>C:/Users/erober10/Documents/GitHub/JumboDash/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>Z:/Radiant/JumboDash/JumboDash/mypll/rtl/mypll.v(105): </Dynamic>
             <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
-            <Navigation>C:/Users/erober10/Documents/GitHub/JumboDash/mypll/rtl/mypll.v</Navigation>
+            <Navigation>Z:/Radiant/JumboDash/JumboDash/mypll/rtl/mypll.v</Navigation>
             <Navigation>105</Navigation>
         </Message>
         <Message>
@@ -297,97 +244,97 @@
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd(5): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd(5): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd(17): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd</Navigation>
-            <Navigation>17</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd</Navigation>
+            <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(5): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd(5): </Dynamic>
             <Dynamic>vga</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(16): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd(16): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd</Navigation>
             <Navigation>16</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd(5): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/rom.vhd(5): </Dynamic>
             <Dynamic>romaddress</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/rom.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd(17): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/rom.vhd(17): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/rom.vhd</Navigation>
             <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(5): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(5): </Dynamic>
             <Dynamic>cube_gen</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(15): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(15): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd</Navigation>
             <Navigation>15</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd(5): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd(5): </Dynamic>
             <Dynamic>jump</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd(13): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd(13): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd</Navigation>
             <Navigation>13</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/controller.vhd(5): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/controller.vhd(5): </Dynamic>
             <Dynamic>controller</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/controller.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/controller.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/controller.vhd(14): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/controller.vhd(14): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/controller.vhd</Navigation>
+            <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/controller.vhd</Navigation>
             <Navigation>14</Navigation>
         </Message>
         <Message>
@@ -404,11 +351,6 @@
             <ID>35935047</ID>
             <Severity>16</Severity>
             <Dynamic>HSOSCclock</Dynamic>
-        </Message>
-        <Message>
-            <ID>35935047</ID>
-            <Severity>16</Severity>
-            <Dynamic>jump1</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -486,9 +428,31 @@
             <Dynamic>sdi_i</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
-            <Severity>256</Severity>
-            <Dynamic>controllerIn</Dynamic>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>
@@ -496,16 +460,15 @@
             <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
         </Message>
     </Task>
-    <Task name="Map">
+    <Task name="Export">
         <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>controllerIn</Dynamic>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
         </Message>
         <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>controllerIn</Dynamic>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
         </Message>
     </Task>
 </BaliMessageLog>

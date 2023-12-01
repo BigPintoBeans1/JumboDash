@@ -6,31 +6,33 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Thu Nov 30 16:44:12 2023
+Mapped on: Fri Dec  1 18:03:13 2023
 
 Design Information
 ------------------
 
-Command line:   map -i FinalProject_impl_1_syn.udb -o
+Command line:   map -i FinalProject_impl_1_syn.udb -pdc
+     Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc -o
      FinalProject_impl_1_map.udb -mp FinalProject_impl_1.mrp -hierrpt -gui
 
 Design Summary
 --------------
 
-   Number of slice registers:  37 out of  5280 (1%)
+   Number of slice registers:  85 out of  5280 (2%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            82 out of  5280 (2%)
-      Number of logic LUT4s:              40
-      Number of ripple logic:             21 (42 LUT4s)
-   Number of IO sites used:   11 out of 39 (28%)
-      Number of IO sites used for general PIO: 11
+   Number of LUT4s:           232 out of  5280 (4%)
+      Number of logic LUT4s:             121
+      Number of inserted feedthru LUT4s:  15
+      Number of ripple logic:             48 (96 LUT4s)
+   Number of IO sites used:   20 out of 39 (51%)
+      Number of IO sites used for general PIO: 20
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 11 out of 36 (31%)
+      Number of IO sites used for PIO+I3C: 20 out of 36 (56%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 11 out of 39 (28%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 20 out of 39 (51%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -43,22 +45,20 @@ Design Summary
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             1 out of 1 (100%)
-   Number of Clocks:  3
-      Net vga_clk: 12 loads, 12 rising, 0 falling (Driver: Pin
+   Number of Clocks:  5
+      Net vga_clk: 23 loads, 23 rising, 0 falling (Driver: Pin
      mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
+      Net jump1.slowClk: 19 loads, 19 rising, 0 falling (Driver: Pin
+     jump1.slowClk_I_0/Q)
+      Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
       Net controller1.clk: 9 loads, 9 rising, 0 falling (Driver: Pin
      controller1.osc/CLKHF)
-      Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
+      Net controlClk_c: 8 loads, 8 rising, 0 falling (Driver: Pin
+     controller1.controlClk_c_I_0/Z)
    Number of Clock Enables:  2
-      Net rgb_pad[2].vcc: 1 loads, 0 SLICEs
-      Net row_0__N_29: 6 loads, 6 SLICEs
-   Number of LSRs:  2
-      Net row_0__N_30: 6 loads, 6 SLICEs
-      Net col_0__N_50: 6 loads, 6 SLICEs
-   Top 10 highest fanout non-clock nets:
-      Net col[7]: 8 loads
-      Net col[5]: 7 loads
-      Net col[6]: 7 loads
+      Net vga_1.row_0__N_30: 6 loads, 6 SLICEs
+      Net ledController_pad[0].vcc: 1 loads, 0 SLICEs
+   Number of LSRs:  5
 
                                     Page 1
 
@@ -68,27 +68,33 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net col_0__N_50: 7 loads
-      Net row_0__N_30: 7 loads
-      Net col[8]: 6 loads
-      Net rgb_pad[2].vcc: 6 loads
-      Net row[1]: 6 loads
-      Net row[2]: 6 loads
-      Net row[3]: 6 loads
+      Net vga_1.row_0__N_31: 6 loads, 6 SLICEs
+      Net vga_1.col_0__N_51: 6 loads, 6 SLICEs
+      Net jump1.cube_bot_4__N_63: 4 loads, 4 SLICEs
+      Net jump1.lastPosition_0__N_118: 7 loads, 7 SLICEs
+      Net jump1.lastPosition_2__N_116: 3 loads, 3 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net ledController_pad[0].vcc: 14 loads
+      Net cube_bot[2]: 13 loads
+      Net cube_bot[3]: 13 loads
+      Net cube_bot[6]: 12 loads
+      Net cube_bot[1]: 11 loads
+      Net cube_bot[4]: 11 loads
+      Net cube_bot[5]: 11 loads
+      Net cube_bot[7]: 11 loads
+      Net cube_bot[8]: 11 loads
+      Net cube_bot[9]: 11 loads
 
 
 
 
-   Number of warnings:  2
+   Number of warnings:  0
    Number of errors:    0
 
 Design Errors/Warnings
 ----------------------
 
-WARNING <71003020> - map: Top module port 'controllerIn' does not connect to
-     anything.
-WARNING <71003020> - map: Top module port 'controllerIn' does not connect to
-     anything.
+   No errors or warnings present.
 
 IO (PIO) Attributes
 -------------------
@@ -96,6 +102,43 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| controllerIn        | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| fpga_clk            | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ledController[0]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ledController[1]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ledController[2]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ledController[3]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ledController[4]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ledController[5]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ledController[6]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ledController[7]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| controlClk          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+                                    Page 2
+
+
+
+
+
+IO (PIO) Attributes (cont)
+--------------------------
+| controlLatch        | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[0]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[1]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -109,31 +152,12 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rgb[1]              | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| rgb[0]              | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| controlLatch        | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| controlClk          | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| fpga_clk            | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 
 PLL/DLL Summary
 ---------------
 
 PLL 1:                                 Pin/Node Value
   PLL Instance Name:                            mypll_1/lscc_pll_inst/u_PLL_B
-
-                                    Page 2
-
-
-
-
-
-PLL/DLL Summary (cont)
-----------------------
   Input Reference Clock:               PIN      fpga_clk_c
   Output Clock(CoreA):                          NONE
   Output Clock(GlobalA):               NODE     vga_clk
@@ -167,30 +191,6 @@ OSC Summary
 
 OSC 1:                                 Pin/Node Value
   OSC Instance Name:                            controller1/osc
-  Power UP:                            NODE     rgb_pad[2].vcc
-  Enable Signal:                       NODE     rgb_pad[2].vcc
-  OSC Output:                          NODE     controller1.clk
-  DIV Setting:                                  00
-
-ASIC Components
----------------
-
-Instance Name: controller1/osc
-         Type: HFOSC
-Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
-         Type: PLL
-
-Constraint Summary
-------------------
-
-   Total number of constraints: 2
-   Total number of constraints dropped: 0
-
-Run Time and Memory Usage
--------------------------
-
-   Total CPU Time: 0 secs
-   Total REAL Time: 0 secs
 
                                     Page 3
 
@@ -198,33 +198,33 @@ Run Time and Memory Usage
 
 
 
-Run Time and Memory Usage (cont)
---------------------------------
-   Peak Memory Usage: 57 MB
+OSC Summary (cont)
+------------------
+  Power UP:                            NODE     ledController_pad[0].vcc
+  Enable Signal:                       NODE     ledController_pad[0].vcc
+  OSC Output:                          NODE     controller1.clk
+  DIV Setting:                                  00
 
+ASIC Components
+---------------
 
+Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
+         Type: PLL
+Instance Name: controller1/osc
+         Type: HFOSC
 
+Constraint Summary
+------------------
 
+   Total number of constraints: 22
+   Total number of constraints dropped: 0
 
+Run Time and Memory Usage
+-------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 59 MB
 
 
 

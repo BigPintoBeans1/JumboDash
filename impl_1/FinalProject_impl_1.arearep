@@ -1,49 +1,42 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  37 of 5280 (0.701%)
-I/O cells:      11
+Register bits:  85 of 5280 (1.610%)
+I/O cells:      20
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        21          100.0
-                            FD1P3XZ        37          100.0
+                               CCU2        48          100.0
+                            FD1P3XZ        85          100.0
                          HSOSC_CORE         1          100.0
-                                 IB         1          100.0
-                               LUT4        38          100.0
-                                 OB        10          100.0
+                                 IB         2          100.0
+                               LUT4       119          100.0
+                                 OB        18          100.0
                               PLL_B         1          100.0
 SUB MODULES
                          controller         1
                            cube_gen         1
+                               jump         1
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
                                 vga         1
-                              TOTAL       114
-----------------------------------------------------------------------
-Report for cell cube_gen.v1
-Instance Path : cube_gen1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4        15           39.5
-                              TOTAL        15
+                              TOTAL       280
 ----------------------------------------------------------------------
 Report for cell vga.v1
 Instance Path : vga_1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        12           57.1
-                            FD1P3XZ        20           54.1
-                               LUT4        18           47.4
-                              TOTAL        50
+                                FA2        12           25.0
+                            FD1P3XZ        20           23.5
+                               LUT4        22           18.5
+                              TOTAL        54
 ----------------------------------------------------------------------
-Report for cell controller.v1
-Instance Path : controller1
+Report for cell jump.v1
+Instance Path : jump1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         9           42.9
-                            FD1P3XZ        17           45.9
-                         HSOSC_CORE         1          100.0
-                               LUT4         4           10.5
-                              TOTAL        31
+                                FA2        17           35.4
+                            FD1P3XZ        40           47.1
+                               LUT4        52           43.7
+                              TOTAL       109
 ----------------------------------------------------------------------
 Report for cell mypll.v1
 Instance Path : mypll_1
@@ -60,3 +53,21 @@ Instance Path : mypll_1.lscc_pll_inst
                                cell     count   Res Usage(%)
                               PLL_B         1          100.0
                               TOTAL         1
+----------------------------------------------------------------------
+Report for cell cube_gen.v1
+Instance Path : cube_gen1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        10           20.8
+                               LUT4        29           24.4
+                              TOTAL        39
+----------------------------------------------------------------------
+Report for cell controller.v1
+Instance Path : controller1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         9           18.8
+                            FD1P3XZ        25           29.4
+                         HSOSC_CORE         1          100.0
+                               LUT4        16           13.4
+                              TOTAL        51

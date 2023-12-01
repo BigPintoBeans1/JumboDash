@@ -7,7 +7,7 @@ entity controller is
 	controllerInput : in std_logic; 
 	controllerLatch : out std_logic; 
 	controllerClk : out std_logic; 
-	controllerResult : out std_logic_vector(7 downto 0) 
+	controllerResult : out std_logic_vector(7 downto 0)
   ); 
 end controller; 
   

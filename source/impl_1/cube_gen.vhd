@@ -20,10 +20,10 @@ signal cube_top : unsigned(9 downto 0);
 
 begin
 	--Cube height of 20
-	cube_top <= cube_bot + 20;
+	cube_top <= cube_bot - 20;
 
-	rgb <= "000000" when (valid = '1' and row < cube_bot) else 
-		"110000" when (valid = '1' and row >= cube_bot and row <= cube_top and col >= 209 and col <= 229) else -- 209 and 229 are off center to the left of screen
+	rgb <= "000000" when (valid = '1' and row < cube_top) else 
+		"110000" when (valid = '1' and row >= cube_top and row <= cube_bot and col >= 209 and col <= 229) else -- 209 and 229 are off center to the left of screen
 		"001100" when (valid = '1' and row >= ground_top and row <= ground_bot) else
 		"000000";
 	

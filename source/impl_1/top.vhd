@@ -10,7 +10,8 @@ entity top is
 		rgb : out std_logic_vector(5 downto 0);
 		controllerIn : in std_logic;
 		controlLatch : out std_logic;
-		controlClk : out std_logic
+		controlClk : out std_logic;
+		ledController : out std_logic_vector(7 downto 0)
 	);
 end top;
 
@@ -76,7 +77,7 @@ component controller is
 	controllerInput : in std_logic; 
 	controllerLatch : out std_logic; 
 	controllerClk : out std_logic; 
-	controllerResult : out std_logic_vector(7 downto 0) 
+	controllerResult : out std_logic_vector(7 downto 0)
   ); 
 end component;
 
@@ -84,7 +85,7 @@ component jump is
 	port(
 		aPressed : in std_logic_vector (7 downto 0); 
 		vgaClk : in std_logic;
-		cubePos : out unsigned(6 downto 0)
+		cubePos : out unsigned(9 downto 0)
 	);
 end component;
 
@@ -100,12 +101,14 @@ signal reset : std_logic := '1';
 
 -- NES signal
 signal controllerOutput : std_logic_vector(7 downto 0); 
--- 8 bits represent certain button being pressed it goes (LSB to MSB) a, b, select, start, up, down, left, right
+-- 8 bits represent certain button being pressed it goes (MSB to LSB) a, b, select, start, up, down, left, right
 
 -- Cube_gen signals
 signal cube_bot : unsigned(9 downto 0);
 
 begin
+
+ledController <= controllerOutput;
 
 controller1 : controller port map(
 	controllerInput => controllerIn,
