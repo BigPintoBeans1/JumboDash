@@ -27,21 +27,21 @@ begin
 	
 	process(slowClk) begin
 		if rising_edge(slowClk) then
-			if (position = 10d"229" and aPressed(7) = '1') then
+			if (position >= 10d"229" and aPressed(7) = '1') then
 				position <= 10d"228";
 				lastPosition <= 10d"229";
-			elsif (position = 10d"229" and aPressed(7) = '0') then
+			elsif (position >= 10d"229" and aPressed(7) = '0') then
 				position <= 10d"229";
 				lastPosition <= 10d"229";
-			elsif (position = 10d"169") then
+			elsif (position <= 10d"169") then
 				position <= 10d"170";
 				lastPosition <= 10d"169";
 			elsif ((position > lastPosition) and (position < 10d"230")) then
 				lastPosition <= position;
-				position <= position + 1;
+				position <= position + 4;
 			elsif (position < lastPosition) then
 				lastPosition <= position;
-				position <= position - 1;
+				position <= position - 4;
 			else
 				position <= 10d"229";
 				lastPosition <= 10d"229";

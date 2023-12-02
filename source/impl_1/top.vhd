@@ -49,7 +49,8 @@ component vga is
 		VSYNC : out std_logic := '1';
 		row : out unsigned(9 downto 0);
 		col : out unsigned(9 downto 0);
-		valid : out std_logic := '1'
+		valid : out std_logic := '1';
+		frameClk : out std_logic
 		);
 end component;
 
@@ -70,7 +71,8 @@ component cube_gen is
 		cube_bot : in unsigned(9 downto 0);
 		rgb : out std_logic_vector(5 downto 0);
 		valid : in std_logic;
-		spikePosX : unsigned(9 downto 0)
+		--spikePosX : unsigned(9 downto 0)
+		spikeArr : in std_logic_vector(19 downto 0)
 	);
 end component;
 
@@ -102,7 +104,8 @@ end component;
 component spikeMove is
 	port(
 		frameClk : in std_logic;
-		spikePosX : out unsigned(9 downto 0) -- since y value is constant 229
+		spikeArr : out std_logic_vector(19 downto 0)
+		--spikePosX : out unsigned(9 downto 0) -- since y value is constant 229
 	);
 end component;
 
@@ -125,6 +128,7 @@ signal controllerOutput : std_logic_vector(7 downto 0);
 
 -- Cube_gen signals
 signal cube_bot : unsigned(9 downto 0);
+signal spikeArr : std_logic_vector(19 downto 0);
 
 -- Spike_gen Signals
 signal randomNum : std_logic_vector(3 downto 0);
@@ -181,24 +185,27 @@ mypll_1 : mypll port map(
 vga_1 : vga port map(
 	vga_clk => vga_clk,
 	HSYNC => HSYNC,
-	VSYNC => frameClk,
+	VSYNC => VSYNC,
 	valid => valid,
 	row => row,
-	col => col
+	col => col,
+	frameClk => frameClk
 );
-VSYNC <= frameClk;
+
 cube_gen1 : cube_gen port map(
 	rgb => rgb,
 	valid => valid,
 	cube_bot => cube_bot,
 	row => row,
 	col => col,
-	spikePosX => spikePosX
+	spikeArr => spikeArr
+	--spikePosX => spikePosX
 );
 
 spikeMove1 : spikeMove port map(
 	frameClk => frameClk,
-	spikePosX => spikePosX
+	spikeArr => spikeArr
+	--spikePosX => spikePosX
 );
 
 jump1 : jump port map(

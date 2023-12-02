@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Export">
+        <Message>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
+        </Message>
+        <Message>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35831026</ID>
@@ -268,10 +279,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(16): </Dynamic>
+            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(17): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd</Navigation>
-            <Navigation>16</Navigation>
+            <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -300,10 +311,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(16): </Dynamic>
+            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(17): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd</Navigation>
-            <Navigation>16</Navigation>
+            <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -348,10 +359,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/spikemove.vhd(12): </Dynamic>
+            <Dynamic>c:/users/erober10/documents/github/jumbodash/source/impl_1/spikemove.vhd(15): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>c:/users/erober10/documents/github/jumbodash/source/impl_1/spikemove.vhd</Navigation>
-            <Navigation>12</Navigation>
+            <Navigation>15</Navigation>
         </Message>
         <Message>
             <ID>35935049</ID>
@@ -444,6 +455,11 @@
             <Dynamic>sdi_i</Dynamic>
         </Message>
         <Message>
+            <ID>35001779</ID>
+            <Severity>16</Severity>
+            <Dynamic>\jump1/position_i0</Dynamic>
+        </Message>
+        <Message>
             <ID>70001944</ID>
             <Severity>16</Severity>
             <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
@@ -474,17 +490,6 @@
             <ID>70001944</ID>
             <Severity>16</Severity>
             <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-    </Task>
-    <Task name="Export">
-        <Message>
-            <ID>1081100</ID>
-            <Severity>1</Severity>
-            <Dynamic>Bitstream authenticated.</Dynamic>
-        </Message>
-        <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
         </Message>
     </Task>
 </BaliMessageLog>

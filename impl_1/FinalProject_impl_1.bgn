@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Dec  2 14:12:05 2023
+Sat Dec  2 16:20:39 2023
 
 
 Command: bitgen -w -freq 0 -gui FinalProject_impl_1.udb 
