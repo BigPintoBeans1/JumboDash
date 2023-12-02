@@ -48,17 +48,6 @@ prj_open "Z:/New folder/JumboDash/FinalProject.rdf"
 
 
 
-<A name="pn231127165311"></A><B><U><big>pn231127165311</big></U></B>
-#Start recording tcl command: 11/27/2023 16:50:48
-#Project Location: Z:/Radiant/JumboDash; Project name: FinalProject
-prj_open "Z:/Radiant/JumboDash/FinalProject.rdf"
-prj_add_source "Z:/Radiant/JumboDash/source/impl_1/vga.vhd"
-prj_set_strategy_value -strategy Strategy1 lse_vhdl2008=True
-prj_set_impl_opt -impl "impl_1" "top" "top.vhd"
-#Stop recording: 11/27/2023 16:53:11
-
-
-
 <A name="pn231127172217"></A><B><U><big>pn231127172217</big></U></B>
 #Start recording tcl command: 11/27/2023 17:01:29
 #Project Location: Z:/Radiant/JumboDash; Project name: FinalProject
@@ -174,12 +163,95 @@ prj_run Export -impl impl_1
 
 
 
+<A name="pn231201180546"></A><B><U><big>pn231201180546</big></U></B>
+#Start recording tcl command: 12/1/2023 14:55:54
+#Project Location: Z:/Radiant/JumboDash/JumboDash; Project name: FinalProject
+prj_open "Z:/Radiant/JumboDash/JumboDash/FinalProject.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/jump2.vhd"
+prj_disable_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/jump2.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/triangle_gen.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/triangle_gen.vhd"
+prj_add_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/moveGround.vhd"
+prj_disable_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/moveGround.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+#Stop recording: 12/1/2023 18:05:46
+
+
+
 </PRE></DIV>
 
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
 <UL id="toc_list">
 <LI><A href=#pn231127164935>pn231127164935</A></LI>
-<LI><A href=#pn231127165311>pn231127165311</A></LI>
 <LI><A href=#pn231127172217>pn231127172217</A></LI>
 <LI><A href=#pn231127172415>pn231127172415</A></LI>
 <LI><A href=#pn231129155453>pn231129155453</A></LI>
@@ -188,6 +260,7 @@ prj_run Export -impl impl_1
 <LI><A href=#pn231129170737>pn231129170737</A></LI>
 <LI><A href=#pn231129170918>pn231129170918</A></LI>
 <LI><A href=#pn231201145335>pn231201145335</A></LI>
+<LI><A href=#pn231201180546>pn231201180546</A></LI>
 </UL>
 </DIV>
 

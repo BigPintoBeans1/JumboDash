@@ -1,5 +1,0 @@
-#Start recording tcl command: 11/27/2023 17:01:29
-#Project Location: Z:/Radiant/JumboDash; Project name: FinalProject
-prj_open "Z:/Radiant/JumboDash/FinalProject.rdf"
-prj_add_source "Z:/Radiant/JumboDash/mypll/mypll.ipx"
-#Stop recording: 11/27/2023 17:22:17
