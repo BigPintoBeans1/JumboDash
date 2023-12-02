@@ -62,13 +62,15 @@ component mypll is
     );
 end component;
 
+-- this is now cube and spike gen (can't rename)
 component cube_gen is
 	port(
 		row : in unsigned(9 downto 0);
 		col : in unsigned(9 downto 0);
 		cube_bot : in unsigned(9 downto 0);
 		rgb : out std_logic_vector(5 downto 0);
-		valid : in std_logic
+		valid : in std_logic;
+		spikePosX : unsigned(9 downto 0)
 	);
 end component;
 
@@ -89,6 +91,22 @@ component jump is
 	);
 end component;
 
+component lfsr4 is
+  port(
+	  clk : in std_logic;
+	  reset : in std_logic;
+	  count : out std_logic_vector(3 downto 0)
+  );
+end component;
+
+component spikeMove is
+	port(
+		frameClk : in std_logic;
+		spikePosX : out unsigned(9 downto 0) -- since y value is constant 229
+	);
+end component;
+
+-- Main clk
 signal clk : std_logic;
 signal addr : unsigned(2 downto 0);
 
@@ -98,6 +116,8 @@ signal row : unsigned(9 downto 0);
 signal col : unsigned(9 downto 0);
 signal valid : std_logic;
 signal reset : std_logic := '1'; 
+--60Hz clock
+signal frameClk : std_logic;
 
 -- NES signal
 signal controllerOutput : std_logic_vector(7 downto 0); 
@@ -106,7 +126,20 @@ signal controllerOutput : std_logic_vector(7 downto 0);
 -- Cube_gen signals
 signal cube_bot : unsigned(9 downto 0);
 
+-- Spike_gen Signals
+signal randomNum : std_logic_vector(3 downto 0);
+signal spikeGenClk : std_logic; -- clock shared with generation and randomizer
+signal spikePosX : unsigned(9 downto 0); -- spike position x-value
+
 begin
+
+-- Where to attach reset signal to?
+---lfsr : lfsr4 port map (
+	--outClk => spikeGenClk,
+	--inClk => clk,
+	--reset => controllerOutput,-- reset should kickstart the randomizer with an initial value 
+	--count => randomNum
+--);
 
 ledController <= controllerOutput;
 
@@ -125,7 +158,7 @@ port map (
 	CLKHFEN => '1',
 	CLKHF => clk
 );
- 
+
 -- Count : counter port map (
 -- 	clk  => clk, 
 --	addr => addr
@@ -148,18 +181,24 @@ mypll_1 : mypll port map(
 vga_1 : vga port map(
 	vga_clk => vga_clk,
 	HSYNC => HSYNC,
-	VSYNC => VSYNC,
+	VSYNC => frameClk,
 	valid => valid,
 	row => row,
 	col => col
 );
-
+VSYNC <= frameClk;
 cube_gen1 : cube_gen port map(
 	rgb => rgb,
 	valid => valid,
 	cube_bot => cube_bot,
 	row => row,
-	col => col
+	col => col,
+	spikePosX => spikePosX
+);
+
+spikeMove1 : spikeMove port map(
+	frameClk => frameClk,
+	spikePosX => spikePosX
 );
 
 jump1 : jump port map(

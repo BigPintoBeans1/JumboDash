@@ -6,24 +6,24 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Fri Dec  1 18:03:13 2023
+Mapped on: Sat Dec  2 14:11:51 2023
 
 Design Information
 ------------------
 
 Command line:   map -i FinalProject_impl_1_syn.udb -pdc
-     Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc -o
+     C:/Users/erober10/Documents/GitHub/JumboDash/device_constraint.pdc -o
      FinalProject_impl_1_map.udb -mp FinalProject_impl_1.mrp -hierrpt -gui
 
 Design Summary
 --------------
 
-   Number of slice registers:  85 out of  5280 (2%)
+   Number of slice registers:  95 out of  5280 (2%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           232 out of  5280 (4%)
-      Number of logic LUT4s:             121
-      Number of inserted feedthru LUT4s:  15
-      Number of ripple logic:             48 (96 LUT4s)
+   Number of LUT4s:           268 out of  5280 (5%)
+      Number of logic LUT4s:             148
+      Number of inserted feedthru LUT4s:  14
+      Number of ripple logic:             53 (106 LUT4s)
    Number of IO sites used:   20 out of 39 (51%)
       Number of IO sites used for general PIO: 20
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -45,20 +45,20 @@ Design Summary
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             1 out of 1 (100%)
-   Number of Clocks:  5
+   Number of Clocks:  6
       Net vga_clk: 23 loads, 23 rising, 0 falling (Driver: Pin
      mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
+      Net VSYNC_c: 5 loads, 5 rising, 0 falling (Driver: Pin vga_1.row_8__I_0/Z)
       Net jump1.slowClk: 19 loads, 19 rising, 0 falling (Driver: Pin
      jump1.slowClk_I_0/Q)
       Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
-      Net controller1.clk: 9 loads, 9 rising, 0 falling (Driver: Pin
-     controller1.osc/CLKHF)
       Net controlClk_c: 8 loads, 8 rising, 0 falling (Driver: Pin
      controller1.controlClk_c_I_0/Z)
+      Net controller1.clk: 9 loads, 9 rising, 0 falling (Driver: Pin
+     controller1.osc/CLKHF)
    Number of Clock Enables:  2
-      Net vga_1.row_0__N_30: 6 loads, 6 SLICEs
+      Net row_0__N_37: 6 loads, 6 SLICEs
       Net ledController_pad[0].vcc: 1 loads, 0 SLICEs
-   Number of LSRs:  5
 
                                     Page 1
 
@@ -68,17 +68,18 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net vga_1.row_0__N_31: 6 loads, 6 SLICEs
-      Net vga_1.col_0__N_51: 6 loads, 6 SLICEs
-      Net jump1.cube_bot_4__N_63: 4 loads, 4 SLICEs
-      Net jump1.lastPosition_0__N_118: 7 loads, 7 SLICEs
-      Net jump1.lastPosition_2__N_116: 3 loads, 3 SLICEs
+   Number of LSRs:  5
+      Net col_0__N_58: 6 loads, 6 SLICEs
+      Net row_0__N_38: 6 loads, 6 SLICEs
+      Net jump1.cube_bot_4__N_70: 4 loads, 4 SLICEs
+      Net jump1.lastPosition_0__N_158: 7 loads, 7 SLICEs
+      Net jump1.lastPosition_2__N_156: 3 loads, 3 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net ledController_pad[0].vcc: 14 loads
+      Net ledController_pad[0].vcc: 26 loads
       Net cube_bot[2]: 13 loads
       Net cube_bot[3]: 13 loads
+      Net cube_bot[1]: 12 loads
       Net cube_bot[6]: 12 loads
-      Net cube_bot[1]: 11 loads
       Net cube_bot[4]: 11 loads
       Net cube_bot[5]: 11 loads
       Net cube_bot[7]: 11 loads
@@ -124,7 +125,6 @@ IO (PIO) Attributes
 | ledController[7]    | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | controlClk          | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 2
 
@@ -134,6 +134,7 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
++---------------------+-----------+-----------+-------+-------+-----------+
 | controlLatch        | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[0]              | OUTPUT    |           |       |       |           |
@@ -152,6 +153,11 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block i1 was optimized away.
 
 PLL/DLL Summary
 ---------------
@@ -186,20 +192,18 @@ PLL 1:                                 Pin/Node Value
   EXTERNAL_DIVIDE_FACTOR:                       NONE
   TEST Mode:                                    0
 
-OSC Summary
------------
-
-OSC 1:                                 Pin/Node Value
-  OSC Instance Name:                            controller1/osc
-
                                     Page 3
 
 
 
 
 
-OSC Summary (cont)
-------------------
+
+OSC Summary
+-----------
+
+OSC 1:                                 Pin/Node Value
+  OSC Instance Name:                            controller1/osc
   Power UP:                            NODE     ledController_pad[0].vcc
   Enable Signal:                       NODE     ledController_pad[0].vcc
   OSC Output:                          NODE     controller1.clk
@@ -224,11 +228,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 59 MB
-
-
-
-
+   Peak Memory Usage: 60 MB
 
 
 
