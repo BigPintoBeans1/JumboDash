@@ -48,46 +48,6 @@ prj_open "Z:/Radiant/JumboDash/FinalProject.rdf"
 
 
 
-<A name="pn231129163540"></A><B><U><big>pn231129163540</big></U></B>
-#Start recording tcl command: 11/29/2023 16:29:37
-#Project Location: C:/Users/erober10/Documents/GitHub/JumboDash; Project name: FinalProject
-prj_open "C:/Users/erober10/Documents/GitHub/JumboDash/FinalProject.rdf"
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-#Stop recording: 11/29/2023 16:35:40
-
-
-
-<A name="pn231129170737"></A><B><U><big>pn231129170737</big></U></B>
-#Start recording tcl command: 11/29/2023 16:02:15
-#Project Location: Z:/New folder/JumboDash; Project name: FinalProject
-prj_open "Z:/New folder/JumboDash/FinalProject.rdf"
-prj_add_source "Z:/New folder/JumboDash/mypll/mypll.ipx"
-prj_add_source "Z:/New folder/JumboDash/source/impl_1/cube_gen.vhd"
-prj_add_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
-prj_remove_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
-prj_add_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_disable_source "Z:/New folder/JumboDash/source/impl_1/gameLogic.vhd"
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-#Stop recording: 11/29/2023 17:07:37
-
-
-
 <A name="pn231129170918"></A><B><U><big>pn231129170918</big></U></B>
 #Start recording tcl command: 11/29/2023 17:09:12
 #Project Location: Z:/New folder/JumboDash; Project name: FinalProject
@@ -380,13 +340,93 @@ prj_run Export -impl impl_1
 
 
 
+<A name="pn231204143215"></A><B><U><big>pn231204143215</big></U></B>
+#Start recording tcl command: 12/4/2023 12:26:03
+#Project Location: Z:/Radiant/JumboDash/JumboDash; Project name: FinalProject
+prj_open "Z:/Radiant/JumboDash/JumboDash/FinalProject.rdf"
+prj_remove_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/ROM.vhd"
+prj_add_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/vga.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/top.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/startROM.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/spikeMove.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/spike_gen.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/randomNumGen.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/jump.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/gameLogic.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/cube_gen.vhd" "Z:/Radiant/JumboDash/JumboDash/source/impl_1/controller.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/randomNumGen.vhd"
+prj_remove_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/startROM.vhd"
+prj_add_source "Z:/Radiant/JumboDash/JumboDash/source/impl_1/backgroundROM.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/4/2023 14:32:15
+
+
+
+<A name="pn231204155606"></A><B><U><big>pn231204155606</big></U></B>
+#Start recording tcl command: 12/4/2023 14:33:47
+#Project Location: Z:/Radiant/JumboDash/JumboDash; Project name: FinalProject
+prj_open "Z:/Radiant/JumboDash/JumboDash/FinalProject.rdf"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/4/2023 15:56:06
+
+
+
 </PRE></DIV>
 
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
 <UL id="toc_list">
 <LI><A href=#pn231127172415>pn231127172415</A></LI>
-<LI><A href=#pn231129163540>pn231129163540</A></LI>
-<LI><A href=#pn231129170737>pn231129170737</A></LI>
 <LI><A href=#pn231129170918>pn231129170918</A></LI>
 <LI><A href=#pn231201145335>pn231201145335</A></LI>
 <LI><A href=#pn231201180546>pn231201180546</A></LI>
@@ -394,6 +434,8 @@ prj_run Export -impl impl_1
 <LI><A href=#pn231202114217>pn231202114217</A></LI>
 <LI><A href=#pn231202141215>pn231202141215</A></LI>
 <LI><A href=#pn231202162045>pn231202162045</A></LI>
+<LI><A href=#pn231204143215>pn231204143215</A></LI>
+<LI><A href=#pn231204155606>pn231204155606</A></LI>
 </UL>
 </DIV>
 

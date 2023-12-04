@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
 
 // backanno -o FinalProject_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui FinalProject_impl_1.udb 
-// Netlist created on Mon Dec  4 15:54:52 2023
-// Netlist written on Mon Dec  4 15:55:01 2023
+// Netlist created on Mon Dec  4 16:18:32 2023
+// Netlist written on Mon Dec  4 16:18:41 2023
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V
