@@ -1,15 +1,15 @@
 <top name = "top"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
-    <clockitem name = "vga_clk"  type = "net" />
-    <clockitem name = "controlClk"  type = "net" />
-    <clockitem name = "VSYNC"  type = "net" />
-    <clockitem name = "fpga_clk"  type = "port" />
-    <clockitem name = "mypll_1/lscc_pll_inst/outcoreb_o"  type = "net" />
     <clockitem name = "mypll_1/lscc_pll_inst/outglobalb_o"  type = "net" />
-    <clockitem name = "jump1/slowClk"  type = "net" />
-    <clockitem name = "mypll_1/outcore_o"  type = "net" />
+    <clockitem name = "mypll_1/lscc_pll_inst/outcoreb_o"  type = "net" />
     <clockitem name = "controller1/clk"  type = "net" />
+    <clockitem name = "mypll_1/outcore_o"  type = "net" />
+    <clockitem name = "jump1/slowClk"  type = "net" />
+    <clockitem name = "fpga_clk"  type = "port" />
+    <clockitem name = "frameClk"  type = "net" />
+    <clockitem name = "controlClk"  type = "net" />
+    <clockitem name = "vga_clk"  type = "net" />
 </clocks>
 
 <!--

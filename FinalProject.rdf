@@ -27,12 +27,6 @@
         <Source name="source/impl_1/controller.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="source/impl_1/spike_gen.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
-            <Options/>
-        </Source>
-        <Source name="source/impl_1/randomNumGen.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
-            <Options/>
-        </Source>
         <Source name="source/impl_1/spikeMove.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>

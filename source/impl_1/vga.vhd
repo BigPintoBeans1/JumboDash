@@ -9,7 +9,8 @@ entity vga is
 		VSYNC : out std_logic := '1';
 		col : out unsigned(9 downto 0);
 		row : out unsigned(9 downto 0);
-		valid : out std_logic := '1'
+		valid : out std_logic := '1';
+		frameClk : out std_logic
 	);
 end;
 
@@ -19,6 +20,9 @@ architecture synth of vga is
 begin
 	process(vga_clk) is begin
 		if rising_edge(vga_clk)then
+			if (srow = 262 and scol = 700) or (srow = 0 and scol = 700) then
+				frameClk <= not frameClk;
+			end if;
 			if (scol = 799) then
 				scol <= "0000000000";
 				srow <= srow + 1;

@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Dec  2 14:11:47 2023
+Sat Dec  2 16:20:19 2023
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset C:/Users/erober10/Documents/GitHub/JumboDash/promote.xml 
@@ -155,7 +155,7 @@ Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/v
 Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd
 
 INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
-INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(16): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/vga.vhd(17): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd. VHDL-1481
 Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/rom.vhd
 
@@ -165,7 +165,7 @@ Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/c
 Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd
 
 INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(5): analyzing entity cube_gen. VHDL-1012
-INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(16): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/cube_gen.vhd(17): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd. VHDL-1481
 Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/jump.vhd
 
@@ -180,7 +180,7 @@ Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/s
 Analyzing VHDL file c:/users/erober10/documents/github/jumbodash/source/impl_1/spikemove.vhd
 
 INFO <35921012> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/spikemove.vhd(5): analyzing entity spikemove. VHDL-1012
-INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/spikemove.vhd(12): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/spikemove.vhd(15): analyzing architecture synth. VHDL-1010
 INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/erober10/Documents/GitHub/JumboDash/impl_1". VHDL-1504
 Top module language type = VHDL.
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
@@ -226,8 +226,29 @@ WARNING <35001771> - synthesis: Initial value found on net cube_bot[1] will be i
 WARNING <35001771> - synthesis: Initial value found on net cube_bot[0] will be ignored due to unrecognized driver type
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+WARNING <35931002> - synthesis: c:/users/erober10/documents/github/jumbodash/source/impl_1/top.vhd(131): net spikeArr[19] does not have a driver. VDB-1002
 WARNING <35931002> - synthesis: c:/users/erober10/documents/github/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING <35931002> - synthesis: c:/users/erober10/documents/github/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net spikeArr[19]. Patching with GND.
+######## Missing driver on net spikeArr[18]. Patching with GND.
+######## Missing driver on net spikeArr[17]. Patching with GND.
+######## Missing driver on net spikeArr[16]. Patching with GND.
+######## Missing driver on net spikeArr[15]. Patching with GND.
+######## Missing driver on net spikeArr[14]. Patching with GND.
+######## Missing driver on net spikeArr[13]. Patching with GND.
+######## Missing driver on net spikeArr[12]. Patching with GND.
+######## Missing driver on net spikeArr[11]. Patching with GND.
+######## Missing driver on net spikeArr[10]. Patching with GND.
+######## Missing driver on net spikeArr[9]. Patching with GND.
+######## Missing driver on net spikeArr[8]. Patching with GND.
+######## Missing driver on net spikeArr[7]. Patching with GND.
+######## Missing driver on net spikeArr[6]. Patching with GND.
+######## Missing driver on net spikeArr[5]. Patching with GND.
+######## Missing driver on net spikeArr[4]. Patching with GND.
+######## Missing driver on net spikeArr[3]. Patching with GND.
+######## Missing driver on net spikeArr[2]. Patching with GND.
+######## Missing driver on net spikeArr[1]. Patching with GND.
+######## Missing driver on net spikeArr[0]. Patching with GND.
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sdi_i. Patching with GND.
 
@@ -235,70 +256,70 @@ WARNING <35931002> - synthesis: c:/users/erober10/documents/github/jumbodash/myp
 
 Combinational loop found : 1
 
- Net ledController_c_7 
-
- Instance \controller1/mux_12_i8 
-
-Combinational loop found : 2
-
  Net ledController_c_0 
 
  Instance \controller1/mux_12_i1 
 
-Combinational loop found : 3
+Combinational loop found : 2
 
  Net ledController_c_1 
 
  Instance \controller1/mux_12_i2 
 
-Combinational loop found : 4
+Combinational loop found : 3
 
  Net ledController_c_2 
 
  Instance \controller1/mux_12_i3 
 
-Combinational loop found : 5
+Combinational loop found : 4
 
  Net ledController_c_3 
 
  Instance \controller1/mux_12_i4 
 
-Combinational loop found : 6
+Combinational loop found : 5
 
  Net ledController_c_4 
 
  Instance \controller1/mux_12_i5 
 
-Combinational loop found : 7
+Combinational loop found : 6
 
  Net ledController_c_5 
 
  Instance \controller1/mux_12_i6 
 
-Combinational loop found : 8
+Combinational loop found : 7
 
  Net ledController_c_6 
 
  Instance \controller1/mux_12_i7 
 
+Combinational loop found : 8
+
+ Net ledController_c_7 
+
+ Instance \controller1/mux_12_i8 
+
+WARNING <35001779> - synthesis: Initial value found on instance \jump1/position_i0 will be ignored.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 95 of 5280 (1 % )
-CCU2 => 53
-FD1P3XZ => 95
+Number of register bits => 85 of 5280 (1 % )
+CCU2 => 37
+FD1P3XZ => 85
 HSOSC_CORE => 1
 IB => 2
-LUT4 => 147
+LUT4 => 112
 OB => 18
 PLL_B => 1
 ################### End Area Report ##################
 Number of odd-length carry chains : 1
-Number of even-length carry chains : 7
+Number of even-length carry chains : 4
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 4
-  Net : vga_1/VSYNC_c, loads : 1
+Number of Clocks: 3
   Net : controller1/controlClk_c, loads : 1
   Net : fpga_clk_c, loads : 1
   Net : mypll_1/lscc_pll_inst/vga_clk, loads : 0
@@ -308,19 +329,19 @@ Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : jump1/slowClk, loads : 21
   Net : controller1/clk, loads : 17
-  Net : jump1/cube_bot[3], loads : 12
-  Net : jump1/cube_bot[2], loads : 12
-  Net : jump1/cube_bot[6], loads : 11
+  Net : jump1/cube_bot[6], loads : 12
+  Net : jump1/cube_bot[5], loads : 12
+  Net : jump1/n461, loads : 11
+  Net : jump1/lastPosition_2__N_89, loads : 11
   Net : jump1/cube_bot[7], loads : 10
-  Net : jump1/cube_bot[5], loads : 10
-  Net : jump1/cube_bot[1], loads : 10
-  Net : vga_1/col_0__N_58, loads : 10
-  Net : vga_1/row_0__N_38, loads : 10
+  Net : vga_1/col_0__N_50, loads : 10
+  Net : vga_1/row_0__N_30, loads : 10
+  Net : row_0__N_29, loads : 10
 ################### End Clock Report ##################
 
-Peak Memory Usage: 114 MB
+Peak Memory Usage: 112 MB
 
 --------------------------------------------------------------
 Total CPU Time: 3 secs 
-Total REAL Time: 3 secs 
+Total REAL Time: 4 secs 
 --------------------------------------------------------------
