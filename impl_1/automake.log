@@ -1,4 +1,796 @@
- 5.083260s wall, 0.968750s user + 5.083260s wall, 0.968750s user + 0.359375s system = 1.328125s CPU (26.1%)
+
+"C:/lscc/radiant/2023.1/tcltk/windows/bin/tclsh" "FinalProject_impl_1_synthesize.tcl"
+
+cpe -f FinalProject_impl_1.cprj mypll.cprj -a iCE40UP -o FinalProject_impl_1_cpe.ldc
+WARNING <35831026> - No user LDC/SDC file specified in the project.
+WARNING <35935050> - input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port I is not connected on this instance. VDB-5050
+Top module name (Verilog): mypll
+INFO <35901018> - Z:/Radiant/JumboDash/JumboDash/mypll/rtl/mypll.v(11): compiling module mypll. VERI-1018
+INFO <35901018> - Z:/Radiant/JumboDash/JumboDash/mypll/rtl/mypll.v(105): compiling module mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;). VERI-1018
+INFO <35901018> - C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): compiling module PLL_B(PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;). VERI-1018
+WARNING <35935049> - input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - input port sdi_i remains unconnected for this instance. VDB-5049
+Last elaborated design is mypll()
+Source compile complete.
+INFO <35831038> - Setting top as top module.
+WARNING <35831026> - No user LDC/SDC file specified in the project.
+WARNING <35935050> - input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port I is not connected on this instance. VDB-5050
+Analyzing Verilog file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v. VERI-1482
+Analyzing Verilog file mypll.v. VERI-1482
+Top module language type = VHDL.
+INFO <35901018> - C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC. VERI-1018
+INFO <35901018> - mypll.v(63): compiling module mypll. VERI-1018
+Top module name (VHDL, mixed language): top
+Source compile complete.
+Starting IP constraint check for mypll.
+Writing output files.
+CPE Completed. FinalProject_impl_1_cpe.ldc and CPEReport.txt produced.
+
+
+synthesis -f FinalProject_impl_1_lattice.synproj
+synthesis:  version Radiant Software (64-bit) 2023.1.0.43.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Dec  4 15:54:21 2023
+
+
+Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset Z:/Radiant/JumboDash/JumboDash/promote.xml 
+
+INFO <35002000> - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = FinalProject_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is FinalProject_impl_1_cpe.ldc.
+-vh2008
+
+-path C:/lscc/radiant/2023.1/ispfpga/ice40tp/data (searchpath added)
+-path Z:/Radiant/JumboDash/JumboDash (searchpath added)
+-path Z:/Radiant/JumboDash/JumboDash/impl_1 (searchpath added)
+-path Z:/Radiant/JumboDash/JumboDash/mypll (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file = Z:/Radiant/JumboDash/JumboDash/mypll/rtl/mypll.v
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/top.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/vga.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/cube_gen.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/jump.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/controller.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/spikeMove.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/spike_gen.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/backgroundROM.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port I is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v. VERI-1482
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file z:/radiant/jumbodash/jumbodash/mypll/rtl/mypll.v. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd
+
+INFO <35921012> - z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
+INFO <35921010> - z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd
+
+INFO <35921012> - z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO <35921010> - z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd(17): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd
+
+INFO <35921012> - z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(5): analyzing entity cube_gen. VHDL-1012
+INFO <35921010> - z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd
+
+INFO <35921012> - z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd(5): analyzing entity jump. VHDL-1012
+INFO <35921010> - z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd(13): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/controller.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/controller.vhd
+
+INFO <35921012> - z:/radiant/jumbodash/jumbodash/source/impl_1/controller.vhd(5): analyzing entity controller. VHDL-1012
+INFO <35921010> - z:/radiant/jumbodash/jumbodash/source/impl_1/controller.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd
+
+INFO <35921012> - z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd(5): analyzing entity spikemove. VHDL-1012
+INFO <35921010> - z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd(15): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/spike_gen.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/spike_gen.vhd
+
+INFO <35921012> - z:/radiant/jumbodash/jumbodash/source/impl_1/spike_gen.vhd(5): analyzing entity spike_gen. VHDL-1012
+INFO <35921010> - z:/radiant/jumbodash/jumbodash/source/impl_1/spike_gen.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/backgroundrom.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/backgroundrom.vhd
+
+INFO <35921012> - z:/radiant/jumbodash/jumbodash/source/impl_1/backgroundrom.vhd(5): analyzing entity backgroundrom. VHDL-1012
+INFO <35921010> - z:/radiant/jumbodash/jumbodash/source/impl_1/backgroundrom.vhd(18): analyzing architecture synth. VHDL-1010
+The default VHDL library search path is now "Z:/Radiant/JumboDash/JumboDash/impl_1". VHDL-1504
+Top module language type = VHDL.
+WARNING <35935049> - input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - input port sdi_i remains unconnected for this instance. VDB-5049
+Top module name (VHDL, mixed language): top
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+WARNING <35935047> - Unused instance HSOSCclock is removed. VDB-5047
+WARNING <35001771> - Initial value found on net HSYNC will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net VSYNC will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net valid will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[9] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[8] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[7] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[6] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[5] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[4] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[3] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[2] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[1] will be ignored due to unrecognized driver type
+WARNING <35001771> - Initial value found on net cube_bot[0] will be ignored due to unrecognized driver type
+WARNING <35935049> - input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - input port sdi_i remains unconnected for this instance. VDB-5049
+z:/radiant/jumbodash/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+z:/radiant/jumbodash/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net \mypll_1/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \mypll_1/lscc_pll_inst/sdi_i. Patching with GND.
+
+
+
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+CRITICAL <35001747> - Bit 5 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
+CRITICAL <35001747> - Bit 3 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
+Combinational loop found : 1
+
+ Net ledController_c_0 
+
+ Instance \controller1/mux_12_i1 
+
+Combinational loop found : 2
+
+ Net ledController_c_1 
+
+ Instance \controller1/mux_12_i2 
+
+Combinational loop found : 3
+
+ Net ledController_c_2 
+
+ Instance \controller1/mux_12_i3 
+
+Combinational loop found : 4
+
+ Net ledController_c_3 
+
+ Instance \controller1/mux_12_i4 
+
+Combinational loop found : 5
+
+ Net ledController_c_4 
+
+ Instance \controller1/mux_12_i5 
+
+Combinational loop found : 6
+
+ Net ledController_c_5 
+
+ Instance \controller1/mux_12_i6 
+
+Combinational loop found : 7
+
+ Net ledController_c_6 
+
+ Instance \controller1/mux_12_i7 
+
+Combinational loop found : 8
+
+ Net ledController_c_7 
+
+ Instance \controller1/mux_12_i8 
+
+
+################### Begin Area Report (top)######################
+Number of register bits => 48 of 5280 (0 % )
+CCU2 => 21
+FD1P3XZ => 48
+HSOSC_CORE => 1
+IB => 2
+LUT4 => 311
+OB => 18
+PLL_B => 1
+################### End Area Report ##################
+Number of odd-length carry chains : 1
+Number of even-length carry chains : 2
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 3
+  Net : controller1/controlClk_c, loads : 1
+  Net : fpga_clk_c, loads : 1
+  Net : mypll_1/lscc_pll_inst/vga_clk, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : vga_1/col[4], loads : 68
+  Net : vga_1/col[5], loads : 64
+  Net : vga_1/col[6], loads : 62
+  Net : vga_1/col[3], loads : 60
+  Net : vga_1/col[7], loads : 55
+  Net : vga_1/col[2], loads : 49
+  Net : vga_1/col[8], loads : 47
+  Net : vga_1/row[2], loads : 45
+  Net : vga_1/col[9], loads : 36
+  Net : vga_1/row[3], loads : 23
+################### End Clock Report ##################
+
+Peak Memory Usage: 670 MB
+
+--------------------------------------------------------------
+Total CPU Time: 16 secs 
+Total REAL Time: 19 secs 
+--------------------------------------------------------------
+
+
+postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o FinalProject_impl_1_syn.udb FinalProject_impl_1.vm -ldc Z:/Radiant/JumboDash/JumboDash/impl_1/FinalProject_impl_1.ldc
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2023.1.0.43.3
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o FinalProject_impl_1_syn.udb -ldc Z:/Radiant/JumboDash/JumboDash/impl_1/FinalProject_impl_1.ldc -gui -msgset Z:/Radiant/JumboDash/JumboDash/promote.xml FinalProject_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'FinalProject_impl_1.vm' ...
+CPU Time to convert: 0.125
+REAL Time to convert: 0
+convert PEAK Memory Usage: 29 MB
+convert CURRENT Memory Usage: 29 MB
+Reading constraint file 'Z:/Radiant/JumboDash/JumboDash/impl_1/FinalProject_impl_1.ldc' ...
+Removing unused logic ...
+Starting design annotation....
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+ 
+Constraint Summary:
+   Total number of constraints: 2
+   Total number of constraints dropped: 0
+ 
+Writing output file 'FinalProject_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 36 MB
+
+
+map -i "FinalProject_impl_1_syn.udb" -pdc "Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc" -o "FinalProject_impl_1_map.udb" -mp "FinalProject_impl_1.mrp" -hierrpt     
+map:  version Radiant Software (64-bit) 2023.1.0.43.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map -i FinalProject_impl_1_syn.udb -pdc Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc -o FinalProject_impl_1_map.udb -mp FinalProject_impl_1.mrp -hierrpt -gui 
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+
+
+
+   Remove unused logic
+
+   Do not produce over sized UDBs.
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of slice registers:  48 out of  5280 (1%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           362 out of  5280 (7%)
+      Number of logic LUT4s:             313
+      Number of inserted feedthru LUT4s:   7
+      Number of ripple logic:             21 (42 LUT4s)
+   Number of IO sites used:   20 out of 39 (51%)
+      Number of IO sites used for general PIO: 20
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 20 out of 36 (56%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 20 out of 39 (51%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  1 out of 1 (100%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             1 out of 1 (100%)
+   Number of Clocks:  4
+      Net controller1.clk: 9 loads, 9 rising, 0 falling (Driver: Pin controller1.osc/CLKHF)
+      Net controlClk_c: 8 loads, 8 rising, 0 falling (Driver: Pin controller1.controlClk_c_I_0/Z)
+      Net vga_clk: 15 loads, 15 rising, 0 falling (Driver: Pin mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
+      Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
+   Number of Clock Enables:  2
+      Net ledController_pad[0].vcc: 1 loads, 0 SLICEs
+      Net row_0__N_29: 6 loads, 6 SLICEs
+   Number of LSRs:  2
+      Net col_0__N_50: 6 loads, 6 SLICEs
+      Net row_0__N_30: 6 loads, 6 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net col[4]: 71 loads
+      Net col[5]: 71 loads
+      Net col[6]: 70 loads
+      Net col[3]: 64 loads
+      Net col[7]: 64 loads
+      Net col[2]: 53 loads
+      Net col[8]: 53 loads
+      Net row[2]: 46 loads
+      Net col[9]: 37 loads
+      Net row[3]: 24 loads
+Running physical design DRC...
+
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Constraint Summary:
+   Total number of constraints: 22
+   Total number of constraints dropped: 0
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 61 MB
+
+
+par -f "FinalProject_impl_1.p2t" "FinalProject_impl_1_map.udb" "FinalProject_impl_1.udb"
+
+Lattice Place and Route Report for Design "FinalProject_impl_1_map.udb"
+Mon Dec  4 15:54:41 2023
+
+PAR: Place And Route Radiant Software (64-bit) 2023.1.0.43.3.
+Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
+	FinalProject_impl_1_map.udb FinalProject_impl_1_par.dir/5_1.udb 
+
+Loading FinalProject_impl_1_map.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+
+WARNING: Database constraint "create_generated_clock -name {vga_clk} -source [get_pins mypll_1.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
+Number of Signals: 449
+Number of Connections: 1347
+Device utilization summary:
+
+   SLICE (est.)     189/2640          7% used
+     LUT            362/5280          7% used
+     REG             48/5280          1% used
+   PIO               20/56           36% used
+                     20/36           55% bonded
+   IOLOGIC            0/56            0% used
+   DSP                0/8             0% used
+   I2C                0/2             0% used
+   HFOSC              1/1           100% used
+   LFOSC              0/1             0% used
+   LEDDA_IP           0/1             0% used
+   RGBA_DRV           0/1             0% used
+   FILTER             0/2             0% used
+   SRAM               0/4             0% used
+   WARMBOOT           0/1             0% used
+   SPI                0/2             0% used
+   EBR                0/30            0% used
+   PLL                1/1           100% used
+   RGBOUTBUF          0/3             0% used
+   I3C                0/2             0% used
+   OPENDRAIN          0/3             0% used
+
+Pin Constraint Summary:
+   20 out of 20 pins locked (100% locked).
+
+Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 2 secs 
+
+
+................
+Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 2 secs 
+
+Starting Placer Phase 1. CPU time: 1 secs , REAL time: 2 secs 
+..  ..
+....................
+
+Placer score = 59257.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE            189/2640          7% used
+
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+Finished Placer Phase 1. CPU time: 8 secs , REAL time: 9 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  78841
+Finished Placer Phase 2.  CPU time: 8 secs , REAL time: 9 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clocks :
+  PRIMARY "controller1.clk" from comp "controller1.osc" on site "HFOSC_R1C32", clk load = 9, ce load = 0, sr load = 0
+  PRIMARY "vga_clk" from OUTGLOBAL on comp "mypll_1.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 14, ce load = 0, sr load = 0
+
+  PRIMARY  : 2 out of 8 (25%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   20 out of 56 (35.7%) I/O sites used.
+   20 out of 36 (55.6%) bonded I/O sites used.
+   Number of I/O components: 20; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 11 / 14 ( 78%) | 3.3V       |            |            |
+| 1        | 1 / 14 (  7%)  | 3.3V       |            |            |
+| 2        | 8 / 8 (100%)   | 3.3V       |            |            |
++----------+----------------+------------+------------+------------+
+
+Total Placer CPU time: 8 secs , REAL time: 9 secs 
+
+Writing design to file FinalProject_impl_1_par.dir/5_1.udb ...
+
+
+Start NBR router at 15:54:50 12/04/23
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+84 connections routed with dedicated routing resources
+2 global clock signals routed
+107 connections routed (of 1342 total) (7.97%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (2 used out of 8 available):
+#4  Signal "controller1.clk"
+       Clock   loads: 9     out of     9 routed (100.00%)
+#7  Signal "vga_clk"
+       Clock   loads: 14    out of    14 routed (100.00%)
+Other clocks:
+    Signal "controlClk_c"
+       Clock   loads: 0     out of     4 routed (  0.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+    Signal "fpga_clk_c"
+       Clock   loads: 0     out of     1 routed (  0.00%)
+    Signal "mypll_1.lscc_pll_inst.feedback_w"
+       Clock   loads: 1     out of     1 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+    TimerIf::skewscore 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Start NBR section for initial routing at 15:54:50 12/04/23
+Level 4, iteration 1
+46(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 15:54:51 12/04/23
+Level 4, iteration 1
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
+Level 4, iteration 3
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 15:54:51 12/04/23
+Changing speed to M
+
+Starting full timing analysis...
+Changing speed to M;   changing temperature to -40
+Changing speed to 6;   changing temperature to 100
+
+Start NBR section for post-routing at 15:54:52 12/04/23
+
+End NBR router with 0 unrouted connection
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+Requested speed is the same as database speed
+Changing speed to M
+
+Starting full timing analysis...
+Requested speed is the same as database speed
+Changing speed to 6;   changing temperature to 100
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Estimated worst slack<setup> : 10.480ns
+  Estimated worst slack<hold > : 1.913ns
+  Timing score<setup> : 0
+  Timing score<hold > : 0
+  Number of connections with timing violations<setup> : 0 (0.00%)
+  Number of connections with timing violations<hold > : 0 (0.00%)
+-----------
+
+
+Total CPU time 2 secs 
+Total REAL time: 2 secs 
+Completely routed.
+End of route.  1342 routed (100.00%); 0 unrouted.
+
+Writing design to file FinalProject_impl_1_par.dir/5_1.udb ...
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 10.480
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.913
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  Time: 10 secs 
+Total REAL Time: 11 secs 
+Peak Memory Usage: 119.45 MB
+
+
+par done!
+
+Note: user must run 'timing' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "FinalProject_impl_1.twr" "FinalProject_impl_1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt FinalProject_impl_1.twr FinalProject_impl_1.udb -gui
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.05 seconds
+
+Initializing timer
+Starting design annotation....
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  28  counted  1306  covered  65
+Changing speed to m;   changing temperature to -40
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 1 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 95 MB
+
+ 5.283545s wall, 1.140625s user + 0.437500s system = 1.578125s CPU (29.9%)
 
 
 tmcheck -par "FinalProject_impl_1.par" 
@@ -41,17 +833,18 @@ Preference Summary:
 
 Creating bit map...
 Saving bit stream in "Z:\Radiant\JumboDash\JumboDash\impl_1\FinalProject_impl_1.bin".
+INFO <1081100> - Bitstream authenticated.
 Bitstream generation complete!
 
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 111 MB
+Peak Memory Usage: 113 MB
 
 
 ibisgen "FinalProject_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
 
-Mon Dec  4 14:32:08 2023
+Mon Dec  4 15:54:59 2023
 
 Loading FinalProject_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
@@ -73,7 +866,8 @@ Created design models.
 Generating: Z:\Radiant\JumboDash\JumboDash\impl_1\IBIS\FinalProject_impl_1.ibs
 
 
-    <postMsg mid="1191031" type="Info" dynamic="0" navigation="0"  />
+INFO <1191031> - Design IBIS models are generated for board level analysis.
+
 
 backanno "FinalProject_impl_1.udb"  -o "FinalProject_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
 backanno: version Radiant Software (64-bit) 2023.1.0.43.3
@@ -100,6 +894,6 @@ Writing a verilog netlist based on the FinalProject_impl_1 design file.
 Writing Verilog netlist to file FinalProject_impl_1_vo.vo
 Writing SDF timing to file FinalProject_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
-Total CPU Time: 0 secs 
+Total CPU Time: 1 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 86 MB
+Peak Memory Usage: 91 MB

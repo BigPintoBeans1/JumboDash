@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Dec  4 14:31:42 2023
+Mon Dec  4 15:54:21 2023
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset Z:/Radiant/JumboDash/JumboDash/promote.xml 
@@ -233,34 +233,18 @@ WARNING <35001771> - synthesis: Initial value found on net cube_bot[1] will be i
 WARNING <35001771> - synthesis: Initial value found on net cube_bot[0] will be ignored due to unrecognized driver type
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd(124): net spikeArr[19] does not have a driver. VDB-1002
 WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
-######## Missing driver on net spikeArr[19]. Patching with GND.
-######## Missing driver on net spikeArr[18]. Patching with GND.
-######## Missing driver on net spikeArr[17]. Patching with GND.
-######## Missing driver on net spikeArr[16]. Patching with GND.
-######## Missing driver on net spikeArr[15]. Patching with GND.
-######## Missing driver on net spikeArr[14]. Patching with GND.
-######## Missing driver on net spikeArr[13]. Patching with GND.
-######## Missing driver on net spikeArr[12]. Patching with GND.
-######## Missing driver on net spikeArr[11]. Patching with GND.
-######## Missing driver on net spikeArr[10]. Patching with GND.
-######## Missing driver on net spikeArr[9]. Patching with GND.
-######## Missing driver on net spikeArr[8]. Patching with GND.
-######## Missing driver on net spikeArr[7]. Patching with GND.
-######## Missing driver on net spikeArr[6]. Patching with GND.
-######## Missing driver on net spikeArr[5]. Patching with GND.
-######## Missing driver on net spikeArr[4]. Patching with GND.
-######## Missing driver on net spikeArr[3]. Patching with GND.
-######## Missing driver on net spikeArr[2]. Patching with GND.
-######## Missing driver on net spikeArr[1]. Patching with GND.
-######## Missing driver on net spikeArr[0]. Patching with GND.
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sdi_i. Patching with GND.
 
 
 
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+CRITICAL <35001747> - synthesis: Bit 5 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 3 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
 Combinational loop found : 1
 
  Net ledController_c_0 
@@ -309,20 +293,19 @@ Combinational loop found : 8
 
  Instance \controller1/mux_12_i8 
 
-WARNING <35001779> - synthesis: Initial value found on instance \jump1/position_i0 will be ignored.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 85 of 5280 (1 % )
-CCU2 => 37
-FD1P3XZ => 85
+Number of register bits => 48 of 5280 (0 % )
+CCU2 => 21
+FD1P3XZ => 48
 HSOSC_CORE => 1
 IB => 2
-LUT4 => 112
+LUT4 => 311
 OB => 18
 PLL_B => 1
 ################### End Area Report ##################
 Number of odd-length carry chains : 1
-Number of even-length carry chains : 4
+Number of even-length carry chains : 2
 
 ################### Begin Clock Report ######################
 Clock Nets
@@ -334,21 +317,21 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : jump1/slowClk, loads : 21
-  Net : controller1/clk, loads : 17
-  Net : jump1/cube_bot[6], loads : 12
-  Net : jump1/cube_bot[5], loads : 12
-  Net : jump1/n462, loads : 11
-  Net : jump1/lastPosition_2__N_89, loads : 11
-  Net : jump1/cube_bot[7], loads : 10
-  Net : vga_1/col_0__N_50, loads : 10
-  Net : vga_1/row_0__N_30, loads : 10
-  Net : row_0__N_29, loads : 10
+  Net : vga_1/col[4], loads : 68
+  Net : vga_1/col[5], loads : 64
+  Net : vga_1/col[6], loads : 62
+  Net : vga_1/col[3], loads : 60
+  Net : vga_1/col[7], loads : 55
+  Net : vga_1/col[2], loads : 49
+  Net : vga_1/col[8], loads : 47
+  Net : vga_1/row[2], loads : 45
+  Net : vga_1/col[9], loads : 36
+  Net : vga_1/row[3], loads : 23
 ################### End Clock Report ##################
 
-Peak Memory Usage: 481 MB
+Peak Memory Usage: 670 MB
 
 --------------------------------------------------------------
-Total CPU Time: 6 secs 
-Total REAL Time: 9 secs 
+Total CPU Time: 16 secs 
+Total REAL Time: 19 secs 
 --------------------------------------------------------------

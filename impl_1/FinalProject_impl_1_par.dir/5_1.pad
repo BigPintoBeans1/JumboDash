@@ -6,7 +6,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Mon Dec  4 14:32:00 2023
+Mon Dec  4 15:54:50 2023
 
 Pinout by Port Name:
 +------------------+----------+--------------+-------+------------------------------------------+
@@ -135,5 +135,5 @@ ldc_set_location -site {44} [ get_ports {rgb[5]} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Mon Dec  4 14:32:00 2023
+Mon Dec  4 15:54:50 2023
 

@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Export">
+    <Task name="PAR">
         <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
         </Message>
     </Task>
     <Task name="Synthesis">
@@ -466,9 +487,28 @@
             <Dynamic>sdi_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001779</ID>
+            <ID>35001045</ID>
             <Severity>16</Severity>
-            <Dynamic>\jump1/position_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001045</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35001045</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\cube_gen1/backgroundROM1/rgb</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\cube_gen1/backgroundROM1/rgb</Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>
@@ -476,31 +516,15 @@
             <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
         </Message>
     </Task>
-    <Task name="PAR">
+    <Task name="Export">
         <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
         </Message>
         <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
         </Message>
     </Task>
 </BaliMessageLog>
