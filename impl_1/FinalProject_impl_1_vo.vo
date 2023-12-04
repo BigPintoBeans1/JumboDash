@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
 
 // backanno -o FinalProject_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui FinalProject_impl_1.udb 
-// Netlist created on Sat Dec  2 16:20:38 2023
-// Netlist written on Sat Dec  2 16:20:41 2023
+// Netlist created on Mon Dec  4 14:32:02 2023
+// Netlist written on Mon Dec  4 14:32:10 2023
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V
@@ -17,78 +17,78 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
   output controlClk, controlLatch;
   output [5:0] rgb;
   output VSYNC, HSYNC;
-  wire   \vga_1.col_9__N_31[6] , \vga_1.col_9__N_31[5] , \vga_1.n4387 , 
-         \vga_1.col[6] , \vga_1.n2665 , \vga_1.col[5] , col_0__N_50, vga_clk, 
-         \vga_1.n2667 , \vga_1.col_9__N_31[4] , \vga_1.col_9__N_31[3] , 
-         \vga_1.n4384 , \vga_1.col[4] , \vga_1.n2663 , \vga_1.col[3] , 
-         \vga_1.col_9__N_31[2] , \vga_1.col_9__N_31[1] , \vga_1.n4381 , 
-         \vga_1.col[2] , \vga_1.n2661 , \vga_1.col[1] , \vga_1.col_9__N_31[0] , 
-         \vga_1.n4258 , \vga_1.col[0] , \ledController_pad[0].vcc , 
-         \vga_1.row_9__N_1[9] , \vga_1.n4348 , \vga_1.n2640 , \row[9] , 
+  wire   \vga_1.col_9__N_31[6] , \vga_1.col_9__N_31[5] , \vga_1.n4388 , 
+         \vga_1.col[6] , \vga_1.n2666 , \vga_1.col[5] , col_0__N_50, vga_clk, 
+         \vga_1.n2668 , \vga_1.col_9__N_31[4] , \vga_1.col_9__N_31[3] , 
+         \vga_1.n4385 , \vga_1.col[4] , \vga_1.n2664 , \vga_1.col[3] , 
+         \vga_1.col_9__N_31[2] , \vga_1.col_9__N_31[1] , \vga_1.n4382 , 
+         \vga_1.col[2] , \vga_1.n2662 , \vga_1.col[1] , \vga_1.col_9__N_31[0] , 
+         \vga_1.n4259 , \vga_1.col[0] , \ledController_pad[0].vcc , 
+         \vga_1.row_9__N_1[9] , \vga_1.n4349 , \vga_1.n2641 , \row[9] , 
          row_0__N_29, row_0__N_30, \vga_1.row_9__N_1[8] , 
-         \vga_1.row_9__N_1[7] , \vga_1.n4345 , \row[8] , \vga_1.n2638 , 
-         \row[7] , \vga_1.row_9__N_1[6] , \vga_1.row_9__N_1[5] , \vga_1.n4342 , 
-         \row[6] , \vga_1.n2636 , \row[5] , \vga_1.row_9__N_1[4] , 
-         \vga_1.row_9__N_1[3] , \vga_1.n4339 , \row[4] , \vga_1.n2634 , 
-         \row[3] , \vga_1.row_9__N_1[2] , \vga_1.row_9__N_1[1] , \vga_1.n4336 , 
-         \row[2] , \vga_1.n2632 , \row[1] , \vga_1.col_9__N_31[9] , 
-         \vga_1.n4393 , \vga_1.n2669 , \vga_1.col[9] , \vga_1.row_9__N_1[0] , 
-         \vga_1.n4306 , \row[0] , \vga_1.col_9__N_31[8] , 
-         \vga_1.col_9__N_31[7] , \vga_1.n4390 , \vga_1.col[8] , \vga_1.col[7] , 
-         \jump1.cube_bot_9__N_59[7] , \jump1.n4300 , \jump1.n2678 , 
-         \jump1.n468[6] , \cube_bot[9] , \jump1.cube_bot_4__N_70 , 
+         \vga_1.row_9__N_1[7] , \vga_1.n4346 , \row[8] , \vga_1.n2639 , 
+         \row[7] , \vga_1.row_9__N_1[6] , \vga_1.row_9__N_1[5] , \vga_1.n4343 , 
+         \row[6] , \vga_1.n2637 , \row[5] , \vga_1.row_9__N_1[4] , 
+         \vga_1.row_9__N_1[3] , \vga_1.n4340 , \row[4] , \vga_1.n2635 , 
+         \row[3] , \vga_1.row_9__N_1[2] , \vga_1.row_9__N_1[1] , \vga_1.n4337 , 
+         \row[2] , \vga_1.n2633 , \row[1] , \vga_1.col_9__N_31[9] , 
+         \vga_1.n4394 , \vga_1.n2670 , \vga_1.col[9] , \vga_1.row_9__N_1[0] , 
+         \vga_1.n4307 , \row[0] , \vga_1.col_9__N_31[8] , 
+         \vga_1.col_9__N_31[7] , \vga_1.n4391 , \vga_1.col[8] , \vga_1.col[7] , 
+         \jump1.cube_bot_9__N_59[7] , \jump1.n4301 , \jump1.n2679 , 
+         \jump1.n469[6] , \cube_bot[9] , \jump1.cube_bot_4__N_70 , 
          \jump1.slowClk , \jump1.slowClk_N_104[14] , \jump1.slowClk_N_104[13] , 
-         \jump1.n4369 , \jump1.n6 , \jump1.n2693 , \jump1.n7 , \jump1.n2695 , 
-         \jump1.slowClk_N_104[12] , \jump1.slowClk_N_104[11] , \jump1.n4366 , 
-         \jump1.n8 , \jump1.n2691 , \jump1.n9 , \jump1.slowClk_N_104[10] , 
-         \jump1.slowClk_N_104[9] , \jump1.n4363 , \jump1.n10 , \jump1.n2689 , 
+         \jump1.n4370 , \jump1.n6 , \jump1.n2694 , \jump1.n7 , \jump1.n2696 , 
+         \jump1.slowClk_N_104[12] , \jump1.slowClk_N_104[11] , \jump1.n4367 , 
+         \jump1.n8 , \jump1.n2692 , \jump1.n9 , \jump1.slowClk_N_104[10] , 
+         \jump1.slowClk_N_104[9] , \jump1.n4364 , \jump1.n10 , \jump1.n2690 , 
          \jump1.n11 , \jump1.cube_bot_9__N_59[6] , \jump1.cube_bot_9__N_59[5] , 
-         \jump1.n4297 , \cube_bot[8] , \jump1.n2676 , \cube_bot[7] , 
-         \jump1.cube_bot_9__N_59[3] , \jump1.n4294 , \cube_bot[6] , 
-         \jump1.n2674 , \cube_bot[5] , \jump1.cube_bot_9__N_59[4] , 
-         \jump1.slowClk_N_104[8] , \jump1.slowClk_N_104[7] , \jump1.n4360 , 
-         \jump1.n12 , \jump1.n2687 , \jump1.n13 , \jump1.slowClk_N_104[19] , 
-         \jump1.n4378 , \jump1.n2699 , \jump1.slowClk_N_104[6] , 
-         \jump1.slowClk_N_104[5] , \jump1.n4357 , \jump1.n14 , \jump1.n2685 , 
+         \jump1.n4298 , \cube_bot[8] , \jump1.n2677 , \cube_bot[7] , 
+         \jump1.cube_bot_9__N_59[3] , \jump1.n4295 , \cube_bot[6] , 
+         \jump1.n2675 , \cube_bot[5] , \jump1.cube_bot_9__N_59[4] , 
+         \jump1.slowClk_N_104[8] , \jump1.slowClk_N_104[7] , \jump1.n4361 , 
+         \jump1.n12 , \jump1.n2688 , \jump1.n13 , \jump1.slowClk_N_104[19] , 
+         \jump1.n4379 , \jump1.n2700 , \jump1.slowClk_N_104[6] , 
+         \jump1.slowClk_N_104[5] , \jump1.n4358 , \jump1.n14 , \jump1.n2686 , 
          \jump1.n15 , \jump1.slowClk_N_104[4] , \jump1.slowClk_N_104[3] , 
-         \jump1.n4354 , \jump1.n16 , \jump1.n2683 , \jump1.n17 , 
-         \jump1.cube_bot_9__N_59[2] , \jump1.n4291 , \cube_bot[4] , 
-         \jump1.n2672 , \cube_bot[3] , \jump1.cube_bot_9__N_59[1] , 
-         \jump1.slowClk_N_104[2] , \jump1.slowClk_N_104[1] , \jump1.n4351 , 
-         \jump1.n18_adj_123 , \jump1.n2681 , \jump1.n19 , 
-         \jump1.slowClk_N_104[18] , \jump1.slowClk_N_104[17] , \jump1.n4375 , 
-         \jump1.n2 , \jump1.n2697 , \jump1.n3 , \jump1.slowClk_N_104[16] , 
-         \jump1.slowClk_N_104[15] , \jump1.n4372 , \jump1.n4_adj_122 , 
-         \jump1.n5 , \jump1.n4288 , \cube_bot[2] , \jump1.cube_bot_9__N_59[0] , 
-         \jump1.slowClk_N_104[0] , \jump1.n4303 , \jump1.n20 , 
+         \jump1.n4355 , \jump1.n16 , \jump1.n2684 , \jump1.n17 , 
+         \jump1.cube_bot_9__N_59[2] , \jump1.n4292 , \cube_bot[4] , 
+         \jump1.n2673 , \cube_bot[3] , \jump1.cube_bot_9__N_59[1] , 
+         \jump1.slowClk_N_104[2] , \jump1.slowClk_N_104[1] , \jump1.n4352 , 
+         \jump1.n18_adj_123 , \jump1.n2682 , \jump1.n19 , 
+         \jump1.slowClk_N_104[18] , \jump1.slowClk_N_104[17] , \jump1.n4376 , 
+         \jump1.n2 , \jump1.n2698 , \jump1.n3 , \jump1.slowClk_N_104[16] , 
+         \jump1.slowClk_N_104[15] , \jump1.n4373 , \jump1.n4_adj_122 , 
+         \jump1.n5 , \jump1.n4289 , \cube_bot[2] , \jump1.cube_bot_9__N_59[0] , 
+         \jump1.slowClk_N_104[0] , \jump1.n4304 , \jump1.n20 , 
          \controller1.slowCount_7__N_51[4] , 
-         \controller1.slowCount_7__N_51[3] , \controller1.n4315 , 
-         \controller1.n13 , \controller1.n2645 , \controller1.n14 , 
-         \controller1.clk , \controller1.n2647 , 
+         \controller1.slowCount_7__N_51[3] , \controller1.n4316 , 
+         \controller1.n13 , \controller1.n2646 , \controller1.n14 , 
+         \controller1.clk , \controller1.n2648 , 
          \controller1.slowCount_7__N_51[2] , 
-         \controller1.slowCount_7__N_51[1] , \controller1.n4312 , 
-         \controller1.n15 , \controller1.n2643 , \controller1.n16 , 
-         \controller1.slowCount_7__N_51[0] , \controller1.n4309 , 
+         \controller1.slowCount_7__N_51[1] , \controller1.n4313 , 
+         \controller1.n15 , \controller1.n2644 , \controller1.n16 , 
+         \controller1.slowCount_7__N_51[0] , \controller1.n4310 , 
          \controller1.n17 , \controller1.slowCount_7__N_51[16] , 
-         \controller1.slowCount_7__N_51[15] , \controller1.n4333 , 
-         \controller1.slowCount[7] , \controller1.n2657 , 
+         \controller1.slowCount_7__N_51[15] , \controller1.n4334 , 
+         \controller1.slowCount[7] , \controller1.n2658 , 
          \controller1.slowCount[6] , \controller1.slowCount_7__N_51[14] , 
-         \controller1.slowCount_7__N_51[13] , \controller1.n4330 , 
-         \controller1.slowCount[5] , \controller1.n2655 , 
+         \controller1.slowCount_7__N_51[13] , \controller1.n4331 , 
+         \controller1.slowCount[5] , \controller1.n2656 , 
          \controller1.slowCount[4] , \controller1.slowCount_7__N_51[12] , 
-         \controller1.slowCount_7__N_51[11] , \controller1.n4327 , 
-         \controller1.slowCount[3] , \controller1.n2653 , 
+         \controller1.slowCount_7__N_51[11] , \controller1.n4328 , 
+         \controller1.slowCount[3] , \controller1.n2654 , 
          \controller1.slowCount[2] , \controller1.slowCount_7__N_51[10] , 
-         \controller1.slowCount_7__N_51[9] , \controller1.n4324 , 
-         \controller1.slowCount[1] , \controller1.n2651 , 
+         \controller1.slowCount_7__N_51[9] , \controller1.n4325 , 
+         \controller1.slowCount[1] , \controller1.n2652 , 
          \controller1.slowCount[0] , \controller1.slowCount_7__N_51[8] , 
-         \controller1.slowCount_7__N_51[7] , \controller1.n4321 , 
-         \controller1.count[8] , \controller1.n2649 , \controller1.n10 , 
+         \controller1.slowCount_7__N_51[7] , \controller1.n4322 , 
+         \controller1.count[8] , \controller1.n2650 , \controller1.n10 , 
          \controller1.slowCount_7__N_51[6] , 
-         \controller1.slowCount_7__N_51[5] , \controller1.n4318 , 
+         \controller1.slowCount_7__N_51[5] , \controller1.n4319 , 
          \controller1.n11 , \controller1.n12 , \jump1.cube_bot_2__N_73 , 
-         \jump1.cube_bot_3__N_71 , \jump1.lastPosition_2__N_89 , n1130, 
-         \jump1.n1155 , cube_bot_2__N_74, \cube_bot[0].sig_006.FeedThruLUT , 
+         \jump1.cube_bot_3__N_71 , \jump1.lastPosition_2__N_89 , n1131, 
+         \jump1.n1156 , cube_bot_2__N_74, \cube_bot[0].sig_006.FeedThruLUT , 
          \cube_bot[1].sig_000.FeedThruLUT , \cube_bot[0] , \cube_bot[1] , 
          \jump1.lastPosition_0__N_91 , \jump1.lastPosition[1] , 
          \jump1.lastPosition[0] , \jump1.lastPosition_6__N_82[3] , 
@@ -99,7 +99,7 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
          \jump1.lastPosition[6] , \cube_bot[8].sig_004.FeedThruLUT , 
          \cube_bot[7].sig_003.FeedThruLUT , \jump1.lastPosition[7] , 
          \jump1.lastPosition[8] , \cube_bot[9].sig_005.FeedThruLUT , 
-         \jump1.lastPosition[9] , cube_bot_1__N_75, cube_bot_0__N_76, n409, 
+         \jump1.lastPosition[9] , cube_bot_1__N_75, cube_bot_0__N_76, n410, 
          \controller1.intermediate[4].sig_013.FeedThruLUT , 
          \controller1.intermediate[3].sig_007.FeedThruLUT , 
          \controller1.intermediate[4] , \controller1.intermediate[3] , 
@@ -116,23 +116,23 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
          \cube_gen1.n14_adj_114 , \cube_gen1.n8_adj_113 , \cube_gen1.n18 , n6, 
          \vga_1.HSYNC_c_N_92 , HSYNC_c, \vga_1.n156 , \vga_1.n9 , \vga_1.n131 , 
          \vga_1.n8 , \vga_1.rgb_c_5_N_98 , \vga_1.rgb_c_2_N_100 , 
-         \jump1.n2229 , \jump1.n2312 , \jump1.n49 , \jump1.n65 , \jump1.n3000 , 
+         \jump1.n2230 , \jump1.n2313 , \jump1.n65 , \jump1.n49 , \jump1.n3001 , 
          \jump1.n4_adj_125 , ledController_c_7, \jump1.n4_adj_126 , 
-         controlLatch_c, \controller1.controlLatch_c_N_102 , \jump1.n3306 , 
+         controlLatch_c, \controller1.controlLatch_c_N_102 , \jump1.n3307 , 
          \cube_gen1.n12 , \cube_gen1.n10 , \cube_gen1.n14 , 
          \vga_1.VSYNC_c_N_94 , VSYNC_c, \vga_1.n93 , \vga_1.n4_adj_135 , 
-         \vga_1.n3641 , \vga_1.n10 , \vga_1.n2274 , \vga_1.rgb_c_5_N_97 , 
-         \vga_1.n4 , n2285, \vga_1.n2977 , \vga_1.n12 , \vga_1.n15 , 
-         \vga_1.n14 , \vga_1.rgb_c_2_N_99 , \vga_1.rgb_c_5_N_95 , rgb_c_5, 
-         \vga_1.rgb_c_2_N_101 , rgb_c_2, n3333, \vga_1.n3636 , 
-         \vga_1.n12_adj_136 , \vga_1.n13 , \jump1.n1193 , \jump1.n3329 , 
-         \jump1.n18 , \jump1.n3331 , \jump1.n18_adj_117 , \jump1.n16_adj_133 , 
+         \vga_1.n3642 , \vga_1.n10 , \vga_1.n2275 , \vga_1.rgb_c_5_N_97 , 
+         \vga_1.n4 , n2286, \vga_1.n2978 , \vga_1.n12 , \vga_1.n15 , 
+         \vga_1.n14 , \vga_1.rgb_c_5_N_95 , \vga_1.rgb_c_2_N_99 , rgb_c_5, 
+         \vga_1.rgb_c_2_N_101 , rgb_c_2, n3334, \vga_1.n3637 , \vga_1.n13 , 
+         \vga_1.n12_adj_136 , \jump1.n1194 , \jump1.n3330 , \jump1.n18 , 
+         \jump1.n3332 , \jump1.n18_adj_117 , \jump1.n16_adj_133 , 
          \jump1.n14_adj_131 , \jump1.n16_adj_134 , \jump1.n14_adj_132 , 
          \jump1.n4 , \jump1.n6_adj_118 , \jump1.n4_adj_119 , 
          \jump1.n6_adj_120 , \jump1.n8_adj_121 , \jump1.n10_adj_127 , 
          \jump1.n8_adj_124 , \jump1.n10_adj_128 , \jump1.n12_adj_129 , 
          \jump1.n12_adj_130 , \controller1.controlClk_c_N_103 , 
-         \jump1.cube_bot_6__N_65 , \cube_gen1.n4 , \cube_gen1.n4116 , 
+         \jump1.cube_bot_6__N_65 , \cube_gen1.n4 , \cube_gen1.n4117 , 
          \cube_gen1.n16 , \cube_gen1.n4_adj_105 , \cube_gen1.n6_c , 
          \cube_gen1.n8 , \cube_gen1.n4_adj_106 , \cube_gen1.n6_adj_107 , 
          \cube_gen1.n8_adj_108 , \cube_gen1.n10_adj_109 , 
@@ -143,256 +143,256 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
          \mypll_1.lscc_pll_inst.feedback_w ;
 
   vga_1_SLICE_0 \vga_1.SLICE_0 ( .DI1(\vga_1.col_9__N_31[6] ), 
-    .DI0(\vga_1.col_9__N_31[5] ), .D1(\vga_1.n4387 ), .C1(\vga_1.col[6] ), 
-    .D0(\vga_1.n2665 ), .C0(\vga_1.col[5] ), .LSR(col_0__N_50), .CLK(vga_clk), 
-    .CIN0(\vga_1.n2665 ), .CIN1(\vga_1.n4387 ), .Q0(\vga_1.col[5] ), 
+    .DI0(\vga_1.col_9__N_31[5] ), .D1(\vga_1.n4388 ), .C1(\vga_1.col[6] ), 
+    .D0(\vga_1.n2666 ), .C0(\vga_1.col[5] ), .LSR(col_0__N_50), .CLK(vga_clk), 
+    .CIN0(\vga_1.n2666 ), .CIN1(\vga_1.n4388 ), .Q0(\vga_1.col[5] ), 
     .Q1(\vga_1.col[6] ), .F0(\vga_1.col_9__N_31[5] ), 
-    .F1(\vga_1.col_9__N_31[6] ), .COUT1(\vga_1.n2667 ), .COUT0(\vga_1.n4387 ));
+    .F1(\vga_1.col_9__N_31[6] ), .COUT1(\vga_1.n2668 ), .COUT0(\vga_1.n4388 ));
   vga_1_SLICE_1 \vga_1.SLICE_1 ( .DI1(\vga_1.col_9__N_31[4] ), 
-    .DI0(\vga_1.col_9__N_31[3] ), .D1(\vga_1.n4384 ), .C1(\vga_1.col[4] ), 
-    .D0(\vga_1.n2663 ), .C0(\vga_1.col[3] ), .LSR(col_0__N_50), .CLK(vga_clk), 
-    .CIN0(\vga_1.n2663 ), .CIN1(\vga_1.n4384 ), .Q0(\vga_1.col[3] ), 
+    .DI0(\vga_1.col_9__N_31[3] ), .D1(\vga_1.n4385 ), .C1(\vga_1.col[4] ), 
+    .D0(\vga_1.n2664 ), .C0(\vga_1.col[3] ), .LSR(col_0__N_50), .CLK(vga_clk), 
+    .CIN0(\vga_1.n2664 ), .CIN1(\vga_1.n4385 ), .Q0(\vga_1.col[3] ), 
     .Q1(\vga_1.col[4] ), .F0(\vga_1.col_9__N_31[3] ), 
-    .F1(\vga_1.col_9__N_31[4] ), .COUT1(\vga_1.n2665 ), .COUT0(\vga_1.n4384 ));
+    .F1(\vga_1.col_9__N_31[4] ), .COUT1(\vga_1.n2666 ), .COUT0(\vga_1.n4385 ));
   vga_1_SLICE_2 \vga_1.SLICE_2 ( .DI1(\vga_1.col_9__N_31[2] ), 
-    .DI0(\vga_1.col_9__N_31[1] ), .D1(\vga_1.n4381 ), .C1(\vga_1.col[2] ), 
-    .D0(\vga_1.n2661 ), .C0(\vga_1.col[1] ), .LSR(col_0__N_50), .CLK(vga_clk), 
-    .CIN0(\vga_1.n2661 ), .CIN1(\vga_1.n4381 ), .Q0(\vga_1.col[1] ), 
+    .DI0(\vga_1.col_9__N_31[1] ), .D1(\vga_1.n4382 ), .C1(\vga_1.col[2] ), 
+    .D0(\vga_1.n2662 ), .C0(\vga_1.col[1] ), .LSR(col_0__N_50), .CLK(vga_clk), 
+    .CIN0(\vga_1.n2662 ), .CIN1(\vga_1.n4382 ), .Q0(\vga_1.col[1] ), 
     .Q1(\vga_1.col[2] ), .F0(\vga_1.col_9__N_31[1] ), 
-    .F1(\vga_1.col_9__N_31[2] ), .COUT1(\vga_1.n2663 ), .COUT0(\vga_1.n4381 ));
+    .F1(\vga_1.col_9__N_31[2] ), .COUT1(\vga_1.n2664 ), .COUT0(\vga_1.n4382 ));
   vga_1_SLICE_3 \vga_1.SLICE_3 ( .DI1(\vga_1.col_9__N_31[0] ), 
-    .D1(\vga_1.n4258 ), .C1(\vga_1.col[0] ), .B1(\ledController_pad[0].vcc ), 
-    .LSR(col_0__N_50), .CLK(vga_clk), .CIN1(\vga_1.n4258 ), 
-    .Q1(\vga_1.col[0] ), .F1(\vga_1.col_9__N_31[0] ), .COUT1(\vga_1.n2661 ), 
-    .COUT0(\vga_1.n4258 ));
+    .D1(\vga_1.n4259 ), .C1(\vga_1.col[0] ), .B1(\ledController_pad[0].vcc ), 
+    .LSR(col_0__N_50), .CLK(vga_clk), .CIN1(\vga_1.n4259 ), 
+    .Q1(\vga_1.col[0] ), .F1(\vga_1.col_9__N_31[0] ), .COUT1(\vga_1.n2662 ), 
+    .COUT0(\vga_1.n4259 ));
   vga_1_SLICE_4 \vga_1.SLICE_4 ( .DI0(\vga_1.row_9__N_1[9] ), 
-    .D1(\vga_1.n4348 ), .D0(\vga_1.n2640 ), .B0(\row[9] ), .CE(row_0__N_29), 
-    .LSR(row_0__N_30), .CLK(vga_clk), .CIN0(\vga_1.n2640 ), 
-    .CIN1(\vga_1.n4348 ), .Q0(\row[9] ), .F0(\vga_1.row_9__N_1[9] ), 
-    .COUT0(\vga_1.n4348 ));
+    .D1(\vga_1.n4349 ), .D0(\vga_1.n2641 ), .B0(\row[9] ), .CE(row_0__N_29), 
+    .LSR(row_0__N_30), .CLK(vga_clk), .CIN0(\vga_1.n2641 ), 
+    .CIN1(\vga_1.n4349 ), .Q0(\row[9] ), .F0(\vga_1.row_9__N_1[9] ), 
+    .COUT0(\vga_1.n4349 ));
   vga_1_SLICE_5 \vga_1.SLICE_5 ( .DI1(\vga_1.row_9__N_1[8] ), 
-    .DI0(\vga_1.row_9__N_1[7] ), .D1(\vga_1.n4345 ), .B1(\row[8] ), 
-    .D0(\vga_1.n2638 ), .B0(\row[7] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
-    .CLK(vga_clk), .CIN0(\vga_1.n2638 ), .CIN1(\vga_1.n4345 ), .Q0(\row[7] ), 
+    .DI0(\vga_1.row_9__N_1[7] ), .D1(\vga_1.n4346 ), .B1(\row[8] ), 
+    .D0(\vga_1.n2639 ), .B0(\row[7] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
+    .CLK(vga_clk), .CIN0(\vga_1.n2639 ), .CIN1(\vga_1.n4346 ), .Q0(\row[7] ), 
     .Q1(\row[8] ), .F0(\vga_1.row_9__N_1[7] ), .F1(\vga_1.row_9__N_1[8] ), 
-    .COUT1(\vga_1.n2640 ), .COUT0(\vga_1.n4345 ));
+    .COUT1(\vga_1.n2641 ), .COUT0(\vga_1.n4346 ));
   vga_1_SLICE_6 \vga_1.SLICE_6 ( .DI1(\vga_1.row_9__N_1[6] ), 
-    .DI0(\vga_1.row_9__N_1[5] ), .D1(\vga_1.n4342 ), .B1(\row[6] ), 
-    .D0(\vga_1.n2636 ), .B0(\row[5] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
-    .CLK(vga_clk), .CIN0(\vga_1.n2636 ), .CIN1(\vga_1.n4342 ), .Q0(\row[5] ), 
+    .DI0(\vga_1.row_9__N_1[5] ), .D1(\vga_1.n4343 ), .B1(\row[6] ), 
+    .D0(\vga_1.n2637 ), .B0(\row[5] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
+    .CLK(vga_clk), .CIN0(\vga_1.n2637 ), .CIN1(\vga_1.n4343 ), .Q0(\row[5] ), 
     .Q1(\row[6] ), .F0(\vga_1.row_9__N_1[5] ), .F1(\vga_1.row_9__N_1[6] ), 
-    .COUT1(\vga_1.n2638 ), .COUT0(\vga_1.n4342 ));
+    .COUT1(\vga_1.n2639 ), .COUT0(\vga_1.n4343 ));
   vga_1_SLICE_7 \vga_1.SLICE_7 ( .DI1(\vga_1.row_9__N_1[4] ), 
-    .DI0(\vga_1.row_9__N_1[3] ), .D1(\vga_1.n4339 ), .B1(\row[4] ), 
-    .D0(\vga_1.n2634 ), .B0(\row[3] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
-    .CLK(vga_clk), .CIN0(\vga_1.n2634 ), .CIN1(\vga_1.n4339 ), .Q0(\row[3] ), 
+    .DI0(\vga_1.row_9__N_1[3] ), .D1(\vga_1.n4340 ), .B1(\row[4] ), 
+    .D0(\vga_1.n2635 ), .B0(\row[3] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
+    .CLK(vga_clk), .CIN0(\vga_1.n2635 ), .CIN1(\vga_1.n4340 ), .Q0(\row[3] ), 
     .Q1(\row[4] ), .F0(\vga_1.row_9__N_1[3] ), .F1(\vga_1.row_9__N_1[4] ), 
-    .COUT1(\vga_1.n2636 ), .COUT0(\vga_1.n4339 ));
+    .COUT1(\vga_1.n2637 ), .COUT0(\vga_1.n4340 ));
   vga_1_SLICE_8 \vga_1.SLICE_8 ( .DI1(\vga_1.row_9__N_1[2] ), 
-    .DI0(\vga_1.row_9__N_1[1] ), .D1(\vga_1.n4336 ), .B1(\row[2] ), 
-    .D0(\vga_1.n2632 ), .B0(\row[1] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
-    .CLK(vga_clk), .CIN0(\vga_1.n2632 ), .CIN1(\vga_1.n4336 ), .Q0(\row[1] ), 
+    .DI0(\vga_1.row_9__N_1[1] ), .D1(\vga_1.n4337 ), .B1(\row[2] ), 
+    .D0(\vga_1.n2633 ), .B0(\row[1] ), .CE(row_0__N_29), .LSR(row_0__N_30), 
+    .CLK(vga_clk), .CIN0(\vga_1.n2633 ), .CIN1(\vga_1.n4337 ), .Q0(\row[1] ), 
     .Q1(\row[2] ), .F0(\vga_1.row_9__N_1[1] ), .F1(\vga_1.row_9__N_1[2] ), 
-    .COUT1(\vga_1.n2634 ), .COUT0(\vga_1.n4336 ));
+    .COUT1(\vga_1.n2635 ), .COUT0(\vga_1.n4337 ));
   vga_1_SLICE_9 \vga_1.SLICE_9 ( .DI0(\vga_1.col_9__N_31[9] ), 
-    .D1(\vga_1.n4393 ), .D0(\vga_1.n2669 ), .C0(\vga_1.col[9] ), 
-    .LSR(col_0__N_50), .CLK(vga_clk), .CIN0(\vga_1.n2669 ), 
-    .CIN1(\vga_1.n4393 ), .Q0(\vga_1.col[9] ), .F0(\vga_1.col_9__N_31[9] ), 
-    .COUT0(\vga_1.n4393 ));
+    .D1(\vga_1.n4394 ), .D0(\vga_1.n2670 ), .C0(\vga_1.col[9] ), 
+    .LSR(col_0__N_50), .CLK(vga_clk), .CIN0(\vga_1.n2670 ), 
+    .CIN1(\vga_1.n4394 ), .Q0(\vga_1.col[9] ), .F0(\vga_1.col_9__N_31[9] ), 
+    .COUT0(\vga_1.n4394 ));
   vga_1_SLICE_10 \vga_1.SLICE_10 ( .DI1(\vga_1.row_9__N_1[0] ), 
-    .D1(\vga_1.n4306 ), .C1(\ledController_pad[0].vcc ), .B1(\row[0] ), 
-    .CE(row_0__N_29), .LSR(row_0__N_30), .CLK(vga_clk), .CIN1(\vga_1.n4306 ), 
-    .Q1(\row[0] ), .F1(\vga_1.row_9__N_1[0] ), .COUT1(\vga_1.n2632 ), 
-    .COUT0(\vga_1.n4306 ));
+    .D1(\vga_1.n4307 ), .C1(\ledController_pad[0].vcc ), .B1(\row[0] ), 
+    .CE(row_0__N_29), .LSR(row_0__N_30), .CLK(vga_clk), .CIN1(\vga_1.n4307 ), 
+    .Q1(\row[0] ), .F1(\vga_1.row_9__N_1[0] ), .COUT1(\vga_1.n2633 ), 
+    .COUT0(\vga_1.n4307 ));
   vga_1_SLICE_11 \vga_1.SLICE_11 ( .DI1(\vga_1.col_9__N_31[8] ), 
-    .DI0(\vga_1.col_9__N_31[7] ), .D1(\vga_1.n4390 ), .C1(\vga_1.col[8] ), 
-    .D0(\vga_1.n2667 ), .C0(\vga_1.col[7] ), .LSR(col_0__N_50), .CLK(vga_clk), 
-    .CIN0(\vga_1.n2667 ), .CIN1(\vga_1.n4390 ), .Q0(\vga_1.col[7] ), 
+    .DI0(\vga_1.col_9__N_31[7] ), .D1(\vga_1.n4391 ), .C1(\vga_1.col[8] ), 
+    .D0(\vga_1.n2668 ), .C0(\vga_1.col[7] ), .LSR(col_0__N_50), .CLK(vga_clk), 
+    .CIN0(\vga_1.n2668 ), .CIN1(\vga_1.n4391 ), .Q0(\vga_1.col[7] ), 
     .Q1(\vga_1.col[8] ), .F0(\vga_1.col_9__N_31[7] ), 
-    .F1(\vga_1.col_9__N_31[8] ), .COUT1(\vga_1.n2669 ), .COUT0(\vga_1.n4390 ));
+    .F1(\vga_1.col_9__N_31[8] ), .COUT1(\vga_1.n2670 ), .COUT0(\vga_1.n4391 ));
   jump1_SLICE_12 \jump1.SLICE_12 ( .DI0(\jump1.cube_bot_9__N_59[7] ), 
-    .D1(\jump1.n4300 ), .D0(\jump1.n2678 ), .C0(\jump1.n468[6] ), 
+    .D1(\jump1.n4301 ), .D0(\jump1.n2679 ), .C0(\jump1.n469[6] ), 
     .B0(\cube_bot[9] ), .LSR(\jump1.cube_bot_4__N_70 ), .CLK(\jump1.slowClk ), 
-    .CIN0(\jump1.n2678 ), .CIN1(\jump1.n4300 ), .Q0(\cube_bot[9] ), 
-    .F0(\jump1.cube_bot_9__N_59[7] ), .COUT0(\jump1.n4300 ));
+    .CIN0(\jump1.n2679 ), .CIN1(\jump1.n4301 ), .Q0(\cube_bot[9] ), 
+    .F0(\jump1.cube_bot_9__N_59[7] ), .COUT0(\jump1.n4301 ));
   jump1_SLICE_13 \jump1.SLICE_13 ( .DI1(\jump1.slowClk_N_104[14] ), 
-    .DI0(\jump1.slowClk_N_104[13] ), .D1(\jump1.n4369 ), .C1(\jump1.n6 ), 
-    .D0(\jump1.n2693 ), .C0(\jump1.n7 ), .CLK(vga_clk), .CIN0(\jump1.n2693 ), 
-    .CIN1(\jump1.n4369 ), .Q0(\jump1.n7 ), .Q1(\jump1.n6 ), 
+    .DI0(\jump1.slowClk_N_104[13] ), .D1(\jump1.n4370 ), .C1(\jump1.n6 ), 
+    .D0(\jump1.n2694 ), .C0(\jump1.n7 ), .CLK(vga_clk), .CIN0(\jump1.n2694 ), 
+    .CIN1(\jump1.n4370 ), .Q0(\jump1.n7 ), .Q1(\jump1.n6 ), 
     .F0(\jump1.slowClk_N_104[13] ), .F1(\jump1.slowClk_N_104[14] ), 
-    .COUT1(\jump1.n2695 ), .COUT0(\jump1.n4369 ));
+    .COUT1(\jump1.n2696 ), .COUT0(\jump1.n4370 ));
   jump1_SLICE_14 \jump1.SLICE_14 ( .DI1(\jump1.slowClk_N_104[12] ), 
-    .DI0(\jump1.slowClk_N_104[11] ), .D1(\jump1.n4366 ), .C1(\jump1.n8 ), 
-    .D0(\jump1.n2691 ), .C0(\jump1.n9 ), .CLK(vga_clk), .CIN0(\jump1.n2691 ), 
-    .CIN1(\jump1.n4366 ), .Q0(\jump1.n9 ), .Q1(\jump1.n8 ), 
+    .DI0(\jump1.slowClk_N_104[11] ), .D1(\jump1.n4367 ), .C1(\jump1.n8 ), 
+    .D0(\jump1.n2692 ), .C0(\jump1.n9 ), .CLK(vga_clk), .CIN0(\jump1.n2692 ), 
+    .CIN1(\jump1.n4367 ), .Q0(\jump1.n9 ), .Q1(\jump1.n8 ), 
     .F0(\jump1.slowClk_N_104[11] ), .F1(\jump1.slowClk_N_104[12] ), 
-    .COUT1(\jump1.n2693 ), .COUT0(\jump1.n4366 ));
+    .COUT1(\jump1.n2694 ), .COUT0(\jump1.n4367 ));
   jump1_SLICE_15 \jump1.SLICE_15 ( .DI1(\jump1.slowClk_N_104[10] ), 
-    .DI0(\jump1.slowClk_N_104[9] ), .D1(\jump1.n4363 ), .C1(\jump1.n10 ), 
-    .D0(\jump1.n2689 ), .C0(\jump1.n11 ), .CLK(vga_clk), .CIN0(\jump1.n2689 ), 
-    .CIN1(\jump1.n4363 ), .Q0(\jump1.n11 ), .Q1(\jump1.n10 ), 
+    .DI0(\jump1.slowClk_N_104[9] ), .D1(\jump1.n4364 ), .C1(\jump1.n10 ), 
+    .D0(\jump1.n2690 ), .C0(\jump1.n11 ), .CLK(vga_clk), .CIN0(\jump1.n2690 ), 
+    .CIN1(\jump1.n4364 ), .Q0(\jump1.n11 ), .Q1(\jump1.n10 ), 
     .F0(\jump1.slowClk_N_104[9] ), .F1(\jump1.slowClk_N_104[10] ), 
-    .COUT1(\jump1.n2691 ), .COUT0(\jump1.n4363 ));
+    .COUT1(\jump1.n2692 ), .COUT0(\jump1.n4364 ));
   jump1_SLICE_16 \jump1.SLICE_16 ( .DI1(\jump1.cube_bot_9__N_59[6] ), 
-    .DI0(\jump1.cube_bot_9__N_59[5] ), .D1(\jump1.n4297 ), 
-    .C1(\jump1.n468[6] ), .B1(\cube_bot[8] ), .D0(\jump1.n2676 ), 
-    .C0(\jump1.n468[6] ), .B0(\cube_bot[7] ), .LSR(\jump1.cube_bot_4__N_70 ), 
-    .CLK(\jump1.slowClk ), .CIN0(\jump1.n2676 ), .CIN1(\jump1.n4297 ), 
+    .DI0(\jump1.cube_bot_9__N_59[5] ), .D1(\jump1.n4298 ), 
+    .C1(\jump1.n469[6] ), .B1(\cube_bot[8] ), .D0(\jump1.n2677 ), 
+    .C0(\jump1.n469[6] ), .B0(\cube_bot[7] ), .LSR(\jump1.cube_bot_4__N_70 ), 
+    .CLK(\jump1.slowClk ), .CIN0(\jump1.n2677 ), .CIN1(\jump1.n4298 ), 
     .Q0(\cube_bot[7] ), .Q1(\cube_bot[8] ), .F0(\jump1.cube_bot_9__N_59[5] ), 
-    .F1(\jump1.cube_bot_9__N_59[6] ), .COUT1(\jump1.n2678 ), 
-    .COUT0(\jump1.n4297 ));
+    .F1(\jump1.cube_bot_9__N_59[6] ), .COUT1(\jump1.n2679 ), 
+    .COUT0(\jump1.n4298 ));
   jump1_SLICE_17 \jump1.SLICE_17 ( .DI0(\jump1.cube_bot_9__N_59[3] ), 
-    .D1(\jump1.n4294 ), .C1(\jump1.n468[6] ), .B1(\cube_bot[6] ), 
-    .D0(\jump1.n2674 ), .C0(\jump1.n468[6] ), .B0(\cube_bot[5] ), 
+    .D1(\jump1.n4295 ), .C1(\jump1.n469[6] ), .B1(\cube_bot[6] ), 
+    .D0(\jump1.n2675 ), .C0(\jump1.n469[6] ), .B0(\cube_bot[5] ), 
     .LSR(\jump1.cube_bot_4__N_70 ), .CLK(\jump1.slowClk ), 
-    .CIN0(\jump1.n2674 ), .CIN1(\jump1.n4294 ), .Q0(\cube_bot[5] ), 
+    .CIN0(\jump1.n2675 ), .CIN1(\jump1.n4295 ), .Q0(\cube_bot[5] ), 
     .F0(\jump1.cube_bot_9__N_59[3] ), .F1(\jump1.cube_bot_9__N_59[4] ), 
-    .COUT1(\jump1.n2676 ), .COUT0(\jump1.n4294 ));
+    .COUT1(\jump1.n2677 ), .COUT0(\jump1.n4295 ));
   jump1_SLICE_18 \jump1.SLICE_18 ( .DI1(\jump1.slowClk_N_104[8] ), 
-    .DI0(\jump1.slowClk_N_104[7] ), .D1(\jump1.n4360 ), .C1(\jump1.n12 ), 
-    .D0(\jump1.n2687 ), .C0(\jump1.n13 ), .CLK(vga_clk), .CIN0(\jump1.n2687 ), 
-    .CIN1(\jump1.n4360 ), .Q0(\jump1.n13 ), .Q1(\jump1.n12 ), 
+    .DI0(\jump1.slowClk_N_104[7] ), .D1(\jump1.n4361 ), .C1(\jump1.n12 ), 
+    .D0(\jump1.n2688 ), .C0(\jump1.n13 ), .CLK(vga_clk), .CIN0(\jump1.n2688 ), 
+    .CIN1(\jump1.n4361 ), .Q0(\jump1.n13 ), .Q1(\jump1.n12 ), 
     .F0(\jump1.slowClk_N_104[7] ), .F1(\jump1.slowClk_N_104[8] ), 
-    .COUT1(\jump1.n2689 ), .COUT0(\jump1.n4360 ));
+    .COUT1(\jump1.n2690 ), .COUT0(\jump1.n4361 ));
   jump1_SLICE_19 \jump1.SLICE_19 ( .DI0(\jump1.slowClk_N_104[19] ), 
-    .D1(\jump1.n4378 ), .D0(\jump1.n2699 ), .C0(\jump1.slowClk ), 
-    .CLK(vga_clk), .CIN0(\jump1.n2699 ), .CIN1(\jump1.n4378 ), 
+    .D1(\jump1.n4379 ), .D0(\jump1.n2700 ), .C0(\jump1.slowClk ), 
+    .CLK(vga_clk), .CIN0(\jump1.n2700 ), .CIN1(\jump1.n4379 ), 
     .Q0(\jump1.slowClk ), .F0(\jump1.slowClk_N_104[19] ), 
-    .COUT0(\jump1.n4378 ));
+    .COUT0(\jump1.n4379 ));
   jump1_SLICE_20 \jump1.SLICE_20 ( .DI1(\jump1.slowClk_N_104[6] ), 
-    .DI0(\jump1.slowClk_N_104[5] ), .D1(\jump1.n4357 ), .C1(\jump1.n14 ), 
-    .D0(\jump1.n2685 ), .C0(\jump1.n15 ), .CLK(vga_clk), .CIN0(\jump1.n2685 ), 
-    .CIN1(\jump1.n4357 ), .Q0(\jump1.n15 ), .Q1(\jump1.n14 ), 
+    .DI0(\jump1.slowClk_N_104[5] ), .D1(\jump1.n4358 ), .C1(\jump1.n14 ), 
+    .D0(\jump1.n2686 ), .C0(\jump1.n15 ), .CLK(vga_clk), .CIN0(\jump1.n2686 ), 
+    .CIN1(\jump1.n4358 ), .Q0(\jump1.n15 ), .Q1(\jump1.n14 ), 
     .F0(\jump1.slowClk_N_104[5] ), .F1(\jump1.slowClk_N_104[6] ), 
-    .COUT1(\jump1.n2687 ), .COUT0(\jump1.n4357 ));
+    .COUT1(\jump1.n2688 ), .COUT0(\jump1.n4358 ));
   jump1_SLICE_21 \jump1.SLICE_21 ( .DI1(\jump1.slowClk_N_104[4] ), 
-    .DI0(\jump1.slowClk_N_104[3] ), .D1(\jump1.n4354 ), .C1(\jump1.n16 ), 
-    .D0(\jump1.n2683 ), .C0(\jump1.n17 ), .CLK(vga_clk), .CIN0(\jump1.n2683 ), 
-    .CIN1(\jump1.n4354 ), .Q0(\jump1.n17 ), .Q1(\jump1.n16 ), 
+    .DI0(\jump1.slowClk_N_104[3] ), .D1(\jump1.n4355 ), .C1(\jump1.n16 ), 
+    .D0(\jump1.n2684 ), .C0(\jump1.n17 ), .CLK(vga_clk), .CIN0(\jump1.n2684 ), 
+    .CIN1(\jump1.n4355 ), .Q0(\jump1.n17 ), .Q1(\jump1.n16 ), 
     .F0(\jump1.slowClk_N_104[3] ), .F1(\jump1.slowClk_N_104[4] ), 
-    .COUT1(\jump1.n2685 ), .COUT0(\jump1.n4354 ));
+    .COUT1(\jump1.n2686 ), .COUT0(\jump1.n4355 ));
   jump1_SLICE_22 \jump1.SLICE_22 ( .DI1(\jump1.cube_bot_9__N_59[2] ), 
-    .D1(\jump1.n4291 ), .C1(\jump1.n468[6] ), .B1(\cube_bot[4] ), 
-    .D0(\jump1.n2672 ), .C0(\jump1.n468[6] ), .B0(\cube_bot[3] ), 
+    .D1(\jump1.n4292 ), .C1(\jump1.n469[6] ), .B1(\cube_bot[4] ), 
+    .D0(\jump1.n2673 ), .C0(\jump1.n469[6] ), .B0(\cube_bot[3] ), 
     .LSR(\jump1.cube_bot_4__N_70 ), .CLK(\jump1.slowClk ), 
-    .CIN0(\jump1.n2672 ), .CIN1(\jump1.n4291 ), .Q1(\cube_bot[4] ), 
+    .CIN0(\jump1.n2673 ), .CIN1(\jump1.n4292 ), .Q1(\cube_bot[4] ), 
     .F0(\jump1.cube_bot_9__N_59[1] ), .F1(\jump1.cube_bot_9__N_59[2] ), 
-    .COUT1(\jump1.n2674 ), .COUT0(\jump1.n4291 ));
+    .COUT1(\jump1.n2675 ), .COUT0(\jump1.n4292 ));
   jump1_SLICE_23 \jump1.SLICE_23 ( .DI1(\jump1.slowClk_N_104[2] ), 
-    .DI0(\jump1.slowClk_N_104[1] ), .D1(\jump1.n4351 ), 
-    .C1(\jump1.n18_adj_123 ), .D0(\jump1.n2681 ), .C0(\jump1.n19 ), 
-    .CLK(vga_clk), .CIN0(\jump1.n2681 ), .CIN1(\jump1.n4351 ), 
+    .DI0(\jump1.slowClk_N_104[1] ), .D1(\jump1.n4352 ), 
+    .C1(\jump1.n18_adj_123 ), .D0(\jump1.n2682 ), .C0(\jump1.n19 ), 
+    .CLK(vga_clk), .CIN0(\jump1.n2682 ), .CIN1(\jump1.n4352 ), 
     .Q0(\jump1.n19 ), .Q1(\jump1.n18_adj_123 ), .F0(\jump1.slowClk_N_104[1] ), 
-    .F1(\jump1.slowClk_N_104[2] ), .COUT1(\jump1.n2683 ), 
-    .COUT0(\jump1.n4351 ));
+    .F1(\jump1.slowClk_N_104[2] ), .COUT1(\jump1.n2684 ), 
+    .COUT0(\jump1.n4352 ));
   jump1_SLICE_24 \jump1.SLICE_24 ( .DI1(\jump1.slowClk_N_104[18] ), 
-    .DI0(\jump1.slowClk_N_104[17] ), .D1(\jump1.n4375 ), .C1(\jump1.n2 ), 
-    .D0(\jump1.n2697 ), .C0(\jump1.n3 ), .CLK(vga_clk), .CIN0(\jump1.n2697 ), 
-    .CIN1(\jump1.n4375 ), .Q0(\jump1.n3 ), .Q1(\jump1.n2 ), 
+    .DI0(\jump1.slowClk_N_104[17] ), .D1(\jump1.n4376 ), .C1(\jump1.n2 ), 
+    .D0(\jump1.n2698 ), .C0(\jump1.n3 ), .CLK(vga_clk), .CIN0(\jump1.n2698 ), 
+    .CIN1(\jump1.n4376 ), .Q0(\jump1.n3 ), .Q1(\jump1.n2 ), 
     .F0(\jump1.slowClk_N_104[17] ), .F1(\jump1.slowClk_N_104[18] ), 
-    .COUT1(\jump1.n2699 ), .COUT0(\jump1.n4375 ));
+    .COUT1(\jump1.n2700 ), .COUT0(\jump1.n4376 ));
   jump1_SLICE_25 \jump1.SLICE_25 ( .DI1(\jump1.slowClk_N_104[16] ), 
-    .DI0(\jump1.slowClk_N_104[15] ), .D1(\jump1.n4372 ), 
-    .C1(\jump1.n4_adj_122 ), .D0(\jump1.n2695 ), .C0(\jump1.n5 ), 
-    .CLK(vga_clk), .CIN0(\jump1.n2695 ), .CIN1(\jump1.n4372 ), .Q0(\jump1.n5 ), 
+    .DI0(\jump1.slowClk_N_104[15] ), .D1(\jump1.n4373 ), 
+    .C1(\jump1.n4_adj_122 ), .D0(\jump1.n2696 ), .C0(\jump1.n5 ), 
+    .CLK(vga_clk), .CIN0(\jump1.n2696 ), .CIN1(\jump1.n4373 ), .Q0(\jump1.n5 ), 
     .Q1(\jump1.n4_adj_122 ), .F0(\jump1.slowClk_N_104[15] ), 
-    .F1(\jump1.slowClk_N_104[16] ), .COUT1(\jump1.n2697 ), 
-    .COUT0(\jump1.n4372 ));
-  jump1_SLICE_26 \jump1.SLICE_26 ( .D1(\jump1.n4288 ), 
-    .C1(\ledController_pad[0].vcc ), .B1(\cube_bot[2] ), .CIN1(\jump1.n4288 ), 
-    .F1(\jump1.cube_bot_9__N_59[0] ), .COUT1(\jump1.n2672 ), 
-    .COUT0(\jump1.n4288 ));
+    .F1(\jump1.slowClk_N_104[16] ), .COUT1(\jump1.n2698 ), 
+    .COUT0(\jump1.n4373 ));
+  jump1_SLICE_26 \jump1.SLICE_26 ( .D1(\jump1.n4289 ), 
+    .C1(\ledController_pad[0].vcc ), .B1(\cube_bot[2] ), .CIN1(\jump1.n4289 ), 
+    .F1(\jump1.cube_bot_9__N_59[0] ), .COUT1(\jump1.n2673 ), 
+    .COUT0(\jump1.n4289 ));
   jump1_SLICE_27 \jump1.SLICE_27 ( .DI1(\jump1.slowClk_N_104[0] ), 
-    .D1(\jump1.n4303 ), .C1(\jump1.n20 ), .B1(\ledController_pad[0].vcc ), 
-    .CLK(vga_clk), .CIN1(\jump1.n4303 ), .Q1(\jump1.n20 ), 
-    .F1(\jump1.slowClk_N_104[0] ), .COUT1(\jump1.n2681 ), 
-    .COUT0(\jump1.n4303 ));
+    .D1(\jump1.n4304 ), .C1(\jump1.n20 ), .B1(\ledController_pad[0].vcc ), 
+    .CLK(vga_clk), .CIN1(\jump1.n4304 ), .Q1(\jump1.n20 ), 
+    .F1(\jump1.slowClk_N_104[0] ), .COUT1(\jump1.n2682 ), 
+    .COUT0(\jump1.n4304 ));
   controller1_SLICE_28 \controller1.SLICE_28 ( 
     .DI1(\controller1.slowCount_7__N_51[4] ), 
-    .DI0(\controller1.slowCount_7__N_51[3] ), .D1(\controller1.n4315 ), 
-    .C1(\controller1.n13 ), .D0(\controller1.n2645 ), .C0(\controller1.n14 ), 
-    .CLK(\controller1.clk ), .CIN0(\controller1.n2645 ), 
-    .CIN1(\controller1.n4315 ), .Q0(\controller1.n14 ), .Q1(\controller1.n13 ), 
+    .DI0(\controller1.slowCount_7__N_51[3] ), .D1(\controller1.n4316 ), 
+    .C1(\controller1.n13 ), .D0(\controller1.n2646 ), .C0(\controller1.n14 ), 
+    .CLK(\controller1.clk ), .CIN0(\controller1.n2646 ), 
+    .CIN1(\controller1.n4316 ), .Q0(\controller1.n14 ), .Q1(\controller1.n13 ), 
     .F0(\controller1.slowCount_7__N_51[3] ), 
-    .F1(\controller1.slowCount_7__N_51[4] ), .COUT1(\controller1.n2647 ), 
-    .COUT0(\controller1.n4315 ));
+    .F1(\controller1.slowCount_7__N_51[4] ), .COUT1(\controller1.n2648 ), 
+    .COUT0(\controller1.n4316 ));
   controller1_SLICE_29 \controller1.SLICE_29 ( 
     .DI1(\controller1.slowCount_7__N_51[2] ), 
-    .DI0(\controller1.slowCount_7__N_51[1] ), .D1(\controller1.n4312 ), 
-    .C1(\controller1.n15 ), .D0(\controller1.n2643 ), .C0(\controller1.n16 ), 
-    .CLK(\controller1.clk ), .CIN0(\controller1.n2643 ), 
-    .CIN1(\controller1.n4312 ), .Q0(\controller1.n16 ), .Q1(\controller1.n15 ), 
+    .DI0(\controller1.slowCount_7__N_51[1] ), .D1(\controller1.n4313 ), 
+    .C1(\controller1.n15 ), .D0(\controller1.n2644 ), .C0(\controller1.n16 ), 
+    .CLK(\controller1.clk ), .CIN0(\controller1.n2644 ), 
+    .CIN1(\controller1.n4313 ), .Q0(\controller1.n16 ), .Q1(\controller1.n15 ), 
     .F0(\controller1.slowCount_7__N_51[1] ), 
-    .F1(\controller1.slowCount_7__N_51[2] ), .COUT1(\controller1.n2645 ), 
-    .COUT0(\controller1.n4312 ));
+    .F1(\controller1.slowCount_7__N_51[2] ), .COUT1(\controller1.n2646 ), 
+    .COUT0(\controller1.n4313 ));
   controller1_SLICE_30 \controller1.SLICE_30 ( 
-    .DI1(\controller1.slowCount_7__N_51[0] ), .D1(\controller1.n4309 ), 
+    .DI1(\controller1.slowCount_7__N_51[0] ), .D1(\controller1.n4310 ), 
     .C1(\controller1.n17 ), .B1(\ledController_pad[0].vcc ), 
-    .CLK(\controller1.clk ), .CIN1(\controller1.n4309 ), 
+    .CLK(\controller1.clk ), .CIN1(\controller1.n4310 ), 
     .Q1(\controller1.n17 ), .F1(\controller1.slowCount_7__N_51[0] ), 
-    .COUT1(\controller1.n2643 ), .COUT0(\controller1.n4309 ));
+    .COUT1(\controller1.n2644 ), .COUT0(\controller1.n4310 ));
   controller1_SLICE_31 \controller1.SLICE_31 ( 
     .DI1(\controller1.slowCount_7__N_51[16] ), 
-    .DI0(\controller1.slowCount_7__N_51[15] ), .D1(\controller1.n4333 ), 
-    .C1(\controller1.slowCount[7] ), .D0(\controller1.n2657 ), 
+    .DI0(\controller1.slowCount_7__N_51[15] ), .D1(\controller1.n4334 ), 
+    .C1(\controller1.slowCount[7] ), .D0(\controller1.n2658 ), 
     .C0(\controller1.slowCount[6] ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n2657 ), .CIN1(\controller1.n4333 ), 
+    .CIN0(\controller1.n2658 ), .CIN1(\controller1.n4334 ), 
     .Q0(\controller1.slowCount[6] ), .Q1(\controller1.slowCount[7] ), 
     .F0(\controller1.slowCount_7__N_51[15] ), 
-    .F1(\controller1.slowCount_7__N_51[16] ), .COUT0(\controller1.n4333 ));
+    .F1(\controller1.slowCount_7__N_51[16] ), .COUT0(\controller1.n4334 ));
   controller1_SLICE_32 \controller1.SLICE_32 ( 
     .DI1(\controller1.slowCount_7__N_51[14] ), 
-    .DI0(\controller1.slowCount_7__N_51[13] ), .D1(\controller1.n4330 ), 
-    .C1(\controller1.slowCount[5] ), .D0(\controller1.n2655 ), 
+    .DI0(\controller1.slowCount_7__N_51[13] ), .D1(\controller1.n4331 ), 
+    .C1(\controller1.slowCount[5] ), .D0(\controller1.n2656 ), 
     .C0(\controller1.slowCount[4] ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n2655 ), .CIN1(\controller1.n4330 ), 
+    .CIN0(\controller1.n2656 ), .CIN1(\controller1.n4331 ), 
     .Q0(\controller1.slowCount[4] ), .Q1(\controller1.slowCount[5] ), 
     .F0(\controller1.slowCount_7__N_51[13] ), 
-    .F1(\controller1.slowCount_7__N_51[14] ), .COUT1(\controller1.n2657 ), 
-    .COUT0(\controller1.n4330 ));
+    .F1(\controller1.slowCount_7__N_51[14] ), .COUT1(\controller1.n2658 ), 
+    .COUT0(\controller1.n4331 ));
   controller1_SLICE_33 \controller1.SLICE_33 ( 
     .DI1(\controller1.slowCount_7__N_51[12] ), 
-    .DI0(\controller1.slowCount_7__N_51[11] ), .D1(\controller1.n4327 ), 
-    .C1(\controller1.slowCount[3] ), .D0(\controller1.n2653 ), 
+    .DI0(\controller1.slowCount_7__N_51[11] ), .D1(\controller1.n4328 ), 
+    .C1(\controller1.slowCount[3] ), .D0(\controller1.n2654 ), 
     .C0(\controller1.slowCount[2] ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n2653 ), .CIN1(\controller1.n4327 ), 
+    .CIN0(\controller1.n2654 ), .CIN1(\controller1.n4328 ), 
     .Q0(\controller1.slowCount[2] ), .Q1(\controller1.slowCount[3] ), 
     .F0(\controller1.slowCount_7__N_51[11] ), 
-    .F1(\controller1.slowCount_7__N_51[12] ), .COUT1(\controller1.n2655 ), 
-    .COUT0(\controller1.n4327 ));
+    .F1(\controller1.slowCount_7__N_51[12] ), .COUT1(\controller1.n2656 ), 
+    .COUT0(\controller1.n4328 ));
   controller1_SLICE_34 \controller1.SLICE_34 ( 
     .DI1(\controller1.slowCount_7__N_51[10] ), 
-    .DI0(\controller1.slowCount_7__N_51[9] ), .D1(\controller1.n4324 ), 
-    .C1(\controller1.slowCount[1] ), .D0(\controller1.n2651 ), 
+    .DI0(\controller1.slowCount_7__N_51[9] ), .D1(\controller1.n4325 ), 
+    .C1(\controller1.slowCount[1] ), .D0(\controller1.n2652 ), 
     .C0(\controller1.slowCount[0] ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n2651 ), .CIN1(\controller1.n4324 ), 
+    .CIN0(\controller1.n2652 ), .CIN1(\controller1.n4325 ), 
     .Q0(\controller1.slowCount[0] ), .Q1(\controller1.slowCount[1] ), 
     .F0(\controller1.slowCount_7__N_51[9] ), 
-    .F1(\controller1.slowCount_7__N_51[10] ), .COUT1(\controller1.n2653 ), 
-    .COUT0(\controller1.n4324 ));
+    .F1(\controller1.slowCount_7__N_51[10] ), .COUT1(\controller1.n2654 ), 
+    .COUT0(\controller1.n4325 ));
   controller1_SLICE_35 \controller1.SLICE_35 ( 
     .DI1(\controller1.slowCount_7__N_51[8] ), 
-    .DI0(\controller1.slowCount_7__N_51[7] ), .D1(\controller1.n4321 ), 
-    .C1(\controller1.count[8] ), .D0(\controller1.n2649 ), 
+    .DI0(\controller1.slowCount_7__N_51[7] ), .D1(\controller1.n4322 ), 
+    .C1(\controller1.count[8] ), .D0(\controller1.n2650 ), 
     .C0(\controller1.n10 ), .CLK(\controller1.clk ), 
-    .CIN0(\controller1.n2649 ), .CIN1(\controller1.n4321 ), 
+    .CIN0(\controller1.n2650 ), .CIN1(\controller1.n4322 ), 
     .Q0(\controller1.n10 ), .Q1(\controller1.count[8] ), 
     .F0(\controller1.slowCount_7__N_51[7] ), 
-    .F1(\controller1.slowCount_7__N_51[8] ), .COUT1(\controller1.n2651 ), 
-    .COUT0(\controller1.n4321 ));
+    .F1(\controller1.slowCount_7__N_51[8] ), .COUT1(\controller1.n2652 ), 
+    .COUT0(\controller1.n4322 ));
   controller1_SLICE_36 \controller1.SLICE_36 ( 
     .DI1(\controller1.slowCount_7__N_51[6] ), 
-    .DI0(\controller1.slowCount_7__N_51[5] ), .D1(\controller1.n4318 ), 
-    .C1(\controller1.n11 ), .D0(\controller1.n2647 ), .C0(\controller1.n12 ), 
-    .CLK(\controller1.clk ), .CIN0(\controller1.n2647 ), 
-    .CIN1(\controller1.n4318 ), .Q0(\controller1.n12 ), .Q1(\controller1.n11 ), 
+    .DI0(\controller1.slowCount_7__N_51[5] ), .D1(\controller1.n4319 ), 
+    .C1(\controller1.n11 ), .D0(\controller1.n2648 ), .C0(\controller1.n12 ), 
+    .CLK(\controller1.clk ), .CIN0(\controller1.n2648 ), 
+    .CIN1(\controller1.n4319 ), .Q0(\controller1.n12 ), .Q1(\controller1.n11 ), 
     .F0(\controller1.slowCount_7__N_51[5] ), 
-    .F1(\controller1.slowCount_7__N_51[6] ), .COUT1(\controller1.n2649 ), 
-    .COUT0(\controller1.n4318 ));
+    .F1(\controller1.slowCount_7__N_51[6] ), .COUT1(\controller1.n2650 ), 
+    .COUT0(\controller1.n4319 ));
   jump1_SLICE_37 \jump1.SLICE_37 ( .DI1(\jump1.cube_bot_2__N_73 ), 
     .DI0(\jump1.cube_bot_3__N_71 ), .D1(\jump1.cube_bot_9__N_59[0] ), 
-    .C1(\jump1.lastPosition_2__N_89 ), .B1(n1130), .A1(\jump1.n1155 ), 
-    .D0(\jump1.n1155 ), .C0(n1130), .B0(\jump1.lastPosition_2__N_89 ), 
+    .C1(\jump1.lastPosition_2__N_89 ), .B1(n1131), .A1(\jump1.n1156 ), 
+    .D0(\jump1.n1156 ), .C0(n1131), .B0(\jump1.lastPosition_2__N_89 ), 
     .A0(\jump1.cube_bot_9__N_59[1] ), .LSR(cube_bot_2__N_74), 
     .CLK(\jump1.slowClk ), .Q0(\cube_bot[3] ), .Q1(\cube_bot[2] ), 
     .F0(\jump1.cube_bot_3__N_71 ), .F1(\jump1.cube_bot_2__N_73 ));
@@ -403,10 +403,10 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
     .Q1(\jump1.lastPosition[0] ), .F0(\cube_bot[1].sig_000.FeedThruLUT ), 
     .F1(\cube_bot[0].sig_006.FeedThruLUT ));
   jump1_SLICE_40 \jump1.SLICE_40 ( .DI1(\jump1.lastPosition_6__N_82[3] ), 
-    .DI0(\jump1.lastPosition_6__N_82[2] ), .D1(\cube_bot[3] ), 
-    .C1(\jump1.n80 ), .B1(\jump1.n1155 ), .A1(\jump1.n468[6] ), 
-    .D0(\jump1.n80 ), .C0(\jump1.n1155 ), .B0(\jump1.n468[6] ), 
-    .A0(\cube_bot[2] ), .LSR(\jump1.lastPosition_2__N_89 ), 
+    .DI0(\jump1.lastPosition_6__N_82[2] ), .D1(\jump1.n80 ), 
+    .C1(\cube_bot[3] ), .B1(\jump1.n1156 ), .A1(\jump1.n469[6] ), 
+    .D0(\cube_bot[2] ), .C0(\jump1.n80 ), .B0(\jump1.n469[6] ), 
+    .A0(\jump1.n1156 ), .LSR(\jump1.lastPosition_2__N_89 ), 
     .CLK(\jump1.slowClk ), .Q0(\jump1.lastPosition[2] ), 
     .Q1(\jump1.lastPosition[3] ), .F0(\jump1.lastPosition_6__N_82[2] ), 
     .F1(\jump1.lastPosition_6__N_82[3] ));
@@ -417,8 +417,8 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
     .Q1(\jump1.lastPosition[5] ), .F0(\cube_bot[4].sig_001.FeedThruLUT ), 
     .F1(\cube_bot[5].sig_002.FeedThruLUT ));
   jump1_SLICE_44 \jump1.SLICE_44 ( .DI0(\jump1.lastPosition_6__N_82[6] ), 
-    .D0(\jump1.n80 ), .C0(\jump1.n1155 ), .B0(\cube_bot[6] ), 
-    .A0(\jump1.n468[6] ), .LSR(\jump1.lastPosition_2__N_89 ), 
+    .D0(\cube_bot[6] ), .C0(\jump1.n80 ), .B0(\jump1.n469[6] ), 
+    .A0(\jump1.n1156 ), .LSR(\jump1.lastPosition_2__N_89 ), 
     .CLK(\jump1.slowClk ), .Q0(\jump1.lastPosition[6] ), 
     .F0(\jump1.lastPosition_6__N_82[6] ));
   SLICE_45 SLICE_45( .DI1(\cube_bot[8].sig_004.FeedThruLUT ), 
@@ -431,9 +431,9 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
     .D0(\cube_bot[9] ), .LSR(\jump1.lastPosition_0__N_91 ), 
     .CLK(\jump1.slowClk ), .Q0(\jump1.lastPosition[9] ), 
     .F0(\cube_bot[9].sig_005.FeedThruLUT ));
-  SLICE_49 SLICE_49( .DI1(cube_bot_1__N_75), .DI0(cube_bot_0__N_76), 
-    .D1(n1130), .C1(n409), .B1(\cube_bot[1] ), .A1(cube_bot_2__N_74), 
-    .D0(cube_bot_2__N_74), .C0(n1130), .B0(n409), .A0(\cube_bot[0] ), 
+  SLICE_49 SLICE_49( .DI1(cube_bot_1__N_75), .DI0(cube_bot_0__N_76), .D1(n410), 
+    .C1(n1131), .B1(\cube_bot[1] ), .A1(cube_bot_2__N_74), 
+    .D0(cube_bot_2__N_74), .C0(n410), .B0(n1131), .A0(\cube_bot[0] ), 
     .CLK(\jump1.slowClk ), .Q0(\cube_bot[0] ), .Q1(\cube_bot[1] ), 
     .F0(cube_bot_0__N_76), .F1(cube_bot_1__N_75));
   controller1_SLICE_52 \controller1.SLICE_52 ( 
@@ -472,124 +472,123 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
     .C1(\cube_gen1.n14_adj_114 ), .B1(\cube_bot[9] ), .A1(\row[9] ), 
     .D0(\cube_gen1.n8_adj_113 ), .C0(\cube_gen1.n18 ), .B0(\row[9] ), 
     .A0(\cube_bot[9] ), .F0(\cube_gen1.n14_adj_114 ), .F1(n6));
-  vga_1_SLICE_62 \vga_1.SLICE_62 ( .D1(\vga_1.col[9] ), .C1(\vga_1.col[8] ), 
-    .D0(\vga_1.col[7] ), .C0(\vga_1.HSYNC_c_N_92 ), .B0(\vga_1.col[8] ), 
-    .A0(\vga_1.col[9] ), .F0(HSYNC_c), .F1(\vga_1.n156 ));
+  vga_1_SLICE_62 \vga_1.SLICE_62 ( .D1(\vga_1.col[9] ), .B1(\vga_1.col[8] ), 
+    .D0(\vga_1.col[7] ), .C0(\vga_1.HSYNC_c_N_92 ), .B0(\vga_1.col[9] ), 
+    .A0(\vga_1.col[8] ), .F0(HSYNC_c), .F1(\vga_1.n156 ));
   vga_1_SLICE_63 \vga_1.SLICE_63 ( .D1(\vga_1.col[6] ), .C1(\vga_1.n9 ), 
     .B1(\vga_1.col[5] ), .A1(\vga_1.col[7] ), .D0(\vga_1.col[2] ), 
-    .C0(\vga_1.col[4] ), .A0(\vga_1.col[3] ), .F0(\vga_1.n9 ), 
+    .C0(\vga_1.col[4] ), .B0(\vga_1.col[3] ), .F0(\vga_1.n9 ), 
     .F1(\vga_1.HSYNC_c_N_92 ));
-  vga_1_SLICE_64 \vga_1.SLICE_64 ( .D1(\vga_1.col[5] ), .C1(\vga_1.n131 ), 
-    .B1(\vga_1.col[1] ), .A1(\vga_1.col[0] ), .D0(\vga_1.col[2] ), 
+  vga_1_SLICE_64 \vga_1.SLICE_64 ( .D1(\vga_1.col[0] ), .C1(\vga_1.n131 ), 
+    .B1(\vga_1.col[1] ), .A1(\vga_1.col[5] ), .D0(\vga_1.col[2] ), 
     .C0(\vga_1.col[3] ), .F0(\vga_1.n131 ), .F1(\vga_1.n8 ));
-  vga_1_SLICE_65 \vga_1.SLICE_65 ( .D1(\vga_1.n156 ), 
-    .C1(\vga_1.rgb_c_5_N_98 ), .B1(\vga_1.col[6] ), .A1(\vga_1.col[7] ), 
-    .D0(n6), .C0(\vga_1.n8 ), .B0(\vga_1.col[5] ), .A0(\vga_1.col[4] ), 
+  vga_1_SLICE_65 \vga_1.SLICE_65 ( .D1(\vga_1.col[6] ), 
+    .C1(\vga_1.rgb_c_5_N_98 ), .B1(\vga_1.n156 ), .A1(\vga_1.col[7] ), 
+    .D0(\vga_1.col[5] ), .C0(\vga_1.n8 ), .B0(\vga_1.col[4] ), .A0(n6), 
     .F0(\vga_1.rgb_c_5_N_98 ), .F1(\vga_1.rgb_c_2_N_100 ));
-  jump1_SLICE_66 \jump1.SLICE_66 ( .D1(\cube_bot[5] ), .C1(\jump1.n2229 ), 
-    .B1(\cube_bot[4] ), .A1(\cube_bot[3] ), .D0(\cube_bot[2] ), 
-    .C0(\cube_bot[1] ), .F0(\jump1.n2229 ), .F1(\jump1.n2312 ));
-  jump1_SLICE_67 \jump1.SLICE_67 ( .D1(\jump1.n80 ), .C1(\jump1.n49 ), 
-    .B1(\cube_bot[7] ), .A1(\jump1.n65 ), .D0(\cube_bot[5] ), 
-    .C0(\jump1.n3000 ), .B0(\jump1.n2312 ), .A0(\cube_bot[6] ), 
+  jump1_SLICE_66 \jump1.SLICE_66 ( .D1(\cube_bot[4] ), .C1(\jump1.n2230 ), 
+    .B1(\cube_bot[3] ), .A1(\cube_bot[5] ), .D0(\cube_bot[2] ), 
+    .C0(\cube_bot[1] ), .F0(\jump1.n2230 ), .F1(\jump1.n2313 ));
+  jump1_SLICE_67 \jump1.SLICE_67 ( .D1(\jump1.n65 ), .C1(\jump1.n49 ), 
+    .B1(\jump1.n80 ), .A1(\cube_bot[7] ), .D0(\cube_bot[5] ), 
+    .C0(\jump1.n3001 ), .B0(\cube_bot[6] ), .A0(\jump1.n2313 ), 
     .F0(\jump1.n49 ), .F1(\jump1.n4_adj_125 ));
   jump1_SLICE_68 \jump1.SLICE_68 ( .D1(ledController_c_7), 
-    .C1(\jump1.n4_adj_126 ), .B1(\jump1.lastPosition_2__N_89 ), 
-    .A1(\cube_bot[8] ), .D0(\cube_bot[9] ), .C0(\jump1.n4_adj_125 ), 
-    .B0(\jump1.n2312 ), .A0(\cube_bot[6] ), .F0(\jump1.n4_adj_126 ), 
-    .F1(n1130));
-  controller1_SLICE_69 \controller1.SLICE_69 ( 
-    .D1(\controller1.intermediate[7] ), .C1(controlLatch_c), 
-    .B1(ledController_c_7), .D0(\controller1.slowCount[0] ), 
-    .C0(\controller1.controlLatch_c_N_102 ), .B0(\controller1.slowCount[3] ), 
-    .A0(\controller1.slowCount[2] ), .F0(controlLatch_c), 
-    .F1(ledController_c_7));
-  jump1_SLICE_70 \jump1.SLICE_70 ( .D1(\jump1.n3000 ), .C1(\jump1.n3306 ), 
-    .B1(\cube_bot[8] ), .A1(\cube_bot[9] ), .D0(\cube_bot[5] ), 
-    .C0(\cube_bot[7] ), .B0(\cube_bot[6] ), .F0(\jump1.n3306 ), 
+    .C1(\jump1.n4_adj_126 ), .B1(\cube_bot[8] ), 
+    .A1(\jump1.lastPosition_2__N_89 ), .D0(\cube_bot[6] ), 
+    .C0(\jump1.n4_adj_125 ), .B0(\cube_bot[9] ), .A0(\jump1.n2313 ), 
+    .F0(\jump1.n4_adj_126 ), .F1(n1131));
+  controller1_SLICE_69 \controller1.SLICE_69 ( .D1(ledController_c_7), 
+    .C1(controlLatch_c), .A1(\controller1.intermediate[7] ), 
+    .D0(\controller1.slowCount[0] ), .C0(\controller1.controlLatch_c_N_102 ), 
+    .B0(\controller1.slowCount[3] ), .A0(\controller1.slowCount[2] ), 
+    .F0(controlLatch_c), .F1(ledController_c_7));
+  jump1_SLICE_70 \jump1.SLICE_70 ( .D1(\cube_bot[9] ), .C1(\jump1.n3307 ), 
+    .B1(\cube_bot[8] ), .A1(\jump1.n3001 ), .D0(\cube_bot[5] ), 
+    .C0(\cube_bot[7] ), .B0(\cube_bot[6] ), .F0(\jump1.n3307 ), 
     .F1(\jump1.lastPosition_2__N_89 ));
   jump1_SLICE_71 \jump1.SLICE_71 ( .D0(\jump1.n4_adj_126 ), 
     .C0(\jump1.lastPosition_2__N_89 ), .A0(\cube_bot[8] ), 
     .F0(\jump1.cube_bot_4__N_70 ));
   cube_gen1_SLICE_72 \cube_gen1.SLICE_72 ( .D1(\cube_bot[5] ), 
-    .C1(\cube_gen1.n12 ), .B1(\cube_bot[6] ), .A1(\row[6] ), .D0(\row[5] ), 
+    .C1(\cube_gen1.n12 ), .B1(\row[6] ), .A1(\cube_bot[6] ), .D0(\row[5] ), 
     .C0(\cube_gen1.n10 ), .A0(\cube_bot[5] ), .F0(\cube_gen1.n12 ), 
     .F1(\cube_gen1.n14 ));
-  vga_1_SLICE_74 \vga_1.SLICE_74 ( .D1(\row[7] ), .C1(\row[6] ), .A1(\row[5] ), 
-    .D0(\row[5] ), .C0(\vga_1.VSYNC_c_N_94 ), .B0(\row[8] ), .A0(\row[9] ), 
+  vga_1_SLICE_74 \vga_1.SLICE_74 ( .D1(\row[6] ), .C1(\row[7] ), .B1(\row[5] ), 
+    .D0(\row[8] ), .C0(\vga_1.VSYNC_c_N_94 ), .B0(\row[9] ), .A0(\row[5] ), 
     .F0(VSYNC_c), .F1(\vga_1.n93 ));
   vga_1_SLICE_75 \vga_1.SLICE_75 ( .D1(\vga_1.n93 ), .C1(\vga_1.n4_adj_135 ), 
-    .B1(\row[4] ), .A1(\vga_1.n3641 ), .D0(\row[6] ), .C0(\vga_1.n10 ), 
-    .A0(\row[7] ), .F0(\vga_1.n4_adj_135 ), .F1(\vga_1.VSYNC_c_N_94 ));
-  vga_1_SLICE_76 \vga_1.SLICE_76 ( .D1(\vga_1.n156 ), .C1(\vga_1.n2274 ), 
-    .B1(\row[5] ), .A1(\row[8] ), .D0(\row[6] ), .C0(\row[7] ), 
-    .F0(\vga_1.n2274 ), .F1(\vga_1.rgb_c_5_N_97 ));
+    .B1(\row[4] ), .A1(\vga_1.n3642 ), .D0(\row[7] ), .C0(\vga_1.n10 ), 
+    .A0(\row[6] ), .F0(\vga_1.n4_adj_135 ), .F1(\vga_1.VSYNC_c_N_94 ));
+  vga_1_SLICE_76 \vga_1.SLICE_76 ( .D1(\vga_1.n156 ), .C1(\vga_1.n2275 ), 
+    .B1(\row[5] ), .A1(\row[8] ), .D0(\row[7] ), .C0(\row[6] ), 
+    .F0(\vga_1.n2275 ), .F1(\vga_1.rgb_c_5_N_97 ));
   vga_1_SLICE_78 \vga_1.SLICE_78 ( .D1(\row[4] ), .C1(\vga_1.n4 ), 
-    .B1(\row[3] ), .A1(\row[2] ), .D0(\row[1] ), .C0(\row[0] ), 
+    .B1(\row[3] ), .A1(\row[2] ), .D0(\row[1] ), .B0(\row[0] ), 
     .F0(\vga_1.n4 ), .F1(\vga_1.n10 ));
-  vga_1_SLICE_80 \vga_1.SLICE_80 ( .D1(\row[2] ), .C1(n2285), .B1(\row[3] ), 
-    .A1(\vga_1.n2274 ), .D0(\row[1] ), .C0(\row[0] ), .F0(n2285), 
-    .F1(\vga_1.n2977 ));
+  vga_1_SLICE_80 \vga_1.SLICE_80 ( .D1(\row[2] ), .C1(n2286), .B1(\row[3] ), 
+    .A1(\vga_1.n2275 ), .D0(\row[1] ), .C0(\row[0] ), .F0(n2286), 
+    .F1(\vga_1.n2978 ));
   vga_1_SLICE_82 \vga_1.SLICE_82 ( .D1(\vga_1.col[7] ), .C1(\vga_1.n12 ), 
     .B1(\vga_1.col[9] ), .A1(\vga_1.col[6] ), .D0(\vga_1.col[2] ), 
     .C0(\vga_1.col[1] ), .F0(\vga_1.n12 ), .F1(\vga_1.n15 ));
   vga_1_SLICE_84 \vga_1.SLICE_84 ( .D1(\vga_1.n15 ), .C1(\vga_1.n14 ), 
-    .B1(\vga_1.col[3] ), .A1(\vga_1.col[5] ), .D0(\vga_1.col[8] ), 
-    .C0(\vga_1.col[0] ), .B0(\vga_1.col[4] ), .F0(\vga_1.n14 ), 
+    .B1(\vga_1.col[3] ), .A1(\vga_1.col[5] ), .D0(\vga_1.col[0] ), 
+    .C0(\vga_1.col[8] ), .B0(\vga_1.col[4] ), .F0(\vga_1.n14 ), 
     .F1(col_0__N_50));
-  vga_1_SLICE_86 \vga_1.SLICE_86 ( .D1(\vga_1.rgb_c_2_N_99 ), 
+  vga_1_SLICE_86 \vga_1.SLICE_86 ( .D1(\vga_1.rgb_c_5_N_98 ), 
     .C1(\vga_1.rgb_c_5_N_95 ), .B1(\vga_1.rgb_c_5_N_97 ), 
-    .A1(\vga_1.rgb_c_5_N_98 ), .D0(\vga_1.col[7] ), .C0(\vga_1.col[6] ), 
+    .A1(\vga_1.rgb_c_2_N_99 ), .D0(\vga_1.col[7] ), .B0(\vga_1.col[6] ), 
     .F0(\vga_1.rgb_c_5_N_95 ), .F1(rgb_c_5));
-  vga_1_SLICE_88 \vga_1.SLICE_88 ( .D1(\vga_1.rgb_c_2_N_100 ), 
-    .C1(\vga_1.rgb_c_2_N_99 ), .B1(\row[8] ), .A1(\vga_1.rgb_c_2_N_101 ), 
-    .D0(\vga_1.col[9] ), .C0(\vga_1.col[7] ), .B0(\row[9] ), 
-    .A0(\vga_1.col[8] ), .F0(\vga_1.rgb_c_2_N_99 ), .F1(rgb_c_2));
-  vga_1_SLICE_92 \vga_1.SLICE_92 ( .D1(n3333), .C1(\vga_1.n3636 ), 
-    .B1(\row[4] ), .A1(\vga_1.n93 ), .D0(\row[1] ), .C0(\row[2] ), 
-    .B0(\row[3] ), .F0(\vga_1.n3636 ), .F1(\vga_1.rgb_c_2_N_101 ));
-  vga_1_SLICE_94 \vga_1.SLICE_94 ( .D1(\vga_1.n12_adj_136 ), .C1(\vga_1.n13 ), 
-    .B1(\row[7] ), .A1(\row[9] ), .D0(\row[4] ), .C0(\row[6] ), .B0(\row[5] ), 
-    .A0(\row[8] ), .F0(\vga_1.n13 ), .F1(row_0__N_30));
-  jump1_SLICE_96 \jump1.SLICE_96 ( .D1(\jump1.n2312 ), .C1(\jump1.n1193 ), 
-    .B1(\cube_bot[6] ), .A1(\cube_bot[7] ), .D0(\cube_bot[9] ), 
-    .C0(\cube_bot[8] ), .F0(\jump1.n1193 ), .F1(\jump1.n1155 ));
-  jump1_SLICE_98 \jump1.SLICE_98 ( .D1(\cube_bot[2] ), .C1(\jump1.n3329 ), 
+  vga_1_SLICE_88 \vga_1.SLICE_88 ( .D1(\vga_1.rgb_c_2_N_101 ), 
+    .C1(\vga_1.rgb_c_2_N_99 ), .B1(\row[8] ), .A1(\vga_1.rgb_c_2_N_100 ), 
+    .D0(\row[9] ), .C0(\vga_1.col[9] ), .B0(\vga_1.col[8] ), 
+    .A0(\vga_1.col[7] ), .F0(\vga_1.rgb_c_2_N_99 ), .F1(rgb_c_2));
+  vga_1_SLICE_92 \vga_1.SLICE_92 ( .D1(n3334), .C1(\vga_1.n3637 ), 
+    .B1(\vga_1.n93 ), .A1(\row[4] ), .D0(\row[1] ), .C0(\row[3] ), 
+    .B0(\row[2] ), .F0(\vga_1.n3637 ), .F1(\vga_1.rgb_c_2_N_101 ));
+  vga_1_SLICE_94 \vga_1.SLICE_94 ( .D1(\row[9] ), .C1(\vga_1.n13 ), 
+    .B1(\row[7] ), .A1(\vga_1.n12_adj_136 ), .D0(\row[4] ), .C0(\row[6] ), 
+    .B0(\row[5] ), .A0(\row[8] ), .F0(\vga_1.n13 ), .F1(row_0__N_30));
+  jump1_SLICE_96 \jump1.SLICE_96 ( .D1(\jump1.n2313 ), .C1(\jump1.n1194 ), 
+    .B1(\cube_bot[7] ), .A1(\cube_bot[6] ), .D0(\cube_bot[8] ), 
+    .C0(\cube_bot[9] ), .F0(\jump1.n1194 ), .F1(\jump1.n1156 ));
+  jump1_SLICE_98 \jump1.SLICE_98 ( .D1(\cube_bot[2] ), .C1(\jump1.n3330 ), 
     .B1(\cube_bot[0] ), .A1(\cube_bot[1] ), .D0(\cube_bot[4] ), 
-    .C0(\cube_bot[3] ), .F0(\jump1.n3329 ), .F1(\jump1.n3000 ));
-  jump1_SLICE_100 \jump1.SLICE_100 ( .D1(\jump1.lastPosition_2__N_89 ), 
-    .C1(\jump1.n80 ), .B1(\jump1.n1155 ), .A1(\jump1.n468[6] ), 
-    .D0(\jump1.lastPosition[9] ), .C0(\jump1.n18 ), .B0(\cube_bot[9] ), 
-    .F0(\jump1.n80 ), .F1(\jump1.lastPosition_0__N_91 ));
-  jump1_SLICE_101 \jump1.SLICE_101 ( .D1(\jump1.n3331 ), .C1(\jump1.n65 ), 
-    .B1(\jump1.n1193 ), .A1(\jump1.n3306 ), .D0(\jump1.lastPosition[9] ), 
+    .C0(\cube_bot[3] ), .F0(\jump1.n3330 ), .F1(\jump1.n3001 ));
+  jump1_SLICE_100 \jump1.SLICE_100 ( .D1(\jump1.n18 ), 
+    .C1(\jump1.lastPosition[9] ), .B1(\cube_bot[9] ), .D0(\jump1.n80 ), 
+    .C0(\jump1.n1156 ), .B0(\jump1.n469[6] ), 
+    .A0(\jump1.lastPosition_2__N_89 ), .F0(\jump1.lastPosition_0__N_91 ), 
+    .F1(\jump1.n80 ));
+  jump1_SLICE_101 \jump1.SLICE_101 ( .D1(\jump1.n3332 ), .C1(\jump1.n65 ), 
+    .B1(\jump1.n3307 ), .A1(\jump1.n1194 ), .D0(\jump1.lastPosition[9] ), 
     .C0(\jump1.n18_adj_117 ), .B0(\cube_bot[9] ), .F0(\jump1.n65 ), 
-    .F1(\jump1.n468[6] ));
+    .F1(\jump1.n469[6] ));
   jump1_SLICE_103 \jump1.SLICE_103 ( .D1(\jump1.lastPosition[8] ), 
     .C1(\jump1.n16_adj_133 ), .B1(\cube_bot[8] ), .D0(\jump1.lastPosition[7] ), 
     .C0(\jump1.n14_adj_131 ), .B0(\cube_bot[7] ), .F0(\jump1.n16_adj_133 ), 
     .F1(\jump1.n18 ));
   jump1_SLICE_105 \jump1.SLICE_105 ( .D1(\jump1.lastPosition[8] ), 
     .C1(\jump1.n16_adj_134 ), .B1(\cube_bot[8] ), .D0(\jump1.lastPosition[7] ), 
-    .C0(\jump1.n14_adj_132 ), .A0(\cube_bot[7] ), .F0(\jump1.n16_adj_134 ), 
+    .C0(\jump1.n14_adj_132 ), .B0(\cube_bot[7] ), .F0(\jump1.n16_adj_134 ), 
     .F1(\jump1.n18_adj_117 ));
   jump1_SLICE_106 \jump1.SLICE_106 ( .D1(\cube_bot[2] ), .C1(\jump1.n4 ), 
     .B1(\jump1.lastPosition[2] ), .D0(\jump1.lastPosition[0] ), 
-    .C0(\jump1.lastPosition[1] ), .B0(\cube_bot[1] ), .A0(\cube_bot[0] ), 
+    .C0(\jump1.lastPosition[1] ), .B0(\cube_bot[0] ), .A0(\cube_bot[1] ), 
     .F0(\jump1.n4 ), .F1(\jump1.n6_adj_118 ));
-  jump1_SLICE_108 \jump1.SLICE_108 ( .D1(\cube_bot[2] ), 
-    .C1(\jump1.n4_adj_119 ), .B1(\jump1.lastPosition[2] ), 
-    .D0(\jump1.lastPosition[0] ), .C0(\cube_bot[0] ), 
-    .B0(\jump1.lastPosition[1] ), .A0(\cube_bot[1] ), .F0(\jump1.n4_adj_119 ), 
-    .F1(\jump1.n6_adj_120 ));
+  jump1_SLICE_108 \jump1.SLICE_108 ( .D1(\jump1.lastPosition[2] ), 
+    .C1(\jump1.n4_adj_119 ), .A1(\cube_bot[2] ), .D0(\jump1.lastPosition[0] ), 
+    .C0(\jump1.lastPosition[1] ), .B0(\cube_bot[1] ), .A0(\cube_bot[0] ), 
+    .F0(\jump1.n4_adj_119 ), .F1(\jump1.n6_adj_120 ));
   jump1_SLICE_110 \jump1.SLICE_110 ( .D1(\jump1.lastPosition[4] ), 
-    .C1(\jump1.n8_adj_121 ), .A1(\cube_bot[4] ), .D0(\jump1.lastPosition[3] ), 
+    .C1(\jump1.n8_adj_121 ), .B1(\cube_bot[4] ), .D0(\jump1.lastPosition[3] ), 
     .C0(\jump1.n6_adj_118 ), .B0(\cube_bot[3] ), .F0(\jump1.n8_adj_121 ), 
     .F1(\jump1.n10_adj_127 ));
   jump1_SLICE_112 \jump1.SLICE_112 ( .D1(\jump1.lastPosition[4] ), 
-    .C1(\jump1.n8_adj_124 ), .B1(\cube_bot[4] ), .D0(\jump1.lastPosition[3] ), 
-    .C0(\jump1.n6_adj_120 ), .B0(\cube_bot[3] ), .F0(\jump1.n8_adj_124 ), 
-    .F1(\jump1.n10_adj_128 ));
+    .C1(\jump1.n8_adj_124 ), .B1(\cube_bot[4] ), .D0(\cube_bot[3] ), 
+    .C0(\jump1.n6_adj_120 ), .A0(\jump1.lastPosition[3] ), 
+    .F0(\jump1.n8_adj_124 ), .F1(\jump1.n10_adj_128 ));
   jump1_SLICE_116 \jump1.SLICE_116 ( .D1(\jump1.lastPosition[6] ), 
     .C1(\jump1.n12_adj_129 ), .B1(\cube_bot[6] ), .D0(\jump1.lastPosition[5] ), 
     .C0(\jump1.n10_adj_127 ), .B0(\cube_bot[5] ), .F0(\jump1.n12_adj_129 ), 
@@ -609,70 +608,70 @@ module top ( controllerIn, fpga_clk, ledController, controlClk, controlLatch,
     .B0(\controller1.controlClk_c_N_103 ), .F0(controlClk_c));
   cube_gen1_SLICE_124 \cube_gen1.SLICE_124 ( .DI1(\jump1.cube_bot_6__N_65 ), 
     .D1(\jump1.cube_bot_9__N_59[4] ), .C1(\jump1.lastPosition_2__N_89 ), 
-    .B1(n1130), .A1(\jump1.n1155 ), .D0(\cube_bot[5] ), .C0(\cube_bot[6] ), 
+    .B1(\jump1.n1156 ), .A1(n1131), .D0(\cube_bot[5] ), .C0(\cube_bot[6] ), 
     .LSR(cube_bot_2__N_74), .CLK(\jump1.slowClk ), .Q1(\cube_bot[6] ), 
     .F0(\cube_gen1.n4 ), .F1(\jump1.cube_bot_6__N_65 ));
-  cube_gen1_SLICE_125 \cube_gen1.SLICE_125 ( .D1(\cube_gen1.n4116 ), 
+  cube_gen1_SLICE_125 \cube_gen1.SLICE_125 ( .D1(\cube_gen1.n4117 ), 
     .C1(\cube_gen1.n16 ), .B1(\cube_bot[8] ), .A1(\row[8] ), 
-    .D0(\cube_gen1.n4 ), .C0(\cube_gen1.n14 ), .B0(\cube_bot[7] ), 
-    .A0(\row[7] ), .F0(\cube_gen1.n16 ), .F1(\cube_gen1.n18 ));
+    .D0(\cube_gen1.n4 ), .C0(\cube_gen1.n14 ), .B0(\row[7] ), 
+    .A0(\cube_bot[7] ), .F0(\cube_gen1.n16 ), .F1(\cube_gen1.n18 ));
   cube_gen1_SLICE_126 \cube_gen1.SLICE_126 ( .D1(\cube_bot[2] ), 
     .C1(\cube_gen1.n4_adj_105 ), .B1(\row[2] ), .D0(\cube_bot[0] ), 
     .C0(\cube_bot[1] ), .B0(\row[1] ), .A0(\row[0] ), 
     .F0(\cube_gen1.n4_adj_105 ), .F1(\cube_gen1.n6_c ));
-  cube_gen1_SLICE_128 \cube_gen1.SLICE_128 ( .D1(\cube_bot[4] ), 
-    .C1(\cube_gen1.n8 ), .B1(\row[4] ), .D0(\cube_bot[3] ), 
-    .C0(\cube_gen1.n6_c ), .B0(\row[3] ), .F0(\cube_gen1.n8 ), 
+  cube_gen1_SLICE_128 \cube_gen1.SLICE_128 ( .D1(\row[4] ), 
+    .C1(\cube_gen1.n8 ), .A1(\cube_bot[4] ), .D0(\row[3] ), 
+    .C0(\cube_gen1.n6_c ), .A0(\cube_bot[3] ), .F0(\cube_gen1.n8 ), 
     .F1(\cube_gen1.n10 ));
   cube_gen1_SLICE_131 \cube_gen1.SLICE_131 ( .D1(\cube_bot[8] ), 
     .C1(\cube_bot[5] ), .B1(\cube_bot[7] ), .A1(\cube_bot[6] ), 
     .D0(\cube_bot[5] ), .C0(\cube_bot[7] ), .B0(\cube_bot[6] ), 
-    .F0(\cube_gen1.n4116 ), .F1(\cube_gen1.n8_adj_113 ));
+    .F0(\cube_gen1.n4117 ), .F1(\cube_gen1.n8_adj_113 ));
   cube_gen1_SLICE_132 \cube_gen1.SLICE_132 ( .D1(\cube_bot[2] ), 
-    .C1(\cube_gen1.n4_adj_106 ), .B1(\row[2] ), .D0(\cube_bot[0] ), 
+    .C1(\cube_gen1.n4_adj_106 ), .A1(\row[2] ), .D0(\cube_bot[0] ), 
     .C0(\cube_bot[1] ), .B0(\row[1] ), .A0(\row[0] ), 
     .F0(\cube_gen1.n4_adj_106 ), .F1(\cube_gen1.n6_adj_107 ));
-  cube_gen1_SLICE_134 \cube_gen1.SLICE_134 ( .D1(\cube_bot[4] ), 
-    .C1(\cube_gen1.n8_adj_108 ), .B1(\row[4] ), .D0(\cube_bot[3] ), 
+  cube_gen1_SLICE_134 \cube_gen1.SLICE_134 ( .D1(\row[4] ), 
+    .C1(\cube_gen1.n8_adj_108 ), .A1(\cube_bot[4] ), .D0(\cube_bot[3] ), 
     .C0(\cube_gen1.n6_adj_107 ), .B0(\row[3] ), .F0(\cube_gen1.n8_adj_108 ), 
     .F1(\cube_gen1.n10_adj_109 ));
   cube_gen1_SLICE_136 \cube_gen1.SLICE_136 ( .D1(\cube_bot[6] ), 
-    .C1(\cube_gen1.n12_adj_110 ), .A1(\row[6] ), .D0(\row[5] ), 
-    .C0(\cube_gen1.n10_adj_109 ), .A0(\cube_bot[5] ), 
-    .F0(\cube_gen1.n12_adj_110 ), .F1(\cube_gen1.n14_adj_111 ));
+    .C1(\cube_gen1.n12_adj_110 ), .B1(\row[6] ), .D0(\cube_bot[5] ), 
+    .C0(\cube_gen1.n10_adj_109 ), .B0(\row[5] ), .F0(\cube_gen1.n12_adj_110 ), 
+    .F1(\cube_gen1.n14_adj_111 ));
   cube_gen1_SLICE_138 \cube_gen1.SLICE_138 ( .D1(\cube_bot[8] ), 
-    .C1(\cube_gen1.n16_adj_112 ), .B1(\row[8] ), .D0(\cube_bot[7] ), 
-    .C0(\cube_gen1.n14_adj_111 ), .B0(\row[7] ), .F0(\cube_gen1.n16_adj_112 ), 
-    .F1(\cube_gen1.n18_adj_115 ));
-  vga_1_SLICE_140 \vga_1.SLICE_140 ( .D1(\row[2] ), .C1(\row[1] ), 
-    .B1(\row[0] ), .A1(\row[3] ), .D0(\row[1] ), .C0(\row[2] ), .B0(\row[3] ), 
-    .A0(\row[0] ), .F0(\vga_1.n12_adj_136 ), .F1(n3333));
+    .C1(\cube_gen1.n16_adj_112 ), .B1(\row[8] ), .D0(\row[7] ), 
+    .C0(\cube_gen1.n14_adj_111 ), .A0(\cube_bot[7] ), 
+    .F0(\cube_gen1.n16_adj_112 ), .F1(\cube_gen1.n18_adj_115 ));
+  vga_1_SLICE_140 \vga_1.SLICE_140 ( .D1(\row[1] ), .C1(\row[2] ), 
+    .B1(\row[3] ), .A1(\row[0] ), .D0(\row[2] ), .C0(\row[1] ), .B0(\row[0] ), 
+    .A0(\row[3] ), .F0(\vga_1.n12_adj_136 ), .F1(n3334));
   SLICE_144 SLICE_144( .D0(col_0__N_50), .C0(row_0__N_30), .F0(row_0__N_29));
-  jump1_SLICE_146 \jump1.SLICE_146 ( .C0(ledController_c_7), 
-    .A0(\jump1.lastPosition_2__N_89 ), .F0(cube_bot_2__N_74));
+  jump1_SLICE_146 \jump1.SLICE_146 ( .D0(\jump1.lastPosition_2__N_89 ), 
+    .C0(ledController_c_7), .F0(cube_bot_2__N_74));
   controller1_SLICE_147 \controller1.SLICE_147 ( 
     .D0(\controller1.intermediate[6] ), .C0(ledController_c_6), 
     .B0(controlLatch_c), .F0(ledController_c_6));
-  vga_1_SLICE_150 \vga_1.SLICE_150 ( .D0(\row[8] ), .C0(\vga_1.n2977 ), 
-    .B0(\vga_1.n10 ), .F0(\vga_1.n3641 ));
+  vga_1_SLICE_150 \vga_1.SLICE_150 ( .D0(\row[8] ), .C0(\vga_1.n2978 ), 
+    .B0(\vga_1.n10 ), .F0(\vga_1.n3642 ));
   SLICE_152 SLICE_152( .F0(GND_net));
   jump1_SLICE_154 \jump1.SLICE_154 ( .D0(\jump1.lastPosition_2__N_89 ), 
-    .C0(\jump1.n1155 ), .F0(n409));
-  jump1_SLICE_157 \jump1.SLICE_157 ( .D0(\cube_bot[1] ), .C0(\cube_bot[4] ), 
-    .B0(\cube_bot[3] ), .A0(\cube_bot[2] ), .F0(\jump1.n3331 ));
-  controller1_SLICE_158 \controller1.SLICE_158 ( .D1(ledController_c_2), 
-    .C1(\controller1.intermediate[2] ), .B1(controlLatch_c), 
-    .D0(ledController_c_1), .C0(\controller1.intermediate[1] ), 
-    .A0(controlLatch_c), .F0(ledController_c_1), .F1(ledController_c_2));
-  controller1_SLICE_160 \controller1.SLICE_160 ( 
-    .D1(\controller1.intermediate[4] ), .C1(ledController_c_4), 
-    .B1(controlLatch_c), .D0(ledController_c_3), .C0(controlLatch_c), 
-    .B0(\controller1.intermediate[3] ), .F0(ledController_c_3), 
-    .F1(ledController_c_4));
+    .C0(\jump1.n1156 ), .F0(n410));
+  jump1_SLICE_157 \jump1.SLICE_157 ( .D0(\cube_bot[4] ), .C0(\cube_bot[2] ), 
+    .B0(\cube_bot[1] ), .A0(\cube_bot[3] ), .F0(\jump1.n3332 ));
+  controller1_SLICE_158 \controller1.SLICE_158 ( 
+    .D1(\controller1.intermediate[2] ), .C1(ledController_c_2), 
+    .B1(controlLatch_c), .D0(\controller1.intermediate[1] ), 
+    .C0(ledController_c_1), .A0(controlLatch_c), .F0(ledController_c_1), 
+    .F1(ledController_c_2));
+  controller1_SLICE_160 \controller1.SLICE_160 ( .D1(ledController_c_4), 
+    .C1(controlLatch_c), .B1(\controller1.intermediate[4] ), 
+    .D0(\controller1.intermediate[3] ), .C0(ledController_c_3), 
+    .B0(controlLatch_c), .F0(ledController_c_3), .F1(ledController_c_4));
   controller1_SLICE_162 \controller1.SLICE_162 ( .D1(ledController_c_0), 
-    .C1(\controller1.intermediate[0] ), .B1(controlLatch_c), 
-    .D0(\controller1.intermediate[5] ), .C0(ledController_c_5), 
-    .A0(controlLatch_c), .F0(ledController_c_5), .F1(ledController_c_0));
+    .C1(\controller1.intermediate[0] ), .A1(controlLatch_c), 
+    .D0(ledController_c_5), .C0(\controller1.intermediate[5] ), 
+    .B0(controlLatch_c), .F0(ledController_c_5), .F1(ledController_c_0));
   ledController_pad_0__SLICE_164 \ledController_pad[0].SLICE_164 ( 
     .F0(\ledController_pad[0].vcc ));
   controller1_osc \controller1.osc ( .CLKHFPU(\ledController_pad[0].vcc ), 
@@ -1953,12 +1952,12 @@ endmodule
 
 module lut40005 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF733") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF373") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40006 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xA0E0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xAA08") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module SLICE_42 ( input DI1, DI0, D1, D0, LSR, CLK, output Q0, Q1, F0, F1 );
@@ -1988,7 +1987,7 @@ endmodule
 module jump1_SLICE_44 ( input DI0, D0, C0, B0, A0, LSR, CLK, output Q0, F0 );
   wire   VCCI, DI0_dly, CLK_dly, LSR_dly;
 
-  lut40007 \jump1/i1630_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40006 \jump1/i1630_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
   ffsre20001 \jump1/lastPosition_6__I_0 ( .D0(DI0_dly), .SP(VCCI), 
     .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
   vcc DRIVEVCC( .PWR1(VCCI));
@@ -2003,11 +2002,6 @@ module jump1_SLICE_44 ( input DI0, D0, C0, B0, A0, LSR, CLK, output Q0, F0 );
     $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
   endspecify
 
-endmodule
-
-module lut40007 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xC0E0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module SLICE_45 ( input DI1, DI0, D1, D0, LSR, CLK, output Q0, Q1, F0, F1 );
@@ -2056,8 +2050,8 @@ module SLICE_49 ( input DI1, DI0, D1, C1, B1, A1, D0, C0, B0, A0, CLK, output
     Q0, Q1, F0, F1 );
   wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
 
-  lut40008 i941_4_lut( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40009 i939_4_lut( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40007 i941_4_lut( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40008 i939_4_lut( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
   ffsre2 \jump1/cube_bot_1__I_0_2 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
     .LSR(GNDI), .Q(Q1));
   vcc DRIVEVCC( .PWR1(VCCI));
@@ -2082,14 +2076,14 @@ module SLICE_49 ( input DI1, DI0, D1, C1, B1, A1, D0, C0, B0, A0, CLK, output
 
 endmodule
 
-module lut40008 ( input A, B, C, D, output Z );
+module lut40007 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0544") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0454") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40009 ( input A, B, C, D, output Z );
+module lut40008 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x00CA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x00E2") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module controller1_SLICE_52 ( input DI1, DI0, D1, D0, CLK, output Q0, Q1, F0, 
@@ -2174,7 +2168,7 @@ module controller1_SLICE_57 ( input DI1, DI0, D1, D0, CLK, output Q0, Q1, F0,
     F1 );
   wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
 
-  lut40010 \controller1/i11_1_lut ( .A(GNDI), .B(GNDI), .C(GNDI), .D(D1), 
+  lut40009 \controller1/i11_1_lut ( .A(GNDI), .B(GNDI), .C(GNDI), .D(D1), 
     .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
   lut40004 \controller1.SLICE_57_K0 ( .A(GNDI), .B(GNDI), .C(GNDI), .D(D0), 
@@ -2196,7 +2190,7 @@ module controller1_SLICE_57 ( input DI1, DI0, D1, D0, CLK, output Q0, Q1, F0,
 
 endmodule
 
-module lut40010 ( input A, B, C, D, output Z );
+module lut40009 ( input A, B, C, D, output Z );
 
   LUT4 #("0x00FF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -2204,8 +2198,8 @@ endmodule
 module cube_gen1_SLICE_60 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, 
     F1 );
 
-  lut40011 \cube_gen1/i2_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40012 \cube_gen1/LessThan_4_i20_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+  lut40010 \cube_gen1/i2_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40011 \cube_gen1/LessThan_4_i20_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
     .Z(F0));
 
   specify
@@ -2221,26 +2215,26 @@ module cube_gen1_SLICE_60 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0,
 
 endmodule
 
-module lut40011 ( input A, B, C, D, output Z );
+module lut40010 ( input A, B, C, D, output Z );
 
   LUT4 #("0xD040") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40012 ( input A, B, C, D, output Z );
+module lut40011 ( input A, B, C, D, output Z );
 
   LUT4 #("0xD4E8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_1_SLICE_62 ( input D1, C1, D0, C0, B0, A0, output F0, F1 );
+module vga_1_SLICE_62 ( input D1, B1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40013 \vga_1/i149_2_lut ( .A(GNDI), .B(GNDI), .C(C1), .D(D1), .Z(F1));
+  lut40012 \vga_1/i149_2_lut ( .A(GNDI), .B(B1), .C(GNDI), .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40014 \vga_1/col_8__I_0 ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40013 \vga_1/col_8__I_0 ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
@@ -2249,21 +2243,21 @@ module vga_1_SLICE_62 ( input D1, C1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
+module lut40012 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
 module lut40013 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFFF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xBFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40014 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xDFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module vga_1_SLICE_63 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
+module vga_1_SLICE_63 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40015 \vga_1.i35_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40016 \vga_1/i1_2_lut_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40014 \vga_1.i35_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40015 \vga_1/i1_2_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2273,26 +2267,26 @@ module vga_1_SLICE_63 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lut40015 ( input A, B, C, D, output Z );
+module lut40014 ( input A, B, C, D, output Z );
 
   LUT4 #("0x7FFC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40016 ( input A, B, C, D, output Z );
+module lut40015 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF0A0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF0C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_1_SLICE_64 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40017 \vga_1/i2621_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40018 \vga_1/i1_2_lut_adj_37 ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40016 \vga_1/i2621_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40017 \vga_1/i1_2_lut_adj_37 ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2306,20 +2300,20 @@ module vga_1_SLICE_64 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
 
 endmodule
 
-module lut40017 ( input A, B, C, D, output Z );
+module lut40016 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x03FE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x5756") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40018 ( input A, B, C, D, output Z );
+module lut40017 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFFF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_1_SLICE_65 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40019 \vga_1.i2_3_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40020 \vga_1/i1_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40018 \vga_1.i2_3_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40019 \vga_1/i1_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -2334,21 +2328,21 @@ module vga_1_SLICE_65 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
-module lut40019 ( input A, B, C, D, output Z );
+module lut40018 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFF7F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xDFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40020 ( input A, B, C, D, output Z );
+module lut40019 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xE400") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xA280") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module jump1_SLICE_66 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40021 \jump1/i1679_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40018 \jump1/i1596_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40020 \jump1/i1679_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40017 \jump1/i1596_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2358,47 +2352,47 @@ module jump1_SLICE_66 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40020 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAA80") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module jump1_SLICE_67 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40021 \jump1/i1_4_lut_adj_34 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40022 \jump1/i67_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40021 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xEC00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module jump1_SLICE_67 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
-
-  lut40022 \jump1/i1_4_lut_adj_34 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40023 \jump1/i67_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
+  LUT4 #("0x5575") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40022 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x3373") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module lut40023 ( input A, B, C, D, output Z );
-
-  LUT4 #("0x4EEE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x2EEE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module jump1_SLICE_68 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40024 \jump1/i1_4_lut_adj_36 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40025 \jump1/i1_4_lut_adj_35 ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40023 \jump1/i1_4_lut_adj_36 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40024 \jump1/i1_4_lut_adj_35 ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -2413,29 +2407,29 @@ module jump1_SLICE_68 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
+module lut40023 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x30BA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
 module lut40024 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x50DC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x3031") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40025 ( input A, B, C, D, output Z );
-
-  LUT4 #("0x00F1") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module controller1_SLICE_69 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
+module controller1_SLICE_69 ( input D1, C1, A1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40026 \controller1/ledController_c_7_I_0 ( .A(GNDI), .B(B1), .C(C1), 
+  lut40025 \controller1/ledController_c_7_I_0 ( .A(A1), .B(GNDI), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40027 \controller1/slowCount_3__I_0 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+  lut40026 \controller1/slowCount_3__I_0 ( .A(A0), .B(B0), .C(C0), .D(D0), 
     .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
     (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
@@ -2444,12 +2438,12 @@ module controller1_SLICE_69 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
-module lut40026 ( input A, B, C, D, output Z );
+module lut40025 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFC0C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xAFA0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40027 ( input A, B, C, D, output Z );
+module lut40026 ( input A, B, C, D, output Z );
 
   LUT4 #("0x0004") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -2457,8 +2451,8 @@ endmodule
 module jump1_SLICE_70 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40028 \jump1/i2_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40029 \jump1/i2_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40027 \jump1/i2_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40028 \jump1/i2_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2473,12 +2467,12 @@ module jump1_SLICE_70 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
 
 endmodule
 
-module lut40028 ( input A, B, C, D, output Z );
+module lut40027 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFEEE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFEC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40029 ( input A, B, C, D, output Z );
+module lut40028 ( input A, B, C, D, output Z );
 
   LUT4 #("0xC000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -2486,10 +2480,36 @@ endmodule
 module jump1_SLICE_71 ( input D0, C0, A0, output F0 );
   wire   GNDI;
 
-  lut40030 \jump1.i781_2_lut_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40029 \jump1.i781_2_lut_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40029 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF5F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module cube_gen1_SLICE_72 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40030 \cube_gen1/LessThan_4_i14_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40031 \cube_gen1/LessThan_4_i12_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (A0 => F0) = (0:0:0,0:0:0);
@@ -2499,51 +2519,25 @@ endmodule
 
 module lut40030 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF5F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xD4E8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module cube_gen1_SLICE_72 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
+module lut40031 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFAA0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_1_SLICE_74 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40031 \cube_gen1/LessThan_4_i14_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
-    .Z(F1));
-  lut40032 \cube_gen1/LessThan_4_i12_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), 
-    .Z(F0));
+  lut40032 \vga_1/i1656_2_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
+  lut40033 \vga_1/VSYNC_c_I_0_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
     (C1 => F1) = (0:0:0,0:0:0);
     (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lut40031 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xB2E8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module lut40032 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xFAA0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module vga_1_SLICE_74 ( input D1, C1, A1, D0, C0, B0, A0, output F0, F1 );
-  wire   GNDI;
-
-  lut40033 \vga_1/i1656_2_lut_3_lut ( .A(A1), .B(GNDI), .C(C1), .D(D1), .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40034 \vga_1/VSYNC_c_I_0_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
@@ -2552,21 +2546,21 @@ module vga_1_SLICE_74 ( input D1, C1, A1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
-module lut40033 ( input A, B, C, D, output Z );
+module lut40032 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xA000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xC000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40034 ( input A, B, C, D, output Z );
+module lut40033 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xBFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xDFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_1_SLICE_75 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40035 \vga_1/i22_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40036 \vga_1.i1_2_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40034 \vga_1/i22_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40035 \vga_1.i1_2_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2581,12 +2575,12 @@ module vga_1_SLICE_75 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
 
 endmodule
 
-module lut40035 ( input A, B, C, D, output Z );
+module lut40034 ( input A, B, C, D, output Z );
 
   LUT4 #("0x22C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40036 ( input A, B, C, D, output Z );
+module lut40035 ( input A, B, C, D, output Z );
 
   LUT4 #("0xA000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -2594,8 +2588,8 @@ endmodule
 module vga_1_SLICE_76 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40037 \vga_1/i2628_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40038 \vga_1/i1_2_lut_adj_39 ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40036 \vga_1/i2628_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40037 \vga_1/i1_2_lut_adj_39 ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2609,21 +2603,21 @@ module vga_1_SLICE_76 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
 
 endmodule
 
-module lut40037 ( input A, B, C, D, output Z );
+module lut40036 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFF80") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40038 ( input A, B, C, D, output Z );
+module lut40037 ( input A, B, C, D, output Z );
 
   LUT4 #("0xF000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_1_SLICE_78 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
+module vga_1_SLICE_78 ( input D1, C1, B1, A1, D0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40039 \vga_1/i348_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40040 \vga_1/i359_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40038 \vga_1/i348_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40039 \vga_1/i359_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2632,26 +2626,26 @@ module vga_1_SLICE_78 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lut40039 ( input A, B, C, D, output Z );
+module lut40038 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFFC8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40040 ( input A, B, C, D, output Z );
+module lut40039 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xCC00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_1_SLICE_80 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40041 \vga_1/i3_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40042 \cube_gen1/i1652_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40040 \vga_1/i3_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40041 \cube_gen1/i1652_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2665,12 +2659,12 @@ module vga_1_SLICE_80 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
 
 endmodule
 
-module lut40041 ( input A, B, C, D, output Z );
+module lut40040 ( input A, B, C, D, output Z );
 
   LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40042 ( input A, B, C, D, output Z );
+module lut40041 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFFF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -2678,8 +2672,8 @@ endmodule
 module vga_1_SLICE_82 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40043 \vga_1/i6_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40040 \vga_1/i3_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40042 \vga_1/i6_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40037 \vga_1/i3_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2693,7 +2687,7 @@ module vga_1_SLICE_82 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
 
 endmodule
 
-module lut40043 ( input A, B, C, D, output Z );
+module lut40042 ( input A, B, C, D, output Z );
 
   LUT4 #("0x0040") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -2701,8 +2695,8 @@ endmodule
 module vga_1_SLICE_84 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40044 \vga_1/i8_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40029 \vga_1/i5_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40043 \vga_1/i8_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40044 \vga_1/i5_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2717,16 +2711,21 @@ module vga_1_SLICE_84 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
 
 endmodule
 
-module lut40044 ( input A, B, C, D, output Z );
+module lut40043 ( input A, B, C, D, output Z );
 
   LUT4 #("0x4000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_1_SLICE_86 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
+module lut40044 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_1_SLICE_86 ( input D1, C1, B1, A1, D0, B0, output F0, F1 );
   wire   GNDI;
 
   lut40045 \vga_1/rgb_c_5_I_0 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40038 \vga_1/i1_2_lut_adj_38 ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40046 \vga_1/i1_2_lut_adj_38 ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2735,20 +2734,25 @@ module vga_1_SLICE_86 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40045 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0020") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x1000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40046 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCC00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_1_SLICE_88 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40046 \vga_1/row_8__I_0 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40047 \vga_1/i2624_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40047 \vga_1/row_8__I_0 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40048 \vga_1/i2624_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -2763,21 +2767,21 @@ module vga_1_SLICE_88 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
-module lut40046 ( input A, B, C, D, output Z );
+module lut40047 ( input A, B, C, D, output Z );
 
   LUT4 #("0x0200") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40047 ( input A, B, C, D, output Z );
+module lut40048 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFECC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFE0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_1_SLICE_92 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40048 \vga_1/i1_4_lut_adj_40 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40049 \vga_1/i2736_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40049 \vga_1/i1_4_lut_adj_40 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40050 \vga_1/i2736_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2792,20 +2796,20 @@ module vga_1_SLICE_92 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
 
 endmodule
 
-module lut40048 ( input A, B, C, D, output Z );
-
-  LUT4 #("0x20A8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
 module lut40049 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFCCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x40C8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40050 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFCF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_1_SLICE_94 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40050 \vga_1/i2836_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40051 \vga_1/i5_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40051 \vga_1/i2836_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40052 \vga_1/i5_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -2820,12 +2824,12 @@ module vga_1_SLICE_94 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
-module lut40050 ( input A, B, C, D, output Z );
+module lut40051 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0002") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0100") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40051 ( input A, B, C, D, output Z );
+module lut40052 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -2833,31 +2837,8 @@ endmodule
 module jump1_SLICE_96 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40052 \jump1/i1691_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40042 \jump1/i637_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lut40052 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xFAF8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module jump1_SLICE_98 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
-  wire   GNDI;
-
-  lut40053 \jump1/i1_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40018 \jump1/i1_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40053 \jump1/i1691_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40017 \jump1/i637_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2873,15 +2854,14 @@ endmodule
 
 module lut40053 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFEF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFCF8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module jump1_SLICE_100 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
+module jump1_SLICE_98 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40054 \jump1/i2839_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40055 \jump1/LessThan_17_i20_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
+  lut40054 \jump1/i1_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40017 \jump1/i1_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -2891,14 +2871,33 @@ module jump1_SLICE_100 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40054 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFF3B") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFEF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module jump1_SLICE_100 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40055 \jump1/LessThan_17_i20_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40056 \jump1/i2839_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
 endmodule
 
 module lut40055 ( input A, B, C, D, output Z );
@@ -2906,11 +2905,16 @@ module lut40055 ( input A, B, C, D, output Z );
   LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
+module lut40056 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAFEF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
 module jump1_SLICE_101 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40056 \jump1/i2842_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40057 \jump1/LessThan_13_i20_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+  lut40057 \jump1/i2842_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40058 \jump1/LessThan_13_i20_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
     .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -2926,12 +2930,12 @@ module jump1_SLICE_101 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
 
 endmodule
 
-module lut40056 ( input A, B, C, D, output Z );
+module lut40057 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xEFCF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xEFAF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40057 ( input A, B, C, D, output Z );
+module lut40058 ( input A, B, C, D, output Z );
 
   LUT4 #("0xC0FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -2939,10 +2943,10 @@ endmodule
 module jump1_SLICE_103 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40058 \jump1/LessThan_17_i18_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+  lut40059 \jump1/LessThan_17_i18_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40055 \jump1/LessThan_17_i16_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+  lut40060 \jump1/LessThan_17_i16_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
     .D(D0), .Z(F0));
 
   specify
@@ -2952,53 +2956,28 @@ module jump1_SLICE_103 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lut40058 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module jump1_SLICE_105 ( input D1, C1, B1, D0, C0, A0, output F0, F1 );
-  wire   GNDI;
-
-  lut40059 \jump1/LessThan_13_i18_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
-    .D(D1), .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40060 \jump1/LessThan_13_i16_3_lut_3_lut ( .A(A0), .B(GNDI), .C(C0), 
-    .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40059 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xC0FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40060 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xA0FA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module jump1_SLICE_106 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
+module jump1_SLICE_105 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40061 \jump1/LessThan_17_i6_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+  lut40061 \jump1/LessThan_13_i18_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40062 \jump1/LessThan_17_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
-    .Z(F0));
+  lut40058 \jump1/LessThan_13_i16_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -3007,7 +2986,6 @@ module jump1_SLICE_106 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
@@ -3017,18 +2995,13 @@ module lut40061 ( input A, B, C, D, output Z );
   LUT4 #("0xC0FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40062 ( input A, B, C, D, output Z );
-
-  LUT4 #("0x7130") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module jump1_SLICE_108 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
+module jump1_SLICE_106 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40063 \jump1/LessThan_13_i6_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+  lut40062 \jump1/LessThan_17_i6_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40064 \jump1/LessThan_13_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+  lut40063 \jump1/LessThan_17_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
     .Z(F0));
 
   specify
@@ -3043,24 +3016,24 @@ module jump1_SLICE_108 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
+module lut40062 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC0FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
 module lut40063 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x7150") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40064 ( input A, B, C, D, output Z );
-
-  LUT4 #("0x22B2") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module jump1_SLICE_110 ( input D1, C1, A1, D0, C0, B0, output F0, F1 );
+module jump1_SLICE_108 ( input D1, C1, A1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40065 \jump1/LessThan_17_i10_3_lut_3_lut ( .A(A1), .B(GNDI), .C(C1), 
+  lut40064 \jump1/LessThan_13_i6_3_lut_3_lut ( .A(A1), .B(GNDI), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40055 \jump1/LessThan_17_i8_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
+  lut40065 \jump1/LessThan_13_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -3069,22 +3042,28 @@ module jump1_SLICE_110 ( input D1, C1, A1, D0, C0, B0, output F0, F1 );
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lut40065 ( input A, B, C, D, output Z );
+module lut40064 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF550") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xA0FA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module jump1_SLICE_112 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+module lut40065 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0C8E") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module jump1_SLICE_110 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40059 \jump1/LessThan_13_i10_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+  lut40059 \jump1/LessThan_17_i10_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40057 \jump1/LessThan_13_i8_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+  lut40060 \jump1/LessThan_17_i8_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
     .D(D0), .Z(F0));
 
   specify
@@ -3098,13 +3077,38 @@ module jump1_SLICE_112 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
 
 endmodule
 
+module jump1_SLICE_112 ( input D1, C1, B1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40061 \jump1/LessThan_13_i10_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40066 \jump1/LessThan_13_i8_3_lut_3_lut ( .A(A0), .B(GNDI), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40066 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF550") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
 module jump1_SLICE_116 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40058 \jump1/LessThan_17_i14_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+  lut40059 \jump1/LessThan_17_i14_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40055 \jump1/LessThan_17_i12_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+  lut40060 \jump1/LessThan_17_i12_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
     .D(D0), .Z(F0));
 
   specify
@@ -3121,10 +3125,10 @@ endmodule
 module jump1_SLICE_118 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40059 \jump1/LessThan_13_i14_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+  lut40061 \jump1/LessThan_13_i14_3_lut_3_lut ( .A(GNDI), .B(B1), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40057 \jump1/LessThan_13_i12_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+  lut40058 \jump1/LessThan_13_i12_3_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
     .D(D0), .Z(F0));
 
   specify
@@ -3141,9 +3145,9 @@ endmodule
 module controller1_SLICE_120 ( input D1, C1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40066 \controller1/i1_2_lut ( .A(GNDI), .B(GNDI), .C(C1), .D(D1), .Z(F1));
+  lut40067 \controller1/i1_2_lut ( .A(GNDI), .B(GNDI), .C(C1), .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40067 \controller1/i3_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40068 \controller1/i3_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -3156,12 +3160,12 @@ module controller1_SLICE_120 ( input D1, C1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
-module lut40066 ( input A, B, C, D, output Z );
+module lut40067 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFFF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40067 ( input A, B, C, D, output Z );
+module lut40068 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -3169,7 +3173,7 @@ endmodule
 module controller1_SLICE_121 ( input D0, C0, B0, output F0 );
   wire   GNDI;
 
-  lut40068 \controller1/controlClk_c_I_0 ( .A(GNDI), .B(B0), .C(C0), .D(D0), 
+  lut40069 \controller1/controlClk_c_I_0 ( .A(GNDI), .B(B0), .C(C0), .D(D0), 
     .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -3181,7 +3185,7 @@ module controller1_SLICE_121 ( input D0, C0, B0, output F0 );
 
 endmodule
 
-module lut40068 ( input A, B, C, D, output Z );
+module lut40069 ( input A, B, C, D, output Z );
 
   LUT4 #("0x0030") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -3190,8 +3194,8 @@ module cube_gen1_SLICE_124 ( input DI1, D1, C1, B1, A1, D0, C0, LSR, CLK,
     output Q1, F0, F1 );
   wire   GNDI, VCCI, DI1_dly, CLK_dly, LSR_dly;
 
-  lut4 \jump1/i675_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40042 \cube_gen1/i374_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40070 \jump1/i675_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40041 \cube_gen1/i374_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
   ffsre20001 \jump1/cube_bot_6__I_0 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
     .LSR(LSR_dly), .Q(Q1));
@@ -3211,12 +3215,17 @@ module cube_gen1_SLICE_124 ( input DI1, D1, C1, B1, A1, D0, C0, LSR, CLK,
 
 endmodule
 
+module lut40070 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFDA8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
 module cube_gen1_SLICE_125 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, 
     F1 );
 
-  lut40031 \cube_gen1/LessThan_4_i18_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+  lut40071 \cube_gen1/LessThan_4_i18_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
     .Z(F1));
-  lut40069 \cube_gen1/LessThan_4_i16_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+  lut40072 \cube_gen1/LessThan_4_i16_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
     .Z(F0));
 
   specify
@@ -3232,18 +3241,23 @@ module cube_gen1_SLICE_125 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0,
 
 endmodule
 
-module lut40069 ( input A, B, C, D, output Z );
+module lut40071 ( input A, B, C, D, output Z );
 
   LUT4 #("0xB2E8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40072 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xD4E8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module cube_gen1_SLICE_126 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40070 \cube_gen1/LessThan_4_i6_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
+  lut40073 \cube_gen1/LessThan_4_i6_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
     .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40071 \cube_gen1/LessThan_4_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+  lut40074 \cube_gen1/LessThan_4_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
     .Z(F0));
 
   specify
@@ -3258,47 +3272,52 @@ module cube_gen1_SLICE_126 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
 
 endmodule
 
-module lut40070 ( input A, B, C, D, output Z );
+module lut40073 ( input A, B, C, D, output Z );
 
   LUT4 #("0xC0FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40071 ( input A, B, C, D, output Z );
+module lut40074 ( input A, B, C, D, output Z );
 
   LUT4 #("0x8ECF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module cube_gen1_SLICE_128 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+module cube_gen1_SLICE_128 ( input D1, C1, A1, D0, C0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40070 \cube_gen1/LessThan_4_i10_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
+  lut40075 \cube_gen1/LessThan_4_i10_3_lut ( .A(A1), .B(GNDI), .C(C1), .D(D1), 
     .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40072 \cube_gen1/LessThan_4_i8_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), 
+  lut40076 \cube_gen1/LessThan_4_i8_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), 
     .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
     (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lut40072 ( input A, B, C, D, output Z );
+module lut40075 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xC0FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF550") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40076 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF550") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module cube_gen1_SLICE_131 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
-  lut40073 \cube_gen1/i390_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+  lut40077 \cube_gen1/i390_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
     .Z(F1));
-  lut40074 \cube_gen1/i382_rep_17_2_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+  lut40078 \cube_gen1/i382_rep_17_2_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
     .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -3307,67 +3326,6 @@ module cube_gen1_SLICE_131 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
     (C1 => F1) = (0:0:0,0:0:0);
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lut40073 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module lut40074 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xFFFC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module cube_gen1_SLICE_132 ( input D1, C1, B1, D0, C0, B0, A0, output F0, F1 );
-  wire   GNDI;
-
-  lut40075 \cube_gen1/LessThan_5_i6_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
-    .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40076 \cube_gen1/LessThan_5_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
-    .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lut40075 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module lut40076 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xF371") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module cube_gen1_SLICE_134 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
-  wire   GNDI;
-
-  lut40075 \cube_gen1/LessThan_5_i10_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
-    .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40077 \cube_gen1/LessThan_5_i8_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), 
-    .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
@@ -3377,91 +3335,152 @@ endmodule
 
 module lut40077 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module cube_gen1_SLICE_136 ( input D1, C1, A1, D0, C0, A0, output F0, F1 );
-  wire   GNDI;
-
-  lut40078 \cube_gen1/LessThan_5_i14_3_lut ( .A(A1), .B(GNDI), .C(C1), .D(D1), 
-    .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40079 \cube_gen1/LessThan_5_i12_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), 
-    .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40078 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF550") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFFC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40079 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xA0FA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module cube_gen1_SLICE_138 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+module cube_gen1_SLICE_132 ( input D1, C1, A1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40075 \cube_gen1/LessThan_5_i18_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
+  lut40075 \cube_gen1/LessThan_5_i6_3_lut ( .A(A1), .B(GNDI), .C(C1), .D(D1), 
     .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40077 \cube_gen1/LessThan_5_i16_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), 
+  lut40079 \cube_gen1/LessThan_5_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
     .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
     (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module vga_1_SLICE_140 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
-
-  lut40080 \cube_gen1/i2_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40081 \vga_1/i4_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
     (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40079 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF371") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module cube_gen1_SLICE_134 ( input D1, C1, A1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40080 \cube_gen1/LessThan_5_i10_3_lut ( .A(A1), .B(GNDI), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40081 \cube_gen1/LessThan_5_i8_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40080 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xA0FA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40081 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFFBF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module cube_gen1_SLICE_136 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40082 \cube_gen1/LessThan_5_i14_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40081 \cube_gen1/LessThan_5_i12_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40082 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module cube_gen1_SLICE_138 ( input D1, C1, B1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40082 \cube_gen1/LessThan_5_i18_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40083 \cube_gen1/LessThan_5_i16_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40083 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA0FA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_1_SLICE_140 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40084 \cube_gen1/i2_3_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40085 \vga_1/i4_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40084 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40085 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFDFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module SLICE_144 ( input D0, C0, output F0 );
   wire   GNDI;
 
-  lut40018 i256_2_lut( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40017 i256_2_lut( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -3471,28 +3490,28 @@ module SLICE_144 ( input D0, C0, output F0 );
 
 endmodule
 
-module jump1_SLICE_146 ( input C0, A0, output F0 );
+module jump1_SLICE_146 ( input D0, C0, output F0 );
   wire   GNDI;
 
-  lut40082 \jump1/i200_2_lut ( .A(A0), .B(GNDI), .C(C0), .D(GNDI), .Z(F0));
+  lut40086 \jump1/i200_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
+    (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lut40082 ( input A, B, C, D, output Z );
+module lut40086 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xA0A0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module controller1_SLICE_147 ( input D0, C0, B0, output F0 );
   wire   GNDI;
 
-  lut40083 \controller1/ledController_c_6_I_0 ( .A(GNDI), .B(B0), .C(C0), 
+  lut40087 \controller1/ledController_c_6_I_0 ( .A(GNDI), .B(B0), .C(C0), 
     .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -3504,7 +3523,7 @@ module controller1_SLICE_147 ( input D0, C0, B0, output F0 );
 
 endmodule
 
-module lut40083 ( input A, B, C, D, output Z );
+module lut40087 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFC30") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -3512,7 +3531,7 @@ endmodule
 module vga_1_SLICE_150 ( input D0, C0, B0, output F0 );
   wire   GNDI;
 
-  lut40084 \vga_1/i2741_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40088 \vga_1/i2741_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -3523,7 +3542,7 @@ module vga_1_SLICE_150 ( input D0, C0, B0, output F0 );
 
 endmodule
 
-module lut40084 ( input A, B, C, D, output Z );
+module lut40088 ( input A, B, C, D, output Z );
 
   LUT4 #("0x0C00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -3531,7 +3550,7 @@ endmodule
 module SLICE_152 ( output F0 );
   wire   GNDI;
 
-  lut40085 i1( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  lut40089 i1( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -3539,7 +3558,7 @@ module SLICE_152 ( output F0 );
 
 endmodule
 
-module lut40085 ( input A, B, C, D, output Z );
+module lut40089 ( input A, B, C, D, output Z );
 
   LUT4 #("0x0000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
@@ -3547,7 +3566,7 @@ endmodule
 module jump1_SLICE_154 ( input D0, C0, output F0 );
   wire   GNDI;
 
-  lut40042 \jump1/i1697_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40041 \jump1/i1697_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -3559,7 +3578,7 @@ endmodule
 
 module jump1_SLICE_157 ( input D0, C0, B0, A0, output F0 );
 
-  lut40086 \jump1/i1_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40090 \jump1/i1_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D0 => F0) = (0:0:0,0:0:0);
@@ -3570,78 +3589,18 @@ module jump1_SLICE_157 ( input D0, C0, B0, A0, output F0 );
 
 endmodule
 
-module lut40086 ( input A, B, C, D, output Z );
+module lut40090 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFEFC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFEA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module controller1_SLICE_158 ( input D1, C1, B1, D0, C0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40087 \controller1/ledController_c_2_I_0 ( .A(GNDI), .B(B1), .C(C1), 
+  lut40091 \controller1/ledController_c_2_I_0 ( .A(GNDI), .B(B1), .C(C1), 
     .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40088 \controller1/ledController_c_1_I_0 ( .A(A0), .B(GNDI), .C(C0), 
-    .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lut40087 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xF3C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module lut40088 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xF5A0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module controller1_SLICE_160 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
-  wire   GNDI;
-
-  lut40089 \controller1/ledController_c_4_I_0 ( .A(GNDI), .B(B1), .C(C1), 
-    .D(D1), .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40090 \controller1/ledController_c_3_I_0 ( .A(GNDI), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lut40089 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xFC30") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module lut40090 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xCFC0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module controller1_SLICE_162 ( input D1, C1, B1, D0, C0, A0, output F0, F1 );
-  wire   GNDI;
-
-  lut40087 \controller1/ledController_c_0_I_0 ( .A(GNDI), .B(B1), .C(C1), 
-    .D(D1), .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40091 \controller1/ledController_c_5_I_0 ( .A(A0), .B(GNDI), .C(C0), 
+  lut40092 \controller1/ledController_c_1_I_0 ( .A(A0), .B(GNDI), .C(C0), 
     .D(D0), .Z(F0));
 
   specify
@@ -3657,13 +3616,73 @@ endmodule
 
 module lut40091 ( input A, B, C, D, output Z );
 
+  LUT4 #("0xFC30") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40092 ( input A, B, C, D, output Z );
+
   LUT4 #("0xFA50") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module controller1_SLICE_160 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40093 \controller1/ledController_c_4_I_0 ( .A(GNDI), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40087 \controller1/ledController_c_3_I_0 ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40093 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCFC0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module controller1_SLICE_162 ( input D1, C1, A1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40094 \controller1/ledController_c_0_I_0 ( .A(A1), .B(GNDI), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40095 \controller1/ledController_c_5_I_0 ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40094 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF5A0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40095 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF3C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module ledController_pad_0__SLICE_164 ( output F0 );
   wire   GNDI;
 
-  lut40092 \ledController_pad[0].vhi_inst ( .A(GNDI), .B(GNDI), .C(GNDI), 
+  lut40096 \ledController_pad[0].vhi_inst ( .A(GNDI), .B(GNDI), .C(GNDI), 
     .D(GNDI), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -3672,7 +3691,7 @@ module ledController_pad_0__SLICE_164 ( output F0 );
 
 endmodule
 
-module lut40092 ( input A, B, C, D, output Z );
+module lut40096 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule

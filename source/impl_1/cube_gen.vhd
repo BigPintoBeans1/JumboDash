@@ -4,6 +4,7 @@ use IEEE.numeric_std.all;
 
 entity cube_gen is
 	port(
+		vga_clk : in std_logic;
 		row : in unsigned(9 downto 0);
 		col : in unsigned(9 downto 0);
 		cube_bot : in unsigned(9 downto 0) := 10d"229";
@@ -16,10 +17,23 @@ end cube_gen;
 
 architecture synth of cube_gen is
 
+component backgroundROM is
+	port (
+		clk : in std_logic;
+		xadr: in unsigned(7 downto 0);
+		yadr : in unsigned(6 downto 0); -- 0-1023
+		rgb : out std_logic_vector(5 downto 0)
+	);
+end component;
+
 signal ground_top : unsigned(9 downto 0) := 10d"230";
 signal ground_bot : unsigned(9 downto 0) := 10d"230" + 10d"10"; -- 10 pixels wide
 signal cube_top : unsigned(9 downto 0);
 signal spikeEndPosX : unsigned(9 downto 0);
+
+signal background : std_logic_vector(5 downto 0);
+signal row_vector : std_logic_vector(9 downto 0);
+signal col_vector : std_logic_vector(9 downto 0);
 
 begin
 	--Cube height of 20
@@ -53,6 +67,16 @@ begin
  		--"000011" when (valid = '1' and col >= spikePosX and col <= (spikeEndPosX) and row >= 197 and row <= 229)  else
 		"000000";
 		
-	
+		row_vector <= std_logic_vector(row);
+		col_vector <= std_logic_vector(col);
+		
+		--rgb <= background when (valid = '1') else "000000";
+		
+		backgroundROM1 : backgroundROM port map (
+			clk => vga_clk, -- not sure if this is the right clock??
+			xadr => unsigned(col_vector(9 downto 2)), -- divide by 4(assigns each pixel defined in rom to 4 pixels on screen)
+			yadr => unsigned(row_vector(8 downto 2)), -- divide by 4 (assigns each pixel defined in rom to 4 pixels on screen)
+			rgb => background -- should be in if block as else (if nothing else there draw background)
+		);
 	
 end;

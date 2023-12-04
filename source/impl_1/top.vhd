@@ -34,14 +34,6 @@ component counter is
 	);
 end component;
 
-component ROMaddress is
-	port (
-	clk : in std_logic;
-	addr : in unsigned(2 downto 0);
-	data : out std_logic_vector(6 downto 0)
-	);
-end component;
-
 component vga is
 	port(
 		vga_clk : in std_logic;
@@ -66,6 +58,7 @@ end component;
 -- this is now cube and spike gen (can't rename)
 component cube_gen is
 	port(
+		vga_clk : in std_logic;
 		row : in unsigned(9 downto 0);
 		col : in unsigned(9 downto 0);
 		cube_bot : in unsigned(9 downto 0);
@@ -168,14 +161,6 @@ port map (
 --	addr => addr
 --);
 
--- ROM : ROMaddress port map (
---	clk  => clk, 
---	addr => addr,
---	data => sevenSeg
--- );
-
-
-
 mypll_1 : mypll port map(
 	ref_clk_i => fpga_clk,
 	rst_n_i => reset,
@@ -193,6 +178,7 @@ vga_1 : vga port map(
 );
 
 cube_gen1 : cube_gen port map(
+	vga_clk => vga_clk,
 	rgb => rgb,
 	valid => valid,
 	cube_bot => cube_bot,

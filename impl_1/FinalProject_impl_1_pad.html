@@ -48,7 +48,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Sat Dec  2 16:20:36 2023
+Mon Dec  4 14:32:00 2023
 
 Pinout by Port Name:
 +------------------+----------+--------------+-------+------------------------------------------+
@@ -68,12 +68,12 @@ Pinout by Port Name:
 | ledController[5] | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | ledController[6] | 34/0     | LVCMOS33_OUT | PR14B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | ledController[7] | 43/0     | LVCMOS33_OUT | PR10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| rgb[0]           | 44/2     | LVCMOS33_OUT | PL7B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| rgb[1]           | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| rgb[2]           | 3/2      | LVCMOS33_OUT | PL10B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| rgb[3]           | 48/2     | LVCMOS33_OUT | PL8A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| rgb[4]           | 45/2     | LVCMOS33_OUT | PL8B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| rgb[5]           | 47/2     | LVCMOS33_OUT | PL7A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| rgb[0]           | 47/2     | LVCMOS33_OUT | PL7A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| rgb[1]           | 45/2     | LVCMOS33_OUT | PL8B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| rgb[2]           | 48/2     | LVCMOS33_OUT | PL8A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| rgb[3]           | 3/2      | LVCMOS33_OUT | PL10B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| rgb[4]           | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| rgb[5]           | 44/2     | LVCMOS33_OUT | PL7B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 +------------------+----------+--------------+-------+------------------------------------------+
 
 Vccio by Bank:
@@ -90,8 +90,8 @@ Vccio by Bank:
 | Pin/Bank | Pin Info            | Constraint | Buffer Type  | Site  | Dual Function    |
 +----------+---------------------+------------+--------------+-------+------------------+
 | 2/2      | VSYNC               | LOCATED    | LVCMOS33_OUT | PL9A  |                  |
-| 3/2      | rgb[2]              | LOCATED    | LVCMOS33_OUT | PL10B |                  |
-| 4/2      | rgb[1]              | LOCATED    | LVCMOS33_OUT | PL10A |                  |
+| 3/2      | rgb[3]              | LOCATED    | LVCMOS33_OUT | PL10B |                  |
+| 4/2      | rgb[4]              | LOCATED    | LVCMOS33_OUT | PL10A |                  |
 | 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
 | 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
@@ -123,11 +123,11 @@ Vccio by Bank:
 | 41/0     |                     |            |              | PR7A  | RGB2             |
 | 42/0     | controllerIn        | LOCATED    | LVCMOS33_IN  | PR9A  |                  |
 | 43/0     | ledController[7]    | LOCATED    | LVCMOS33_OUT | PR10A |                  |
-| 44/2     | rgb[0]              | LOCATED    | LVCMOS33_OUT | PL7B  | PCLKT2_0         |
-| 45/2     | rgb[4]              | LOCATED    | LVCMOS33_OUT | PL8B  |                  |
+| 44/2     | rgb[5]              | LOCATED    | LVCMOS33_OUT | PL7B  | PCLKT2_0         |
+| 45/2     | rgb[1]              | LOCATED    | LVCMOS33_OUT | PL8B  |                  |
 | 46/2     | HSYNC               | LOCATED    | LVCMOS33_OUT | PL6A  |                  |
-| 47/2     | rgb[5]              | LOCATED    | LVCMOS33_OUT | PL7A  |                  |
-| 48/2     | rgb[3]              | LOCATED    | LVCMOS33_OUT | PL8A  |                  |
+| 47/2     | rgb[0]              | LOCATED    | LVCMOS33_OUT | PL7A  |                  |
+| 48/2     | rgb[2]              | LOCATED    | LVCMOS33_OUT | PL8A  |                  |
 | PL6B/2   |     unused, PULL:UP |            |              | PL6B  |                  |
 | PL9B/2   |     unused, PULL:UP |            |              | PL9B  |                  |
 | PL13A/1  |     unused, PULL:UP |            |              | PL13A |                  |
@@ -164,12 +164,12 @@ ldc_set_location -site {31} [ get_ports {ledController[4]} ]
 ldc_set_location -site {37} [ get_ports {ledController[5]} ]
 ldc_set_location -site {34} [ get_ports {ledController[6]} ]
 ldc_set_location -site {43} [ get_ports {ledController[7]} ]
-ldc_set_location -site {44} [ get_ports {rgb[0]} ]
-ldc_set_location -site {4} [ get_ports {rgb[1]} ]
-ldc_set_location -site {3} [ get_ports {rgb[2]} ]
-ldc_set_location -site {48} [ get_ports {rgb[3]} ]
-ldc_set_location -site {45} [ get_ports {rgb[4]} ]
-ldc_set_location -site {47} [ get_ports {rgb[5]} ]
+ldc_set_location -site {47} [ get_ports {rgb[0]} ]
+ldc_set_location -site {45} [ get_ports {rgb[1]} ]
+ldc_set_location -site {48} [ get_ports {rgb[2]} ]
+ldc_set_location -site {3} [ get_ports {rgb[3]} ]
+ldc_set_location -site {4} [ get_ports {rgb[4]} ]
+ldc_set_location -site {44} [ get_ports {rgb[5]} ]
 
 
 
@@ -177,7 +177,7 @@ ldc_set_location -site {47} [ get_ports {rgb[5]} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Sat Dec  2 16:20:36 2023
+Mon Dec  4 14:32:00 2023
 
 
 

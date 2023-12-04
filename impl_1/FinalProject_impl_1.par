@@ -1,6 +1,6 @@
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Sat Dec  2 16:20:28 2023
+Mon Dec  4 14:31:52 2023
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	FinalProject_impl_1_map.udb FinalProject_impl_1.udb 
@@ -18,7 +18,7 @@ Total (real) run time for 1-seed: 10 secs
 par done!
 
 Lattice Place and Route Report for Design "FinalProject_impl_1_map.udb"
-Sat Dec  2 16:20:28 2023
+Mon Dec  4 14:31:52 2023
 
 PAR: Place And Route Radiant Software (64-bit) 2023.1.0.43.3.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -79,7 +79,7 @@ Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 38552.
+Placer score = 37304.
 
 Device SLICE utilization summary after final SLICE packing:
    SLICE            107/2640          4% used
@@ -91,7 +91,7 @@ Finished Placer Phase 1. CPU time: 7 secs , REAL time: 8 secs
 Starting Placer Phase 2.
 .
 
-Placer score =  60396
+Placer score =  58944
 Finished Placer Phase 2.  CPU time: 7 secs , REAL time: 8 secs 
 
 
@@ -127,7 +127,7 @@ Total Placer CPU time: 7 secs , REAL time: 8 secs
 Writing design to file FinalProject_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 16:20:36 12/02/23
+Start NBR router at 14:32:00 12/04/23
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -175,27 +175,27 @@ WARNING <70001944> - par: No master clock for
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 16:20:36 12/02/23
+Start NBR section for initial routing at 14:32:00 12/04/23
 Level 4, iteration 1
-17(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+18(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 16:20:37 12/02/23
+Start NBR section for normal routing at 14:32:01 12/04/23
 Level 4, iteration 1
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
 Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 10.480ns/0.000ns; real time: 0 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 16:20:37 12/02/23
+Start NBR section for setup/hold timing optimization with effort level 3 at 14:32:01 12/04/23
 
 Starting full timing analysis...
 
-Start NBR section for post-routing at 16:20:37 12/02/23
+Start NBR section for post-routing at 14:32:01 12/04/23
 
 End NBR router with 0 unrouted connection
 WARNING <70001944> - par: No master clock for
@@ -216,7 +216,7 @@ NBR Summary
 
 
 Total CPU time 1 secs 
-Total REAL time: 0 secs 
+Total REAL time: 2 secs 
 Completely routed.
 End of route.  786 routed (100.00%); 0 unrouted.
 
@@ -236,7 +236,7 @@ PAR_SUMMARY::Number of errors = 0
 
 Total CPU  Time: 9 secs 
 Total REAL Time: 10 secs 
-Peak Memory Usage: 114.78 MB
+Peak Memory Usage: 114.17 MB
 
 
 par done!

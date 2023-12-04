@@ -1,3 +1,5 @@
+ 5.083260s wall, 0.968750s user + 5.083260s wall, 0.968750s user + 0.359375s system = 1.328125s CPU (26.1%)
+
 
 tmcheck -par "FinalProject_impl_1.par" 
 
@@ -38,8 +40,7 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "C:\Users\erober10\Documents\GitHub\JumboDash\impl_1\FinalProject_impl_1.bin".
-    <postMsg mid="1081100" type="Info" dynamic="1" navigation="0" arg0="Bitstream authenticated."  />
+Saving bit stream in "Z:\Radiant\JumboDash\JumboDash\impl_1\FinalProject_impl_1.bin".
 Bitstream generation complete!
 
 Total CPU Time: 0 secs 
@@ -50,7 +51,7 @@ Peak Memory Usage: 111 MB
 ibisgen "FinalProject_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
 
-Sat Dec  2 16:20:40 2023
+Mon Dec  4 14:32:08 2023
 
 Loading FinalProject_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
@@ -69,7 +70,7 @@ Successfully loading design udb and device data from disks and to up-layer in CP
 Created design models.
 
 
-Generating: C:\Users\erober10\Documents\GitHub\JumboDash\impl_1\IBIS\FinalProject_impl_1.ibs
+Generating: Z:\Radiant\JumboDash\JumboDash\impl_1\IBIS\FinalProject_impl_1.ibs
 
 
     <postMsg mid="1191031" type="Info" dynamic="0" navigation="0"  />

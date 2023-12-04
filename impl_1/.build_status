@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1701552040">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1701552040"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1701552040"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1701552041"/>
+        <Milestone name="Export" build_result="2" build_time="1701718328">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1701718328"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1701718330"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1701718330"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1701552028">
-            <Task name="Map" build_result="2" update_result="0" update_time="1701552028"/>
+        <Milestone name="Map" build_result="2" build_time="1701718312">
+            <Task name="Map" build_result="2" update_result="0" update_time="1701718312"/>
             <Task name="MapTrace" build_result="0" update_result="2" update_time="1701459623"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1701552038">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1701552038"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1701552039"/>
+        <Milestone name="PAR" build_result="2" build_time="1701718322">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1701718322"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1701718327"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1701552023">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1701552023"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1701552023"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1701544896"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1701544896"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1701718311">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1701718311"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1701718327"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1701712717"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1701712717"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1701290832"/>
@@ -28,16 +28,16 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="1701290832"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="1701290832"/>
         </Milestone>
-        <Report name="FinalProject_impl_1.bgn" last_build_time="1701552040" last_build_size="1047"/>
-        <Report name="FinalProject_impl_1.bin" last_build_time="1701552040" last_build_size="104156"/>
+        <Report name="FinalProject_impl_1.bgn" last_build_time="1701718328" last_build_size="990"/>
+        <Report name="FinalProject_impl_1.bin" last_build_time="1701718328" last_build_size="104156"/>
         <Report name="FinalProject_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="FinalProject_impl_1.twr.html" last_build_time="1701552039" last_build_size="286632"/>
-        <Report name="FinalProject_impl_1.udb" last_build_time="1701552038" last_build_size="31930"/>
-        <Report name="FinalProject_impl_1_map.udb" last_build_time="1701552028" last_build_size="21017"/>
-        <Report name="FinalProject_impl_1_rtl.udb" last_build_time="1701552022" last_build_size="15555"/>
-        <Report name="FinalProject_impl_1_syn.udb" last_build_time="1701552023" last_build_size="14477"/>
-        <Report name="FinalProject_impl_1_vo.sdf" last_build_time="1701552041" last_build_size="145172"/>
-        <Report name="FinalProject_impl_1_vo.vo" last_build_time="1701552041" last_build_size="149685"/>
-        <Report name="IBIS/FinalProject_impl_1.ibs" last_build_time="1701552040" last_build_size="54880"/>
+        <Report name="FinalProject_impl_1.twr.html" last_build_time="1701718327" last_build_size="286632"/>
+        <Report name="FinalProject_impl_1.udb" last_build_time="1701718322" last_build_size="31808"/>
+        <Report name="FinalProject_impl_1_map.udb" last_build_time="1701718312" last_build_size="21030"/>
+        <Report name="FinalProject_impl_1_rtl.udb" last_build_time="1701718308" last_build_size="591941"/>
+        <Report name="FinalProject_impl_1_syn.udb" last_build_time="1701718311" last_build_size="14460"/>
+        <Report name="FinalProject_impl_1_vo.sdf" last_build_time="1701718330" last_build_size="145190"/>
+        <Report name="FinalProject_impl_1_vo.vo" last_build_time="1701718330" last_build_size="150195"/>
+        <Report name="IBIS/FinalProject_impl_1.ibs" last_build_time="1701718329" last_build_size="54880"/>
     </Strategy>
 </BuildStatus>
