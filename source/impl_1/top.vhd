@@ -10,8 +10,8 @@ entity top is
 		rgb : out std_logic_vector(5 downto 0);
 		controllerIn : in std_logic;
 		controlLatch : out std_logic;
-		controlClk : out std_logic;
-		ledController : out std_logic_vector(7 downto 0)
+		controlClk : out std_logic
+		--ledController : out std_logic_vector(7 downto 0)
 	);
 end top;
 
@@ -138,7 +138,7 @@ begin
 	--count => randomNum
 --);
 
-ledController <= controllerOutput;
+--ledController <= controllerOutput;
 
 controller1 : controller port map(
 	controllerInput => controllerIn,

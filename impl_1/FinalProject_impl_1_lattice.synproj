@@ -37,21 +37,21 @@
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -sdc "FinalProject_impl_1_cpe.ldc"
--path "Z:/New folder/JumboDash/mypll"
--path "C:/lscc/radiant/2023.1/ispfpga/ice40tp/data" "Z:/New folder/JumboDash/impl_1" "Z:/New folder/JumboDash"
+-path "Z:/Radiant/JumboDash/JumboDash/mypll"
+-path "C:/lscc/radiant/2023.1/ispfpga/ice40tp/data" "Z:/Radiant/JumboDash/JumboDash/impl_1" "Z:/Radiant/JumboDash/JumboDash"
 -ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd"
--lib "work" -vhd "Z:/New folder/JumboDash/source/impl_1/top.vhd"
-"Z:/New folder/JumboDash/source/impl_1/vga.vhd"
--ver "Z:/New folder/JumboDash/mypll/rtl/mypll.v"
--lib "work" -vhd "Z:/New folder/JumboDash/source/impl_1/cube_gen.vhd"
-"Z:/New folder/JumboDash/source/impl_1/jump.vhd"
-"Z:/New folder/JumboDash/source/impl_1/controller.vhd"
-"Z:/New folder/JumboDash/source/impl_1/spikeMove.vhd"
-"Z:/New folder/JumboDash/source/impl_1/backgroundROM.vhd"
+-lib "work" -vhd "Z:/Radiant/JumboDash/JumboDash/source/impl_1/top.vhd"
+"Z:/Radiant/JumboDash/JumboDash/source/impl_1/vga.vhd"
+-ver "Z:/Radiant/JumboDash/JumboDash/mypll/rtl/mypll.v"
+-lib "work" -vhd "Z:/Radiant/JumboDash/JumboDash/source/impl_1/cube_gen.vhd"
+"Z:/Radiant/JumboDash/JumboDash/source/impl_1/jump.vhd"
+"Z:/Radiant/JumboDash/JumboDash/source/impl_1/controller.vhd"
+"Z:/Radiant/JumboDash/JumboDash/source/impl_1/spikeMove.vhd"
+"Z:/Radiant/JumboDash/JumboDash/source/impl_1/backgroundROM.vhd"
 
 
--path "Z:/New folder/JumboDash"
+-path "Z:/Radiant/JumboDash/JumboDash"
 -top top
 -udb "FinalProject_impl_1_rtl.udb"
 -output_hdl "FinalProject_impl_1.vm"

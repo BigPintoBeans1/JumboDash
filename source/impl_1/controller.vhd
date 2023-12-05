@@ -39,8 +39,8 @@ end process;
   
 slowClk <= count(8); 
 slowCount <= count(16 downto 9); 
-controllerLatch <= '1' when slowCount = 0x"08" else '0'; 
-controllerClk <= slowClk when (slowCount < 0x"08") else '0'; 
+controllerLatch <= '1' when slowCount = "00001000" else '0'; 
+controllerClk <= slowClk when (slowCount < "00001000") else '0'; 
 
 process (controllerClk) begin 
 	if rising_edge(controllerClk) then 

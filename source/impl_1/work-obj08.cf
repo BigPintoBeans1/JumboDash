@@ -1,16 +1,22 @@
 v 4
-file . "vga.vhd" "2d6b3e6ee8dde1f3144ad74ace29dad7d6da67ab" "20231204185518.310":
-  entity vga at 1( 0) + 0 on 19;
-  architecture synth of vga at 17( 334) + 0 on 20;
-file . "top.vhd" "a1caf24c83c80d53ba7c8412de031121ffac55c4" "20231204185518.307":
-  entity top at 1( 0) + 0 on 17;
-  architecture synth of top at 18( 410) + 0 on 18;
-file . "jump.vhd" "7eda77b8e68c9a6c697c3dd92a2354d9646e844b" "20231204185518.304":
-  entity jump at 1( 0) + 0 on 15;
-  architecture synth of jump at 13( 330) + 0 on 16;
-file . "cube_gen.vhd" "0c60f06f5adc554e8fd4ed994244a6fd054958a5" "20231204185518.302":
-  entity cube_gen at 1( 0) + 0 on 13;
-  architecture synth of cube_gen at 18( 426) + 0 on 14;
-file . "backgroundROM.vhd" "050e2453b9af2e001fa43f24e645eacf28475ad0" "20231204185518.299":
-  entity romaddress at 1( 0) + 0 on 11;
-  architecture synth of romaddress at 18( 391) + 0 on 12;
+file . "spikeMove.vhd" "7c243cc50429c40f1f0f172f059fd9b373d085ec" "20231205063438.710":
+  entity spikemove at 1( 0) + 0 on 57;
+  architecture synth of spikemove at 15( 385) + 0 on 58;
+file . "controller.vhd" "d75b6c451c85320fb8ca22e38c226ddc2787215d" "20231205063438.701":
+  entity controller at 1( 0) + 0 on 51;
+  architecture synth of controller at 14( 300) + 0 on 52;
+file . "backgroundROM.vhd" "fe0225bc3b995318ba103c422903455b43124216" "20231205063438.698":
+  entity backgroundrom at 1( 0) + 0 on 49;
+  architecture synth of backgroundrom at 18( 397) + 0 on 50;
+file . "cube_gen.vhd" "1fd9ce1403b7c6125d6d3b335e1f544427d1dbb5" "20231205063438.705":
+  entity cube_gen at 1( 0) + 0 on 53;
+  architecture synth of cube_gen at 18( 426) + 0 on 54;
+file . "jump.vhd" "7eda77b8e68c9a6c697c3dd92a2354d9646e844b" "20231205063438.708":
+  entity jump at 1( 0) + 0 on 55;
+  architecture synth of jump at 13( 330) + 0 on 56;
+file . "top.vhd" "df4ce1ec73eaedb991c038be69de1d0a48039c13" "20231205063438.713":
+  entity top at 1( 0) + 0 on 59;
+  architecture synth of top at 18( 411) + 0 on 60;
+file . "vga.vhd" "2d6b3e6ee8dde1f3144ad74ace29dad7d6da67ab" "20231205063438.715":
+  entity vga at 1( 0) + 0 on 61;
+  architecture synth of vga at 17( 334) + 0 on 62;

@@ -48,31 +48,32 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Mon Dec  4 16:18:21 2023
+Mapped on: Tue Dec  5 02:03:22 2023
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map -i FinalProject_impl_1_syn.udb -pdc Z:/New
-     folder/JumboDash/device_constraint.pdc -o FinalProject_impl_1_map.udb -mp
-     FinalProject_impl_1.mrp -hierrpt -gui
+Command line:   map -i FinalProject_impl_1_syn.udb -pdc
+     Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc -o
+     FinalProject_impl_1_map.udb -mp FinalProject_impl_1.mrp -hierrpt -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers:  48 out of  5280 (1%)
+   Number of slice registers: 101 out of  5280 (2%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           362 out of  5280 (7%)
-      Number of logic LUT4s:             313
-      Number of inserted feedthru LUT4s:   7
-      Number of ripple logic:             21 (42 LUT4s)
-   Number of IO sites used:   20 out of 39 (51%)
-      Number of IO sites used for general PIO: 20
+   Number of LUT4s:           1174 out of  5280 (22%)
+      Number of logic LUT4s:             1069
+      Number of inserted feedthru LUT4s:  14
+      Number of replicated LUT4s:          1
+      Number of ripple logic:             45 (90 LUT4s)
+   Number of IO sites used:   12 out of 39 (31%)
+      Number of IO sites used for general PIO: 12
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 20 out of 36 (56%)
+      Number of IO sites used for PIO+I3C: 12 out of 36 (33%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 20 out of 39 (51%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 12 out of 39 (31%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -83,39 +84,49 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc Z:/New
    Number of SRAMs:            0 out of 4 (0%)
    Number of WARMBOOTs:        0 out of 1 (0%)
    Number of SPIs:             0 out of 2 (0%)
-   Number of EBRs:             0 out of 30 (0%)
+   Number of EBRs:             2 out of 30 (6%)
    Number of PLLs:             1 out of 1 (100%)
-   Number of Clocks:  4
+   Number of Clocks:  7
+      Net rollClk: 2 loads, 2 rising, 0 falling (Driver: Pin
+     spikeMove1.rollClk_I_0/Q)
       Net controller1.clk: 9 loads, 9 rising, 0 falling (Driver: Pin
      controller1.osc/CLKHF)
       Net controlClk_c: 8 loads, 8 rising, 0 falling (Driver: Pin
      controller1.controlClk_c_I_0/Z)
-      Net vga_clk: 15 loads, 15 rising, 0 falling (Driver: Pin
-     mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
+      Net vga_clk: 27 loads, 27 rising, 0 falling (Driver: Pin
+     mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
+      Net jump1.slowClk: 19 loads, 19 rising, 0 falling (Driver: Pin
+     jump1.slowClk_I_0/Q)
+      Net frameClk: 10 loads, 10 rising, 0 falling (Driver: Pin
+
+     vga_1.frameClk_I_0/Q)
    Number of Clock Enables:  2
-      Net ledController_pad[0].vcc: 1 loads, 0 SLICEs
-      Net row_0__N_29: 6 loads, 6 SLICEs
-   Number of LSRs:  2
-      Net col_0__N_50: 6 loads, 6 SLICEs
-      Net row_0__N_30: 6 loads, 6 SLICEs
-
+      Net VCC_net: 7 loads, 0 SLICEs
+      Net row_0__N_37: 6 loads, 6 SLICEs
+   Number of LSRs:  6
+      Net col_0__N_58: 6 loads, 6 SLICEs
+      Net row_0__N_38: 6 loads, 6 SLICEs
+      Net cube_bot_2__N_74: 3 loads, 3 SLICEs
+      Net jump1.cube_bot_4__N_70: 4 loads, 4 SLICEs
+      Net jump1.lastPosition_0__N_127: 7 loads, 7 SLICEs
+      Net jump1.lastPosition_2__N_125: 3 loads, 3 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net col[4]: 71 loads
-      Net col[5]: 71 loads
-      Net col[6]: 70 loads
-      Net col[3]: 64 loads
-      Net col[7]: 64 loads
-      Net col[2]: 53 loads
-      Net col[8]: 53 loads
-      Net row[2]: 46 loads
-      Net col[9]: 37 loads
-      Net row[3]: 24 loads
+      Net col[8]: 293 loads
+      Net col[7]: 287 loads
+      Net col[9]: 193 loads
+      Net col[6]: 162 loads
+      Net row[2]: 160 loads
+      Net col[5]: 125 loads
+      Net col[4]: 108 loads
+      Net col[3]: 97 loads
+      Net col[2]: 90 loads
+      Net row[3]: 87 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  32
    Number of errors:    0
 
 
@@ -123,7 +134,63 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc Z:/New
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-   No errors or warnings present.
+WARNING &lt;1026001&gt; - map: Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc
+     (7) : No port matched &apos;ledController[0]&apos;.
+WARNING &lt;1026001&gt; - map: Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc
+     (8) : No port matched &apos;ledController[1]&apos;.
+WARNING &lt;1026001&gt; - map: Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc
+     (9) : No port matched &apos;ledController[2]&apos;.
+WARNING &lt;1026001&gt; - map: Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc
+     (10) : No port matched &apos;ledController[3]&apos;.
+WARNING &lt;1026001&gt; - map: Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc
+     (11) : No port matched &apos;ledController[4]&apos;.
+WARNING &lt;1026001&gt; - map: Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc
+     (12) : No port matched &apos;ledController[5]&apos;.
+WARNING &lt;1026001&gt; - map: Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc
+     (13) : No port matched &apos;ledController[6]&apos;.
+WARNING &lt;1026001&gt; - map: Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc
+     (14) : No port matched &apos;ledController[7]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;ledController[0]&apos;.
+WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;ledController[0]&apos; in constraint
+     &apos;ldc_set_location -site {26} [get_ports {ledController[0]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;ledController[1]&apos;.
+WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;ledController[1]&apos; in constraint
+     &apos;ldc_set_location -site {27} [get_ports {ledController[1]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;ledController[2]&apos;.
+WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;ledController[2]&apos; in constraint
+     &apos;ldc_set_location -site {32} [get_ports {ledController[2]}]&apos;.
+
+WARNING &lt;1027013&gt; - map: No port matched &apos;ledController[3]&apos;.
+WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;ledController[3]&apos; in constraint
+     &apos;ldc_set_location -site {35} [get_ports {ledController[3]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;ledController[4]&apos;.
+WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;ledController[4]&apos; in constraint
+     &apos;ldc_set_location -site {31} [get_ports {ledController[4]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;ledController[5]&apos;.
+WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;ledController[5]&apos; in constraint
+     &apos;ldc_set_location -site {37} [get_ports {ledController[5]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;ledController[6]&apos;.
+WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;ledController[6]&apos; in constraint
+     &apos;ldc_set_location -site {34} [get_ports {ledController[6]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;ledController[7]&apos;.
+WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;ledController[7]&apos; in constraint
+     &apos;ldc_set_location -site {43} [get_ports {ledController[7]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {26}
+     [get_ports {ledController[0]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {27}
+     [get_ports {ledController[1]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {32}
+     [get_ports {ledController[2]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {35}
+     [get_ports {ledController[3]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {31}
+     [get_ports {ledController[4]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {37}
+     [get_ports {ledController[5]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {34}
+     [get_ports {ledController[6]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {43}
+     [get_ports {ledController[7]}]&apos;.
 
 
 
@@ -137,22 +204,6 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc Z:/New
 +---------------------+-----------+-----------+-------+-------+-----------+
 | fpga_clk            | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| ledController[0]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| ledController[1]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| ledController[2]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| ledController[3]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| ledController[4]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| ledController[5]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| ledController[6]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| ledController[7]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | controlClk          | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | controlLatch        | OUTPUT    |           |       |       |           |
@@ -160,7 +211,6 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc Z:/New
 | rgb[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[1]              | OUTPUT    |           |       |       |           |
-
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -168,12 +218,19 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc Z:/New
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[4]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+
 | rgb[5]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | VSYNC               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i1 was optimized away.
 
 
 
@@ -215,10 +272,12 @@ OSC Summary
 
 OSC 1:                                 Pin/Node Value
   OSC Instance Name:                            controller1/osc
-  Power UP:                            NODE     ledController_pad[0].vcc
-  Enable Signal:                       NODE     ledController_pad[0].vcc
+  Power UP:                            NODE     VCC_net
+  Enable Signal:                       NODE     VCC_net
   OSC Output:                          NODE     controller1.clk
   DIV Setting:                                  00
+
+
 
 
 
@@ -226,8 +285,12 @@ OSC 1:                                 Pin/Node Value
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
+Instance Name: int_rightMost_0__I_0
+         Type: EBR
 Instance Name: controller1/osc
          Type: HFOSC
+Instance Name: int_rightMost_0__I_0_2
+         Type: EBR
 Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
          Type: PLL
 
@@ -237,7 +300,7 @@ Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
 ------------------
 
    Total number of constraints: 22
-   Total number of constraints dropped: 0
+   Total number of constraints dropped: 8
 
 
 
@@ -246,11 +309,7 @@ Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 60 MB
-
-
-
-
+   Peak Memory Usage: 71 MB
 
 
 
@@ -359,6 +418,7 @@ Copyright (c) 2002-2023 Lattice Semiconductor
 <LI><A href=#mrp_ds>Design Summary</A></LI>
 <LI><A href=#mrp_dwe>Design Errors/Warnings</A></LI>
 <LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
 <LI><A href=#mrp_pll>PLL/DLL Summary</A></LI>
 <LI><A href=#mrp_asic>ASIC Components</A></LI>
 <LI><A href=#mrp_consum>Constraint Summary</A></LI>

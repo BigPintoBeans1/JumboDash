@@ -1,52 +1,37 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  48 of 5280 (0.909%)
-I/O cells:      20
+Register bits:  101 of 5280 (1.913%)
+I/O cells:      12
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        21          100.0
-                            FD1P3XZ        48          100.0
+                              EBR_B         2          100.0
+                               CCU2        45          100.0
+                            FD1P3XZ       101          100.0
                          HSOSC_CORE         1          100.0
                                  IB         2          100.0
-                               LUT4       311          100.0
-                                 OB        18          100.0
+                               LUT4      1068          100.0
+                                 OB        10          100.0
                               PLL_B         1          100.0
 SUB MODULES
                       backgroundROM         1
                          controller         1
                            cube_gen         1
+                               jump         1
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                          spikeMove         1
                                 vga         1
-                              TOTAL       408
+                              TOTAL      1238
 ----------------------------------------------------------------------
 Report for cell controller.v1
 Instance Path : controller1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         9           42.9
-                            FD1P3XZ        25           52.1
+                                FA2         9           20.0
+                            FD1P3XZ        25           24.8
                          HSOSC_CORE         1          100.0
-                               LUT4        13            4.2
-                              TOTAL        48
-----------------------------------------------------------------------
-Report for cell cube_gen.v1
-Instance Path : cube_gen1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ         3            6.2
-                               LUT4       271           87.1
-SUB MODULES
-                      backgroundROM         1
-                              TOTAL       275
-----------------------------------------------------------------------
-Report for cell backgroundROM.v1
-Instance Path : cube_gen1.backgroundROM1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ         3            6.2
-                               LUT4       268           86.2
-                              TOTAL       271
+                               LUT4         6            0.6
+                              TOTAL        41
 ----------------------------------------------------------------------
 Report for cell mypll.v1
 Instance Path : mypll_1
@@ -64,11 +49,47 @@ Instance Path : mypll_1.lscc_pll_inst
                               PLL_B         1          100.0
                               TOTAL         1
 ----------------------------------------------------------------------
+Report for cell cube_gen.v1
+Instance Path : cube_gen1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         3            3.0
+                               LUT4       905           84.7
+SUB MODULES
+                      backgroundROM         1
+                              TOTAL       909
+----------------------------------------------------------------------
+Report for cell backgroundROM.v1
+Instance Path : cube_gen1.backgroundROM1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         3            3.0
+                               LUT4       676           63.3
+                              TOTAL       679
+----------------------------------------------------------------------
+Report for cell jump.v1
+Instance Path : jump1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        16           35.6
+                            FD1P3XZ        40           39.6
+                               LUT4        42            3.9
+                              TOTAL        98
+----------------------------------------------------------------------
 Report for cell vga.v1
 Instance Path : vga_1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        12           57.1
-                            FD1P3XZ        20           41.7
-                               LUT4        26            8.4
-                              TOTAL        58
+                                FA2        12           26.7
+                            FD1P3XZ        21           20.8
+                               LUT4        93            8.7
+                              TOTAL       126
+----------------------------------------------------------------------
+Report for cell spikeMove.v1
+Instance Path : spikeMove1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         8           17.8
+                            FD1P3XZ        12           11.9
+                               LUT4         8            0.7
+                              TOTAL        28

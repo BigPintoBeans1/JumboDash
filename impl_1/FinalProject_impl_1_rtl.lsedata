@@ -2,19 +2,20 @@
 
 <clocks>
     <clockitem name = "controller1/clk"  type = "net" />
-    <clockitem name = "mypll_1/lscc_pll_inst/outcoreb_o"  type = "net" />
     <clockitem name = "mypll_1/lscc_pll_inst/outglobalb_o"  type = "net" />
+    <clockitem name = "mypll_1/lscc_pll_inst/outcoreb_o"  type = "net" />
     <clockitem name = "mypll_1/outcore_o"  type = "net" />
+    <clockitem name = "spikeMove1/rollClk"  type = "net" />
     <clockitem name = "jump1/slowClk"  type = "net" />
-    <clockitem name = "frameClk"  type = "net" />
-    <clockitem name = "controlClk"  type = "net" />
     <clockitem name = "vga_clk"  type = "net" />
     <clockitem name = "fpga_clk"  type = "port" />
+    <clockitem name = "frameClk"  type = "net" />
+    <clockitem name = "controlClk"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 9
+    //  Number of Clocks processed: 10
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.
