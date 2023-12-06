@@ -20,9 +20,9 @@ architecture synth of vga is
 begin
 	process(vga_clk) is begin
 		if rising_edge(vga_clk)then
-			if (srow = 262 and scol = 700) or (srow = 0 and scol = 700) then
-				frameClk <= not frameClk;
-			end if;
+			--if (srow = 262 and scol = 700) or (srow = 0 and scol = 700) then
+				--frameClk <= not frameClk;
+			--end if;
 			if (scol = 799) then
 				scol <= "0000000000";
 				srow <= srow + 1;
@@ -42,6 +42,8 @@ begin
 	VSYNC <= '0' when((srow > 490) and (srow < 493)) else '1';
 	--Valid is used to tell pattern_gen when to send rgb values
 	valid <= '1' when ((scol <= 639) and (srow <= 479)) else '0';
+	
+	frameClk <= '1' when (srow = 482) else '0';
 	
 	row <= srow;
 	col <= scol;

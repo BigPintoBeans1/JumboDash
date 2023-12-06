@@ -65,7 +65,8 @@ component cube_gen is
 		rgb : out std_logic_vector(5 downto 0);
 		valid : in std_logic;
 		--spikePosX : unsigned(9 downto 0)
-		spikeArr : in std_logic_vector(19 downto 0)
+		spikeArr : in std_logic_vector(19 downto 0);
+		spikeInterval : in unsigned(4 downto 0)
 	);
 end component;
 
@@ -97,7 +98,8 @@ end component;
 component spikeMove is
 	port(
 		frameClk : in std_logic;
-		spikeArr : out std_logic_vector(19 downto 0)
+		spikeArr : out std_logic_vector(19 downto 0);
+		spikeInterval : out unsigned(4 downto 0)
 		--spikePosX : out unsigned(9 downto 0) -- since y value is constant 229
 	);
 end component;
@@ -127,6 +129,7 @@ signal spikeArr : std_logic_vector(19 downto 0);
 signal randomNum : std_logic_vector(3 downto 0);
 signal spikeGenClk : std_logic; -- clock shared with generation and randomizer
 signal spikePosX : unsigned(9 downto 0); -- spike position x-value
+signal spikeInterval : unsigned(4 downto 0);
 
 begin
 
@@ -184,13 +187,15 @@ cube_gen1 : cube_gen port map(
 	cube_bot => cube_bot,
 	row => row,
 	col => col,
-	spikeArr => spikeArr
+	spikeArr => spikeArr,
+	spikeInterval => spikeInterval
 	--spikePosX => spikePosX
 );
 
 spikeMove1 : spikeMove port map(
 	frameClk => frameClk,
-	spikeArr => spikeArr
+	spikeArr => spikeArr,
+	spikeInterval => spikeInterval
 	--spikePosX => spikePosX
 );
 

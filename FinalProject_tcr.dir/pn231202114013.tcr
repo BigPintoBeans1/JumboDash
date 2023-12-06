@@ -1,8 +1,0 @@
-#Start recording tcl command: 12/2/2023 11:30:06
-#Project Location: C:/Users/erober10/Documents/GitHub/JumboDash; Project name: FinalProject
-prj_open "C:/Users/erober10/Documents/GitHub/JumboDash/FinalProject.rdf"
-prj_enable_source "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/moveGround.vhd"
-prj_remove_source "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/moveGround.vhd"
-prj_enable_source "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/jump2.vhd"
-prj_remove_source "C:/Users/erober10/Documents/GitHub/JumboDash/source/impl_1/jump2.vhd"
-#Stop recording: 12/2/2023 11:40:13

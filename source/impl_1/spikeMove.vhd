@@ -7,7 +7,7 @@ entity spikeMove is
 		frameClk : in std_logic;
 		--spikePosX : out unsigned(9 downto 0) -- since y value is constant 229
 		spikeArr : out std_logic_vector(19 downto 0) := "00000000000000000000"; -- spikes shown on the screen
-		spikeInterval : out unsigned(4 downto 0) -- a counter of the frameClk
+		spikeInterval : out unsigned(4 downto 0) := "00000" -- a counter of the frameClk
 		
 	);
 end spikeMove;

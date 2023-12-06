@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Export">
+    <Task name="Map">
         <Message>
             <ID>1026001</ID>
             <Severity>16</Severity>
@@ -73,6 +73,144 @@
             <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
             <Navigation>14</Navigation>
         </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>ledController[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>ledController[0]</Dynamic>
+            <Dynamic>ldc_set_location -site {26} [get_ports {ledController[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>ledController[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>ledController[1]</Dynamic>
+            <Dynamic>ldc_set_location -site {27} [get_ports {ledController[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>ledController[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>ledController[2]</Dynamic>
+            <Dynamic>ldc_set_location -site {32} [get_ports {ledController[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>ledController[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>ledController[3]</Dynamic>
+            <Dynamic>ldc_set_location -site {35} [get_ports {ledController[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>ledController[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>ledController[4]</Dynamic>
+            <Dynamic>ldc_set_location -site {31} [get_ports {ledController[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>ledController[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>ledController[5]</Dynamic>
+            <Dynamic>ldc_set_location -site {37} [get_ports {ledController[5]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>ledController[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>ledController[6]</Dynamic>
+            <Dynamic>ldc_set_location -site {34} [get_ports {ledController[6]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>ledController[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>ledController[7]</Dynamic>
+            <Dynamic>ldc_set_location -site {43} [get_ports {ledController[7]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {26} [get_ports {ledController[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {27} [get_ports {ledController[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {32} [get_ports {ledController[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {35} [get_ports {ledController[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {31} [get_ports {ledController[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {37} [get_ports {ledController[5]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {34} [get_ports {ledController[6]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {43} [get_ports {ledController[7]}]</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Export">
         <Message>
             <ID>1081100</ID>
             <Severity>1</Severity>
@@ -367,10 +505,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(18): </Dynamic>
+            <Dynamic>z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(19): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd</Navigation>
-            <Navigation>18</Navigation>
+            <Navigation>19</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -559,216 +697,6 @@
             <ID>70001944</ID>
             <Severity>16</Severity>
             <Dynamic>create_generated_clock -name {vga_clk} -source [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {mypll_1/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-    </Task>
-    <Task name="Map">
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Dynamic>
-            <Dynamic>7</Dynamic>
-            <Dynamic>No port matched 'ledController[0]'.</Dynamic>
-            <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
-            <Navigation>7</Navigation>
-        </Message>
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Dynamic>
-            <Dynamic>8</Dynamic>
-            <Dynamic>No port matched 'ledController[1]'.</Dynamic>
-            <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
-            <Navigation>8</Navigation>
-        </Message>
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Dynamic>
-            <Dynamic>9</Dynamic>
-            <Dynamic>No port matched 'ledController[2]'.</Dynamic>
-            <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
-            <Navigation>9</Navigation>
-        </Message>
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Dynamic>
-            <Dynamic>10</Dynamic>
-            <Dynamic>No port matched 'ledController[3]'.</Dynamic>
-            <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
-            <Navigation>10</Navigation>
-        </Message>
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Dynamic>
-            <Dynamic>11</Dynamic>
-            <Dynamic>No port matched 'ledController[4]'.</Dynamic>
-            <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
-            <Navigation>11</Navigation>
-        </Message>
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Dynamic>
-            <Dynamic>12</Dynamic>
-            <Dynamic>No port matched 'ledController[5]'.</Dynamic>
-            <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
-            <Navigation>12</Navigation>
-        </Message>
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Dynamic>
-            <Dynamic>13</Dynamic>
-            <Dynamic>No port matched 'ledController[6]'.</Dynamic>
-            <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
-            <Navigation>13</Navigation>
-        </Message>
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Dynamic>
-            <Dynamic>14</Dynamic>
-            <Dynamic>No port matched 'ledController[7]'.</Dynamic>
-            <Navigation>Z:/Radiant/JumboDash/JumboDash/device_constraint.pdc</Navigation>
-            <Navigation>14</Navigation>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>ledController[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>ledController[0]</Dynamic>
-            <Dynamic>ldc_set_location -site {26} [get_ports {ledController[0]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>ledController[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>ledController[1]</Dynamic>
-            <Dynamic>ldc_set_location -site {27} [get_ports {ledController[1]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>ledController[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>ledController[2]</Dynamic>
-            <Dynamic>ldc_set_location -site {32} [get_ports {ledController[2]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>ledController[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>ledController[3]</Dynamic>
-            <Dynamic>ldc_set_location -site {35} [get_ports {ledController[3]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>ledController[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>ledController[4]</Dynamic>
-            <Dynamic>ldc_set_location -site {31} [get_ports {ledController[4]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>ledController[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>ledController[5]</Dynamic>
-            <Dynamic>ldc_set_location -site {37} [get_ports {ledController[5]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>ledController[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>ledController[6]</Dynamic>
-            <Dynamic>ldc_set_location -site {34} [get_ports {ledController[6]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>ledController[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>ledController[7]</Dynamic>
-            <Dynamic>ldc_set_location -site {43} [get_ports {ledController[7]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {26} [get_ports {ledController[0]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {27} [get_ports {ledController[1]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {32} [get_ports {ledController[2]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {35} [get_ports {ledController[3]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {31} [get_ports {ledController[4]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {37} [get_ports {ledController[5]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {34} [get_ports {ledController[6]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {43} [get_ports {ledController[7]}]</Dynamic>
         </Message>
     </Task>
     <Task name="PAR">

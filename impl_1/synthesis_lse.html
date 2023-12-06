@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec  5 02:03:00 2023
+Tue Dec  5 19:56:27 2023
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset Z:/Radiant/JumboDash/JumboDash/promote.xml 
@@ -203,7 +203,7 @@ Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd. V
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd
 
 INFO <35921012> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(5): analyzing entity cube_gen. VHDL-1012
-INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(18): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(19): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd. VHDL-1481
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd
 
@@ -293,13 +293,13 @@ WARNING <35001779> - synthesis: Initial value found on instance \jump1/position_
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
-Number of register bits => 101 of 5280 (1 % )
+Number of register bits => 99 of 5280 (1 % )
 EBR_B => 2
 CCU2 => 45
-FD1P3XZ => 101
+FD1P3XZ => 99
 HSOSC_CORE => 1
 IB => 2
-LUT4 => 1068
+LUT4 => 323
 OB => 10
 PLL_B => 1
 ################### End Area Report ##################
@@ -315,29 +315,29 @@ Number of Clocks: 5
   Net : mypll_1/lscc_pll_inst/vga_clk, loads : 0
   Net : spikeMove1/rollClk, loads : 0
   Net : fpga_clk_c, loads : 1
-  Net : vga_1/frameClk, loads : 1
+  Net : vga_1/frameClk, loads : 0
   Net : controller1/controlClk_c, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vga_1/col[8], loads : 289
-  Net : vga_1/col[7], loads : 276
-  Net : vga_1/col[9], loads : 192
-  Net : vga_1/row[2], loads : 159
-  Net : vga_1/col[6], loads : 148
-  Net : vga_1/col[5], loads : 112
-  Net : vga_1/col[4], loads : 99
-  Net : vga_1/col[3], loads : 93
-  Net : vga_1/col[2], loads : 87
-  Net : vga_1/row[3], loads : 86
+  Net : vga_1/col[9], loads : 42
+  Net : vga_1/col[8], loads : 42
+  Net : vga_1/col[7], loads : 38
+  Net : vga_1/col[6], loads : 32
+  Net : vga_1/col[5], loads : 23
+  Net : jump1/slowClk, loads : 21
+  Net : vga_1/row[5], loads : 20
+  Net : cube_gen1/n61, loads : 18
+  Net : vga_1/row[4], loads : 17
+  Net : controller1/clk, loads : 17
 ################### End Clock Report ##################
 
-Peak Memory Usage: 650 MB
+Peak Memory Usage: 628 MB
 
 --------------------------------------------------------------
-Total CPU Time: 18 secs 
-Total REAL Time: 21 secs 
+Total CPU Time: 4 secs 
+Total REAL Time: 12 secs 
 --------------------------------------------------------------
 
 
