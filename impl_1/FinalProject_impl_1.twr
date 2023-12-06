@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.0.43.3
 
-Wed Dec  6 00:35:43 2023
+Wed Dec  6 17:18:43 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -54,7 +54,7 @@ create_clock -name {controller1/clk} -period 20.8333 [get_pins {controller1/osc/
 
 1.2  Constraint Coverage
 ---------------------------
-Constraint Coverage: 4.51703%
+Constraint Coverage: 4.43383%
 
 
 1.3  Overall Summary
@@ -77,16 +77,16 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-jump1/count_548_666__i13/D              |    No arrival or required
-jump1/count_548_666__i12/D              |    No arrival or required
-jump1/count_548_666__i11/D              |    No arrival or required
-jump1/count_548_666__i10/D              |    No arrival or required
-jump1/count_548_666__i9/D               |    No arrival or required
-jump1/count_548_666__i8/D               |    No arrival or required
-jump1/count_548_666__i7/D               |    No arrival or required
-jump1/count_548_666__i6/D               |    No arrival or required
-jump1/count_548_666__i5/D               |    No arrival or required
-jump1/count_548_666__i4/D               |    No arrival or required
+jump1/count_550_690__i13/D              |    No arrival or required
+jump1/count_550_690__i12/D              |    No arrival or required
+jump1/count_550_690__i11/D              |    No arrival or required
+jump1/count_550_690__i10/D              |    No arrival or required
+jump1/count_550_690__i9/D               |    No arrival or required
+jump1/count_550_690__i8/D               |    No arrival or required
+jump1/count_550_690__i7/D               |    No arrival or required
+jump1/count_550_690__i6/D               |    No arrival or required
+jump1/count_550_690__i5/D               |    No arrival or required
+jump1/count_550_690__i4/D               |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
@@ -133,7 +133,7 @@ Define a clock on a top level port or a generated clock on a clock divider pin a
 -------------------------------------------------------------------
 controlClk_c                            |controller1/controlClk_c_I_0/Z
 jump1.slowClk                           |       jump1/slowClk_I_0/Q
-frame2Clk                               |     vga_1/frame2Clk_I_0/Z
+frame2Clk                               |        vga_1/row_1__I_0/Z
 -------------------------------------------------------------------
                                         |                          
 Number of clock nets without clock defi |                          
@@ -206,16 +206,16 @@ Clock Domain Crossing
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-controller1/slowCount_7__I_0/D           |   10.480 ns 
-controller1/slowCount_7__I_1/D           |   10.757 ns 
-controller1/slowCount_7__I_2/D           |   11.589 ns 
-controller1/slowCount_7__I_3/D           |   11.866 ns 
-controller1/slowCount_7__I_4/D           |   12.143 ns 
-controller1/slowCount_7__I_5/D           |   12.420 ns 
-controller1/slowCount_7__I_6/D           |   12.697 ns 
-controller1/slowCount_7__I_7/D           |   12.974 ns 
-controller1/slowCount_7__I_50/D          |   13.251 ns 
-controller1/count_544_654__i8/D          |   13.528 ns 
+controller1/count_8__I_47/D              |   10.480 ns 
+controller1/count_8__I_48/D              |   10.757 ns 
+controller1/count_8__I_49/D              |   11.589 ns 
+controller1/count_8__I_50/D              |   11.866 ns 
+controller1/count_8__I_51/D              |   12.143 ns 
+controller1/count_8__I_52/D              |   12.420 ns 
+controller1/count_8__I_53/D              |   12.697 ns 
+controller1/count_8__I_54/D              |   12.974 ns 
+controller1/count_8__I_0/D               |   13.251 ns 
+controller1/count_546_670__i8/D          |   13.528 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -238,8 +238,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_0/D  (SLICE_R12C29A)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_47/D  (SLICE_R15C28A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 18
@@ -254,67 +254,67 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.000                 11.746  2       
-controller1/count_544_654_add_4_9/CI1->controller1/count_544_654_add_4_9/CO1
-                                          SLICE_R12C28A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n12447                                           NET DELAY               0.000                 12.023  2       
-controller1/count_544_654_add_4_11/CI0->controller1/count_544_654_add_4_11/CO0
-                                          SLICE_R12C28B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n14818                                           NET DELAY               0.000                 12.300  2       
-controller1/count_544_654_add_4_11/CI1->controller1/count_544_654_add_4_11/CO1
-                                          SLICE_R12C28B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n12449                                           NET DELAY               0.000                 12.577  2       
-controller1/count_544_654_add_4_13/CI0->controller1/count_544_654_add_4_13/CO0
-                                          SLICE_R12C28C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n14821                                           NET DELAY               0.000                 12.854  2       
-controller1/count_544_654_add_4_13/CI1->controller1/count_544_654_add_4_13/CO1
-                                          SLICE_R12C28C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
-controller1/n12451                                           NET DELAY               0.000                 13.131  2       
-controller1/count_544_654_add_4_15/CI0->controller1/count_544_654_add_4_15/CO0
-                                          SLICE_R12C28D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
-controller1/n14824                                           NET DELAY               0.000                 13.408  2       
-controller1/count_544_654_add_4_15/CI1->controller1/count_544_654_add_4_15/CO1
-                                          SLICE_R12C28D      CIN1_TO_COUT1_DELAY     0.277                 13.685  2       
-controller1/n12453                                           NET DELAY               0.555                 14.240  2       
-controller1/count_544_654_add_4_17/CI0->controller1/count_544_654_add_4_17/CO0
-                                          SLICE_R12C29A      CIN0_TO_COUT0_DELAY     0.277                 14.517  2       
-controller1/n14827                                           NET DELAY               0.661                 15.178  2       
-controller1/count_544_654_add_4_17/D1->controller1/count_544_654_add_4_17/S1
-                                          SLICE_R12C29A      D1_TO_F1_DELAY          0.476                 15.654  1       
-controller1/slowCount_7__N_1[16]                             NET DELAY               0.000                 15.654  1       
-controller1/slowCount_7__I_0/D                                                       0.000                 15.654  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.000                 11.746  2       
+controller1/count_546_670_add_4_9/CI1->controller1/count_546_670_add_4_9/CO1
+                                          SLICE_R15C27A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
+controller1/n11731                                           NET DELAY               0.000                 12.023  2       
+controller1/count_546_670_add_4_11/CI0->controller1/count_546_670_add_4_11/CO0
+                                          SLICE_R15C27B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
+controller1/n14114                                           NET DELAY               0.000                 12.300  2       
+controller1/count_546_670_add_4_11/CI1->controller1/count_546_670_add_4_11/CO1
+                                          SLICE_R15C27B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
+controller1/n11733                                           NET DELAY               0.000                 12.577  2       
+controller1/count_546_670_add_4_13/CI0->controller1/count_546_670_add_4_13/CO0
+                                          SLICE_R15C27C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
+controller1/n14117                                           NET DELAY               0.000                 12.854  2       
+controller1/count_546_670_add_4_13/CI1->controller1/count_546_670_add_4_13/CO1
+                                          SLICE_R15C27C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
+controller1/n11735                                           NET DELAY               0.000                 13.131  2       
+controller1/count_546_670_add_4_15/CI0->controller1/count_546_670_add_4_15/CO0
+                                          SLICE_R15C27D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
+controller1/n14120                                           NET DELAY               0.000                 13.408  2       
+controller1/count_546_670_add_4_15/CI1->controller1/count_546_670_add_4_15/CO1
+                                          SLICE_R15C27D      CIN1_TO_COUT1_DELAY     0.277                 13.685  2       
+controller1/n11737                                           NET DELAY               0.555                 14.240  2       
+controller1/count_546_670_add_4_17/CI0->controller1/count_546_670_add_4_17/CO0
+                                          SLICE_R15C28A      CIN0_TO_COUT0_DELAY     0.277                 14.517  2       
+controller1/n14123                                           NET DELAY               0.661                 15.178  2       
+controller1/count_546_670_add_4_17/D1->controller1/count_546_670_add_4_17/S1
+                                          SLICE_R15C28A      D1_TO_F1_DELAY          0.476                 15.654  1       
+controller1/count_8__N_65[16]                                NET DELAY               0.000                 15.654  1       
+controller1/count_8__I_47/D                                                          0.000                 15.654  1       
 
 
 Destination Clock Path
@@ -323,7 +323,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/slowCount_7__I_1/CK   controller1/slowCount_7__I_0/CK}
+{controller1/count_8__I_48/CK   controller1/count_8__I_47/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -338,8 +338,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_1/D  (SLICE_R12C29A)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_48/D  (SLICE_R15C28A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 17
@@ -354,64 +354,64 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.000                 11.746  2       
-controller1/count_544_654_add_4_9/CI1->controller1/count_544_654_add_4_9/CO1
-                                          SLICE_R12C28A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n12447                                           NET DELAY               0.000                 12.023  2       
-controller1/count_544_654_add_4_11/CI0->controller1/count_544_654_add_4_11/CO0
-                                          SLICE_R12C28B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n14818                                           NET DELAY               0.000                 12.300  2       
-controller1/count_544_654_add_4_11/CI1->controller1/count_544_654_add_4_11/CO1
-                                          SLICE_R12C28B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n12449                                           NET DELAY               0.000                 12.577  2       
-controller1/count_544_654_add_4_13/CI0->controller1/count_544_654_add_4_13/CO0
-                                          SLICE_R12C28C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n14821                                           NET DELAY               0.000                 12.854  2       
-controller1/count_544_654_add_4_13/CI1->controller1/count_544_654_add_4_13/CO1
-                                          SLICE_R12C28C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
-controller1/n12451                                           NET DELAY               0.000                 13.131  2       
-controller1/count_544_654_add_4_15/CI0->controller1/count_544_654_add_4_15/CO0
-                                          SLICE_R12C28D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
-controller1/n14824                                           NET DELAY               0.000                 13.408  2       
-controller1/count_544_654_add_4_15/CI1->controller1/count_544_654_add_4_15/CO1
-                                          SLICE_R12C28D      CIN1_TO_COUT1_DELAY     0.277                 13.685  2       
-controller1/n12453                                           NET DELAY               1.216                 14.901  2       
-controller1/count_544_654_add_4_17/D0->controller1/count_544_654_add_4_17/S0
-                                          SLICE_R12C29A      D0_TO_F0_DELAY          0.476                 15.377  1       
-controller1/slowCount_7__N_1[15]                             NET DELAY               0.000                 15.377  1       
-controller1/slowCount_7__I_1/D                                                       0.000                 15.377  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.000                 11.746  2       
+controller1/count_546_670_add_4_9/CI1->controller1/count_546_670_add_4_9/CO1
+                                          SLICE_R15C27A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
+controller1/n11731                                           NET DELAY               0.000                 12.023  2       
+controller1/count_546_670_add_4_11/CI0->controller1/count_546_670_add_4_11/CO0
+                                          SLICE_R15C27B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
+controller1/n14114                                           NET DELAY               0.000                 12.300  2       
+controller1/count_546_670_add_4_11/CI1->controller1/count_546_670_add_4_11/CO1
+                                          SLICE_R15C27B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
+controller1/n11733                                           NET DELAY               0.000                 12.577  2       
+controller1/count_546_670_add_4_13/CI0->controller1/count_546_670_add_4_13/CO0
+                                          SLICE_R15C27C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
+controller1/n14117                                           NET DELAY               0.000                 12.854  2       
+controller1/count_546_670_add_4_13/CI1->controller1/count_546_670_add_4_13/CO1
+                                          SLICE_R15C27C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
+controller1/n11735                                           NET DELAY               0.000                 13.131  2       
+controller1/count_546_670_add_4_15/CI0->controller1/count_546_670_add_4_15/CO0
+                                          SLICE_R15C27D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
+controller1/n14120                                           NET DELAY               0.000                 13.408  2       
+controller1/count_546_670_add_4_15/CI1->controller1/count_546_670_add_4_15/CO1
+                                          SLICE_R15C27D      CIN1_TO_COUT1_DELAY     0.277                 13.685  2       
+controller1/n11737                                           NET DELAY               1.216                 14.901  2       
+controller1/count_546_670_add_4_17/D0->controller1/count_546_670_add_4_17/S0
+                                          SLICE_R15C28A      D0_TO_F0_DELAY          0.476                 15.377  1       
+controller1/count_8__N_65[15]                                NET DELAY               0.000                 15.377  1       
+controller1/count_8__I_48/D                                                          0.000                 15.377  1       
 
 
 Destination Clock Path
@@ -420,7 +420,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/slowCount_7__I_1/CK   controller1/slowCount_7__I_0/CK}
+{controller1/count_8__I_48/CK   controller1/count_8__I_47/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -435,8 +435,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_2/D  (SLICE_R12C28D)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_49/D  (SLICE_R15C27D)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 16
@@ -451,61 +451,61 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.000                 11.746  2       
-controller1/count_544_654_add_4_9/CI1->controller1/count_544_654_add_4_9/CO1
-                                          SLICE_R12C28A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n12447                                           NET DELAY               0.000                 12.023  2       
-controller1/count_544_654_add_4_11/CI0->controller1/count_544_654_add_4_11/CO0
-                                          SLICE_R12C28B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n14818                                           NET DELAY               0.000                 12.300  2       
-controller1/count_544_654_add_4_11/CI1->controller1/count_544_654_add_4_11/CO1
-                                          SLICE_R12C28B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n12449                                           NET DELAY               0.000                 12.577  2       
-controller1/count_544_654_add_4_13/CI0->controller1/count_544_654_add_4_13/CO0
-                                          SLICE_R12C28C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n14821                                           NET DELAY               0.000                 12.854  2       
-controller1/count_544_654_add_4_13/CI1->controller1/count_544_654_add_4_13/CO1
-                                          SLICE_R12C28C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
-controller1/n12451                                           NET DELAY               0.000                 13.131  2       
-controller1/count_544_654_add_4_15/CI0->controller1/count_544_654_add_4_15/CO0
-                                          SLICE_R12C28D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
-controller1/n14824                                           NET DELAY               0.661                 14.069  2       
-controller1/count_544_654_add_4_15/D1->controller1/count_544_654_add_4_15/S1
-                                          SLICE_R12C28D      D1_TO_F1_DELAY          0.476                 14.545  1       
-controller1/slowCount_7__N_1[14]                             NET DELAY               0.000                 14.545  1       
-controller1/slowCount_7__I_2/D                                                       0.000                 14.545  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.000                 11.746  2       
+controller1/count_546_670_add_4_9/CI1->controller1/count_546_670_add_4_9/CO1
+                                          SLICE_R15C27A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
+controller1/n11731                                           NET DELAY               0.000                 12.023  2       
+controller1/count_546_670_add_4_11/CI0->controller1/count_546_670_add_4_11/CO0
+                                          SLICE_R15C27B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
+controller1/n14114                                           NET DELAY               0.000                 12.300  2       
+controller1/count_546_670_add_4_11/CI1->controller1/count_546_670_add_4_11/CO1
+                                          SLICE_R15C27B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
+controller1/n11733                                           NET DELAY               0.000                 12.577  2       
+controller1/count_546_670_add_4_13/CI0->controller1/count_546_670_add_4_13/CO0
+                                          SLICE_R15C27C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
+controller1/n14117                                           NET DELAY               0.000                 12.854  2       
+controller1/count_546_670_add_4_13/CI1->controller1/count_546_670_add_4_13/CO1
+                                          SLICE_R15C27C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
+controller1/n11735                                           NET DELAY               0.000                 13.131  2       
+controller1/count_546_670_add_4_15/CI0->controller1/count_546_670_add_4_15/CO0
+                                          SLICE_R15C27D      CIN0_TO_COUT0_DELAY     0.277                 13.408  2       
+controller1/n14120                                           NET DELAY               0.661                 14.069  2       
+controller1/count_546_670_add_4_15/D1->controller1/count_546_670_add_4_15/S1
+                                          SLICE_R15C27D      D1_TO_F1_DELAY          0.476                 14.545  1       
+controller1/count_8__N_65[14]                                NET DELAY               0.000                 14.545  1       
+controller1/count_8__I_49/D                                                          0.000                 14.545  1       
 
 
 Destination Clock Path
@@ -514,7 +514,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/slowCount_7__I_3/CK   controller1/slowCount_7__I_2/CK}
+{controller1/count_8__I_50/CK   controller1/count_8__I_49/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -529,8 +529,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_3/D  (SLICE_R12C28D)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_50/D  (SLICE_R15C27D)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 15
@@ -545,58 +545,58 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.000                 11.746  2       
-controller1/count_544_654_add_4_9/CI1->controller1/count_544_654_add_4_9/CO1
-                                          SLICE_R12C28A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n12447                                           NET DELAY               0.000                 12.023  2       
-controller1/count_544_654_add_4_11/CI0->controller1/count_544_654_add_4_11/CO0
-                                          SLICE_R12C28B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n14818                                           NET DELAY               0.000                 12.300  2       
-controller1/count_544_654_add_4_11/CI1->controller1/count_544_654_add_4_11/CO1
-                                          SLICE_R12C28B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n12449                                           NET DELAY               0.000                 12.577  2       
-controller1/count_544_654_add_4_13/CI0->controller1/count_544_654_add_4_13/CO0
-                                          SLICE_R12C28C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n14821                                           NET DELAY               0.000                 12.854  2       
-controller1/count_544_654_add_4_13/CI1->controller1/count_544_654_add_4_13/CO1
-                                          SLICE_R12C28C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
-controller1/n12451                                           NET DELAY               0.661                 13.792  2       
-controller1/count_544_654_add_4_15/D0->controller1/count_544_654_add_4_15/S0
-                                          SLICE_R12C28D      D0_TO_F0_DELAY          0.476                 14.268  1       
-controller1/slowCount_7__N_1[13]                             NET DELAY               0.000                 14.268  1       
-controller1/slowCount_7__I_3/D                                                       0.000                 14.268  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.000                 11.746  2       
+controller1/count_546_670_add_4_9/CI1->controller1/count_546_670_add_4_9/CO1
+                                          SLICE_R15C27A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
+controller1/n11731                                           NET DELAY               0.000                 12.023  2       
+controller1/count_546_670_add_4_11/CI0->controller1/count_546_670_add_4_11/CO0
+                                          SLICE_R15C27B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
+controller1/n14114                                           NET DELAY               0.000                 12.300  2       
+controller1/count_546_670_add_4_11/CI1->controller1/count_546_670_add_4_11/CO1
+                                          SLICE_R15C27B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
+controller1/n11733                                           NET DELAY               0.000                 12.577  2       
+controller1/count_546_670_add_4_13/CI0->controller1/count_546_670_add_4_13/CO0
+                                          SLICE_R15C27C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
+controller1/n14117                                           NET DELAY               0.000                 12.854  2       
+controller1/count_546_670_add_4_13/CI1->controller1/count_546_670_add_4_13/CO1
+                                          SLICE_R15C27C      CIN1_TO_COUT1_DELAY     0.277                 13.131  2       
+controller1/n11735                                           NET DELAY               0.661                 13.792  2       
+controller1/count_546_670_add_4_15/D0->controller1/count_546_670_add_4_15/S0
+                                          SLICE_R15C27D      D0_TO_F0_DELAY          0.476                 14.268  1       
+controller1/count_8__N_65[13]                                NET DELAY               0.000                 14.268  1       
+controller1/count_8__I_50/D                                                          0.000                 14.268  1       
 
 
 Destination Clock Path
@@ -605,7 +605,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/slowCount_7__I_3/CK   controller1/slowCount_7__I_2/CK}
+{controller1/count_8__I_50/CK   controller1/count_8__I_49/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -620,8 +620,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_4/D  (SLICE_R12C28C)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_51/D  (SLICE_R15C27C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 14
@@ -636,55 +636,55 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.000                 11.746  2       
-controller1/count_544_654_add_4_9/CI1->controller1/count_544_654_add_4_9/CO1
-                                          SLICE_R12C28A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n12447                                           NET DELAY               0.000                 12.023  2       
-controller1/count_544_654_add_4_11/CI0->controller1/count_544_654_add_4_11/CO0
-                                          SLICE_R12C28B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n14818                                           NET DELAY               0.000                 12.300  2       
-controller1/count_544_654_add_4_11/CI1->controller1/count_544_654_add_4_11/CO1
-                                          SLICE_R12C28B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n12449                                           NET DELAY               0.000                 12.577  2       
-controller1/count_544_654_add_4_13/CI0->controller1/count_544_654_add_4_13/CO0
-                                          SLICE_R12C28C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
-controller1/n14821                                           NET DELAY               0.661                 13.515  2       
-controller1/count_544_654_add_4_13/D1->controller1/count_544_654_add_4_13/S1
-                                          SLICE_R12C28C      D1_TO_F1_DELAY          0.476                 13.991  1       
-controller1/slowCount_7__N_1[12]                             NET DELAY               0.000                 13.991  1       
-controller1/slowCount_7__I_4/D                                                       0.000                 13.991  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.000                 11.746  2       
+controller1/count_546_670_add_4_9/CI1->controller1/count_546_670_add_4_9/CO1
+                                          SLICE_R15C27A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
+controller1/n11731                                           NET DELAY               0.000                 12.023  2       
+controller1/count_546_670_add_4_11/CI0->controller1/count_546_670_add_4_11/CO0
+                                          SLICE_R15C27B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
+controller1/n14114                                           NET DELAY               0.000                 12.300  2       
+controller1/count_546_670_add_4_11/CI1->controller1/count_546_670_add_4_11/CO1
+                                          SLICE_R15C27B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
+controller1/n11733                                           NET DELAY               0.000                 12.577  2       
+controller1/count_546_670_add_4_13/CI0->controller1/count_546_670_add_4_13/CO0
+                                          SLICE_R15C27C      CIN0_TO_COUT0_DELAY     0.277                 12.854  2       
+controller1/n14117                                           NET DELAY               0.661                 13.515  2       
+controller1/count_546_670_add_4_13/D1->controller1/count_546_670_add_4_13/S1
+                                          SLICE_R15C27C      D1_TO_F1_DELAY          0.476                 13.991  1       
+controller1/count_8__N_65[12]                                NET DELAY               0.000                 13.991  1       
+controller1/count_8__I_51/D                                                          0.000                 13.991  1       
 
 
 Destination Clock Path
@@ -693,7 +693,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/slowCount_7__I_5/CK   controller1/slowCount_7__I_4/CK}
+{controller1/count_8__I_52/CK   controller1/count_8__I_51/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -708,8 +708,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_5/D  (SLICE_R12C28C)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_52/D  (SLICE_R15C27C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 13
@@ -724,52 +724,52 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.000                 11.746  2       
-controller1/count_544_654_add_4_9/CI1->controller1/count_544_654_add_4_9/CO1
-                                          SLICE_R12C28A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n12447                                           NET DELAY               0.000                 12.023  2       
-controller1/count_544_654_add_4_11/CI0->controller1/count_544_654_add_4_11/CO0
-                                          SLICE_R12C28B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n14818                                           NET DELAY               0.000                 12.300  2       
-controller1/count_544_654_add_4_11/CI1->controller1/count_544_654_add_4_11/CO1
-                                          SLICE_R12C28B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
-controller1/n12449                                           NET DELAY               0.661                 13.238  2       
-controller1/count_544_654_add_4_13/D0->controller1/count_544_654_add_4_13/S0
-                                          SLICE_R12C28C      D0_TO_F0_DELAY          0.476                 13.714  1       
-controller1/slowCount_7__N_1[11]                             NET DELAY               0.000                 13.714  1       
-controller1/slowCount_7__I_5/D                                                       0.000                 13.714  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.000                 11.746  2       
+controller1/count_546_670_add_4_9/CI1->controller1/count_546_670_add_4_9/CO1
+                                          SLICE_R15C27A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
+controller1/n11731                                           NET DELAY               0.000                 12.023  2       
+controller1/count_546_670_add_4_11/CI0->controller1/count_546_670_add_4_11/CO0
+                                          SLICE_R15C27B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
+controller1/n14114                                           NET DELAY               0.000                 12.300  2       
+controller1/count_546_670_add_4_11/CI1->controller1/count_546_670_add_4_11/CO1
+                                          SLICE_R15C27B      CIN1_TO_COUT1_DELAY     0.277                 12.577  2       
+controller1/n11733                                           NET DELAY               0.661                 13.238  2       
+controller1/count_546_670_add_4_13/D0->controller1/count_546_670_add_4_13/S0
+                                          SLICE_R15C27C      D0_TO_F0_DELAY          0.476                 13.714  1       
+controller1/count_8__N_65[11]                                NET DELAY               0.000                 13.714  1       
+controller1/count_8__I_52/D                                                          0.000                 13.714  1       
 
 
 Destination Clock Path
@@ -778,7 +778,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/slowCount_7__I_5/CK   controller1/slowCount_7__I_4/CK}
+{controller1/count_8__I_52/CK   controller1/count_8__I_51/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -793,8 +793,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_6/D  (SLICE_R12C28B)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_53/D  (SLICE_R15C27B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 12
@@ -809,49 +809,49 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.000                 11.746  2       
-controller1/count_544_654_add_4_9/CI1->controller1/count_544_654_add_4_9/CO1
-                                          SLICE_R12C28A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n12447                                           NET DELAY               0.000                 12.023  2       
-controller1/count_544_654_add_4_11/CI0->controller1/count_544_654_add_4_11/CO0
-                                          SLICE_R12C28B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
-controller1/n14818                                           NET DELAY               0.661                 12.961  2       
-controller1/count_544_654_add_4_11/D1->controller1/count_544_654_add_4_11/S1
-                                          SLICE_R12C28B      D1_TO_F1_DELAY          0.476                 13.437  1       
-controller1/slowCount_7__N_1[10]                             NET DELAY               0.000                 13.437  1       
-controller1/slowCount_7__I_6/D                                                       0.000                 13.437  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.000                 11.746  2       
+controller1/count_546_670_add_4_9/CI1->controller1/count_546_670_add_4_9/CO1
+                                          SLICE_R15C27A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
+controller1/n11731                                           NET DELAY               0.000                 12.023  2       
+controller1/count_546_670_add_4_11/CI0->controller1/count_546_670_add_4_11/CO0
+                                          SLICE_R15C27B      CIN0_TO_COUT0_DELAY     0.277                 12.300  2       
+controller1/n14114                                           NET DELAY               0.661                 12.961  2       
+controller1/count_546_670_add_4_11/D1->controller1/count_546_670_add_4_11/S1
+                                          SLICE_R15C27B      D1_TO_F1_DELAY          0.476                 13.437  1       
+controller1/count_8__N_65[10]                                NET DELAY               0.000                 13.437  1       
+controller1/count_8__I_53/D                                                          0.000                 13.437  1       
 
 
 Destination Clock Path
@@ -860,7 +860,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/slowCount_7__I_7/CK   controller1/slowCount_7__I_6/CK}
+{controller1/count_8__I_54/CK   controller1/count_8__I_53/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -875,8 +875,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_7/D  (SLICE_R12C28B)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_54/D  (SLICE_R15C27B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 11
@@ -891,46 +891,46 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.000                 11.746  2       
-controller1/count_544_654_add_4_9/CI1->controller1/count_544_654_add_4_9/CO1
-                                          SLICE_R12C28A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
-controller1/n12447                                           NET DELAY               0.661                 12.684  2       
-controller1/count_544_654_add_4_11/D0->controller1/count_544_654_add_4_11/S0
-                                          SLICE_R12C28B      D0_TO_F0_DELAY          0.476                 13.160  1       
-controller1/slowCount_7__N_1[9]                              NET DELAY               0.000                 13.160  1       
-controller1/slowCount_7__I_7/D                                                       0.000                 13.160  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.000                 11.746  2       
+controller1/count_546_670_add_4_9/CI1->controller1/count_546_670_add_4_9/CO1
+                                          SLICE_R15C27A      CIN1_TO_COUT1_DELAY     0.277                 12.023  2       
+controller1/n11731                                           NET DELAY               0.661                 12.684  2       
+controller1/count_546_670_add_4_11/D0->controller1/count_546_670_add_4_11/S0
+                                          SLICE_R15C27B      D0_TO_F0_DELAY          0.476                 13.160  1       
+controller1/count_8__N_65[9]                                 NET DELAY               0.000                 13.160  1       
+controller1/count_8__I_54/D                                                          0.000                 13.160  1       
 
 
 Destination Clock Path
@@ -939,7 +939,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/slowCount_7__I_7/CK   controller1/slowCount_7__I_6/CK}
+{controller1/count_8__I_54/CK   controller1/count_8__I_53/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -954,8 +954,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/slowCount_7__I_50/D  (SLICE_R12C28A)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_8__I_0/D  (SLICE_R15C27A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 10
@@ -970,43 +970,43 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               0.555                 11.469  2       
-controller1/count_544_654_add_4_9/CI0->controller1/count_544_654_add_4_9/CO0
-                                          SLICE_R12C28A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
-controller1/n14815                                           NET DELAY               0.661                 12.407  2       
-controller1/count_544_654_add_4_9/D1->controller1/count_544_654_add_4_9/S1
-                                          SLICE_R12C28A      D1_TO_F1_DELAY          0.476                 12.883  1       
-controller1/slowCount_7__N_1[8]                              NET DELAY               0.000                 12.883  1       
-controller1/slowCount_7__I_50/D                                                      0.000                 12.883  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               0.555                 11.469  2       
+controller1/count_546_670_add_4_9/CI0->controller1/count_546_670_add_4_9/CO0
+                                          SLICE_R15C27A      CIN0_TO_COUT0_DELAY     0.277                 11.746  2       
+controller1/n14111                                           NET DELAY               0.661                 12.407  2       
+controller1/count_546_670_add_4_9/D1->controller1/count_546_670_add_4_9/S1
+                                          SLICE_R15C27A      D1_TO_F1_DELAY          0.476                 12.883  1       
+controller1/count_8__N_65[8]                                 NET DELAY               0.000                 12.883  1       
+controller1/count_8__I_0/D                                                           0.000                 12.883  1       
 
 
 Destination Clock Path
@@ -1015,7 +1015,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/count_544_654__i8/CK   controller1/slowCount_7__I_50/CK}
+{controller1/count_546_670__i8/CK   controller1/count_8__I_0/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -1030,8 +1030,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/count_544_654__i1/Q  (SLICE_R12C27A)
-Path End         : controller1/count_544_654__i8/D  (SLICE_R12C28A)
+Path Begin       : controller1/count_546_670__i1/Q  (SLICE_R15C26A)
+Path End         : controller1/count_546_670__i8/D  (SLICE_R15C27A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 9
@@ -1046,40 +1046,40 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  10      
 controller1/clk                                              NET DELAY               5.499                  5.499  10      
-controller1/count_544_654__i1/CK                                                     0.000                  5.499  1       
+controller1/count_546_670__i1/CK                                                     0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-controller1/count_544_654__i1/CK->controller1/count_544_654__i1/Q
-                                          SLICE_R12C27A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
+controller1/count_546_670__i1/CK->controller1/count_546_670__i1/Q
+                                          SLICE_R15C26A      CLK_TO_Q1_DELAY         1.388                  6.887  1       
 controller1/n17                                              NET DELAY               2.022                  8.909  1       
-controller1/count_544_654_add_4_1/C1->controller1/count_544_654_add_4_1/CO1
-                                          SLICE_R12C27A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
-controller1/n12439                                           NET DELAY               0.000                  9.252  2       
-controller1/count_544_654_add_4_3/CI0->controller1/count_544_654_add_4_3/CO0
-                                          SLICE_R12C27B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
-controller1/n14806                                           NET DELAY               0.000                  9.529  2       
-controller1/count_544_654_add_4_3/CI1->controller1/count_544_654_add_4_3/CO1
-                                          SLICE_R12C27B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
-controller1/n12441                                           NET DELAY               0.000                  9.806  2       
-controller1/count_544_654_add_4_5/CI0->controller1/count_544_654_add_4_5/CO0
-                                          SLICE_R12C27C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
-controller1/n14809                                           NET DELAY               0.000                 10.083  2       
-controller1/count_544_654_add_4_5/CI1->controller1/count_544_654_add_4_5/CO1
-                                          SLICE_R12C27C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
-controller1/n12443                                           NET DELAY               0.000                 10.360  2       
-controller1/count_544_654_add_4_7/CI0->controller1/count_544_654_add_4_7/CO0
-                                          SLICE_R12C27D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
-controller1/n14812                                           NET DELAY               0.000                 10.637  2       
-controller1/count_544_654_add_4_7/CI1->controller1/count_544_654_add_4_7/CO1
-                                          SLICE_R12C27D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
-controller1/n12445                                           NET DELAY               1.216                 12.130  2       
-controller1/count_544_654_add_4_9/D0->controller1/count_544_654_add_4_9/S0
-                                          SLICE_R12C28A      D0_TO_F0_DELAY          0.476                 12.606  1       
-controller1/slowCount_7__N_1[7]                              NET DELAY               0.000                 12.606  1       
-controller1/count_544_654__i8/D                                                      0.000                 12.606  1       
+controller1/count_546_670_add_4_1/C1->controller1/count_546_670_add_4_1/CO1
+                                          SLICE_R15C26A      C1_TO_COUT1_DELAY       0.343                  9.252  2       
+controller1/n11723                                           NET DELAY               0.000                  9.252  2       
+controller1/count_546_670_add_4_3/CI0->controller1/count_546_670_add_4_3/CO0
+                                          SLICE_R15C26B      CIN0_TO_COUT0_DELAY     0.277                  9.529  2       
+controller1/n14102                                           NET DELAY               0.000                  9.529  2       
+controller1/count_546_670_add_4_3/CI1->controller1/count_546_670_add_4_3/CO1
+                                          SLICE_R15C26B      CIN1_TO_COUT1_DELAY     0.277                  9.806  2       
+controller1/n11725                                           NET DELAY               0.000                  9.806  2       
+controller1/count_546_670_add_4_5/CI0->controller1/count_546_670_add_4_5/CO0
+                                          SLICE_R15C26C      CIN0_TO_COUT0_DELAY     0.277                 10.083  2       
+controller1/n14105                                           NET DELAY               0.000                 10.083  2       
+controller1/count_546_670_add_4_5/CI1->controller1/count_546_670_add_4_5/CO1
+                                          SLICE_R15C26C      CIN1_TO_COUT1_DELAY     0.277                 10.360  2       
+controller1/n11727                                           NET DELAY               0.000                 10.360  2       
+controller1/count_546_670_add_4_7/CI0->controller1/count_546_670_add_4_7/CO0
+                                          SLICE_R15C26D      CIN0_TO_COUT0_DELAY     0.277                 10.637  2       
+controller1/n14108                                           NET DELAY               0.000                 10.637  2       
+controller1/count_546_670_add_4_7/CI1->controller1/count_546_670_add_4_7/CO1
+                                          SLICE_R15C26D      CIN1_TO_COUT1_DELAY     0.277                 10.914  2       
+controller1/n11729                                           NET DELAY               1.216                 12.130  2       
+controller1/count_546_670_add_4_9/D0->controller1/count_546_670_add_4_9/S0
+                                          SLICE_R15C27A      D0_TO_F0_DELAY          0.476                 12.606  1       
+controller1/count_8__N_65[7]                                 NET DELAY               0.000                 12.606  1       
+controller1/count_546_670__i8/D                                                      0.000                 12.606  1       
 
 
 Destination Clock Path
@@ -1088,7 +1088,7 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  10      
 controller1/clk                                              NET DELAY               5.499                 26.332  10      
-{controller1/count_544_654__i8/CK   controller1/slowCount_7__I_50/CK}
+{controller1/count_546_670__i8/CK   controller1/count_8__I_0/CK}
                                                                                      0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
@@ -1118,16 +1118,16 @@ Path Slack  (Passed)                                                            
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-controller1/count_544_654__i8/D          |    1.913 ns 
-controller1/slowCount_7__I_50/D          |    1.913 ns 
-controller1/slowCount_7__I_7/D           |    1.913 ns 
-controller1/slowCount_7__I_6/D           |    1.913 ns 
-controller1/slowCount_7__I_5/D           |    1.913 ns 
-controller1/slowCount_7__I_4/D           |    1.913 ns 
-controller1/slowCount_7__I_3/D           |    1.913 ns 
-controller1/slowCount_7__I_2/D           |    1.913 ns 
-controller1/slowCount_7__I_1/D           |    1.913 ns 
-controller1/slowCount_7__I_0/D           |    1.913 ns 
+controller1/count_546_670__i8/D          |    1.913 ns 
+controller1/count_8__I_0/D               |    1.913 ns 
+controller1/count_8__I_54/D              |    1.913 ns 
+controller1/count_8__I_53/D              |    1.913 ns 
+controller1/count_8__I_52/D              |    1.913 ns 
+controller1/count_8__I_51/D              |    1.913 ns 
+controller1/count_8__I_50/D              |    1.913 ns 
+controller1/count_8__I_49/D              |    1.913 ns 
+controller1/count_8__I_48/D              |    1.913 ns 
+controller1/count_8__I_47/D              |    1.913 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -1150,8 +1150,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : controller1/count_544_654__i8/Q  (SLICE_R12C28A)
-Path End         : controller1/count_544_654__i8/D  (SLICE_R12C28A)
+Path Begin       : controller1/count_546_670__i8/Q  (SLICE_R15C27A)
+Path End         : controller1/count_546_670__i8/D  (SLICE_R15C27A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1166,20 +1166,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/count_544_654__i8/CK   controller1/slowCount_7__I_50/CK}
+{controller1/count_546_670__i8/CK   controller1/count_8__I_0/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/count_544_654__i8/CK->controller1/count_544_654__i8/Q
-                                          SLICE_R12C28A      CLK_TO_Q0_DELAY  0.779                  3.863  1       
+controller1/count_546_670__i8/CK->controller1/count_546_670__i8/Q
+                                          SLICE_R15C27A      CLK_TO_Q0_DELAY  0.779                  3.863  1       
 controller1/n10                                              NET DELAY        0.882                  4.745  1       
-controller1/count_544_654_add_4_9/C0->controller1/count_544_654_add_4_9/S0
-                                          SLICE_R12C28A      C0_TO_F0_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[7]                              NET DELAY        0.000                  4.997  1       
-controller1/count_544_654__i8/D                                               0.000                  4.997  1       
+controller1/count_546_670_add_4_9/C0->controller1/count_546_670_add_4_9/S0
+                                          SLICE_R15C27A      C0_TO_F0_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[7]                                 NET DELAY        0.000                  4.997  1       
+controller1/count_546_670__i8/D                                               0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1188,7 +1188,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/count_544_654__i8/CK   controller1/slowCount_7__I_50/CK}
+{controller1/count_546_670__i8/CK   controller1/count_8__I_0/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1203,8 +1203,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_50/Q  (SLICE_R12C28A)
-Path End         : controller1/slowCount_7__I_50/D  (SLICE_R12C28A)
+Path Begin       : controller1/count_8__I_0/Q  (SLICE_R15C27A)
+Path End         : controller1/count_8__I_0/D  (SLICE_R15C27A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1219,20 +1219,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/count_544_654__i8/CK   controller1/slowCount_7__I_50/CK}
+{controller1/count_546_670__i8/CK   controller1/count_8__I_0/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_50/CK->controller1/slowCount_7__I_50/Q
-                                          SLICE_R12C28A      CLK_TO_Q1_DELAY  0.779                  3.863  2       
+controller1/count_8__I_0/CK->controller1/count_8__I_0/Q
+                                          SLICE_R15C27A      CLK_TO_Q1_DELAY  0.779                  3.863  2       
 controller1/count[8]                                         NET DELAY        0.882                  4.745  2       
-controller1/count_544_654_add_4_9/C1->controller1/count_544_654_add_4_9/S1
-                                          SLICE_R12C28A      C1_TO_F1_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[8]                              NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_50/D                                               0.000                  4.997  1       
+controller1/count_546_670_add_4_9/C1->controller1/count_546_670_add_4_9/S1
+                                          SLICE_R15C27A      C1_TO_F1_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[8]                                 NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_0/D                                                    0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1241,7 +1241,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/count_544_654__i8/CK   controller1/slowCount_7__I_50/CK}
+{controller1/count_546_670__i8/CK   controller1/count_8__I_0/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1256,8 +1256,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_7/Q  (SLICE_R12C28B)
-Path End         : controller1/slowCount_7__I_7/D  (SLICE_R12C28B)
+Path Begin       : controller1/count_8__I_54/Q  (SLICE_R15C27B)
+Path End         : controller1/count_8__I_54/D  (SLICE_R15C27B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1272,20 +1272,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_7/CK   controller1/slowCount_7__I_6/CK}
+{controller1/count_8__I_54/CK   controller1/count_8__I_53/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_7/CK->controller1/slowCount_7__I_7/Q
-                                          SLICE_R12C28B      CLK_TO_Q0_DELAY  0.779                  3.863  2       
+controller1/count_8__I_54/CK->controller1/count_8__I_54/Q
+                                          SLICE_R15C27B      CLK_TO_Q0_DELAY  0.779                  3.863  2       
 controller1/slowCount[0]                                     NET DELAY        0.882                  4.745  2       
-controller1/count_544_654_add_4_11/C0->controller1/count_544_654_add_4_11/S0
-                                          SLICE_R12C28B      C0_TO_F0_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[9]                              NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_7/D                                                0.000                  4.997  1       
+controller1/count_546_670_add_4_11/C0->controller1/count_546_670_add_4_11/S0
+                                          SLICE_R15C27B      C0_TO_F0_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[9]                                 NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_54/D                                                   0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1294,7 +1294,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_7/CK   controller1/slowCount_7__I_6/CK}
+{controller1/count_8__I_54/CK   controller1/count_8__I_53/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1309,8 +1309,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_6/Q  (SLICE_R12C28B)
-Path End         : controller1/slowCount_7__I_6/D  (SLICE_R12C28B)
+Path Begin       : controller1/count_8__I_53/Q  (SLICE_R15C27B)
+Path End         : controller1/count_8__I_53/D  (SLICE_R15C27B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1325,20 +1325,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_7/CK   controller1/slowCount_7__I_6/CK}
+{controller1/count_8__I_54/CK   controller1/count_8__I_53/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_6/CK->controller1/slowCount_7__I_6/Q
-                                          SLICE_R12C28B      CLK_TO_Q1_DELAY  0.779                  3.863  2       
+controller1/count_8__I_53/CK->controller1/count_8__I_53/Q
+                                          SLICE_R15C27B      CLK_TO_Q1_DELAY  0.779                  3.863  2       
 controller1/slowCount[1]                                     NET DELAY        0.882                  4.745  2       
-controller1/count_544_654_add_4_11/C1->controller1/count_544_654_add_4_11/S1
-                                          SLICE_R12C28B      C1_TO_F1_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[10]                             NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_6/D                                                0.000                  4.997  1       
+controller1/count_546_670_add_4_11/C1->controller1/count_546_670_add_4_11/S1
+                                          SLICE_R15C27B      C1_TO_F1_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[10]                                NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_53/D                                                   0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1347,7 +1347,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_7/CK   controller1/slowCount_7__I_6/CK}
+{controller1/count_8__I_54/CK   controller1/count_8__I_53/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1362,8 +1362,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_5/Q  (SLICE_R12C28C)
-Path End         : controller1/slowCount_7__I_5/D  (SLICE_R12C28C)
+Path Begin       : controller1/count_8__I_52/Q  (SLICE_R15C27C)
+Path End         : controller1/count_8__I_52/D  (SLICE_R15C27C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1378,20 +1378,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_5/CK   controller1/slowCount_7__I_4/CK}
+{controller1/count_8__I_52/CK   controller1/count_8__I_51/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_5/CK->controller1/slowCount_7__I_5/Q
-                                          SLICE_R12C28C      CLK_TO_Q0_DELAY  0.779                  3.863  2       
+controller1/count_8__I_52/CK->controller1/count_8__I_52/Q
+                                          SLICE_R15C27C      CLK_TO_Q0_DELAY  0.779                  3.863  2       
 controller1/slowCount[2]                                     NET DELAY        0.882                  4.745  2       
-controller1/count_544_654_add_4_13/C0->controller1/count_544_654_add_4_13/S0
-                                          SLICE_R12C28C      C0_TO_F0_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[11]                             NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_5/D                                                0.000                  4.997  1       
+controller1/count_546_670_add_4_13/C0->controller1/count_546_670_add_4_13/S0
+                                          SLICE_R15C27C      C0_TO_F0_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[11]                                NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_52/D                                                   0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1400,7 +1400,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_5/CK   controller1/slowCount_7__I_4/CK}
+{controller1/count_8__I_52/CK   controller1/count_8__I_51/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1415,8 +1415,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_4/Q  (SLICE_R12C28C)
-Path End         : controller1/slowCount_7__I_4/D  (SLICE_R12C28C)
+Path Begin       : controller1/count_8__I_51/Q  (SLICE_R15C27C)
+Path End         : controller1/count_8__I_51/D  (SLICE_R15C27C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1431,20 +1431,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_5/CK   controller1/slowCount_7__I_4/CK}
+{controller1/count_8__I_52/CK   controller1/count_8__I_51/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_4/CK->controller1/slowCount_7__I_4/Q
-                                          SLICE_R12C28C      CLK_TO_Q1_DELAY  0.779                  3.863  3       
+controller1/count_8__I_51/CK->controller1/count_8__I_51/Q
+                                          SLICE_R15C27C      CLK_TO_Q1_DELAY  0.779                  3.863  3       
 controller1/slowCount[3]                                     NET DELAY        0.882                  4.745  3       
-controller1/count_544_654_add_4_13/C1->controller1/count_544_654_add_4_13/S1
-                                          SLICE_R12C28C      C1_TO_F1_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[12]                             NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_4/D                                                0.000                  4.997  1       
+controller1/count_546_670_add_4_13/C1->controller1/count_546_670_add_4_13/S1
+                                          SLICE_R15C27C      C1_TO_F1_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[12]                                NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_51/D                                                   0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1453,7 +1453,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_5/CK   controller1/slowCount_7__I_4/CK}
+{controller1/count_8__I_52/CK   controller1/count_8__I_51/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1468,8 +1468,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_3/Q  (SLICE_R12C28D)
-Path End         : controller1/slowCount_7__I_3/D  (SLICE_R12C28D)
+Path Begin       : controller1/count_8__I_50/Q  (SLICE_R15C27D)
+Path End         : controller1/count_8__I_50/D  (SLICE_R15C27D)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1484,20 +1484,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_3/CK   controller1/slowCount_7__I_2/CK}
+{controller1/count_8__I_50/CK   controller1/count_8__I_49/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_3/CK->controller1/slowCount_7__I_3/Q
-                                          SLICE_R12C28D      CLK_TO_Q0_DELAY  0.779                  3.863  2       
+controller1/count_8__I_50/CK->controller1/count_8__I_50/Q
+                                          SLICE_R15C27D      CLK_TO_Q0_DELAY  0.779                  3.863  2       
 controller1/slowCount[4]                                     NET DELAY        0.882                  4.745  2       
-controller1/count_544_654_add_4_15/C0->controller1/count_544_654_add_4_15/S0
-                                          SLICE_R12C28D      C0_TO_F0_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[13]                             NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_3/D                                                0.000                  4.997  1       
+controller1/count_546_670_add_4_15/C0->controller1/count_546_670_add_4_15/S0
+                                          SLICE_R15C27D      C0_TO_F0_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[13]                                NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_50/D                                                   0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1506,7 +1506,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_3/CK   controller1/slowCount_7__I_2/CK}
+{controller1/count_8__I_50/CK   controller1/count_8__I_49/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1521,8 +1521,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_2/Q  (SLICE_R12C28D)
-Path End         : controller1/slowCount_7__I_2/D  (SLICE_R12C28D)
+Path Begin       : controller1/count_8__I_49/Q  (SLICE_R15C27D)
+Path End         : controller1/count_8__I_49/D  (SLICE_R15C27D)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1537,20 +1537,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_3/CK   controller1/slowCount_7__I_2/CK}
+{controller1/count_8__I_50/CK   controller1/count_8__I_49/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_2/CK->controller1/slowCount_7__I_2/Q
-                                          SLICE_R12C28D      CLK_TO_Q1_DELAY  0.779                  3.863  2       
+controller1/count_8__I_49/CK->controller1/count_8__I_49/Q
+                                          SLICE_R15C27D      CLK_TO_Q1_DELAY  0.779                  3.863  2       
 controller1/slowCount[5]                                     NET DELAY        0.882                  4.745  2       
-controller1/count_544_654_add_4_15/C1->controller1/count_544_654_add_4_15/S1
-                                          SLICE_R12C28D      C1_TO_F1_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[14]                             NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_2/D                                                0.000                  4.997  1       
+controller1/count_546_670_add_4_15/C1->controller1/count_546_670_add_4_15/S1
+                                          SLICE_R15C27D      C1_TO_F1_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[14]                                NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_49/D                                                   0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1559,7 +1559,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_3/CK   controller1/slowCount_7__I_2/CK}
+{controller1/count_8__I_50/CK   controller1/count_8__I_49/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1574,8 +1574,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_1/Q  (SLICE_R12C29A)
-Path End         : controller1/slowCount_7__I_1/D  (SLICE_R12C29A)
+Path Begin       : controller1/count_8__I_48/Q  (SLICE_R15C28A)
+Path End         : controller1/count_8__I_48/D  (SLICE_R15C28A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1590,20 +1590,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_1/CK   controller1/slowCount_7__I_0/CK}
+{controller1/count_8__I_48/CK   controller1/count_8__I_47/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_1/CK->controller1/slowCount_7__I_1/Q
-                                          SLICE_R12C29A      CLK_TO_Q0_DELAY  0.779                  3.863  2       
+controller1/count_8__I_48/CK->controller1/count_8__I_48/Q
+                                          SLICE_R15C28A      CLK_TO_Q0_DELAY  0.779                  3.863  2       
 controller1/slowCount[6]                                     NET DELAY        0.882                  4.745  2       
-controller1/count_544_654_add_4_17/C0->controller1/count_544_654_add_4_17/S0
-                                          SLICE_R12C29A      C0_TO_F0_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[15]                             NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_1/D                                                0.000                  4.997  1       
+controller1/count_546_670_add_4_17/C0->controller1/count_546_670_add_4_17/S0
+                                          SLICE_R15C28A      C0_TO_F0_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[15]                                NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_48/D                                                   0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1612,7 +1612,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_1/CK   controller1/slowCount_7__I_0/CK}
+{controller1/count_8__I_48/CK   controller1/count_8__I_47/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1627,8 +1627,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/slowCount_7__I_0/Q  (SLICE_R12C29A)
-Path End         : controller1/slowCount_7__I_0/D  (SLICE_R12C29A)
+Path Begin       : controller1/count_8__I_47/Q  (SLICE_R15C28A)
+Path End         : controller1/count_8__I_47/D  (SLICE_R15C28A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1643,20 +1643,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_1/CK   controller1/slowCount_7__I_0/CK}
+{controller1/count_8__I_48/CK   controller1/count_8__I_47/CK}
                                                                               0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-controller1/slowCount_7__I_0/CK->controller1/slowCount_7__I_0/Q
-                                          SLICE_R12C29A      CLK_TO_Q1_DELAY  0.779                  3.863  2       
+controller1/count_8__I_47/CK->controller1/count_8__I_47/Q
+                                          SLICE_R15C28A      CLK_TO_Q1_DELAY  0.779                  3.863  2       
 controller1/slowCount[7]                                     NET DELAY        0.882                  4.745  2       
-controller1/count_544_654_add_4_17/C1->controller1/count_544_654_add_4_17/S1
-                                          SLICE_R12C29A      C1_TO_F1_DELAY   0.252                  4.997  1       
-controller1/slowCount_7__N_1[16]                             NET DELAY        0.000                  4.997  1       
-controller1/slowCount_7__I_0/D                                                0.000                  4.997  1       
+controller1/count_546_670_add_4_17/C1->controller1/count_546_670_add_4_17/S1
+                                          SLICE_R15C28A      C1_TO_F1_DELAY   0.252                  4.997  1       
+controller1/count_8__N_65[16]                                NET DELAY        0.000                  4.997  1       
+controller1/count_8__I_47/D                                                   0.000                  4.997  1       
 
 
 Destination Clock Path
@@ -1665,7 +1665,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 controller1.osc/CLKHF                     HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  11      
 controller1/clk                                              NET DELAY        3.084                  3.084  11      
-{controller1/slowCount_7__I_1/CK   controller1/slowCount_7__I_0/CK}
+{controller1/count_8__I_48/CK   controller1/count_8__I_47/CK}
                                                                               0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  

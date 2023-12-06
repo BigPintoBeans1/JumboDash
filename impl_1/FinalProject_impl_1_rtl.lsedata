@@ -5,12 +5,12 @@
     <clockitem name = "vga_clk"  type = "net" />
     <clockitem name = "frame2Clk"  type = "net" />
     <clockitem name = "controlClk"  type = "net" />
-    <clockitem name = "mypll_1/lscc_pll_inst/outglobalb_o"  type = "net" />
-    <clockitem name = "mypll_1/lscc_pll_inst/outcoreb_o"  type = "net" />
-    <clockitem name = "jump1/slowClk"  type = "net" />
     <clockitem name = "controller1/clk"  type = "net" />
+    <clockitem name = "mypll_1/lscc_pll_inst/outcoreb_o"  type = "net" />
+    <clockitem name = "mypll_1/lscc_pll_inst/outglobalb_o"  type = "net" />
     <clockitem name = "mypll_1/outcore_o"  type = "net" />
     <clockitem name = "spikeMove1/rollClk"  type = "net" />
+    <clockitem name = "jump1/slowClk"  type = "net" />
 </clocks>
 
 <!--
