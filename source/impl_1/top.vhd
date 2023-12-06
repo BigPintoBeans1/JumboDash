@@ -42,7 +42,8 @@ component vga is
 		row : out unsigned(9 downto 0);
 		col : out unsigned(9 downto 0);
 		valid : out std_logic := '1';
-		frameClk : out std_logic
+		frameClk : out std_logic;
+		frame2Clk : out std_logic
 		);
 end component;
 
@@ -66,7 +67,10 @@ component cube_gen is
 		valid : in std_logic;
 		--spikePosX : unsigned(9 downto 0)
 		spikeArr : in std_logic_vector(19 downto 0);
-		spikeInterval : in unsigned(4 downto 0)
+		spikeInterval : in unsigned(4 downto 0);
+		spikePosA : out unsigned(9 downto 0);
+		spikePosB : out unsigned(9 downto 0);
+		collided : in std_logic
 	);
 end component;
 
@@ -98,9 +102,30 @@ end component;
 component spikeMove is
 	port(
 		frameClk : in std_logic;
+		frame2Clk : in std_logic;
 		spikeArr : out std_logic_vector(19 downto 0);
 		spikeInterval : out unsigned(4 downto 0)
 		--spikePosX : out unsigned(9 downto 0) -- since y value is constant 229
+	);
+end component;
+
+component collisions is
+	port(
+		frame2Clk : in std_logic;
+		cubePos : in unsigned(9 downto 0);-- current bottom left pixel of cube's position
+		spikePosB : in unsigned(9 downto 0); -- current bottom left pixel of the spike that spawns in the segment before the cube
+		spikePosA : in unsigned(9 downto 0); -- current bottom left pixel of the spike that spawns in the cube segment
+		collided : out std_logic := '0'
+	);
+end component;
+
+component game_state is
+	port(
+		frameClk : in std_logic;
+		collided : in std_logic;
+		controllerResult : in std_logic_vector(7 downto 0);
+		startGame : out std_logic;
+		endGame : out std_logic
 	);
 end component;
 
@@ -116,9 +141,10 @@ signal valid : std_logic;
 signal reset : std_logic := '1'; 
 --60Hz clock
 signal frameClk : std_logic;
+signal frame2Clk : std_logic;
 
 -- NES signal
-signal controllerOutput : std_logic_vector(7 downto 0); 
+signal controllerResult : std_logic_vector(7 downto 0); 
 -- 8 bits represent certain button being pressed it goes (MSB to LSB) a, b, select, start, up, down, left, right
 
 -- Cube_gen signals
@@ -131,25 +157,24 @@ signal spikeGenClk : std_logic; -- clock shared with generation and randomizer
 signal spikePosX : unsigned(9 downto 0); -- spike position x-value
 signal spikeInterval : unsigned(4 downto 0);
 
+-- Collisions Signals
+signal spikePosA : unsigned(9 downto 0);
+signal spikePosB : unsigned(9 downto 0);
+signal collided : std_logic;
+
+-- Game_State Signals
+signal startGame : std_logic;
+signal endGame : std_logic;
+
 begin
 
--- Where to attach reset signal to?
----lfsr : lfsr4 port map (
-	--outClk => spikeGenClk,
-	--inClk => clk,
-	--reset => controllerOutput,-- reset should kickstart the randomizer with an initial value 
-	--count => randomNum
---);
-
---ledController <= controllerOutput;
 
 controller1 : controller port map(
 	controllerInput => controllerIn,
 	controllerLatch => controlLatch,
 	controllerClk => controlClk,
-	controllerResult => controllerOutput
+	controllerResult => controllerResult
 );
-
 
 
 HSOSCclock : HSOSC generic map ( CLKHF_DIV => "0b00")
@@ -159,10 +184,6 @@ port map (
 	CLKHF => clk
 );
 
--- Count : counter port map (
--- 	clk  => clk, 
---	addr => addr
---);
 
 mypll_1 : mypll port map(
 	ref_clk_i => fpga_clk,
@@ -177,7 +198,8 @@ vga_1 : vga port map(
 	valid => valid,
 	row => row,
 	col => col,
-	frameClk => frameClk
+	frameClk => frameClk,
+	frame2Clk => frame2Clk
 );
 
 cube_gen1 : cube_gen port map(
@@ -188,21 +210,41 @@ cube_gen1 : cube_gen port map(
 	row => row,
 	col => col,
 	spikeArr => spikeArr,
-	spikeInterval => spikeInterval
-	--spikePosX => spikePosX
+	spikeInterval => spikeInterval,
+	spikePosA => spikePosA,
+	spikePosB => spikePosB,
+	collided => collided
 );
 
 spikeMove1 : spikeMove port map(
 	frameClk => frameClk,
+	frame2Clk => frame2Clk,
 	spikeArr => spikeArr,
 	spikeInterval => spikeInterval
-	--spikePosX => spikePosX
 );
 
 jump1 : jump port map(
 	vgaClk => vga_clk,
 	cubePos => cube_bot,
-	aPressed => controllerOutput -- need to port map controller then add "aPressed" here
+	aPressed => controllerResult -- need to port map controller then add "aPressed" here
 );
+
+collisions1 : collisions port map(
+	frame2Clk => frame2Clk,
+	cubePos => cube_bot,
+	spikePosA => spikePosA,
+	spikePosB => spikePosB,
+	collided => collided
+	
+);
+
+game_state1 : game_state port map(
+	frameClk => frameClk,
+	collided => collided,
+	controllerResult => controllerResult,
+	startGame => startGame,
+	endGame => endGame
+);
+
 
 end;

@@ -48,7 +48,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Tue Dec  5 19:56:40 2023
+Mapped on: Wed Dec  6 00:35:34 2023
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -60,11 +60,11 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of slice registers:  99 out of  5280 (2%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           429 out of  5280 (8%)
-      Number of logic LUT4s:             324
+   Number of LUT4s:           418 out of  5280 (8%)
+      Number of logic LUT4s:             315
       Number of inserted feedthru LUT4s:  14
       Number of replicated LUT4s:          1
-      Number of ripple logic:             45 (90 LUT4s)
+      Number of ripple logic:             44 (88 LUT4s)
    Number of IO sites used:   12 out of 39 (31%)
       Number of IO sites used for general PIO: 12
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -95,33 +95,33 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc
      controller1.controlClk_c_I_0/Z)
       Net jump1.slowClk: 19 loads, 19 rising, 0 falling (Driver: Pin
      jump1.slowClk_I_0/Q)
-      Net vga_clk: 25 loads, 25 rising, 0 falling (Driver: Pin
+      Net vga_clk: 24 loads, 24 rising, 0 falling (Driver: Pin
      mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
-      Net frameClk: 10 loads, 10 rising, 0 falling (Driver: Pin
+      Net frame2Clk: 10 loads, 10 rising, 0 falling (Driver: Pin
 
-     vga_1.row_9__I_0/Z)
+     vga_1.frame2Clk_I_0/Z)
    Number of Clock Enables:  2
       Net VCC_net: 7 loads, 0 SLICEs
-      Net row_0__N_37: 6 loads, 6 SLICEs
+      Net row_0__N_28: 6 loads, 6 SLICEs
    Number of LSRs:  6
-      Net col_0__N_58: 6 loads, 6 SLICEs
-      Net row_0__N_38: 6 loads, 6 SLICEs
-      Net lastPosition_3__N_121: 1 loads, 1 SLICEs
-      Net cube_bot_2__N_74: 3 loads, 3 SLICEs
-      Net jump1.cube_bot_4__N_70: 4 loads, 4 SLICEs
-      Net jump1.lastPosition_0__N_124: 7 loads, 7 SLICEs
+      Net cube_bot_4__N_60: 3 loads, 3 SLICEs
+      Net col_0__N_48: 6 loads, 6 SLICEs
+      Net frameClk: 6 loads, 6 SLICEs
+      Net jump1.cube_bot_2__N_64: 4 loads, 4 SLICEs
+      Net jump1.lastPosition_0__N_121: 7 loads, 7 SLICEs
+      Net jump1.lastPosition_4__N_117: 3 loads, 3 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net col[8]: 44 loads
-      Net col[9]: 43 loads
-      Net col[7]: 41 loads
-      Net col[6]: 34 loads
-      Net col[5]: 25 loads
+      Net col[8]: 42 loads
+      Net col[9]: 42 loads
+      Net col[7]: 37 loads
+      Net col[6]: 30 loads
+      Net col[5]: 28 loads
+      Net row[2]: 22 loads
       Net row[5]: 22 loads
-      Net row[4]: 20 loads
-      Net cube_gen1.n61: 18 loads
-      Net row[3]: 17 loads
-      Net VCC_net: 17 loads
+      Net row[3]: 19 loads
+      Net row[4]: 19 loads
+      Net col[2]: 17 loads
 
 
 
@@ -289,10 +289,10 @@ Instance Name: int_rightMost_0__I_0
          Type: EBR
 Instance Name: controller1/osc
          Type: HFOSC
-Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
-         Type: PLL
 Instance Name: int_rightMost_0__I_0_2
          Type: EBR
+Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
+         Type: PLL
 
 
 

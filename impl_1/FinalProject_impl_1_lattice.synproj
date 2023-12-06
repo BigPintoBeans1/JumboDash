@@ -49,6 +49,8 @@
 "Z:/Radiant/JumboDash/JumboDash/source/impl_1/controller.vhd"
 "Z:/Radiant/JumboDash/JumboDash/source/impl_1/spikeMove.vhd"
 "Z:/Radiant/JumboDash/JumboDash/source/impl_1/backgroundROM.vhd"
+"Z:/Radiant/JumboDash/JumboDash/source/impl_1/collisions.vhd"
+"Z:/Radiant/JumboDash/JumboDash/source/impl_1/game_state.vhd"
 
 
 -path "Z:/Radiant/JumboDash/JumboDash"

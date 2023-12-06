@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec  5 19:56:27 2023
+Wed Dec  6 00:35:18 2023
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset Z:/Radiant/JumboDash/JumboDash/promote.xml 
@@ -93,6 +93,10 @@ VHDL library = work
 VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/spikeMove.vhd
 VHDL library = work
 VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/backgroundROM.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/collisions.vhd
+VHDL library = work
+VHDL design file = Z:/Radiant/JumboDash/JumboDash/source/impl_1/game_state.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
@@ -155,12 +159,12 @@ Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd. VHDL-1
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd
 
 INFO <35921012> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
-INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd(17): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/vga.vhd(18): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd. VHDL-1481
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd
 
 INFO <35921012> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(5): analyzing entity cube_gen. VHDL-1012
-INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(19): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/cube_gen.vhd(21): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd. VHDL-1481
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/jump.vhd
 
@@ -175,16 +179,46 @@ Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd. 
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd
 
 INFO <35921012> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd(5): analyzing entity spikemove. VHDL-1012
-INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd(15): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/spikemove.vhd(16): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/backgroundrom.vhd. VHDL-1481
 Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/backgroundrom.vhd
 
 INFO <35921012> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/backgroundrom.vhd(5): analyzing entity backgroundrom. VHDL-1012
 INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/backgroundrom.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/collisions.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/collisions.vhd
+
+INFO <35921012> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/collisions.vhd(5): analyzing entity collisions. VHDL-1012
+INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/collisions.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/game_state.vhd. VHDL-1481
+Analyzing VHDL file z:/radiant/jumbodash/jumbodash/source/impl_1/game_state.vhd
+
+INFO <35921012> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/game_state.vhd(5): analyzing entity game_state. VHDL-1012
+INFO <35921010> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/game_state.vhd(15): analyzing architecture synth. VHDL-1010
 INFO <35921504> - synthesis: The default VHDL library search path is now "Z:/Radiant/JumboDash/JumboDash/impl_1". VHDL-1504
 Top module language type = VHDL.
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+WARNING <35935050> - synthesis: input port spikeArr[19] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[18] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[17] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[16] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[15] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[14] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[13] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[12] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[11] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[10] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[9] is not connected on this instance. VDB-5050
+WARNING <35935049> - synthesis: input port spikeArr[8] remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port spikeArr[7] remains unconnected for this instance. VDB-5049
+WARNING <35935050> - synthesis: input port spikeArr[6] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[5] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[4] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[3] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[2] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[1] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[0] is not connected on this instance. VDB-5050
 Top module name (VHDL, mixed language): top
                                                          
 
@@ -211,6 +245,7 @@ Top module name (VHDL, mixed language): top
 
 
 WARNING <35935047> - synthesis: Unused instance HSOSCclock is removed. VDB-5047
+WARNING <35935047> - synthesis: Unused instance game_state1 is removed. VDB-5047
 WARNING <35001771> - synthesis: Initial value found on net HSYNC will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net VSYNC will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net valid will be ignored due to unrecognized driver type
@@ -224,10 +259,87 @@ WARNING <35001771> - synthesis: Initial value found on net cube_bot[3] will be i
 WARNING <35001771> - synthesis: Initial value found on net cube_bot[2] will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net cube_bot[1] will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net cube_bot[0] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net collided will be ignored due to unrecognized driver type
+WARNING <35935050> - synthesis: input port spikeArr[19] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[18] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[17] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[16] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[15] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[14] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[13] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[12] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[11] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[10] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[9] is not connected on this instance. VDB-5050
+WARNING <35935049> - synthesis: input port spikeArr[8] remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port spikeArr[7] remains unconnected for this instance. VDB-5049
+WARNING <35935050> - synthesis: input port spikeArr[6] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[5] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[4] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[3] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[2] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[1] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[0] is not connected on this instance. VDB-5050
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/collisions.vhd(19): net numPixAbove[9] does not have a driver. VDB-1002
+WARNING <35935050> - synthesis: input port spikeArr[19] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[18] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[17] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[16] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[15] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[14] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[13] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[12] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[11] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[10] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[9] is not connected on this instance. VDB-5050
+WARNING <35935049> - synthesis: input port spikeArr[8] remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port spikeArr[7] remains unconnected for this instance. VDB-5049
+WARNING <35935050> - synthesis: input port spikeArr[6] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[5] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[4] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[3] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[2] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[1] is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port spikeArr[0] is not connected on this instance. VDB-5050
+WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd(161): net spikePosA[9] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/top.vhd(162): net spikePosB[9] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/source/impl_1/collisions.vhd(11): net \collisions1/spikeArr[8] does not have a driver. VDB-1002
 WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net spikePosA[9]. Patching with GND.
+######## Missing driver on net spikePosA[8]. Patching with GND.
+######## Missing driver on net spikePosA[7]. Patching with GND.
+######## Missing driver on net spikePosA[6]. Patching with GND.
+######## Missing driver on net spikePosA[5]. Patching with GND.
+######## Missing driver on net spikePosA[4]. Patching with GND.
+######## Missing driver on net spikePosA[3]. Patching with GND.
+######## Missing driver on net spikePosA[2]. Patching with GND.
+######## Missing driver on net spikePosA[1]. Patching with GND.
+######## Missing driver on net spikePosA[0]. Patching with GND.
+######## Missing driver on net spikePosB[9]. Patching with GND.
+######## Missing driver on net spikePosB[8]. Patching with GND.
+######## Missing driver on net spikePosB[7]. Patching with GND.
+######## Missing driver on net spikePosB[6]. Patching with GND.
+######## Missing driver on net spikePosB[5]. Patching with GND.
+######## Missing driver on net spikePosB[4]. Patching with GND.
+######## Missing driver on net spikePosB[3]. Patching with GND.
+######## Missing driver on net spikePosB[2]. Patching with GND.
+######## Missing driver on net spikePosB[1]. Patching with GND.
+######## Missing driver on net spikePosB[0]. Patching with GND.
+######## Missing driver on net \collisions1/spikeArr[8]. Patching with GND.
+######## Missing driver on net \collisions1/spikeArr[7]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[9]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[8]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[7]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[6]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[5]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[4]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[3]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[2]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[1]. Patching with GND.
+######## Missing driver on net \collisions1/numPixAbove[0]. Patching with GND.
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sdi_i. Patching with GND.
 
@@ -236,11 +348,12 @@ WARNING <35931002> - synthesis: z:/radiant/jumbodash/jumbodash/mypll/rtl/mypll.v
 WARNING <35001045> - synthesis: No available RAMs found.
 WARNING <35001045> - synthesis: No available RAMs found.
 WARNING <35001045> - synthesis: No available RAMs found.
+######## Missing driver on net collided. Patching with GND.
 CRITICAL <35001747> - synthesis: Bit 5 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 3 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
 Combinational loop found : 1
 
- Net controllerOutput[7] 
+ Net controllerResult[7] 
 
  Instance \controller1/mux_12_i8 
 
@@ -249,16 +362,16 @@ WARNING <35001779> - synthesis: Initial value found on instance \jump1/position_
 ################### Begin Area Report (top)######################
 Number of register bits => 99 of 5280 (1 % )
 EBR_B => 2
-CCU2 => 45
+CCU2 => 44
 FD1P3XZ => 99
 HSOSC_CORE => 1
 IB => 2
-LUT4 => 323
+LUT4 => 314
 OB => 10
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 1
-Number of even-length carry chains : 6
+Number of odd-length carry chains : 4
+Number of even-length carry chains : 3
 
 ################### Begin Clock Report ######################
 Clock Nets
@@ -266,27 +379,27 @@ Number of Clocks: 5
   Net : mypll_1/lscc_pll_inst/vga_clk, loads : 0
   Net : spikeMove1/rollClk, loads : 0
   Net : fpga_clk_c, loads : 1
-  Net : vga_1/frameClk, loads : 0
+  Net : vga_1/frame2Clk, loads : 0
   Net : controller1/controlClk_c, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vga_1/col[9], loads : 42
-  Net : vga_1/col[8], loads : 42
-  Net : vga_1/col[7], loads : 38
-  Net : vga_1/col[6], loads : 32
-  Net : vga_1/col[5], loads : 23
+  Net : vga_1/col[9], loads : 41
+  Net : vga_1/col[8], loads : 41
+  Net : vga_1/col[7], loads : 36
+  Net : vga_1/col[6], loads : 29
+  Net : vga_1/col[5], loads : 25
+  Net : vga_1/row[5], loads : 21
+  Net : vga_1/row[2], loads : 21
   Net : jump1/slowClk, loads : 21
-  Net : vga_1/row[5], loads : 20
-  Net : cube_gen1/n61, loads : 18
-  Net : vga_1/row[4], loads : 17
-  Net : controller1/clk, loads : 17
+  Net : vga_1/row[4], loads : 18
+  Net : vga_1/row[3], loads : 17
 ################### End Clock Report ##################
 
-Peak Memory Usage: 628 MB
+Peak Memory Usage: 631 MB
 
 --------------------------------------------------------------
-Total CPU Time: 4 secs 
-Total REAL Time: 12 secs 
+Total CPU Time: 3 secs 
+Total REAL Time: 15 secs 
 --------------------------------------------------------------

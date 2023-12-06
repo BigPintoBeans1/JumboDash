@@ -23,7 +23,7 @@ begin
 		end if;
 	end process;
 	
-	slowClk <= count(19);
+	slowClk <= count(18);
 	
 	process(slowClk) begin
 		if rising_edge(slowClk) then
@@ -33,9 +33,9 @@ begin
 			elsif (position >= 10d"229" and aPressed(7) = '0') then
 				position <= 10d"229";
 				lastPosition <= 10d"229";
-			elsif (position <= 10d"169") then
-				position <= 10d"170";
-				lastPosition <= 10d"169";
+			elsif (position <= 10d"149") then
+				position <= 10d"150";
+				lastPosition <= 10d"149";
 			elsif ((position > lastPosition) and (position < 10d"230")) then
 				lastPosition <= position;
 				position <= position + 4;

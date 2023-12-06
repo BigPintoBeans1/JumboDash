@@ -10,7 +10,8 @@ entity vga is
 		col : out unsigned(9 downto 0);
 		row : out unsigned(9 downto 0);
 		valid : out std_logic := '1';
-		frameClk : out std_logic
+		frameClk : out std_logic;
+		frame2Clk : out std_logic
 	);
 end;
 
@@ -43,8 +44,10 @@ begin
 	--Valid is used to tell pattern_gen when to send rgb values
 	valid <= '1' when ((scol <= 639) and (srow <= 479)) else '0';
 	
-	frameClk <= '1' when (srow = 482) else '0';
-	
+	--frameClk <= '1' when (srow = 482) else '0';
+	frameClk <= '1' when (srow = 524) else '0';
+
+	frame2Clk <= '1' when (srow = 262 or srow = 524) else '0';
 	row <= srow;
 	col <= scol;
 end;
