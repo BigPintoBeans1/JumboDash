@@ -48,8 +48,6 @@ begin
 		
 	playing_rgb <=
 		"111111" when (valid = '1' and collided = '1') else
-		--"000011" when (valid = '1' and wonGame = '1') else --Changing entire screen to blue except cube (makes purple)
-		--"000111" when (valid = '1' and row >= cube_top and row <= cube_bot and col >= 224 and col <= 255) else -- 209 and 229 are off center to the left of screen
 		
 		"001100" when (valid = '1' and row >= cube_top and row <= (cube_top + 6) and col >= 224 and col <= 255) else
 		"001100" when (valid = '1' and row >= (cube_top+7) and row <= (cube_top+26) and col >= 224 and col <= 229) else
@@ -140,8 +138,7 @@ begin
 		"111100" when (valid = '1' and col >= (10 + (32*19) - int_spikeInterval) and col < (21 + (32*19) - int_spikeInterval)  and spikeArr(19)  = '1' and row >= 209 and row <= 216) else
 		"111100" when (valid = '1' and col >= (5  + (32*19) - int_spikeInterval) and col < (26 + (32*19) - int_spikeInterval)  and spikeArr(19)  = '1' and row >= 217 and row <= 224) else
 		"111100" when (valid = '1' and col >= (0  + (32*19) - int_spikeInterval) and col < (31 + (32*19) - int_spikeInterval)  and spikeArr(19)  = '1' and row >= 225 and row <= 229) else
-	                                                                                        
-		--"010101" when (valid = '1' and col >= (0) and col < (32  - int_spikeInterval) and spikeArr(0) = '1' and row >= 197 and row <= 229) else
+	                                                                                 
 		
 		background when (valid = '1') else
 		"000000";

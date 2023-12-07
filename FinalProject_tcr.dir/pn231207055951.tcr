@@ -1,0 +1,9 @@
+#Start recording tcl command: 12/7/2023 05:53:34
+#Project Location: C:/Users/aoreil02/Documents/GitHub/JumboDash; Project name: FinalProject
+prj_open "C:/Users/aoreil02/Documents/GitHub/JumboDash/FinalProject.rdf"
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/game_state.vhd"
+prj_remove_source "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/state_machine.vhd"
+#Stop recording: 12/7/2023 05:59:51

@@ -50,7 +50,7 @@ Peak Memory Usage: 152 MB
 ibisgen "FinalProject_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
 
-Thu Dec  7 05:51:58 2023
+Thu Dec  7 05:57:52 2023
 
 Loading FinalProject_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
