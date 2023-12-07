@@ -17,7 +17,7 @@ end spikeMove;
 
 architecture synth of spikeMove is
 
-signal spikeMap : std_logic_vector(99 downto 0);
+signal spikeMap : std_logic_vector(109 downto 0);
 signal rollClk : std_logic;
 signal rollCount : unsigned(6 downto 0); -- amount of spikes that have been put on screen
 signal zeros : std_logic_vector(19 downto 0);
@@ -27,7 +27,7 @@ signal int_rollCount : integer;
 
 
 begin
-	spikeMap <= "0000000000000000000001000010000001000000000100000100000100000001000010000000100000000000000000000000"; -- LSB is on the right
+	spikeMap <= "00000000000000000000000010001000010010001000010010000010001000100010000000100100000100100000000000000000000000"; -- LSB is on the right
 	rightMost <= rollCount + 7d"19"; -- last element in spikeArr
 	-- leftMost is just rollCount
 	int_rightMost <= to_integer(rightMost);

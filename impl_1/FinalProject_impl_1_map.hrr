@@ -4,9 +4,9 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	       3332        100.0
-                               LUTGATE	       3244        100.0
-                                LUTCCU	         88        100.0
+                                  LUT4	       3448        100.0
+                               LUTGATE	       3272        100.0
+                                LUTCCU	        176        100.0
                                  IOREG	          1        100.0
                                  IOBUF	         12        100.0
                                 PFUREG	        124        100.0
@@ -14,60 +14,21 @@ Report for cell top
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                             controller	          1         0.8
-                              cube_gen	          1        13.2
-                          game_machine	          1        73.6
-                                  jump	          1         2.2
+                              cube_gen	          1        20.8
+                          game_machine	          1        65.4
+                                  jump	          1         2.1
                                  mypll	          1         0.0
-                             spikeMove	          1         0.7
-                                   vga	          1         2.7
+                             spikeMove	          1         0.6
+                                   vga	          1         3.5
 ---------------------------------------------------
 Report for cell jump
    Instance path: top/jump1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         72         2.2
-                               LUTGATE	         42         1.3
-                                LUTCCU	         30        34.1
+                                  LUT4	         73         2.1
+                               LUTGATE	         43         1.3
+                                LUTCCU	         30        17.0
                                 PFUREG	         39        31.5
----------------------------------------------------
-Report for cell game_machine
-   Instance path: top/game_machine1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                 IOLGC	       1.00        100.0
-                                  LUT4	       2452        73.6
-                               LUTGATE	       2452        75.6
-                                 IOREG	          1        100.0
-                                PFUREG	         24        19.4
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-                               die_rom	          1        20.6
-                             start_rom	          1        28.9
-                               win_rom	          1        23.5
----------------------------------------------------
-Report for cell win_rom
-   Instance path: top/game_machine1/win_rom1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        783        23.5
-                               LUTGATE	        783        24.1
-                                PFUREG	          5         4.0
----------------------------------------------------
-Report for cell start_rom
-   Instance path: top/game_machine1/start_rom1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        964        28.9
-                               LUTGATE	        964        29.7
-                                PFUREG	          6         4.8
----------------------------------------------------
-Report for cell die_rom
-   Instance path: top/game_machine1/die_rom1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        687        20.6
-                               LUTGATE	        687        21.2
-                                PFUREG	          6         4.8
 ---------------------------------------------------
 Report for cell mypll
    Instance path: top/mypll_1
@@ -82,42 +43,73 @@ Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
+Report for cell game_machine
+   Instance path: top/game_machine1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                  LUT4	       2255        65.4
+                               LUTGATE	       2255        68.9
+                                 IOREG	          1        100.0
+                                PFUREG	         24        19.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                               die_rom	          1        19.0
+                             start_rom	          1        23.5
+                               win_rom	          1        22.5
+---------------------------------------------------
+Report for cell win_rom
+   Instance path: top/game_machine1/win_rom1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        777        22.5
+                               LUTGATE	        777        23.7
+                                PFUREG	          5         4.0
+---------------------------------------------------
+Report for cell start_rom
+   Instance path: top/game_machine1/start_rom1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        811        23.5
+                               LUTGATE	        811        24.8
+                                PFUREG	          6         4.8
+---------------------------------------------------
+Report for cell die_rom
+   Instance path: top/game_machine1/die_rom1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        654        19.0
+                               LUTGATE	        654        20.0
+                                PFUREG	          6         4.8
+---------------------------------------------------
 Report for cell vga
    Instance path: top/vga_1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         90         2.7
-                               LUTGATE	         66         2.0
-                                LUTCCU	         24        27.3
+                                  LUT4	        122         3.5
+                               LUTGATE	         98         3.0
+                                LUTCCU	         24        13.6
                                 PFUREG	         20        16.1
----------------------------------------------------
-Report for cell spikeMove
-   Instance path: top/spikeMove1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         24         0.7
-                               LUTGATE	          8         0.2
-                                LUTCCU	         16        18.2
-                                PFUREG	         14        11.3
 ---------------------------------------------------
 Report for cell cube_gen
    Instance path: top/cube_gen1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        440        13.2
-                               LUTGATE	        440        13.6
+                                  LUT4	        718        20.8
+                               LUTGATE	        630        19.3
+                                LUTCCU	         88        50.0
                                 PFUREG	          2         1.6
                                    EBR	          1        50.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                         backgroundROM	          1         2.1
+                         backgroundROM	          1         2.4
 ---------------------------------------------------
 Report for cell backgroundROM
    Instance path: top/cube_gen1/backgroundROM1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         71         2.1
-                               LUTGATE	         71         2.2
+                                  LUT4	         84         2.4
+                               LUTGATE	         84         2.6
                                 PFUREG	          2         1.6
 ---------------------------------------------------
 Report for cell controller
@@ -126,5 +118,14 @@ Report for cell controller
                                   cell	      count    Res Usage(%)
                                   LUT4	         26         0.8
                                LUTGATE	          8         0.2
-                                LUTCCU	         18        20.5
+                                LUTCCU	         18        10.2
                                 PFUREG	         25        20.2
+---------------------------------------------------
+Report for cell spikeMove
+   Instance path: top/spikeMove1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         22         0.6
+                               LUTGATE	          6         0.2
+                                LUTCCU	         16         9.1
+                                PFUREG	         14        11.3
