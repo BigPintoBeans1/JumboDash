@@ -1,0 +1,10 @@
+#Start recording tcl command: 12/7/2023 04:04:58
+#Project Location: C:/Users/aoreil02/Documents/GitHub/JumboDash; Project name: FinalProject
+prj_open "C:/Users/aoreil02/Documents/GitHub/JumboDash/FinalProject.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/7/2023 04:43:39

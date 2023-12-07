@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec  7 03:59:59 2023
+Thu Dec  7 04:38:59 2023
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset C:/Users/aoreil02/Documents/GitHub/JumboDash/promote.xml 
@@ -309,7 +309,7 @@ FD1P3XZ => 124
 HSOSC_CORE => 1
 IB => 2
 IOL_B => 1
-LUT4 => 2822
+LUT4 => 3227
 OB => 10
 PLL_B => 1
 ################### End Area Report ##################
@@ -328,21 +328,21 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vga_1/col[5], loads : 735
-  Net : vga_1/col[6], loads : 723
-  Net : vga_1/col[4], loads : 646
-  Net : vga_1/col[3], loads : 621
-  Net : vga_1/col[2], loads : 600
-  Net : vga_1/col[7], loads : 508
-  Net : vga_1/col[8], loads : 407
-  Net : vga_1/row[2], loads : 262
-  Net : vga_1/col[9], loads : 232
-  Net : vga_1/row[3], loads : 147
+  Net : vga_1/col[6], loads : 778
+  Net : vga_1/col[5], loads : 772
+  Net : vga_1/col[4], loads : 655
+  Net : vga_1/col[3], loads : 639
+  Net : vga_1/col[2], loads : 602
+  Net : vga_1/col[7], loads : 547
+  Net : vga_1/col[8], loads : 417
+  Net : vga_1/col[9], loads : 271
+  Net : vga_1/row[2], loads : 263
+  Net : vga_1/row[3], loads : 154
 ################### End Clock Report ##################
 
-Peak Memory Usage: 1927 MB
+Peak Memory Usage: 1949 MB
 
 --------------------------------------------------------------
-Total CPU Time: 58 secs 
-Total REAL Time: 58 secs 
+Total CPU Time: 1 mins 3 secs 
+Total REAL Time: 1 mins 3 secs 
 --------------------------------------------------------------

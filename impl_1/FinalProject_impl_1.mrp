@@ -6,7 +6,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Thu Dec  7 04:00:59 2023
+Mapped on: Thu Dec  7 04:40:04 2023
 
 Design Information
 ------------------
@@ -20,9 +20,10 @@ Design Summary
 
    Number of slice registers: 124 out of  5280 (2%)
    Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           2926 out of  5280 (55%)
-      Number of logic LUT4s:             2823
+   Number of LUT4s:           3332 out of  5280 (63%)
+      Number of logic LUT4s:             3228
       Number of inserted feedthru LUT4s:  15
+      Number of replicated LUT4s:          1
       Number of ripple logic:             44 (88 LUT4s)
    Number of IO sites used:   12 out of 39 (31%)
       Number of IO sites used for general PIO: 12
@@ -52,13 +53,12 @@ Design Summary
      mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net rollClk: 3 loads, 3 rising, 0 falling (Driver: Pin
      spikeMove1.rollClk_I_0/Q)
+      Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
       Net frame2Clk: 10 loads, 10 rising, 0 falling (Driver: Pin
-     vga_1.row_1__I_0/Z)
+     vga_1.frame2Clk_I_0/Z)
       Net controller1.clk: 9 loads, 9 rising, 0 falling (Driver: Pin
      controller1.osc/CLKHF)
       Net controlClk_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     controller1.controlClk_c_I_0/Z)
-      Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
 
                                     Page 1
 
@@ -68,33 +68,34 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
+     controller1.controlClk_c_I_0/Z)
    Number of Clock Enables:  4
       Net VCC_net: 7 loads, 0 SLICEs
       Net row_0__N_21: 6 loads, 6 SLICEs
-      Net rollCount_0__N_92: 4 loads, 4 SLICEs
-      Net game_machine1.current_state_0__N_152: 2 loads, 2 SLICEs
+      Net rollCount_0__N_96: 4 loads, 4 SLICEs
+      Net game_machine1.current_state_0__N_156: 2 loads, 2 SLICEs
    Number of LSRs:  10
       Net jump1.cube_bot_2__N_57: 4 loads, 4 SLICEs
       Net cube_bot_4__N_53: 3 loads, 3 SLICEs
-      Net jump1.lastPosition_0__N_131: 7 loads, 7 SLICEs
-      Net jump1.lastPosition_4__N_127: 3 loads, 3 SLICEs
+      Net jump1.lastPosition_0__N_135: 7 loads, 7 SLICEs
+      Net jump1.lastPosition_4__N_131: 3 loads, 3 SLICEs
       Net col_0__N_41: 6 loads, 6 SLICEs
       Net frameClk: 6 loads, 6 SLICEs
-      Net rollClk_N_177: 1 loads, 1 SLICEs
+      Net rgb_c_0_N_171: 5 loads, 5 SLICEs
       Net controllerResult[4]: 9 loads, 9 SLICEs
-      Net rgb_c_0_N_168: 5 loads, 5 SLICEs
-      Net game_machine1.die_rom1.dieRom_5__N_132: 1 loads, 1 SLICEs
+      Net dieRom_5__N_136: 1 loads, 1 SLICEs
+      Net spikeMove1.rollClk_N_182: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net col[5]: 756 loads
-      Net col[6]: 737 loads
-      Net col[4]: 676 loads
-      Net col[3]: 648 loads
-      Net col[2]: 631 loads
-      Net col[7]: 518 loads
-      Net col[8]: 415 loads
+      Net col[5]: 802 loads
+      Net col[6]: 793 loads
+      Net col[4]: 683 loads
+      Net col[3]: 661 loads
+      Net col[2]: 619 loads
+      Net col[7]: 562 loads
+      Net col[8]: 429 loads
+      Net col[9]: 280 loads
       Net row[2]: 266 loads
-      Net col[9]: 234 loads
-      Net row[3]: 151 loads
+      Net row[3]: 158 loads
 
 
 
@@ -124,7 +125,6 @@ WARNING <1026001> - map:
      C:/Users/aoreil02/Documents/GitHub/JumboDash/device_constraint.pdc (12) :
      No port matched 'ledController[5]'.
 WARNING <1026001> - map:
-     C:/Users/aoreil02/Documents/GitHub/JumboDash/device_constraint.pdc (13) :
 
                                     Page 2
 
@@ -134,6 +134,7 @@ WARNING <1026001> - map:
 
 Design Errors/Warnings (cont)
 -----------------------------
+     C:/Users/aoreil02/Documents/GitHub/JumboDash/device_constraint.pdc (13) :
      No port matched 'ledController[6]'.
 WARNING <1026001> - map:
      C:/Users/aoreil02/Documents/GitHub/JumboDash/device_constraint.pdc (14) :
@@ -190,7 +191,6 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | fpga_clk            | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| controlClk          | OUTPUT    |           |       |       |           |
 
                                     Page 3
 
@@ -200,6 +200,7 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
+| controlClk          | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | controlLatch        | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -256,7 +257,6 @@ PLL 1:                                 Pin/Node Value
   FDA_FEEDBACK:                                 0
   FILTER_RANGE:                                 1
   EXTERNAL_DIVIDE_FACTOR:                       NONE
-  TEST Mode:                                    0
 
                                     Page 4
 
@@ -264,6 +264,9 @@ PLL 1:                                 Pin/Node Value
 
 
 
+PLL/DLL Summary (cont)
+----------------------
+  TEST Mode:                                    0
 
 OSC Summary
 -----------
@@ -278,16 +281,16 @@ OSC 1:                                 Pin/Node Value
 ASIC Components
 ---------------
 
+Instance Name: game_machine1/rgb_c_5_I_0
+         Type: IOLOGIC
 Instance Name: int_rightMost_0__I_0
+         Type: EBR
+Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
+         Type: PLL
+Instance Name: cube_gen1/int_rightMost_0__I_0_2
          Type: EBR
 Instance Name: controller1/osc
          Type: HFOSC
-Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
-         Type: PLL
-Instance Name: game_machine1/rgb_c_5_I_0
-         Type: IOLOGIC
-Instance Name: int_rightMost_0__I_0_2
-         Type: EBR
 
 Constraint Summary
 ------------------
@@ -298,12 +301,9 @@ Constraint Summary
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs
+   Total CPU Time: 2 secs
    Total REAL Time: 2 secs
-   Peak Memory Usage: 107 MB
-
-
-
+   Peak Memory Usage: 113 MB
 
 
 
