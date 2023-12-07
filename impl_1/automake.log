@@ -44,13 +44,13 @@ Bitstream generation complete!
 
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 116 MB
+Peak Memory Usage: 114 MB
 
 
 ibisgen "FinalProject_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
 
-Wed Dec  6 17:18:45 2023
+Thu Dec  7 02:10:01 2023
 
 Loading FinalProject_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
@@ -100,5 +100,5 @@ Writing Verilog netlist to file FinalProject_impl_1_vo.vo
 Writing SDF timing to file FinalProject_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
 Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
-Peak Memory Usage: 95 MB
+Total REAL Time: 0 secs 
+Peak Memory Usage: 94 MB

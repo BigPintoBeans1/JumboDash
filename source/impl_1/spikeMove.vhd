@@ -7,8 +7,10 @@ entity spikeMove is
 		frameClk : in std_logic;
 		spikeArr : out std_logic_vector(19 downto 0) := "00000000000000000000"; -- spikes shown on the screen
 		spikeInterval : out unsigned(4 downto 0) := "00000"; -- a counter of the frameClk
-		frame2Clk : in std_logic -- faster clock for moving spikes faster
-		
+		frame2Clk : in std_logic; -- faster clock for moving spikes faster
+		controllerResult : in std_logic_vector(7 downto 0);
+		globalReset : in std_logic;
+		won : out std_logic
 	);
 end spikeMove;
 
@@ -24,7 +26,7 @@ signal int_rollCount : integer;
 
 
 begin
-	spikeMap <= "0000000000000000000001000010000001000100000100001000010000000001000100001000100000000000000000000000"; -- LSB is on the right
+	spikeMap <= "0000000000000000000001000010000001000000000100000100000100000001000010000000100000000000000000000000"; -- LSB is on the right
 	rightMost <= rollCount + 7d"19"; -- last element in spikeArr
 	-- leftMost is just rollCount
 	int_rightMost <= to_integer(rightMost);
@@ -32,24 +34,28 @@ begin
 	
 	process(rollClk) begin
 		if rising_edge(rollClk) then
-			-- this if else statement displays each 20 bit spike arr from map based on 20 rollcounts
 			if (rollCount >= 7d"0" and rollCount < 7d"80") then
 				spikeArr <= spikeMap(int_rightMost downto int_rollCount);
+				won <= '0';
 			else
 				spikeArr <= 20b"0";
+				won <= '1';
 			end if;
 		end if;
 	end process;
-	
 
 	process(frame2Clk) begin
 		if rising_edge(frame2Clk) then
 			spikeInterval <= spikeInterval + 1;
-			if spikeInterval = "11111" then
+			if (spikeInterval = "11111" and controllerResult(4) = '0') then
 				rollClk <= '1';
 				rollCount <= rollCount + 1;
-			else 
+			else
 				rollClk <= '0';
+			end if;
+			if(controllerResult(4) = '1') then
+				rollCount <= "0000000";
+				spikeInterval <= "00000";
 			end if;
 		end if;
 	end process;

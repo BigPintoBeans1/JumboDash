@@ -15,19 +15,42 @@ entity game_state is
 	);
 end game_state;
 
+-- Based off what happens in the game and what the user does, change the state of the game
 architecture synth of game_state is 
+
+signal firstTime : std_logic := '0';
 
 begin
 	process (frameClk) is
 	begin
-	
-		startGame <= '1' when controllerResult(4) = '1' else '0'; --Start the game (spikes begin moving)
+		if (not firstTime) then
+			firstTime <= '1';
+			startGame <= '0';
+			endGame <= '0';
+			wonGame <= '0';
+			globalReset <= '0';
+		else
 		
-		endGame <= '1' when collided = '1' else '0'; --Game over when collided is 1
-		
-		globalReset <= '1' when endGame = '1' else '0';
-		
-		wonGame <= '1' when won = '1' else '0';
+			--globalReset <= '1' when (endGame = '1' or startGame = '1') else '0';
+			
+			if controllerResult(4) = '1' then
+				startGame <= '1'; --Start the game (spikes begin moving)
+			else
+				startGame <= '0';
+			end if;
+			
+			if collided = '1' then
+				endGame <= '1';
+			else
+				endGame <= '0'; --Game over when collided is 1
+			end if;
+			
+			if won = '1'then
+				wonGame <= '1';
+			else 
+				wonGame <= '0';
+			end if;
+	end if;
 				
 	end process;
 	

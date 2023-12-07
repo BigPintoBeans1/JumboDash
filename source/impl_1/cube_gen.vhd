@@ -8,7 +8,7 @@ entity cube_gen is
 		row : in unsigned(9 downto 0);
 		col : in unsigned(9 downto 0);
 		cube_bot : in unsigned(9 downto 0) := 10d"229";
-		rgb : out std_logic_vector(5 downto 0);
+		playing_rgb : out std_logic_vector(5 downto 0);
 		valid : in std_logic;
 		spikeArr : in std_logic_vector(19 downto 0);
 		spikeInterval : in unsigned(4 downto 0);
@@ -31,7 +31,6 @@ end component;
 signal ground_top : unsigned(9 downto 0) := 10d"230";
 signal ground_bot : unsigned(9 downto 0) := 10d"230" + 10d"10"; -- 10 pixels wide
 signal cube_top : unsigned(9 downto 0);
-signal spikeEndPosX : unsigned(9 downto 0);
 
 signal background : std_logic_vector(5 downto 0);
 signal row_vector : std_logic_vector(9 downto 0);
@@ -47,12 +46,11 @@ begin
 	cube_rgb <= "110000" when (valid = '1' and row >= cube_top and row <= cube_bot and col >= 224 and col <= 256) else -- 209 and 229 are off center to the left of screen
 		"000000";
 		
-	rgb <=
+	playing_rgb <=
 		"111111" when (valid = '1' and collided = '1') else
-		--"000011" when (valid = '1' and wonGame = '1') else --Changing entire screen to blue except cube (makes purple) once RollCount is past 80
+		--"000011" when (valid = '1' and wonGame = '1') else --Changing entire screen to blue except cube (makes purple)
 		"110000" when (valid = '1' and row >= cube_top and row <= cube_bot and col >= 224 and col <= 256) else -- 209 and 229 are off center to the left of screen
 		"001100" when (valid = '1' and row >= ground_top and row <= ground_bot) else
-		--"010101" when (valid = '1' and col >= (0) and col < (32  - int_spikeInterval)  and spikeArr(0) = '1' and row >= 197 and row <= 229) else
 		
 		--Spike 1: leftmost spike
 		--"010101" when (valid = '1' and col >= (15) and col <= (16)  and spikeArr(0) = '1' and row >= 197 and row <= 198) else

@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Dec  6 17:18:05 2023
+Thu Dec  7 02:09:28 2023
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset C:/Users/aoreil02/Documents/GitHub/JumboDash/promote.xml 
@@ -93,6 +93,8 @@ VHDL library = work
 VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/spikeMove.vhd
 VHDL library = work
 VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/backgroundROM.vhd
+VHDL library = work
+VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/emmettStateMachine.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
@@ -151,8 +153,6 @@ Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/t
 
 INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
 INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd(17): analyzing architecture synth. VHDL-1010
-INFO <35929000> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd(201): input pin globalreset has no actual or default value. VHDL-9000
-INFO <35921259> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd(97): globalreset is declared here. VHDL-1259
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/vga.vhd. VHDL-1481
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/vga.vhd
 
@@ -177,16 +177,22 @@ Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/s
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd
 
 INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd(5): analyzing entity spikemove. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd(15): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd(17): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd. VHDL-1481
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd
 
 INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd(5): analyzing entity backgroundrom. VHDL-1012
 INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd. VHDL-1481
+Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd
+
+INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(5): analyzing entity game_machine. VHDL-1012
+INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(18): analyzing architecture synth. VHDL-1010
 INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/aoreil02/Documents/GitHub/JumboDash/impl_1". VHDL-1504
 Top module language type = VHDL.
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+WARNING <35935050> - synthesis: input port globalReset is not connected on this instance. VDB-5050
 Top module name (VHDL, mixed language): top
                                                          
 
@@ -227,10 +233,10 @@ WARNING <35001771> - synthesis: Initial value found on net cube_bot[2] will be i
 WARNING <35001771> - synthesis: Initial value found on net cube_bot[1] will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net cube_bot[0] will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net collided will be ignored due to unrecognized driver type
-WARNING <35931002> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd(141): net won does not have a driver. VDB-1002
+WARNING <35935050> - synthesis: input port globalReset is not connected on this instance. VDB-5050
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35935047> - synthesis: Unused instance game_state1 is removed. VDB-5047
+WARNING <35935050> - synthesis: input port globalReset is not connected on this instance. VDB-5050
 WARNING <35931002> - synthesis: c:/users/aoreil02/documents/github/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING <35931002> - synthesis: c:/users/aoreil02/documents/github/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sclk_i. Patching with GND.
@@ -245,20 +251,34 @@ CRITICAL <35001747> - synthesis: Bit 5 of Register \cube_gen1/backgroundROM1/rgb
 CRITICAL <35001747> - synthesis: Bit 3 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
 Combinational loop found : 1
 
+ Net controllerResult[4] 
+
+ Instance \controller1/mux_12_i5 
+
+Combinational loop found : 2
+
  Net controllerResult[7] 
 
  Instance \controller1/mux_12_i8 
 
+Combinational loop found : 3
+
+ Net controllerResult[6] 
+
+ Instance \controller1/mux_12_i7 
+
 WARNING <35001779> - synthesis: Initial value found on instance \jump1/position_i0 will be ignored.
+INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 99 of 5280 (1 % )
+Number of register bits => 105 of 5280 (1 % )
 EBR_B => 2
 CCU2 => 44
-FD1P3XZ => 99
+FD1P3XZ => 105
 HSOSC_CORE => 1
 IB => 2
-LUT4 => 322
+IOL_B => 2
+LUT4 => 332
 OB => 10
 PLL_B => 1
 ################### End Area Report ##################
@@ -278,20 +298,20 @@ Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : vga_1/col[9], loads : 39
-  Net : vga_1/col[8], loads : 36
+  Net : vga_1/col[8], loads : 37
   Net : vga_1/col[7], loads : 35
   Net : vga_1/col[6], loads : 31
-  Net : vga_1/col[5], loads : 24
+  Net : vga_1/col[5], loads : 25
   Net : jump1/slowClk, loads : 21
-  Net : vga_1/row[5], loads : 18
-  Net : vga_1/rgb_c_0_N_143, loads : 18
+  Net : vga_1/row[5], loads : 19
   Net : controller1/clk, loads : 17
-  Net : cube_gen1/n77, loads : 17
+  Net : controller1/controllerResult[4], loads : 16
+  Net : vga_1/row[2], loads : 15
 ################### End Clock Report ##################
 
-Peak Memory Usage: 629 MB
+Peak Memory Usage: 630 MB
 
 --------------------------------------------------------------
 Total CPU Time: 16 secs 
-Total REAL Time: 17 secs 
+Total REAL Time: 16 secs 
 --------------------------------------------------------------

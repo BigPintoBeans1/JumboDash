@@ -49,6 +49,7 @@
 "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/controller.vhd"
 "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/spikeMove.vhd"
 "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/backgroundROM.vhd"
+"C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/emmettStateMachine.vhd"
 
 
 -path "C:/Users/aoreil02/Documents/GitHub/JumboDash"

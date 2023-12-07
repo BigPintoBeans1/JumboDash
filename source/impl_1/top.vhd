@@ -62,7 +62,7 @@ component cube_gen is
 		row : in unsigned(9 downto 0);
 		col : in unsigned(9 downto 0);
 		cube_bot : in unsigned(9 downto 0);
-		rgb : out std_logic_vector(5 downto 0);
+		playing_rgb : out std_logic_vector(5 downto 0);
 		valid : in std_logic;
 		spikeArr : in std_logic_vector(19 downto 0);
 		spikeInterval : in unsigned(4 downto 0);
@@ -83,7 +83,7 @@ end component;
 component jump is
 	port(
 		aPressed : in std_logic_vector (7 downto 0); 
-		vgaClk : in std_logic;
+		vga_clk : in std_logic;
 		cubePos : out unsigned(9 downto 0)
 	);
 end component;
@@ -92,23 +92,49 @@ component spikeMove is
 	port(
 		frameClk : in std_logic;
 		frame2Clk : in std_logic;
+		controllerResult : in std_logic_vector(7 downto 0);
 		spikeArr : out std_logic_vector(19 downto 0);
 		spikeInterval : out unsigned(4 downto 0);
-		globalReset : in std_logic;
+		--globalReset : in std_logic;
 		won : out std_logic
 	);
 end component;
 
-component game_state is
+--component game_state is
+	--port(
+		--frameClk : in std_logic;
+		--collided : in std_logic;
+		--controllerResult : in std_logic_vector(7 downto 0);
+		--won : in std_logic;
+		--startGame : out std_logic;
+		--endGame : out std_logic;
+		--wonGame : out std_logic;
+		--globalReset : out std_logic
+	--);
+--end component;
+
+--component state_machine is
+	--port(
+		--frameClk : in std_logic;
+		--valid : in std_logic;
+		--startGame : in std_logic;
+		--endGame : in std_logic;
+		--wonGame : in std_logic;
+		--globalReset : in std_logic;
+		--playing_rgb : in std_logic_vector(5 downto 0);
+		--rgb : out std_logic_vector(5 downto 0)
+	--);
+--end component;
+
+component game_machine is
 	port(
-		frameClk : in std_logic;
+		vga_clk : in std_logic;
+		valid : in std_logic;
 		collided : in std_logic;
 		controllerResult : in std_logic_vector(7 downto 0);
 		won : in std_logic;
-		startGame : out std_logic;
-		endGame : out std_logic;
-		wonGame : out std_logic;
-		globalReset : out std_logic
+		playing_rgb : in std_logic_vector(5 downto 0);
+		rgb : out std_logic_vector(5 downto 0)
 	);
 end component;
 
@@ -135,16 +161,17 @@ signal controllerResult : std_logic_vector(7 downto 0);
 signal cube_bot : unsigned(9 downto 0);
 signal spikeArr : std_logic_vector(19 downto 0);
 signal collided : std_logic;
+signal playing_rgb : std_logic_vector(5 downto 0);
 
 -- spikeMove Signals
 signal spikeInterval : unsigned(4 downto 0);
 signal won : std_logic;
-signal globalReset : std_logic;
+--signal globalReset : std_logic;
 
 -- Game_State Signals
-signal startGame : std_logic;
-signal endGame : std_logic;
-signal wonGame : std_logic;
+signal startGame : std_logic := '0';
+signal endGame : std_logic := '0';
+signal wonGame : std_logic := '0';
 
 begin
 
@@ -181,7 +208,7 @@ vga_1 : vga port map(
 
 cube_gen1 : cube_gen port map(
 	vga_clk => vga_clk,
-	rgb => rgb,
+	playing_rgb => playing_rgb,
 	valid => valid,
 	cube_bot => cube_bot,
 	row => row,
@@ -196,25 +223,47 @@ spikeMove1 : spikeMove port map(
 	frameClk => frameClk,
 	frame2Clk => frame2Clk,
 	spikeArr => spikeArr,
+	controllerResult => controllerResult,
 	spikeInterval => spikeInterval,
 	won => won
 );
 
 jump1 : jump port map(
-	vgaClk => vga_clk,
+	vga_clk => vga_clk,
 	cubePos => cube_bot,
 	aPressed => controllerResult -- need to port map controller then add "aPressed" here
 );
 
-game_state1 : game_state port map(
-	frameClk => frameClk,
+--game_state1 : game_state port map(
+	--frameClk => frameClk,
+	--collided => collided,
+	--controllerResult => controllerResult,
+	--won => won,
+	--startGame => startGame,
+	--endGame => endGame,
+	--wonGame => wonGame,
+	--globalReset => globalReset
+--);
+
+--state_machine1 : state_machine port map(
+	--frameClk => frameClk,
+	--valid => valid,
+	--startGame => startGame,
+	--endGame => endGame,
+	--wonGame => wonGame,
+	--globalReset => globalReset,
+	--playing_rgb => playing_rgb,
+	--rgb => rgb
+--);
+
+game_machine1 : game_machine port map(
+	vga_clk => vga_clk,
+	valid => valid,
 	collided => collided,
 	controllerResult => controllerResult,
 	won => won,
-	startGame => startGame,
-	endGame => endGame,
-	wonGame => wonGame,
-	globalReset => globalReset
+	playing_rgb => playing_rgb,
+	rgb => rgb
 );
 
 end;
