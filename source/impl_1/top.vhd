@@ -95,6 +95,7 @@ component spikeMove is
 		controllerResult : in std_logic_vector(7 downto 0);
 		spikeArr : out std_logic_vector(19 downto 0);
 		spikeInterval : out unsigned(4 downto 0);
+		collided : in std_logic;
 		--globalReset : in std_logic;
 		won : out std_logic
 	);
@@ -134,6 +135,8 @@ component game_machine is
 		controllerResult : in std_logic_vector(7 downto 0);
 		won : in std_logic;
 		playing_rgb : in std_logic_vector(5 downto 0);
+		row : in unsigned(9 downto 0);
+		col : in unsigned(9 downto 0);
 		rgb : out std_logic_vector(5 downto 0)
 	);
 end component;
@@ -225,6 +228,7 @@ spikeMove1 : spikeMove port map(
 	spikeArr => spikeArr,
 	controllerResult => controllerResult,
 	spikeInterval => spikeInterval,
+	collided => collided,
 	won => won
 );
 
@@ -263,6 +267,8 @@ game_machine1 : game_machine port map(
 	controllerResult => controllerResult,
 	won => won,
 	playing_rgb => playing_rgb,
+	row => row,
+	col => col,
 	rgb => rgb
 );
 

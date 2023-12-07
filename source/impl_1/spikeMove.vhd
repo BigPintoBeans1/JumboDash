@@ -10,6 +10,7 @@ entity spikeMove is
 		frame2Clk : in std_logic; -- faster clock for moving spikes faster
 		controllerResult : in std_logic_vector(7 downto 0);
 		globalReset : in std_logic;
+		collided : in std_logic;
 		won : out std_logic
 	);
 end spikeMove;

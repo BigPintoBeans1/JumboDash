@@ -48,7 +48,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Thu Dec  7 02:09:45 2023
+Mapped on: Thu Dec  7 04:00:59 2023
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -58,10 +58,10 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc
      FinalProject_impl_1_map.udb -mp FinalProject_impl_1.mrp -hierrpt -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 105 out of  5280 (2%)
-   Number of I/O registers:      2 out of   117 (2%)
-   Number of LUT4s:           436 out of  5280 (8%)
-      Number of logic LUT4s:             333
+   Number of slice registers: 124 out of  5280 (2%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           2926 out of  5280 (55%)
+      Number of logic LUT4s:             2823
       Number of inserted feedthru LUT4s:  15
       Number of ripple logic:             44 (88 LUT4s)
    Number of IO sites used:   12 out of 39 (31%)
@@ -88,46 +88,45 @@ Command line:   map -i FinalProject_impl_1_syn.udb -pdc
    Number of Clocks:  7
       Net jump1.slowClk: 19 loads, 19 rising, 0 falling (Driver: Pin
      jump1.slowClk_I_0/Q)
-      Net vga_clk: 32 loads, 32 rising, 0 falling (Driver: Pin
+      Net vga_clk: 49 loads, 49 rising, 0 falling (Driver: Pin
      mypll_1.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net rollClk: 2 loads, 2 rising, 0 falling (Driver: Pin
+      Net rollClk: 3 loads, 3 rising, 0 falling (Driver: Pin
      spikeMove1.rollClk_I_0/Q)
+      Net frame2Clk: 10 loads, 10 rising, 0 falling (Driver: Pin
+     vga_1.row_1__I_0/Z)
       Net controller1.clk: 9 loads, 9 rising, 0 falling (Driver: Pin
      controller1.osc/CLKHF)
       Net controlClk_c: 8 loads, 8 rising, 0 falling (Driver: Pin
      controller1.controlClk_c_I_0/Z)
-      Net frame2Clk: 10 loads, 10 rising, 0 falling (Driver: Pin
-     vga_1.frame2Clk_I_0/Z)
       Net fpga_clk_c: 1 loads, 1 rising, 0 falling (Driver: Port fpga_clk)
 
    Number of Clock Enables:  4
       Net VCC_net: 7 loads, 0 SLICEs
       Net row_0__N_21: 6 loads, 6 SLICEs
-      Net rollCount_0__N_97: 4 loads, 4 SLICEs
-      Net game_machine1.current_state_1__N_135: 1 loads, 1 SLICEs
-   Number of LSRs:  11
+      Net rollCount_0__N_92: 4 loads, 4 SLICEs
+      Net game_machine1.current_state_0__N_152: 2 loads, 2 SLICEs
+   Number of LSRs:  10
       Net jump1.cube_bot_2__N_57: 4 loads, 4 SLICEs
       Net cube_bot_4__N_53: 3 loads, 3 SLICEs
-      Net jump1.lastPosition_0__N_134: 7 loads, 7 SLICEs
-      Net lastPosition_4__N_130: 1 loads, 1 SLICEs
+      Net jump1.lastPosition_0__N_131: 7 loads, 7 SLICEs
+      Net jump1.lastPosition_4__N_127: 3 loads, 3 SLICEs
       Net col_0__N_41: 6 loads, 6 SLICEs
       Net frameClk: 6 loads, 6 SLICEs
+      Net rollClk_N_177: 1 loads, 1 SLICEs
       Net controllerResult[4]: 9 loads, 9 SLICEs
-      Net rollClk_N_155: 1 loads, 1 SLICEs
-      Net current_state[1]: 2 loads, 2 SLICEs
-      Net game_machine1.rgb_c_0_N_146: 2 loads, 2 SLICEs
-      Net game_machine1.current_state_1__N_136: 1 loads, 1 SLICEs
+      Net rgb_c_0_N_168: 5 loads, 5 SLICEs
+      Net game_machine1.die_rom1.dieRom_5__N_132: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net col[8]: 41 loads
-      Net col[9]: 41 loads
-      Net col[7]: 38 loads
-      Net col[6]: 32 loads
-      Net col[5]: 31 loads
-      Net row[5]: 20 loads
-      Net VCC_net: 18 loads
-      Net cube_rgb_4__N_82: 17 loads
-      Net row[2]: 17 loads
-      Net row[3]: 16 loads
+      Net col[5]: 756 loads
+      Net col[6]: 737 loads
+      Net col[4]: 676 loads
+      Net col[3]: 648 loads
+      Net col[2]: 631 loads
+      Net col[7]: 518 loads
+      Net col[8]: 415 loads
+      Net row[2]: 266 loads
+      Net col[9]: 234 loads
+      Net row[3]: 151 loads
 
 
 
@@ -159,8 +158,8 @@ WARNING &lt;1026001&gt; - map:
      C:/Users/aoreil02/Documents/GitHub/JumboDash/device_constraint.pdc (12) :
      No port matched &apos;ledController[5]&apos;.
 WARNING &lt;1026001&gt; - map:
-
      C:/Users/aoreil02/Documents/GitHub/JumboDash/device_constraint.pdc (13) :
+
      No port matched &apos;ledController[6]&apos;.
 WARNING &lt;1026001&gt; - map:
      C:/Users/aoreil02/Documents/GitHub/JumboDash/device_constraint.pdc (14) :
@@ -218,8 +217,8 @@ WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location 
 +---------------------+-----------+-----------+-------+-------+-----------+
 | fpga_clk            | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
 | controlClk          | OUTPUT    |           |       |       |           |
+
 +---------------------+-----------+-----------+-------+-------+-----------+
 | controlLatch        | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -231,7 +230,7 @@ WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location 
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[3]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rgb[4]              | OUTPUT    |           | O     |       |           |
+| rgb[4]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[5]              | OUTPUT    |           | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -279,8 +278,8 @@ PLL 1:                                 Pin/Node Value
   FDA_FEEDBACK:                                 0
   FILTER_RANGE:                                 1
   EXTERNAL_DIVIDE_FACTOR:                       NONE
-
   TEST Mode:                                    0
+
 
 OSC Summary
 -----------
@@ -301,14 +300,12 @@ Instance Name: int_rightMost_0__I_0
          Type: EBR
 Instance Name: controller1/osc
          Type: HFOSC
-Instance Name: int_rightMost_0__I_0_2
-         Type: EBR
-Instance Name: game_machine1/rgb_c_5_I_0
-         Type: IOLOGIC
-Instance Name: game_machine1/rgb_c_4_I_0
-         Type: IOLOGIC
 Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
          Type: PLL
+Instance Name: game_machine1/rgb_c_5_I_0
+         Type: IOLOGIC
+Instance Name: int_rightMost_0__I_0_2
+         Type: EBR
 
 
 
@@ -323,9 +320,14 @@ Instance Name: mypll_1/lscc_pll_inst/u_PLL_B
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
-   Total CPU Time: 0 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 62 MB
+   Total CPU Time: 1 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 107 MB
+
+
+
+
+
 
 
 

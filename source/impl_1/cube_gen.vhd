@@ -52,25 +52,6 @@ begin
 		"110000" when (valid = '1' and row >= cube_top and row <= cube_bot and col >= 224 and col <= 256) else -- 209 and 229 are off center to the left of screen
 		"001100" when (valid = '1' and row >= ground_top and row <= ground_bot) else
 		
-		--Spike 1: leftmost spike
-		--"010101" when (valid = '1' and col >= (15) and col <= (16)  and spikeArr(0) = '1' and row >= 197 and row <= 198) else
-		--"010101" when (valid = '1' and col >= (14) and col <= (17)  and spikeArr(0) = '1' and row >= 199 and row <= 200) else
-		--"010101" when (valid = '1' and col >= (13) and col <= (18)  and spikeArr(0) = '1' and row >= 201 and row <= 202) else
-		--"010101" when (valid = '1' and col >= (12) and col <= (19)  and spikeArr(0) = '1' and row >= 203 and row <= 204) else
-		--"010101" when (valid = '1' and col >= (11) and col <= (20)  and spikeArr(0) = '1' and row >= 205 and row <= 206) else
-		--"010101" when (valid = '1' and col >= (10) and col <= (21)  and spikeArr(0) = '1' and row >= 207 and row <= 208) else
-		--"010101" when (valid = '1' and col >= (9 ) and col <= (22)  and spikeArr(0) = '1' and row >= 209 and row <= 210) else
-		--"010101" when (valid = '1' and col >= (8 ) and col <= (23)  and spikeArr(0) = '1' and row >= 211 and row <= 212) else
-		--"010101" when (valid = '1' and col >= (7 ) and col <= (24)  and spikeArr(0) = '1' and row >= 213 and row <= 214) else
-		--"010101" when (valid = '1' and col >= (6 ) and col <= (25)  and spikeArr(0) = '1' and row >= 215 and row <= 216) else
-		--"010101" when (valid = '1' and col >= (5 ) and col <= (26)  and spikeArr(0) = '1' and row >= 217 and row <= 218) else
-		--"010101" when (valid = '1' and col >= (4 ) and col <= (27)  and spikeArr(0) = '1' and row >= 219 and row <= 220) else
-		--"010101" when (valid = '1' and col >= (3 ) and col <= (28)  and spikeArr(0) = '1' and row >= 221 and row <= 222) else
-		--"010101" when (valid = '1' and col >= (2 ) and col <= (29)  and spikeArr(0) = '1' and row >= 223 and row <= 224) else
-		--"010101" when (valid = '1' and col >= (1 ) and col <= (30)  and spikeArr(0) = '1' and row >= 225 and row <= 226) else
-		--"010101" when (valid = '1' and col >= (0 ) and col <= (31)  and spikeArr(0) = '1' and row >= 227 and row <= 228) else
-		
-
 		--"010101" when (valid = '1' and col >= (15 + (32*1) - int_spikeInterval) and col <= (16 + (32*1) - int_spikeInterval)  and spikeArr(1) = '1' and row >= 197 and row <= 198) else
 		--"010101" when (valid = '1' and col >= (14 + (32*1) - int_spikeInterval) and col <= (17 + (32*1) - int_spikeInterval)  and spikeArr(1) = '1' and row >= 199 and row <= 200) else
 		--"010101" when (valid = '1' and col >= (13 + (32*1) - int_spikeInterval) and col <= (18 + (32*1) - int_spikeInterval)  and spikeArr(1) = '1' and row >= 201 and row <= 202) else
@@ -87,7 +68,7 @@ begin
 		--"010101" when (valid = '1' and col >= (2  + (32*1) - int_spikeInterval) and col <= (29 + (32*1) - int_spikeInterval)  and spikeArr(1) = '1' and row >= 223 and row <= 224) else
 		--"010101" when (valid = '1' and col >= (1  + (32*1) - int_spikeInterval) and col <= (30 + (32*1) - int_spikeInterval)  and spikeArr(1) = '1' and row >= 225 and row <= 226) else
 		--"010101" when (valid = '1' and col >= (0  + (32*1) - int_spikeInterval) and col <= (31 + (32*1) - int_spikeInterval)  and spikeArr(1) = '1' and row >= 227 and row <= 228) else
-		
+
 
 		--"010101" when (valid = '1' and col >= (15 + (32*2)  - int_spikeInterval) and col < (16 + (32*2)  - int_spikeInterval)  and spikeArr(2) = '1' and row >= 197 and row <= 198) else
 		--"010101" when (valid = '1' and col >= (14 + (32*2)  - int_spikeInterval) and col < (17 + (32*2)  - int_spikeInterval)  and spikeArr(2) = '1' and row >= 199 and row <= 200) else
@@ -411,29 +392,9 @@ begin
 		--"010101" when (valid = '1' and col >= (2  + (32*19) - int_spikeInterval) and col < (29 + (32*19) - int_spikeInterval)  and spikeArr(19)  = '1' and row >= 223 and row <= 224) else
 		--"010101" when (valid = '1' and col >= (1  + (32*19) - int_spikeInterval) and col < (30 + (32*19) - int_spikeInterval)  and spikeArr(19)  = '1' and row >= 225 and row <= 226) else
 		--"010101" when (valid = '1' and col >= (0  + (32*19) - int_spikeInterval) and col < (31 + (32*19) - int_spikeInterval)  and spikeArr(19)  = '1' and row >= 227 and row <= 228) else
- 		
-		--"010101" when (valid = '1' and col >= (0) and col < (32  - int_spikeInterval)  and spikeArr(0) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (32  - int_spikeInterval) and col < (64  - int_spikeInterval)  and spikeArr(1) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (64  - int_spikeInterval) and col < (96  - int_spikeInterval)  and spikeArr(2) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (96  - int_spikeInterval) and col < (128 - int_spikeInterval)  and spikeArr(3) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (128 - int_spikeInterval) and col < (160 - int_spikeInterval)  and spikeArr(4) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (160 - int_spikeInterval) and col < (192 - int_spikeInterval)  and spikeArr(5) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (192 - int_spikeInterval) and col < (224 - int_spikeInterval)  and spikeArr(6) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (224 - int_spikeInterval) and col < (256 - int_spikeInterval)  and spikeArr(7) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (256 - int_spikeInterval) and col < (288 - int_spikeInterval)  and spikeArr(8) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (288 - int_spikeInterval) and col < (320 - int_spikeInterval)  and spikeArr(9) = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (320 - int_spikeInterval) and col < (352 - int_spikeInterval)  and spikeArr(10)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (352 - int_spikeInterval) and col < (384 - int_spikeInterval)  and spikeArr(11)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (384 - int_spikeInterval) and col < (416 - int_spikeInterval)  and spikeArr(12)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (416 - int_spikeInterval) and col < (448 - int_spikeInterval)  and spikeArr(13)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (448 - int_spikeInterval) and col < (480 - int_spikeInterval)  and spikeArr(14)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (480 - int_spikeInterval) and col < (512 - int_spikeInterval)  and spikeArr(15)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (512 - int_spikeInterval) and col < (544 - int_spikeInterval)  and spikeArr(16)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (544 - int_spikeInterval) and col < (576 - int_spikeInterval)  and spikeArr(17)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (576 - int_spikeInterval) and col < (608 - int_spikeInterval)  and spikeArr(18)  = '1' and row >= 197 and row <= 229) else
-		--"010101" when (valid = '1' and col >= (608 - int_spikeInterval) and col < (640 - int_spikeInterval)  and spikeArr(19)  = '1' and row >= 197 and row <= 229) else
 	
-		"010101" when (valid = '1' and col >= (0) and col < (32  - int_spikeInterval)  and spikeArr(0) = '1' and row >= 197 and row <= 229) else
+		--"010101" when (valid = '1' and col >= (0) and col < (32  - int_spikeInterval)  and spikeArr(0) = '1' and row >= 197 and row <= 229) else
+		
 		"010101" when (valid = '1' and col >= (32  - int_spikeInterval) and col < (64  - int_spikeInterval)  and spikeArr(1) = '1' and row >= 197 and row <= 229) else
 		"010101" when (valid = '1' and col >= (64  - int_spikeInterval) and col < (96  - int_spikeInterval)  and spikeArr(2) = '1' and row >= 197 and row <= 229) else
 		"010101" when (valid = '1' and col >= (96  - int_spikeInterval) and col < (128 - int_spikeInterval)  and spikeArr(3) = '1' and row >= 197 and row <= 229) else
@@ -490,5 +451,6 @@ begin
 			yadr => unsigned(row_vector(8 downto 2)), -- divide by 4 (assigns each pixel defined in rom to 4 pixels on screen)
 			rgb => background -- should be in if block as else (if nothing else there draw background)
 		);
+		
 	
 end;

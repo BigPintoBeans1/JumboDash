@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec  7 02:09:28 2023
+Thu Dec  7 03:59:59 2023
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset C:/Users/aoreil02/Documents/GitHub/JumboDash/promote.xml 
@@ -95,6 +95,12 @@ VHDL library = work
 VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/backgroundROM.vhd
 VHDL library = work
 VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/emmettStateMachine.vhd
+VHDL library = work
+VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/die_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/win_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/start_rom.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
@@ -177,7 +183,7 @@ Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/s
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd
 
 INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd(5): analyzing entity spikemove. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd(17): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd(18): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd. VHDL-1481
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd
 
@@ -187,7 +193,22 @@ Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/e
 Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd
 
 INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(5): analyzing entity game_machine. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(18): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(20): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/die_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/die_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/die_rom.vhd(5): analyzing entity die_rom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/die_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/win_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/win_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/win_rom.vhd(5): analyzing entity win_rom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/win_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/start_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/start_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/start_rom.vhd(5): analyzing entity start_rom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/start_rom.vhd(14): analyzing architecture synth. VHDL-1010
 INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/aoreil02/Documents/GitHub/JumboDash/impl_1". VHDL-1504
 Top module language type = VHDL.
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
@@ -247,6 +268,16 @@ WARNING <35931002> - synthesis: c:/users/aoreil02/documents/github/jumbodash/myp
 WARNING <35001045> - synthesis: No available RAMs found.
 WARNING <35001045> - synthesis: No available RAMs found.
 WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+CRITICAL <35001747> - synthesis: Bit 5 of Register \game_machine1/win_rom1/rgb is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 5 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 3 of Register \cube_gen1/backgroundROM1/rgb is stuck at Zero
 Combinational loop found : 1
@@ -271,14 +302,14 @@ WARNING <35001779> - synthesis: Initial value found on instance \jump1/position_
 INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 105 of 5280 (1 % )
+Number of register bits => 124 of 5280 (2 % )
 EBR_B => 2
 CCU2 => 44
-FD1P3XZ => 105
+FD1P3XZ => 124
 HSOSC_CORE => 1
 IB => 2
-IOL_B => 2
-LUT4 => 332
+IOL_B => 1
+LUT4 => 2822
 OB => 10
 PLL_B => 1
 ################### End Area Report ##################
@@ -297,21 +328,21 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vga_1/col[9], loads : 39
-  Net : vga_1/col[8], loads : 37
-  Net : vga_1/col[7], loads : 35
-  Net : vga_1/col[6], loads : 31
-  Net : vga_1/col[5], loads : 25
-  Net : jump1/slowClk, loads : 21
-  Net : vga_1/row[5], loads : 19
-  Net : controller1/clk, loads : 17
-  Net : controller1/controllerResult[4], loads : 16
-  Net : vga_1/row[2], loads : 15
+  Net : vga_1/col[5], loads : 735
+  Net : vga_1/col[6], loads : 723
+  Net : vga_1/col[4], loads : 646
+  Net : vga_1/col[3], loads : 621
+  Net : vga_1/col[2], loads : 600
+  Net : vga_1/col[7], loads : 508
+  Net : vga_1/col[8], loads : 407
+  Net : vga_1/row[2], loads : 262
+  Net : vga_1/col[9], loads : 232
+  Net : vga_1/row[3], loads : 147
 ################### End Clock Report ##################
 
-Peak Memory Usage: 630 MB
+Peak Memory Usage: 1927 MB
 
 --------------------------------------------------------------
-Total CPU Time: 16 secs 
-Total REAL Time: 16 secs 
+Total CPU Time: 58 secs 
+Total REAL Time: 58 secs 
 --------------------------------------------------------------

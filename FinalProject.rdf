@@ -36,6 +36,15 @@
         <Source name="source/impl_1/emmettStateMachine.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
+        <Source name="source/impl_1/die_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/win_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/start_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
         <Source name="device_constraint.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>

@@ -1,0 +1,32 @@
+#Start recording tcl command: 12/7/2023 02:11:40
+#Project Location: C:/Users/aoreil02/Documents/GitHub/JumboDash; Project name: FinalProject
+prj_open "C:/Users/aoreil02/Documents/GitHub/JumboDash/FinalProject.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/die_rom.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/win_rom.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/start_rom.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/7/2023 04:03:56

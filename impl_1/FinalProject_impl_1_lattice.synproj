@@ -50,6 +50,9 @@
 "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/spikeMove.vhd"
 "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/backgroundROM.vhd"
 "C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/emmettStateMachine.vhd"
+"C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/die_rom.vhd"
+"C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/win_rom.vhd"
+"C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/start_rom.vhd"
 
 
 -path "C:/Users/aoreil02/Documents/GitHub/JumboDash"
