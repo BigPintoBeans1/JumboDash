@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec  7 05:57:51 2023
+Sun Dec 17 12:03:07 2023
 
 
 Command: bitgen -w -freq 0 -gui FinalProject_impl_1.udb 
@@ -21,6 +21,6 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "C:\Users\aoreil02\Documents\GitHub\JumboDash\impl_1\FinalProject_impl_1.bin".
+Saving bit stream in "C:\Users\maxip\OneDrive\Documents\GitHub\JumboDash\impl_1\FinalProject_impl_1.bin".
 INFO <1081100> - Bitstream authenticated.
 Bitstream generation complete!

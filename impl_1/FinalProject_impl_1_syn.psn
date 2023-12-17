@@ -1,11 +1,11 @@
 POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2023.1.0.43.3
-Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o FinalProject_impl_1_syn.udb -ldc C:/Users/aoreil02/Documents/GitHub/JumboDash/impl_1/FinalProject_impl_1.ldc -gui -msgset C:/Users/aoreil02/Documents/GitHub/JumboDash/promote.xml FinalProject_impl_1.vm 
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o FinalProject_impl_1_syn.udb -ldc C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/impl_1/FinalProject_impl_1.ldc -gui -msgset C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/promote.xml FinalProject_impl_1.vm 
    Architecture:     iCE40UP
    Device:           iCE40UP5K
    Package:          SG48
    Performance:      High-Performance_1.2V
 Reading input file 'FinalProject_impl_1.vm' ...
-Reading constraint file 'C:/Users/aoreil02/Documents/GitHub/JumboDash/impl_1/FinalProject_impl_1.ldc' ...
+Reading constraint file 'C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/impl_1/FinalProject_impl_1.ldc' ...
 Removing unused logic ...
 Starting design annotation....
 WARNING <70001944> - No master clock for
@@ -18,5 +18,5 @@ Constraint Summary:
 Writing output file 'FinalProject_impl_1_syn.udb'.
 POSTSYN finished successfully.
 Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 3 secs 
 Peak Memory Usage: 57 MB

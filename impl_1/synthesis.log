@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec  7 05:55:13 2023
+Sun Dec 17 11:56:17 2023
 
 
-Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset C:/Users/aoreil02/Documents/GitHub/JumboDash/promote.xml 
+Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f FinalProject_impl_1_lattice.synproj -gui -msgset C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/promote.xml 
 
 Synthesis options:
 The -a option is iCE40UP.
@@ -70,37 +70,37 @@ The -syn option is FALSE.
 -sdc option: SDC file input is FinalProject_impl_1_cpe.ldc.
 -vh2008
 
--path C:/Users/aoreil02/Documents/GitHub/JumboDash (searchpath added)
--path C:/Users/aoreil02/Documents/GitHub/JumboDash/impl_1 (searchpath added)
--path C:/Users/aoreil02/Documents/GitHub/JumboDash/mypll (searchpath added)
+-path C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash (searchpath added)
+-path C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/impl_1 (searchpath added)
+-path C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/mypll (searchpath added)
 -path C:/lscc/radiant/2023.1/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
 Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v
-Verilog design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/mypll/rtl/mypll.v
+Verilog design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/mypll/rtl/mypll.v
 VHDL library = pmi
 VHDL design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/top.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/top.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/vga.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/vga.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/cube_gen.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/cube_gen.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/jump.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/jump.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/controller.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/controller.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/spikeMove.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/spikeMove.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/backgroundROM.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/backgroundROM.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/emmettStateMachine.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/emmettStateMachine.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/die_rom.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/die_rom.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/win_rom.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/win_rom.vhd
 VHDL library = work
-VHDL design file = C:/Users/aoreil02/Documents/GitHub/JumboDash/source/impl_1/start_rom.vhd
+VHDL design file = C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/source/impl_1/start_rom.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
@@ -149,67 +149,67 @@ INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): 
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file c:/users/aoreil02/documents/github/jumbodash/mypll/rtl/mypll.v. VERI-1482
+Analyzing Verilog file c:/users/maxip/onedrive/documents/github/jumbodash/mypll/rtl/mypll.v. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd
 
 INFO <35921014> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/top.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/top.vhd(17): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/vga.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/vga.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/top.vhd(17): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/vga.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/vga.vhd(18): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/cube_gen.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/cube_gen.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/vga.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/cube_gen.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/cube_gen.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/cube_gen.vhd(5): analyzing entity cube_gen. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/cube_gen.vhd(20): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/jump.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/jump.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/cube_gen.vhd(5): analyzing entity cube_gen. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/cube_gen.vhd(20): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/jump.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/jump.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/jump.vhd(5): analyzing entity jump. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/jump.vhd(13): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/controller.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/controller.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/jump.vhd(5): analyzing entity jump. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/jump.vhd(13): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/controller.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/controller.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/controller.vhd(5): analyzing entity controller. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/controller.vhd(14): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/controller.vhd(5): analyzing entity controller. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/controller.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/spikemove.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/spikemove.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd(5): analyzing entity spikemove. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/spikemove.vhd(18): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/spikemove.vhd(5): analyzing entity spikemove. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/spikemove.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/backgroundrom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/backgroundrom.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd(5): analyzing entity backgroundrom. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/backgroundrom.vhd(18): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/backgroundrom.vhd(5): analyzing entity backgroundrom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/backgroundrom.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(5): analyzing entity game_machine. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(20): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/die_rom.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/die_rom.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(5): analyzing entity game_machine. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/emmettstatemachine.vhd(20): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/die_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/die_rom.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/die_rom.vhd(5): analyzing entity die_rom. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/die_rom.vhd(14): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/win_rom.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/win_rom.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/die_rom.vhd(5): analyzing entity die_rom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/die_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/win_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/win_rom.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/win_rom.vhd(5): analyzing entity win_rom. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/win_rom.vhd(14): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/start_rom.vhd. VHDL-1481
-Analyzing VHDL file c:/users/aoreil02/documents/github/jumbodash/source/impl_1/start_rom.vhd
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/win_rom.vhd(5): analyzing entity win_rom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/win_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/start_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/start_rom.vhd
 
-INFO <35921012> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/start_rom.vhd(5): analyzing entity start_rom. VHDL-1012
-INFO <35921010> - synthesis: c:/users/aoreil02/documents/github/jumbodash/source/impl_1/start_rom.vhd(14): analyzing architecture synth. VHDL-1010
-INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/aoreil02/Documents/GitHub/JumboDash/impl_1". VHDL-1504
+INFO <35921012> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/start_rom.vhd(5): analyzing entity start_rom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/source/impl_1/start_rom.vhd(14): analyzing architecture synth. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/maxip/OneDrive/Documents/GitHub/JumboDash/impl_1". VHDL-1504
 Top module language type = VHDL.
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
@@ -239,7 +239,6 @@ Top module name (VHDL, mixed language): top
                                                          
 
 
-WARNING <35935047> - synthesis: Unused instance HSOSCclock is removed. VDB-5047
 WARNING <35001771> - synthesis: Initial value found on net HSYNC will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net VSYNC will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net valid will be ignored due to unrecognized driver type
@@ -258,8 +257,8 @@ WARNING <35935050> - synthesis: input port globalReset is not connected on this 
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
 WARNING <35935050> - synthesis: input port globalReset is not connected on this instance. VDB-5050
-WARNING <35931002> - synthesis: c:/users/aoreil02/documents/github/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/aoreil02/documents/github/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/mypll/rtl/mypll.v(139): net \mypll_1/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/maxip/onedrive/documents/github/jumbodash/mypll/rtl/mypll.v(140): net \mypll_1/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \mypll_1/lscc_pll_inst/sdi_i. Patching with GND.
 
@@ -340,9 +339,9 @@ Top 10 highest fanout non-clock nets:
   Net : vga_1/row[3], loads : 154
 ################### End Clock Report ##################
 
-Peak Memory Usage: 1981 MB
+Peak Memory Usage: 1678 MB
 
 --------------------------------------------------------------
-Total CPU Time: 1 mins 3 secs 
-Total REAL Time: 1 mins 4 secs 
+Total CPU Time: 1 mins 50 secs 
+Total REAL Time: 2 mins 43 secs 
 --------------------------------------------------------------

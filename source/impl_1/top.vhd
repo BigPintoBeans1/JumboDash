@@ -16,23 +16,6 @@ end top;
 
 architecture synth of top is 
 
-component HSOSC is
-	generic (
-	
-		CLKHF_DIV : String := "0b00"); -- Divide 48MHz clock
-	port(
-		CLKHFPU : in std_logic := '1'; -- Set to 1 to power up
-		CLKHFEN : in std_logic := '1'; -- Set to 1 to enable output
-		CLKHF : out std_logic := 'X'); -- Clock output
-	end component;
-
-component counter is
-	port (
-	clk : in std_logic;
-	addr : out unsigned(2 downto 0)
-	);
-end component;
-
 component vga is
 	port(
 		vga_clk : in std_logic;
@@ -101,31 +84,6 @@ component spikeMove is
 	);
 end component;
 
---component game_state is
-	--port(
-		--frameClk : in std_logic;
-		--collided : in std_logic;
-		--controllerResult : in std_logic_vector(7 downto 0);
-		--won : in std_logic;
-		--startGame : out std_logic;
-		--endGame : out std_logic;
-		--wonGame : out std_logic;
-		--globalReset : out std_logic
-	--);
---end component;
-
---component state_machine is
-	--port(
-		--frameClk : in std_logic;
-		--valid : in std_logic;
-		--startGame : in std_logic;
-		--endGame : in std_logic;
-		--wonGame : in std_logic;
-		--globalReset : in std_logic;
-		--playing_rgb : in std_logic_vector(5 downto 0);
-		--rgb : out std_logic_vector(5 downto 0)
-	--);
---end component;
 
 component game_machine is
 	port(
@@ -140,10 +98,6 @@ component game_machine is
 		rgb : out std_logic_vector(5 downto 0)
 	);
 end component;
-
--- Main clk
-signal clk : std_logic;
-signal addr : unsigned(2 downto 0);
 
 -- VGA signals
 signal vga_clk : std_logic;
@@ -183,13 +137,6 @@ controller1 : controller port map(
 	controllerLatch => controlLatch,
 	controllerClk => controlClk,
 	controllerResult => controllerResult
-);
-
-HSOSCclock : HSOSC generic map ( CLKHF_DIV => "0b00")
-port map ( 
-	CLKHFPU => '1',
-	CLKHFEN => '1',
-	CLKHF => clk
 );
 
 mypll_1 : mypll port map(
@@ -237,28 +184,6 @@ jump1 : jump port map(
 	cubePos => cube_bot,
 	aPressed => controllerResult -- need to port map controller then add "aPressed" here
 );
-
---game_state1 : game_state port map(
-	--frameClk => frameClk,
-	--collided => collided,
-	--controllerResult => controllerResult,
-	--won => won,
-	--startGame => startGame,
-	--endGame => endGame,
-	--wonGame => wonGame,
-	--globalReset => globalReset
---);
-
---state_machine1 : state_machine port map(
-	--frameClk => frameClk,
-	--valid => valid,
-	--startGame => startGame,
-	--endGame => endGame,
-	--wonGame => wonGame,
-	--globalReset => globalReset,
-	--playing_rgb => playing_rgb,
-	--rgb => rgb
---);
 
 game_machine1 : game_machine port map(
 	vga_clk => vga_clk,
